@@ -119,20 +119,9 @@ sudo apt install -y steam # Prompts with License Agreement
 {% assign i = 0 %}
 
 <style>
-li {
-  white-space: pre-line;
-}
 li:first-line,
 li > p:first-line {
   font-weight: bold;
-}
-li > a.header-link + p {
-  margin-top: -1.58em;
-  margin-bottom: 0;
-}
-li > ul,
-li > ol {
-    line-height: 0.5em;
 }
 </style>
 
