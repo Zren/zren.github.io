@@ -1,0 +1,62 @@
+<header class="site-header">
+
+  <style type="text/css">
+    .headereffect {
+        opacity: 0.2;
+        background: #25a967;
+        bottom: -60%;
+        right: -10rem;
+        width: 20rem;
+        display: block;
+        position: absolute;
+    }
+    .headereffect[data-a] {
+        height: 19rem;
+        border-radius: 50%;
+        animation: linear infinite-spinning 11s infinite;
+    }
+    .headereffect[data-b]{
+        height: 17rem;
+        border-radius: 50%;
+        animation: linear infinite-spinning 10s infinite;
+    }
+    .headereffect[data-c]{
+        height: 21rem;
+        border-radius: 50%;
+        animation: linear infinite-spinning 13s infinite;
+    }
+
+    header.site-header {
+        overflow: hidden;
+        position: relative;
+    }
+
+    @keyframes infinite-spinning {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <div class="headereffect" data-a></div>
+  <div class="headereffect" data-b></div>
+  <div class="headereffect" data-c></div>
+
+  <div class="wrapper">
+
+    <!---<h1 class="page-title">{{ page.title }}</h1>-->
+
+    <div class="site-author">
+      <img class="avatar-image" src="{{ "/img/avatar.jpg" | prepend: site.baseurl }}">
+      <div><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></div>
+      <div><a class="site-github" href="https://github.com/{{ site.github_username }}"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="username">{{ site.github_username }}</span></a></div>
+    </div>
+    
+
+
+  </div>
+
+</header>
