@@ -110,6 +110,7 @@ sudo apt install -y sublime-text-installer
 
 {% highlight bash %}
 sudo apt install -y steam # Prompts with License Agreement
+sudo apt install -y playonlinux
 {% endhighlight %}
 
 
@@ -225,6 +226,12 @@ li > p:first-line {
   KWin > Quick Tile Window to the Left: Win+Left
   KWin > Quick Tile Window to the Right: Win+Right
   To open the “Start Menu” with the Windows key see the next item.
+
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Present all windows with Win+Tab
+  System Settings > Desktop Behavior
+  Desktop Effects Tab > Check Present Windows
+  Click the Gear Icon > Change the Ctrl+F10 shortcut to Meta+Tab
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Open “Start Menu” with Windows/Meta key
