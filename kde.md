@@ -359,29 +359,6 @@ li > p:first-line {
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} 
 
-{% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} 
-
-{% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} 
-
-{% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} 
-
-{% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} 
-
-{% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} 
-
-{% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} 
-
-{% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} 
-
-
-
 
 
 <script>

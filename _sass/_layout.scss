@@ -110,6 +110,29 @@ li[id]:hover > .header-link {
   opacity: 1;
 }
 
+// Images
+@media screen and (min-width: 64em) {
+  .post-content img.pull-right,
+  .post-content img.pull-left {
+    max-width: calc(50vw - 1em);
+    border: 2px solid #eee;
+    max-height: 60vh;
+
+  }
+  .post-content img.pull-left {
+    margin: 0 1em 1em calc(-50vw + 50%);
+    float: left;
+  }
+  .post-content img.pull-right {
+    margin: 0 calc(-50vw + 50%) 1em 1em;
+    float: right;
+  }
+  .post-content .outset {
+    margin: 0 -140px 1em -140px;
+    max-width: 1020px;
+  }
+}
+
 
 .site-nav {
     float: right;

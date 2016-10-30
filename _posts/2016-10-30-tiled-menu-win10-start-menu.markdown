@@ -41,7 +41,9 @@ Kicker's model also gives me the last 10 or so apps, when all I want to display 
 
 After I managed to list the apps, I started on implementing the search, and soon found that it was fairly easy to add the calculator to the menu's results, as well as all the other services.
 
-<div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/e/h9us" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no" style="width: 100%; height: 100%; position: absolute;"></iframe></div>
+<div class="outset">
+	<div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/e/h9us" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no" style="width: 100%; height: 100%; position: absolute;"></iframe></div>
+</div>
 
 Finally, I implemented the favourites view. I'd managed to mockup the "Large"/"Wide"/"Small" sizes with albeit a few bugs still, but realized it would be way too dificult to implement at the same time I'm trying to bind it with the [FavouritesModel](https://github.com/KDE/plasma-desktop/blob/master/applets/kicker/plugin/favoritesmodel.h), so I dropped it for a simple grid.
 
@@ -49,4 +51,6 @@ One thing that makes the "Start menu" is the ability to resize the menu to make 
 
 The hardest part is probably the context menu jump lists. Right now I've parsed the models into javascript, but I need to be able to invoke functions on the old models when you click stuff. So right now it's a really complicated process that I might need to scrap, but that requires rewriting everything. I might do it someday, but not right now since my main goal was to get a favourites grid and an A-Z list of apps.
 
-<div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/e/ypps" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no" style="width: 100%; height: 100%; position: absolute;"></iframe></div>
+<div class="outset">
+	<div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/e/ypps" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no" style="width: 100%; height: 100%; position: absolute;"></iframe></div>
+</div>

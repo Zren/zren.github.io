@@ -52,24 +52,6 @@ h3 + .tags {
     margin-top: -15px;
     margin-bottom: 15px;
 }
-
-@media screen and (min-width: 64em) {
-    .post-content img.pull-right,
-    .post-content img.pull-left {
-        max-width: calc(50vw - 1em);
-        border: 2px solid #eee;
-        max-height: 60vh;
-
-    }
-    .post-content img.pull-left {
-        margin: 0 1em 1em calc(-50vw + 50%);
-        float: left;
-    }
-    .post-content img.pull-right {
-        margin: 0 calc(-50vw + 50%) 1em 1em;
-        float: right;
-    }
-}
 </style>
 
 ## 2016
@@ -78,6 +60,8 @@ h3 + .tags {
 ### Plasma5 Widget - Tiled Menu
 
 **Link:** [Blog Post]({% post_url 2016-10-30-tiled-menu-win10-start-menu %})
+
+**Source:** <https://github.com/Zren/plasma-applets/tree/master/tiledmenu>
 
 I reskinned the app menu based on the Win10 Start Menu. I mainly did this because I wanted an A-Z menu without the dashboard (and a grid of favourites).
 
