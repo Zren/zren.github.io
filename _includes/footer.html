@@ -4,31 +4,72 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="{{ site.baseurl }}/">Home</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
         <ul class="social-media-list">
+          <li>{{ site.title }}</li>
           {% if site.github_username %}
           <li>
             {% include icon-github.html username=site.github_username %}
           </li>
           {% endif %}
 
-          
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <ul class="social-media-list">
           {% if site.twitter_username %}
           <li>
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <ul class="social-media-list">
+          <script>
+          https://github.com/Zren/projects/new/gh-pages?path=_posts&filename=2016-12-31-test.md
+          window.newPost = function() {
+            var url = 'https://github.com/Zren/projects/new/gh-pages';
+            url += '?path=_posts';
+            var now = new Date();
+            var dateStr = '' + now.getFullYear() + '-' + (now.getMonth()+1) + '-' + now.getDate();
+            url += '&filename=' + dateStr + '-title.md';
+            var content = '';
+            content += '---\n';
+            content += 'layout: post\n';
+            content += 'title: title\n';
+            content += '---\n\n';
+            content += '![](image)\n\n';
+            content += 'text\n\n';
+            url += '&value=' + encodeURIComponent(content); // base64 encode
+            window.open(url);
+          };
+          </script>
+          <li><a href="javascript:void();" onclick="newPost()">New Post</a></li>
+
+
+
+          <script>
+          https://github.com/Zren/projects/new/gh-pages?path=_posts&filename=2016-12-31-test.md
+          window.newPage = function() {
+            var url = 'https://github.com/Zren/projects/new/gh-pages';
+            url += '?';
+            url += '&filename=title.md';
+            var content = '';
+            content += '---\n';
+            content += 'layout: page\n';
+            content += 'title: title\n';
+            content += 'permalink: /title/\n';
+            content += '---\n\n';
+            content += '![](image)\n\n';
+            content += 'text\n\n';
+            url += '&value=' + encodeURIComponent(content); // base64 encode
+            window.open(url);
+          };
+          </script>
+          <li><a href="javascript:void();" onclick="newPage()">New Page</a></li>
         </ul>
       </div>
     </div>
