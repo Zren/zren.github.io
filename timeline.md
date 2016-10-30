@@ -240,11 +240,11 @@ A timer based on a url parameter. Based off of [e.ggtimer.com](http://e.ggtimer.
 
 **Source:** <https://github.com/Zren/ResizeYoutubePlayerToWindowSize/>
 
-![](https://i.imgur.com/ja8Kx.jpg){:.pull-right}
+![](https://i.imgur.com/ja8Kx.jpg){:.pull-left}
 
 After a similar userscript/extension broke, I decided to make a simplier version that would just move the video to the top of the site and scaled to the window. It got popular enough to get [Lifehackered](http://lifehacker.com/resize-youtubes-player-to-fit-your-browser-window-493160000).
 
-![](https://i.imgur.com/RiodhIb.jpg)
+![](https://i.imgur.com/RiodhIb.jpg){:.pull-right}
 
 
 ### MultiView IRC UI In AngularJS
@@ -393,6 +393,13 @@ Then taken over by [LlmDl](https://github.com/LlmDl). <https://github.com/LlmDl/
 
 A server owner was asking for a plugin to kick off his server and make it more unique. Basically a new player would be forced to tackle a waves of enemies when he first joined before being able to select his faction. This was my first tackle on a paid project, and gave me a tons of experience for what to do next time.
 
+### Turing - Advanced Input Module
+<div class="tags">Turing</div>
+
+**Link:** <http://compsci.ca/v3/viewtopic.php?t=29263>
+
+Turing has 2 methods of input, polling the keyboard state, and a rough key event loop. This module is to simplify if a key has just been pressed (by checking the last keyboard/mouse state).
+
 
 ## 2010
 
@@ -421,53 +428,31 @@ When I finally decided on just a plain flatfile, and with the heirachy code done
 
 I started looking into cuboid and how it did block protection. This was around the time when dev’s started talking about how checking if a block was in a list of cuboids was a terrible idea. Eventually cuboid got on the path of using K-D Tree. That threw my sphere idea out, but I started on thinking about a chunk based system.
 
+### Animated Sprites Engine
+<div class="tags">Turing</div>
 
-### name
-<div class="tags">tags</div>
+**Link:** <http://compsci.ca/v3/viewtopic.php?t=25745>
 
-**Link:** <link>
-
-![](image){:.pull-right}
-
-description
+A simple engine to animate a sprite character. Character can move around and jump. Uses a bit mask to perform map collision detection. Contains a background and foreground to draw above / below the character.
 
 
-### name
-<div class="tags">tags</div>
+## 2009
 
-**Link:** <link>
+### Snowfall Engine
+<div class="tags">Turing</div>
 
-![](image){:.pull-right}
-
-description
-
-
-### name
-<div class="tags">tags</div>
-
-**Link:** <link>
+**Link:** <http://compsci.ca/v3/viewtopic.php?t=22799>
 
 ![](image){:.pull-right}
 
-description
+A simple particle engine using trig for movement. A bit mask is used for collision detection, and the particle is drawn to the bit mask on collision (to accumulate snow).
 
 
-### name
-<div class="tags">tags</div>
+## 2008
 
-**Link:** <link>
+### Virus (Game)
+<div class="tags">Turing</div>
 
-![](image){:.pull-right}
+**Link:** <http://compsci.ca/v3/viewtopic.php?t=18910>
 
-description
-
-
-### name
-<div class="tags">tags</div>
-
-**Link:** <link>
-
-![](image){:.pull-right}
-
-description
-
+Back when I had no clue how to do 3D, I tried zooming from the center of the screen to create the top and bottom of cubes. The game is to hit the 10 or so yellow cubes while avoiding enemy dots (anti-virus). You have safe places to avoid the enemies inside green cubes, but every time you destroy a yellow cube, more and more green havens are destroyed.
