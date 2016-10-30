@@ -14,9 +14,9 @@ The last few months I've been wanting to reskin the KDE "Start" menu. Plasma shi
 I initially mocked up the layout in QML View, and started deciphering how the [kicker](https://github.com/KDE/plasma-desktop/tree/master/applets/kicker) and [kickoff](https://github.com/KDE/plasma-desktop/tree/master/applets/kickoff) plasmoids worked. I found out apps are loaded into a nested model that also contains the recent apps and documents.
 
 * [`RootModel`](https://github.com/KDE/plasma-desktop/blob/master/applets/kicker/plugin/rootmodel.h)
-	* `Recent Applications` => `RecentUsageModel(this, RecentUsageModel::OnlyApps)`
+	* `Recent Applications` => `RecentUsageModel`
 		* app (May contain invalid entries)
-	* `Recent Documents` => `RecentUsageModel(this, RecentUsageModel::OnlyDocs)`
+	* `Recent Documents` => `RecentUsageModel`
 	* `Recent Contacts` => `RecentContactsModel`
 	* Seperator (optional)
 	* `All Apps` 
