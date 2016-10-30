@@ -243,6 +243,15 @@ li > p:first-line {
     Right Click the KDE Icon > Application Menu Settings
     Keyboard Shortcuts Tab > Shortcut: Meta+Space
 
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Do not open the “Start Menu” with Windows/Meta key (KDE 5.8)
+  We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/config/kwinrc`, then restart kwin.
+  It's easier to use these commmands than doing it by hand.
+  {% highlight bash %}
+  kwriteconfig --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta ""
+  kwin_x11 --replace & disown
+  {% endhighlight %}
+
 
 ### Dolphin (File Manager)
 
