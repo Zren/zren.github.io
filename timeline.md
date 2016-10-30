@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Project Timeline
+title: Timeline / Projects
 permalink: /timeline/
 ---
 
@@ -35,11 +35,22 @@ permalink: /timeline/
     color: #fff;
     margin-left: -30px;
     padding-left: 30px;
+    clear: both;
 }
 
 .post-content h3 {
     border-bottom: 1px solid;
     clear: both;
+}
+
+.tags {
+    font-size: 0.9em;
+    word-spacing: 1em;
+    color: #999;
+}
+h3 + .tags {
+    margin-top: -15px;
+    margin-bottom: 15px;
 }
 
 @media screen and (min-width: 64em) {
@@ -122,6 +133,7 @@ I needed a light theme with a black panel, and I wanted to make a few adjustment
 ## 2015
 
 ### HawkenAPI - Periodic Diff Check Emails
+<div class="tags">Python SMTP</div>
 
 ![](https://i.imgur.com/g2Gp6r1.jpg){:.pull-right}
 
@@ -129,9 +141,103 @@ After the responses for certain endpoints in the Hawken API started going haywir
 
 
 ### Hawken - Distribution Charts
+<div class="tags">Python Flask SQLAlchemy PostgreSQL</div>
 
 **Link:** <http://home.xshade.ca/users/recent/7-days/pilotlevel-distribution/>
 
 ![](https://i.imgur.com/tX1pRGc.jpg){:.pull-right}
 
 After noticing the existing MMR distribution charts were wildly inaccurate because they included users who hadn't played in months, I made a chart fetching data from the leaderboards which filtered out older users.
+
+
+### Hawken - Leaderboards
+<div class="tags">Python Flask SQLAlchemy PostgreSQL</div>
+
+**Link:** <http://home.xshade.ca/users/leaderboard/>
+
+![](https://i.imgur.com/0pQcZhZ.jpg){:.pull-right}
+
+After data mining a list of users by name in order to add a user search function to the server list app, I decided to start mining some other data as well. I ended up making a simple leaderboard based on MMR (MatchMaking Ranking) which the community had been using for a while.
+
+## 2014
+
+### QuasselPy
+<div class="tags">Python Flask jQuery.DataTables</div>
+
+**Source:** <https://github.com/Zren/QuasselPy>
+
+![](https://i.imgur.com/ay00toq.png){:.pull-right}
+
+After being dissatisfied with quasselsuche, I decided to reinplement the feature using DataTables to have dynamic filtering.
+
+
+### quassel-pushbullet
+<div class="tags">Javascript NodeJS</div>
+
+**Source:** <https://github.com/Zren/quassel-pushbullet>
+
+![](https://i.imgur.com/V3oQJ5vl.png){:.pull-right}
+
+After toying around with quassel-webserver, I tried pulling it apart to make an always connected client that would speedup the load time. I eventually ended up creating a new "client" and hooking the new message event to send a pushbullet notification to my phone when I get highlighted. Unfortunately I have more or less abandoned this project due to libquassel's meomory consumption.
+
+
+### quassel-webserver (Contributor)
+<div class="tags">Javascript NodeJS Angular</div>
+
+**Source:** <https://github.com/magne4000/quassel-webserver>
+
+![](https://i.imgur.com/yDOGT1H.png){:.pull-right}
+
+magne4000 released a quasselclient implementation using NodeJS and socket.io. I made a number of pull requests to make the UI more similar to the desktop application. I was hoping to replace QuasselDroid with this in order to lower battery consumption on my phone.
+
+
+### OpenUserJS.org
+<div class="tags">Javascript NodeJS MongoDB Mongoose Bootstrap</div>
+
+![](https://i.imgur.com/SkGA17P.png){:.pull-right}
+
+After userscript.org went down due to neglect. A few replacements appeared. The mojority with a UI made by programmers. I decided to help redisign on of them. My decision to help OUJS is mainly due it being the first I was able to setup a dev environment for. I'd worked with NodeJS before, and the developer had a default remote MongoDB database which made it very easy to setup.
+
+I ended up reskinning theming Bootstrap for them, and refactoring all the views ([old frontpage](https://i.imgur.com/laIdySZ.png)). I implemented saner pagination, along with a pagination widget.
+
+
+### name
+<div class="tags">tags</div>
+
+**Link:** <>
+
+![](image){:.pull-right}
+
+description
+
+
+### name
+<div class="tags">tags</div>
+
+**Link:** <>
+
+![](image){:.pull-right}
+
+description
+
+
+### name
+<div class="tags">tags</div>
+
+**Link:** <>
+
+![](image){:.pull-right}
+
+description
+
+
+### name
+<div class="tags">tags</div>
+
+**Link:** <>
+
+![](image){:.pull-right}
+
+description
+
+
