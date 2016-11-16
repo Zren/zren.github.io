@@ -172,7 +172,7 @@ li > p:first-line {
   General Tab > Filters > Check: Current Desktop
 
 {% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} Pin to Apps to Taskbar
+* {:#cfg-{{ i }}} Pin Apps to Taskbar
   Launch App
   Right Click app in Taskbar > Check: Show Launcher When Not Running
 
