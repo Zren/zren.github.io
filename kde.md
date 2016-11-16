@@ -81,7 +81,7 @@ sudo apt install ubuntu-make
 umake android # Prompts InstallDirectory + License
 sudo apt install openjdk-8-jre
 # Run with:
-JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/ /home/chris/.local/share/umake/android/android-studio/bin/studio.sh
+# JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/ ~/.local/share/umake/android/android-studio/bin/studio.sh
 
 ## Git
 sudo apt install -y git
