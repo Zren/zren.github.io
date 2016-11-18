@@ -253,6 +253,16 @@ li > p:first-line {
   {% endhighlight %}
 
 
+### Login Screen (SDDM) / Lock Screen
+
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Change Login Screen Wallpaper
+  System Settings > Startup and Shutdown
+  Login Screen (SDDM) Tab > Background > Load From File
+  We should also change the lock screen.
+  System Settings > Desktop Bahviour
+  Screen Locking Tab > Wallpaper > Wallpaper Type: Image
+
 ### Dolphin (File Manager)
 
 {% assign i = i | plus: 1 %}
