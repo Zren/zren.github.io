@@ -378,6 +378,15 @@ li > p:first-line {
 
 -----
 
+# Known Bugs
+
+{% assign i = i | plus: 1 %}
+* {:#bug-{{ i }}} Tooltips broken in Chrome/Chromium
+  https://bugs.chromium.org/p/chromium/issues/detail?id=442111
+
+
+-----
+
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} 
 
