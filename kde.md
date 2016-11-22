@@ -297,7 +297,7 @@ li > p:first-line {
   Paste > Set Alternative (Defaulted to Shift+Insert) as “None”
 
 
-# Chrome
+### Chrome
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Overlay tabs on top of the title bar
@@ -310,7 +310,7 @@ li > p:first-line {
   Breeze Dark: [Chrome Theme](https://chrome.google.com/webstore/detail/breeze-dark/nkhdomjgcjkhipblklfchdkojecapgmc)
 
 
-# Steam
+### Steam
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Launching Steam Fixes
@@ -347,7 +347,7 @@ li > p:first-line {
   Uncheck: Notify me about additions to my games and other releases
 
 
-# Clementine
+### Clementine
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Clean up UI
@@ -366,6 +366,15 @@ li > p:first-line {
 * {:#cfg-{{ i }}} Double Click song should play song now
   Behaviour > Using the menu to add a song will: Always start playing
   Behaviour > Double clicking a song will: Replace the playlist + Always start playing
+
+
+### Gtk Apps (Gimp/Hexchat/etc)
+
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Fix white text on white bg tooltips
+  System Settings > Colors
+  Uncheck: Apply colors to non-Qt applications
+
 
 -----
 
