@@ -127,6 +127,13 @@ li > p:first-line {
 </style>
 
 
+### Autostarted Apps
+
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Disable restoring session on Login (restarting apps open during Logout)
+  System Settings > Startup & Shutdown
+  Desktop Session Tab > On Login: Check Start with an empty session
+
 ### Desktop
 
 {% assign i = i | plus: 1 %}
