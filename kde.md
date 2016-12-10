@@ -391,6 +391,11 @@ li > p:first-line {
 * {:#bug-{{ i }}} Tooltips broken in Chrome/Chromium
   <https://bugs.chromium.org/p/chromium/issues/detail?id=442111>
 
+{% assign i = i | plus: 1 %}
+* {:#bug-{{ i }}} Missing minimize/close buttons when not using systems titlebars when maximized in Chrome
+  <https://bugs.chromium.org/p/chromium/issues/detail?id=375650>
+  Workaround (disables progress bars in taskbar): `sudo apt remove libunity9`
+
 
 -----
 
