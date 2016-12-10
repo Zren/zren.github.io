@@ -19,5 +19,6 @@ permalink: /kde/repos/
     * **MonthView:** <https://github.com/KDE/plasma-framework/tree/master/src/declarativeimports/calendar>
 * **Pager:** [GitHub](https://github.com/KDE/plasma-desktop/blob/master/applets/pager/)
 * **Task Manager:** [GitHub](https://github.com/KDE/plasma-desktop/blob/master/applets/taskmanager/) / [All Bugs]({{kdeBugList}}product=plasmashell&component=Task%20Manager&list_id=1407534) / [New Bug]({{kdeNewBug}}product=plasmashell&component=Task%20Manager)
-    * **Icon Tasks:** 
+    * **Icon Tasks:** [All Bugs]({{kdeBugList}}product=plasmashell&component=Icons-only%20Task%20Manager&list_id=1407535) / [New Bug]({{kdeNewBug}}product=plasmashell&component=Icons-only%20Task%20Manager)
+    
 * **System Tray:** [GitHub](https://github.com/KDE/plasma-workspace/tree/master/applets/systemtray/)
