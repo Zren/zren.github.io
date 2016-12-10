@@ -18,6 +18,6 @@ permalink: /kde/repos/
 * **Digital Clock:** [GitHub](https://github.com/KDE/plasma-desktop/blob/master/applets/kicker/) / [All Bugs]({{kdeBugList}}product=plasmashell&component=Digital%20Clock&list_id=1406061) / [New Bug]({{kdeNewBug}}product=plasmashell&component=Digital%20Clock)
     * **MonthView:** <https://github.com/KDE/plasma-framework/tree/master/src/declarativeimports/calendar>
 * **Pager:** [GitHub](https://github.com/KDE/plasma-desktop/blob/master/applets/pager/)
-* **Task Manager:** [GitHub](https://github.com/KDE/plasma-desktop/blob/master/applets/taskmanager/)
+* **Task Manager:** [GitHub](https://github.com/KDE/plasma-desktop/blob/master/applets/taskmanager/) / [All Bugs]({{kdeBugList}}product=plasmashell&component=Task%20Manager&list_id=1407534) / [New Bug]({{kdeNewBug}}product=plasmashell&component=Task%20Manager)
     * **Icon Tasks:** 
 * **System Tray:** [GitHub](https://github.com/KDE/plasma-workspace/tree/master/applets/systemtray/)
