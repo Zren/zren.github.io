@@ -12,6 +12,9 @@ permalink: /kde/repos/
 li a {
     display: inline-block;
 }
+li:nth-of-type(2n) {
+    background: #ebf2fb;
+}
 </style>
 
 > **Note:** All GitHub links are source mirrors only. Do not submit issues to those repos.
