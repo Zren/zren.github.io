@@ -10,9 +10,9 @@ permalink: /kde/repos/
 
 {% assign kdeBugList = 'https://bugs.kde.org/buglist.cgi?order=bug_id%20DESC&query_format=advanced&' %}
 {% assign kdeNewBug = 'https://bugs.kde.org/enter_bug.cgi?' %}
-{% assign phabDiffs = 'https://phabricator.kde.org/differential/query/'}
-{% assign phabDiffsDesktop = 'https://phabricator.kde.org/differential/query/7LklMmkHDcva/#R'}
-{% assign phabDiffsWorkspace = 'https://phabricator.kde.org/differential/query/stR7aMSmxBU./#R'}
+{% assign phabDiffs = 'https://phabricator.kde.org/differential/query/' %}
+{% assign phabDiffsDesktop = 'https://phabricator.kde.org/differential/query/7LklMmkHDcva/#R' %}
+{% assign phabDiffsWorkspace = 'https://phabricator.kde.org/differential/query/stR7aMSmxBU./#R' %}
 
 
 * **Application Launcher (Kickoff):** [GitHub](https://github.com/KDE/plasma-desktop/blob/master/applets/kickoff/) / [All Bugs]({{kdeBugList}}product=plasmashell&component=Application%20Launcher%20%28Kickoff%29&list_id=1406061) / [New Bug]({{kdeNewBug}}product=plasmashell&component=Application%20Launcher%20%28Kickoff%29) / [Pull Requests]({{phabDiffsDesktop}}) / New PR
