@@ -39,6 +39,18 @@
         transform: rotate(360deg);
       }
     }
+
+    .site-header nav {
+      float: right;
+      opacity: 0.7;
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: -1px;
+    }
+    .site-header nav a,
+    .site-header nav a:visited {
+      color: #fff;
+    }
   </style>
 
   <div class="headereffect" data-a></div>
@@ -48,6 +60,9 @@
   <div class="wrapper">
 
     <!---<h1 class="page-title">{{ page.title }}</h1>-->
+      <nav>
+        <a class="homepage-link" href="{{ site.baseurl }}/">Home</a>
+      </nav>
 
     <div class="site-author">
       <img class="avatar-image" src="{{ "/img/avatar.jpg" | prepend: site.baseurl }}">
