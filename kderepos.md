@@ -4,6 +4,16 @@ title: KDE Repositories
 permalink: /kde/repos/
 ---
 
+<style type="text/css">
+.page-content .wrapper {
+    max-width: -webkit-calc(100vw - (30px * 2));
+    max-width: calc(100vw - (30px * 2));
+}
+li a {
+    display: inline-block;
+}
+</style>
+
 > **Note:** All GitHub links are source mirrors only. Do not submit issues to those repos.
 
 ## PlasmaShell
