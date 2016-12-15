@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: widepage
 title: KDE Repositories
 permalink: /kde/repos/
 ---

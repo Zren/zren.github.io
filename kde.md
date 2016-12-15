@@ -1,16 +1,8 @@
 ---
-layout: page
+layout: widepage
 title: KDE Plasma5 Fixes
 permalink: /kde/
 ---
-
-<style type="text/css">
-.page-content .wrapper {
-    /* wider */
-    max-width: -webkit-calc(1024px - (30px * 2));
-    max-width: calc(1024px - (30px * 2));
-}
-</style>
 
 This page aims to setup a nice KDE Plasma5 desktop for someone who's coming from Windows.
 
