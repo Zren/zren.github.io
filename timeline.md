@@ -57,6 +57,20 @@ h3 + .tags {
 ## 2016
 
 
+### Plasma5 Widget - Battery Time
+
+**Source:** <https://github.com/Zren/plasma-applets/tree/master/batterytime>
+
+Made a simple widget which will always use the breeze battery icon and also shows the percentage and how many minutes are left.
+
+
+### Plasma5 Widget - Command Output
+
+**Source:** <https://github.com/Zren/plasma-applets/tree/master/commandoutput>
+
+Simple widget that runs a command every second and display the output in the panel.
+
+
 ### Plasma5 Widget - Tiled Menu
 
 **Link:** [Blog Post]({% post_url 2016-10-30-tiled-menu-win10-start-menu %})
@@ -224,11 +238,11 @@ A timer based on a url parameter. Based off of [e.ggtimer.com](http://e.ggtimer.
 
 **Source:** <https://github.com/Zren/ResizeYoutubePlayerToWindowSize/>
 
-![](https://i.imgur.com/ja8Kx.jpg){:.pull-left}
+![](https://i.imgur.com/ja8Kx.jpg)
 
 After a similar userscript/extension broke, I decided to make a simplier version that would just move the video to the top of the site and scaled to the window. It got popular enough to get [Lifehackered](http://lifehacker.com/resize-youtubes-player-to-fit-your-browser-window-493160000).
 
-![](https://i.imgur.com/RiodhIb.jpg){:.pull-right}
+![](https://i.imgur.com/RiodhIb.jpg)
 
 
 ### MultiView IRC UI In AngularJS
