@@ -11,27 +11,17 @@ body {
 
 // Header
 .site-header {
-  color: #fff;
+  color: $headerTextColor;
   text-align: center;
-  background-color: #fafafa;
-  background-image: linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px), // Vertical Grid line
-    linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px), // Horizontal Grid Line
-    linear-gradient(#dfeaec, #fff); // Fill must be last for some reason.
-  background-size: 20px 20px,
-    20px 20px,
-    100% 100%;
-  background-position: -1px -1px,
-    -1px -1px,
-    0 0;
   
   nav a,
   nav a:visited {
     color: $headerTextColor;
   }
 }
-@media screen and (min-width: 64em) { .site-header { padding: 3rem 6rem 2rem 6rem; } }
-@media screen and (min-width: 42em) and (max-width: 64em) { .site-header { padding: 3rem 4rem; } }
-@media screen and (max-width: 42em) { .site-header { padding: 2rem 1rem; } }
+@media screen and (min-width: 64em) { .site-header { padding: 1rem 6rem 1rem 6rem; } }
+@media screen and (min-width: 42em) and (max-width: 64em) { .site-header { padding: 1rem 4rem; } }
+@media screen and (max-width: 42em) { .site-header { padding: 1rem 1rem; } }
 
 
 h1 {
@@ -79,6 +69,7 @@ h1 {
     font-size: 22px;
     font-weight: 300;
     letter-spacing: -1px;
+    font-weight: bold;
 }
 .site-github .icon > svg path {
   fill: $headerTextColor;
@@ -146,6 +137,11 @@ li[id]:hover > .header-link {
   .post-content .outset {
     margin: 0 -140px 1em -140px;
     max-width: 1020px;
+  }
+  
+  .post-content .outset,
+  .post-content img {
+    box-shadow: 0 0 10px #000;
   }
 }
 
