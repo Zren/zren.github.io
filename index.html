@@ -5,11 +5,19 @@ layout: default
 <div class="home">
 
   <style type="text/css">
-    nav {
+    #sidenav {
       position: relative;
     }
+    #sidenav ul {
+      margin-left: 0;
+    }
+    #sidenav li {
+      font-size: 0.8em;
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      list-style: none;
+    }
     @media (max-width: 1440px) {
-      nav {
+      #sidenav {
         margin-bottom: 52px;
         border-bottom: 1px solid #ccc;
         padding-bottom: 42px;
@@ -19,7 +27,7 @@ layout: default
       .nav-contents {
         position: absolute;
         right: calc((100vw - 700px)/2 * -1);
-        width: calc((100vw - 700px)/2);
+        width: calc((100vw - 700px)/2 - 30px);
       }
     }
     .nav-contents > h3 {
@@ -27,7 +35,7 @@ layout: default
       margin-bottom: 0;
     }
   </style>
-  <nav>
+  <nav id="sidenav">
     <div class="nav-contents">
     <h3>Menu</h3>
       <ul>

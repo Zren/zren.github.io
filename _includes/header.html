@@ -1,43 +1,9 @@
 <header class="site-header">
 
   <style type="text/css">
-    .headereffect {
-        opacity: 0.2;
-        background: #25a967;
-        bottom: -60%;
-        right: -10rem;
-        width: 20rem;
-        display: block;
-        position: absolute;
-    }
-    .headereffect[data-a] {
-        height: 19rem;
-        border-radius: 50%;
-        animation: linear infinite-spinning 11s infinite;
-    }
-    .headereffect[data-b]{
-        height: 17rem;
-        border-radius: 50%;
-        animation: linear infinite-spinning 10s infinite;
-    }
-    .headereffect[data-c]{
-        height: 21rem;
-        border-radius: 50%;
-        animation: linear infinite-spinning 13s infinite;
-    }
-
     header.site-header {
-        overflow: hidden;
-        position: relative;
-    }
-
-    @keyframes infinite-spinning {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
+      overflow: hidden;
+      position: relative;
     }
 
     .site-header nav {
@@ -47,16 +13,8 @@
       font-weight: 300;
       letter-spacing: -1px;
     }
-    .site-header nav a,
-    .site-header nav a:visited {
-      color: #fff;
-    }
   </style>
-
-  <div class="headereffect" data-a></div>
-  <div class="headereffect" data-b></div>
-  <div class="headereffect" data-c></div>
-
+  
   <div class="wrapper">
 
     <!---<h1 class="page-title">{{ page.title }}</h1>-->

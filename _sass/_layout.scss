@@ -1,5 +1,7 @@
 // https://github.com/jasonlong/cayman-theme
 
+$headerTextColor: #111;
+
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -11,12 +13,26 @@ body {
 .site-header {
   color: #fff;
   text-align: center;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957);
+  background-color: #fafafa;
+  background-image: linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px), // Vertical Grid line
+    linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px), // Horizontal Grid Line
+    linear-gradient(#dfeaec, #fff); // Fill must be last for some reason.
+  background-size: 20px 20px,
+    20px 20px,
+    100% 100%;
+  background-position: -1px -1px,
+    -1px -1px,
+    0 0;
+  
+  nav a,
+  nav a:visited {
+    color: $headerTextColor;
+  }
 }
 @media screen and (min-width: 64em) { .site-header { padding: 3rem 6rem 2rem 6rem; } }
 @media screen and (min-width: 42em) and (max-width: 64em) { .site-header { padding: 3rem 4rem; } }
 @media screen and (max-width: 42em) { .site-header { padding: 2rem 1rem; } }
+
 
 h1 {
   font-size: 2em;
@@ -56,7 +72,7 @@ h1 {
 
     &,
     &:visited {
-        color: #fff;
+        color: $headerTextColor;
     }
 }
 .site-title {
@@ -65,7 +81,7 @@ h1 {
     letter-spacing: -1px;
 }
 .site-github .icon > svg path {
-  fill: #fff;
+  fill: $headerTextColor;
 }
 
 // Content
