@@ -13,6 +13,7 @@ body {
 .site-header {
   color: $headerTextColor;
   text-align: center;
+  box-shadow: 0 0 10px #e8e8e8;
   
   nav a,
   nav a:visited {
@@ -138,7 +139,7 @@ li[id]:hover > .header-link {
     margin: 0 -140px 1em -140px;
     max-width: 1020px;
   }
-  
+
   .post-content .outset,
   .post-content img {
     box-shadow: 0 0 10px #000;
