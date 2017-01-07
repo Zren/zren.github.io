@@ -140,8 +140,10 @@ li[id]:hover > .header-link {
     max-width: 1020px;
   }
 
-  .post-content .outset,
   .post-content img {
+    box-shadow: 0 0 4px #000;
+  }
+  .post-content .outset {
     box-shadow: 0 0 10px #000;
   }
 }
