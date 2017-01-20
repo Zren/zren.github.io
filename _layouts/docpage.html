@@ -235,7 +235,7 @@ function updateMenu() {
 	for (var i = 0; i < sectionList.length; i++) {
 		var section = sectionList[i];
 		var offset = getOffsetSum(section)
-		if (offset.top >= viewTop) {
+		if (offset.top > viewTop) {
 			console.log(i, viewTop, offset.top, section)
 			if (i <= 1) {
 				// We're at the top, so select the first item.
