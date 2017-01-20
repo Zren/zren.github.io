@@ -204,14 +204,14 @@ plasmoidviewer -a package -l bottomedge -f horizontal
 
 {% capture label %}Testing High DPI{% endcapture %}
 {% capture sectionLeft %}
-By setting the `QT_DEVICE_PIXEL_RATIO=2` we can set the DPI to 192 just for the plasmoidviewer window. This is great for testing if your code will support a HiDPI monitor. You can also use `QT_DEVICE_PIXEL_RATIO=1.5` for 144 DPI.
+By setting the `QT_SCALE_FACTOR=2` we can set the DPI to 192 just for the plasmoidviewer window. This is great for testing if your code will support a HiDPI monitor.
 
 If you're testing a much higher DPI, you'll probably find the default plasmoidviewer window is too small to show the widget, so we'll set the size and position of the window. Note that the window will go maximized if you set a size larger than you desktop has available.
 {% endcapture %}{% capture sectionRight %}
 
 {% highlight bash %}
-QT_DEVICE_PIXEL_RATIO=2 plasmoidviewer -a package
-QT_DEVICE_PIXEL_RATIO=2 plasmoidviewer -a package -l floating -f horizontal -x 0 -y 0 -s 1920x1080
+QT_SCALE_FACTOR=2 plasmoidviewer -a package
+QT_SCALE_FACTOR=2 plasmoidviewer -a package -l floating -f horizontal -x 0 -y 0 -s 1920x1080
 {% endhighlight %}
 
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
