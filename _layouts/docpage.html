@@ -78,8 +78,7 @@ layout: default
 	font-family: 'Open Sans',Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .documentation > section {
-	display: table;
-	width: 100%;
+	
 }
 .documentation > section:not(:last-child) {
 	border-bottom: 1px solid #bfcdd8;
@@ -95,11 +94,8 @@ layout: default
 
 .documentation > section > .left {
 	box-sizing: border-box;
-	width: 50%;
 	min-width: calc((100vw - 250px)/2);
-	display: table-cell;
 	padding: 30px;
-	border-right: 1px solid #bfcdd8;
 }
 .documentation > section > .left > h3 {
 	font-size: 14px;
@@ -108,10 +104,39 @@ layout: default
 .documentation > section > .right {
 	box-sizing: border-box;
 	padding: 30px;
-	width: 50%;
-	display: table-cell;
 	background-color: #eaf0f3;
 }
+
+@media (max-width: 1280px) {
+	.documentation > section {
+		display: block;
+	}
+	.documentation > section > .left {
+		width: 100%;
+		display: block;
+		border-bottom: 1px solid #bfcdd8;
+	}
+	.documentation > section > .right {
+		width: 100%;
+		display: block;
+	}
+}
+@media (min-width: 1281px) {
+	.documentation > section {
+		display: table;
+		width: 100%;
+	}
+	.documentation > section > .left {
+		width: 50%;
+		display: table-cell;
+		border-right: 1px solid #bfcdd8;
+	}
+	.documentation > section > .right {
+		width: 50%;
+		display: table-cell;
+	}
+}
+
 </style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
