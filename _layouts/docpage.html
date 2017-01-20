@@ -1,0 +1,261 @@
+---
+layout: default
+---
+<style type="text/css">
+.page-content .wrapper {
+	max-width: 100%;
+}
+
+#sidemenu {
+	background-color: #091a23;
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+}
+
+#sidemenu a {
+	display: inline-block;
+	color: #eee;
+	font-family: 'Open Sans',Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size: 12px;
+	width: 100%;
+	padding: 8px 30px;
+	box-sizing: border-box;
+}
+#sidemenu > ul > li > a {
+	padding-left: 27px;
+}
+#sidemenu > ul > li > a:before {
+	font-family: FontAwesome;
+	content: "\f054";
+	margin-right: 10px;
+	display: inline-block;
+	text-align: center;
+	width: 12px;
+}
+#sidemenu > ul > li > a:hover {
+	text-decoration: none;
+	color: #0392c9;
+}
+#sidemenu > ul > li.active > a:before {
+	content: "\f078";
+}
+#sidemenu li.active > a {
+	font-weight: bold;
+}
+#sidemenu ul ul li a {
+	border-left: 3px solid transparent;
+}
+#sidemenu ul ul li.active a {
+	border-left-color: #0392c9;
+	background-color: #0e2735;
+}
+#sidemenu ul ul a:hover {
+	text-decoration: none;
+	background-color: #0e2735;
+}
+#sidemenu li {
+	list-style-type: none;
+}
+#sidemenu ul {
+	margin-left: 0;
+}
+
+
+.wrapper {
+	box-sizing: border-box;
+	margin-left: 250px;
+	padding: 0;
+}
+.documentation {
+
+}
+.documentation > section {
+	display: table;
+	width: 100%;
+}
+.documentation > section:not(:last-child) {
+	border-bottom: 1px solid #bfcdd8;
+}
+.documentation > section.folder > h2 {
+	color: #0392c9;
+	font-size: 16px;
+	font-weight: 700;
+	box-sizing: border-box;
+	padding: 30px;
+	margin-bottom: 0;
+}
+
+.documentation > section > .left {
+	width: 50%;
+	display: table-cell;
+	padding: 30px;
+	border-right: 1px solid #bfcdd8;
+}
+.documentation > section > .left > h3 {
+	font-size: 14px;
+	font-weight: 700;
+}
+.documentation > section > .right {
+	box-sizing: border-box;
+	padding: 30px;
+	width: 50%;
+	display: table-cell;
+	background-color: #eaf0f3;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<div id="sidemenu">
+	<ul>
+		<li class="active">
+			<a href="">Menu</a>
+			<ul>
+				<li class="active">
+					<a href="">Loading...</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<div class="documentation">
+	{{content}}
+</div>
+
+<script>
+function getOffsetSum(elem) {
+	var top=0, left=0;
+	while(elem) {
+		top = top + parseInt(elem.offsetTop);
+		left = left + parseInt(elem.offsetLeft);
+		elem = elem.offsetParent;
+	}
+	return {top: top, left: left};
+}
+function el(html) {
+	var e = document.createElement('div');
+	e.innerHTML = html;
+	return e.removeChild(e.firstChild);
+}
+
+var menu = el('<ul />')
+var menuIdMap = {}
+var currentSubmenu = null;
+
+function createFolder(id, label) {
+	var li = el('<li />')
+	menuIdMap[id] = li
+
+	var a = el('<a />')
+	a.innerText = label
+	a.href = "#" + id
+	li.appendChild(a)
+
+	var submenu = el('<ul />')
+	li.appendChild(submenu)
+
+	menu.appendChild(li)
+	currentSubmenu = submenu
+}
+
+function createMenuItem(id, label) {
+	var li = el('<li />')
+	menuIdMap[id] = li
+
+	var a = el('<a />')
+	a.innerText = label
+	a.href = "#" + id
+	li.appendChild(a)
+
+	currentSubmenu.appendChild(li)
+}
+
+for (var e of document.querySelectorAll('.documentation section')) {
+	console.log(e.id, getOffsetSum(e), e)
+	if (e.classList.contains('folder')) {
+		var label = e.querySelector('h2').innerText
+		createFolder(e.id, label)
+	} else {
+		var label = e.querySelector('h3').innerText
+		createMenuItem(e.id, label)
+	}
+}
+
+var sidemenu = document.querySelector('#sidemenu')
+sidemenu.querySelector('ul').remove()
+sidemenu.appendChild(menu)
+console.log(menu)
+
+
+function setActiveSection(id) {
+	var li = menuIdMap[id]
+	var isMenuItem = li.matches('#sidemenu > ul > li')
+	var isSubMenuItem = li.matches('#sidemenu > ul > li > ul > li')
+	var wasActive = li.classList.contains('active')
+
+	if (isMenuItem || !wasActive) {
+		// Unset current active item
+		var menuItem = document.querySelector('#sidemenu > ul > li.active')
+		if (menuItem) {
+			menuItem.classList.remove('active')
+		}
+		var menuItem = document.querySelector('#sidemenu > ul > li > ul > li.active')
+		if (menuItem) {
+			menuItem.classList.remove('active')
+		}
+	}
+	li.classList.add('active')
+
+	if (isMenuItem) {
+		var firstSubMenuItem = li.querySelector('ul > li')
+		if (firstSubMenuItem) {
+			firstSubMenuItem.classList.add('active')
+		}
+	} else if (isSubMenuItem) {
+		var menuItem = li.parentNode.parentNode; // TODO: parentUntil('li')
+		menuItem.classList.add('active')
+	}
+}
+function updateMenu() {
+	console.log('updateMenu')
+	var viewTop = window.scrollY
+	var sectionList = document.querySelectorAll('.documentation > section')
+	// Binary Search maybe (since elements are in order)?
+	for (var i = 0; i < sectionList.length; i++) {
+		var section = sectionList[i];
+		var offset = getOffsetSum(section)
+		if (offset.top >= viewTop) {
+			if (0 <= i) {
+				// We're at the top, so select the first item.
+				setActiveSection(section.id)
+			} else {
+				// Previous item is still being read.
+				var sectionId = sectionList[i - 1].id
+				setActiveSection(sectionId)
+			}
+			break
+		}
+	}
+}
+
+var updating = false;
+function queueUpdateMenu() {
+	console.log('queueUpdateMenu', updating)
+	if (!updating) {
+		updating = true
+		requestAnimationFrame(function() {
+			updateMenu()
+			updating = false
+		})
+	}
+}
+
+queueUpdateMenu()
+window.addEventListener('scroll', queueUpdateMenu)
+
+</script>
