@@ -232,15 +232,19 @@ function updateMenu() {
 		var section = sectionList[i];
 		var offset = getOffsetSum(section)
 		if (offset.top >= viewTop) {
-			if (0 <= i) {
+			console.log(i, viewTop, offset.top, section)
+			if (i <= 1) {
 				// We're at the top, so select the first item.
 				setActiveSection(section.id)
 			} else {
 				// Previous item is still being read.
-				var sectionId = sectionList[i - 1].id
-				setActiveSection(sectionId)
+				var prevMenuItem = sectionList[i - 1];
+				var sectionId = prevMenuItem.id
+				setActiveSection(prevMenuItem.id)
 			}
 			break
+		} else if (i == sectionList.length - 1) {
+			setActiveSection(section.id)
 		}
 	}
 }
