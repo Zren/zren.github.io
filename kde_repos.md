@@ -6,16 +6,34 @@ permalink: /kde/repos/
 
 <style type="text/css">
 .page-content .wrapper {
-    max-width: -webkit-calc(100vw - (30px * 2));
-    max-width: calc(100vw - (30px * 2));
+	max-width: -webkit-calc(100vw - (30px * 2));
+	max-width: calc(100vw - (30px * 2));
 }
-li a {
-    display: inline-block;
+.repolist td {
+	padding: 0.1em 0.5em;
 }
-li:nth-of-type(2n) {
-    background: #ebf2fb;
+.repolist tr:nth-of-type(2n-1) td {
+	background: #ebf2fb;
+}
+.repolist tr:nth-of-type(2n) td {
+	background: #f8f8ff;
+}
+.repolist td:nth-of-type(1) {
+	font-weight: bold;
+}
+.repolist tr.indent td:nth-of-type(1):before {
+	display: inline-block;
+	content: "";
+	width: 2em;
+}
+.repolist td:nth-of-type(1):after {
+	content: ":";
+}
+.repolist td a:not([href]) {
+	color: #aaa;
 }
 </style>
+
 
 > **Note:** All GitHub links are source mirrors only. Do not submit issues to those repos.
 
@@ -28,17 +46,105 @@ li:nth-of-type(2n) {
 {% assign phabDiffsWorkspace = 'https://phabricator.kde.org/differential/query/stR7aMSmxBU./#R' %}
 {% assign phabNewDiff = 'https://phabricator.kde.org/differential/diff/create/' %}
 
-
-* **Application Launcher (Kickoff):** [GitHub](https://github.com/KDE/plasma-desktop/blob/master/applets/kickoff/) / [All Bugs]({{kdeBugList}}product=plasmashell&component=Application%20Launcher%20%28Kickoff%29&list_id=1406061) / [New Bug]({{kdeNewBug}}product=plasmashell&component=Application%20Launcher%20%28Kickoff%29) / [Pull Requests]({{phabDiffsDesktop}}) / [New PR (Repo: Plasma Desktop)]({{phabNewDiff}})
-* **Application Menu/Dashboard (Kicker):** [GitHub](https://github.com/KDE/plasma-desktop/blob/master/applets/kicker/) / [All Bugs]({{kdeBugList}}product=plasmashell&component=Application%20Menu%20%28Kicker%29&list_id=1406061) / [New Bug]({{kdeNewBug}}product=plasmashell&component=Application%20Menu%20%28Kicker%29) / [Pull Requests]({{phabDiffsDesktop}}) / [New PR (Repo: Plasma Desktop)]({{phabNewDiff}})
-    * **Application Dashboard:**
-* **Audio Volume (plasma-pa):** [GitHub](https://github.com/KDE/plasma-pa) / [All Bugs]({{kdeBugList}}product=plasma-pa&list_id=1406062) / New Bug / [Pull Requests]({{phabDiffs}}NlM7ES4ji2UX/#R) / [New PR (Repo: Plasma Audio Volume Applet)]({{phabNewDiff}})
-* **Battery and Brightness:** [GitHub](https://github.com/KDE/plasma-workspace/tree/master/applets/batterymonitor) / All Bugs / New Bug / Pull Requests / [New PR (Repo: Plasma Workspace)]({{phabNewDiff}})
-* **Digital Clock:** [GitHub](https://github.com/KDE/plasma-desktop/blob/master/applets/kicker/) / [All Bugs]({{kdeBugList}}product=plasmashell&component=Digital%20Clock&list_id=1406061) / [New Bug]({{kdeNewBug}}product=plasmashell&component=Digital%20Clock) / [Pull Requests]({{phabDiffsWorkspace}}) / [New PR (Repo: Plasma Desktop)]({{phabNewDiff}})
-    * **MonthView:** <https://github.com/KDE/plasma-framework/tree/master/src/declarativeimports/calendar>
-* **Media Player [Controller]:** [GitHub](https://github.com/KDE/plasma-workspace/tree/master/applets/mediacontroller) / All Bugs / New Bug / Pull Requests / [New PR (Repo: Plasma Workspace)]({{phabNewDiff}})
-* **Notifications:** [GitHub](https://github.com/KDE/plasma-workspace/tree/master/applets/notifications) / All Bugs / New Bug / Pull Requests / [New PR (Repo: Plasma Workspace)]({{phabNewDiff}})
-* **Pager:** [GitHub](https://github.com/KDE/plasma-desktop/blob/master/applets/pager/) / [All Bugs]({{kdeBugList}}product=plasmashell&component=Pager&list_id=1411058) / [New Bug]({{kdeNewBug}}product=plasmashell&component=Pager) / [Pull Requests]({{phabDiffsDesktop}}) / [New PR (Repo: Plasma Desktop)]({{phabNewDiff}})
-* **System Tray:** [GitHub](https://github.com/KDE/plasma-workspace/tree/master/applets/systemtray/) / [All Bugs]({{kdeBugList}}product=plasmashell&component=System%20Tray&list_id=1408524) / [New Bug]({{kdeNewBug}}product=plasmashell&component=System%20Tray) / [Pull Requests]({{phabDiffsWorkspace}}) / [New PR (Repo: Plasma Workspace)]({{phabNewDiff}})
-* **Task Manager:** [GitHub](https://github.com/KDE/plasma-desktop/blob/master/applets/taskmanager/) / [All Bugs]({{kdeBugList}}product=plasmashell&component=Task%20Manager&list_id=1407534) / [New Bug]({{kdeNewBug}}product=plasmashell&component=Task%20Manager) / [Pull Requests]({{phabDiffsDesktop}}) / [New PR (Repo: Plasma Desktop)]({{phabNewDiff}})
-    * **Icon Tasks:** [All Bugs]({{kdeBugList}}product=plasmashell&component=Icons-only%20Task%20Manager&list_id=1407535) / [New Bug]({{kdeNewBug}}product=plasmashell&component=Icons-only%20Task%20Manager) / Pull Requests / [New PR (Repo: Plasma Desktop)]({{phabNewDiff}})
+<table class="repolist">
+	<tr>
+		<td>Application Launcher (Kickoff)</td>
+		<td><a href="https://github.com/KDE/plasma-desktop/blob/master/applets/kickoff/">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=plasmashell&component=Application%20Launcher%20%28Kickoff%29&list_id=1406061">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=plasmashell&component=Application%20Launcher%20%28Kickoff%29">New Bug</a></td>
+		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop)</a></td>
+	</tr>
+	<tr>
+		<td>Application Menu/Dashboard (Kicker)</td>
+		<td><a href="https://github.com/KDE/plasma-desktop/blob/master/applets/kicker/">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=plasmashell&component=Application%20Menu%20%28Kicker%29&list_id=1406061">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=plasmashell&component=Application%20Menu%20%28Kicker%29">New Bug</a></td>
+		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop)</a></td>
+	</tr>
+	<tr>
+		<td>Audio Volume (plasma-pa)</td>
+		<td><a href="https://github.com/KDE/plasma-pa">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=plasma-pa&list_id=1406062">All Bugs</a></td>
+		<td><a>New Bug</a></td>
+		<td><a href="{{phabDiffs}}NlM7ES4ji2UX/#R">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Audio Volume Applet)</a></td>
+	</tr>
+	<tr>
+		<td>Desktop: Folder View</td>
+		<td><a href="https://github.com/KDE/plasma-desktop/tree/master/containments/desktop/">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=plasmashell&component=Folder&list_id=1417574">All Bugs</a></td>
+		<td><a>New Bug</a></td>
+		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop))</a></td>
+	</tr>
+	<tr>
+		<td>Battery and Brightness</td>
+		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/batterymonitor">GitHub</a></td>
+		<td><a>All Bugs</a></td>
+		<td><a>New Bug</a></td>
+		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace))</a></td>
+	</tr>
+	<tr>
+		<td>Digital Clock</td>
+		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/digital-clock">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=plasmashell&component=Digital%20Clock&list_id=1406061">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=plasmashell&component=Digital%20Clock">New Bug</a></td>
+		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace))</a></td>
+	</tr>
+	<tr class="indent">
+		<td>MonthView</td>
+		<td><a href="https://github.com/KDE/plasma-framework/tree/master/src/declarativeimports/calendar">GitHub</a></td>
+	</tr>
+	<tr>
+		<td>Media Player [Controller]</td>
+		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/mediacontroller">GitHub</a></td>
+		<td><a>All Bugs</a></td>
+		<td><a>New Bug</a></td>
+		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace))</a></td>
+	</tr>
+	<tr>
+		<td>Notifications</td>
+		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/notifications">GitHub</a></td>
+		<td><a>All Bugs</a></td>
+		<td><a>New Bug</a></td>
+		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace))</a></td>
+	</tr>
+	<tr>
+		<td>Pager</td>
+		<td><a href="https://github.com/KDE/plasma-desktop/blob/master/applets/pager">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=plasmashell&component=Pager&list_id=1411058">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=plasmashell&component=Pager">New Bug</a></td>
+		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop))</a></td>
+	</tr>
+	<tr>
+		<td>System Tray</td>
+		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/systemtray">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=plasmashell&component=System%20Tray&list_id=1408524">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=plasmashell&component=System%20Tray">New Bug</a></td>
+		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace))</a></td>
+	</tr>
+	<tr>
+		<td>Task Manager</td>
+		<td><a href="https://github.com/KDE/plasma-desktop/blob/master/applets/taskmanager">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=plasmashell&component=Task%20Manager&list_id=1407534">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=plasmashell&component=Task%20Manager">New Bug</a></td>
+		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop))</a></td>
+	</tr>
+	<tr class="indent">
+		<td>Icon Tasks</td>
+		<td><a href="https://github.com/KDE/plasma-desktop/blob/master/applets/taskmanager">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=plasmashell&component=Icons-only%20Task%20Manager&list_id=1407535">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=plasmashell&component=Icons-only%20Task%20Manager">New Bug</a></td>
+		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop))</a></td>
+	</tr>
+</table>
