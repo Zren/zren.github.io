@@ -156,3 +156,23 @@ permalink: /kde/repos/
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop))</a></td>
 	</tr>
 </table>
+
+## KDE Store
+
+<table class="repolist">
+	<tr>
+		<td>ocs-webserver</td>
+		<td><a href="https://github.com/KDE/ocs-webserver/tree/master/application/modules/default/controllers">GitHub</a></td>
+		<td><a href="https://phabricator.kde.org/tag/kde_store/">All Tasks</a></td>
+		<td><a href="https://phabricator.kde.org/tag/kde_store/">(▼ Create Task)</a></td>
+	</tr>
+
+	<tr class="indent">
+		<td>Product Page</td>
+		<td><a href="https://github.com/KDE/ocs-webserver/blob/master/application/modules/default/controllers/ProductController.php">GitHub</a></td>
+	</tr>
+	<tr class="indent">
+		<td>Product Comments</td>
+		<td><a href="https://github.com/KDE/ocs-webserver/blob/master/application/modules/default/controllers/ProductcommentController.php">GitHub</a></td>
+	</tr>
+	
