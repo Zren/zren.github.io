@@ -10,13 +10,21 @@ permalink: /kde/repos/
 	max-width: calc(100vw - (30px * 2));
 }
 .repolist td {
-	padding: 0.1em 0.5em;
+	padding: 0 0.5em;
+	border-width: 0.1em 0;
+	border-style: solid;
 }
 .repolist tr:nth-of-type(2n-1) td {
 	background: #ebf2fb;
+	border-color: #ebf2fb;
 }
 .repolist tr:nth-of-type(2n) td {
 	background: #f8f8ff;
+	border-color: #f8f8ff;
+}
+.repolist tr:nth-of-type(2n-1):hover td,
+.repolist tr:nth-of-type(2n):hover td {
+	border-color: #888;
 }
 .repolist td:nth-of-type(1) {
 	font-weight: bold;
