@@ -35,7 +35,7 @@ permalink: /kde/repos/
 </style>
 
 
-> **Note:** All GitHub links are source mirrors only. Do not submit issues to those repos.
+> **Note:** All GitHub links are source mirrors only. Do not submit issues to those repos. KDE uses <https://bugs.kde.org> for issues, and <https://phabricator.kde.org> for pull requests. The official source browser is at <https://cgit.kde.org/> but GitHub is much easier to navigate.
 
 ## PlasmaShell
 
@@ -72,14 +72,6 @@ permalink: /kde/repos/
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Audio Volume Applet)</a></td>
 	</tr>
 	<tr>
-		<td>Desktop: Folder View</td>
-		<td><a href="https://github.com/KDE/plasma-desktop/tree/master/containments/desktop/">GitHub</a></td>
-		<td><a href="{{kdeBugList}}product=plasmashell&component=Folder&list_id=1417574">All Bugs</a></td>
-		<td><a>New Bug</a></td>
-		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop))</a></td>
-	</tr>
-	<tr>
 		<td>Battery and Brightness</td>
 		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/batterymonitor">GitHub</a></td>
 		<td><a>All Bugs</a></td>
@@ -98,6 +90,14 @@ permalink: /kde/repos/
 	<tr class="indent">
 		<td>MonthView</td>
 		<td><a href="https://github.com/KDE/plasma-framework/tree/master/src/declarativeimports/calendar">GitHub</a></td>
+	</tr>
+	<tr>
+		<td>[Desktop] Folder View</td>
+		<td><a href="https://github.com/KDE/plasma-desktop/tree/master/containments/desktop/">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=plasmashell&component=Folder&list_id=1417574">All Bugs</a></td>
+		<td><a>New Bug</a></td>
+		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop))</a></td>
 	</tr>
 	<tr>
 		<td>Media Player [Controller]</td>
