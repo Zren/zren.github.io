@@ -50,6 +50,7 @@ permalink: /kde/repos/
 {% assign kdeBugList = 'https://bugs.kde.org/buglist.cgi?order=bug_id%20DESC&query_format=advanced&' %}
 {% assign kdeNewBug = 'https://bugs.kde.org/enter_bug.cgi?' %}
 {% assign phabDiffs = 'https://phabricator.kde.org/differential/query/' %}
+{% assign phabDiffsFramework = 'https://phabricator.kde.org/differential/query/7DrhVUSaAXrw/#R' %}
 {% assign phabDiffsDesktop = 'https://phabricator.kde.org/differential/query/7LklMmkHDcva/#R' %}
 {% assign phabDiffsWorkspace = 'https://phabricator.kde.org/differential/query/stR7aMSmxBU./#R' %}
 {% assign phabNewDiff = 'https://phabricator.kde.org/differential/diff/create/' %}
@@ -98,6 +99,10 @@ permalink: /kde/repos/
 	<tr class="indent">
 		<td>MonthView</td>
 		<td><a href="https://github.com/KDE/plasma-framework/tree/master/src/declarativeimports/calendar">GitHub</a></td>
+		<td><a>All Bugs</a></td>
+		<td><a>New Bug</a></td>
+		<td><a href="{{phabDiffsFramework}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Framework))</a></td>
 	</tr>
 	<tr>
 		<td>[Desktop] Folder View</td>
