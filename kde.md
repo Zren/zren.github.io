@@ -319,18 +319,6 @@ li > p:first-line {
 ### Steam
 
 {% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} Launching Steam Fixes
-  Right Click the “Start” menu > Edit Applications
-  Games > Steam
-  Change the command to `STEAM_FRAME_FORCE_CLOSE=1 LD_PRELOAD='/usr/$LIB/libstdc++.so.6' DISPLAY=:0 /usr/games/steam %U`
-  Broken down, we just fixed:
-  * Close Steam to the System Tray
-    Launch with `STEAM_FRAME_FORCE_CLOSE=1 steam`
-  * AMD GPU Open Source Driver Fix
-    <http://askubuntu.com/questions/641700/steam-not-working-with-open-source-drivers>
-    Launch with `LD_PRELOAD='/usr/$LIB/libstdc++.so.6' DISPLAY=:0 steam`
-
-{% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} PixelVision2 Skin
   `cd ~/.steam/skins `
   `git clone https://github.com/somini/Pixelvision2.git`
