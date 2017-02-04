@@ -158,7 +158,7 @@ li > p:first-line {
   Entries Tab > Networks > Visibility: Hidden
 
 {% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} Disable SysTray Icon
+* {:#cfg-{{ i }}} Disable Icon in System Tray
   Right Click the “Expand System Tray Triangle” > System Tray Settings.
   General Tab > Extra Items > Uncheck: Clipboard, Battery
 
