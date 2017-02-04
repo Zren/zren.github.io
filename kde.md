@@ -183,6 +183,11 @@ li > p:first-line {
   Right Click app in Taskbar > Check: Show Launcher When Not Running
 
 {% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Hide audio indicator in window list
+  Right Click a Task > Task Manager Settings
+  General Tab > Uncheck: Mark applications that play audio
+
+{% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Disable Top Left “Hot Corner”
   System Settings > Desktop Behaviour
   Screen Edges Tab > Top Left: No Action
