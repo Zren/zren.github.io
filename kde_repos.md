@@ -180,4 +180,17 @@ permalink: /kde/repos/
 		<td>Product Comments</td>
 		<td><a href="https://github.com/KDE/ocs-webserver/blob/master/application/modules/default/controllers/ProductcommentController.php">GitHub</a></td>
 	</tr>
-	
+</table>
+
+## Plasma SDK
+
+<table class="repolist">
+	<tr>
+		<td>plasmoidviewer</td>
+		<td><a href="https://github.com/KDE/plasma-sdk/tree/master/plasmoidviewer">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=Plasma%20SDK&component=plasmoidviewer&list_id=1422702">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=Plasma%20SDK&component=plasmoidviewer">New Bug</a></td>
+		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma SDK))</a></td>
+	</tr>
+</table>
