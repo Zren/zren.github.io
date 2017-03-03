@@ -263,6 +263,15 @@ li > p:first-line {
   kwin_x11 --replace & disown
   {% endhighlight %}
 
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Hide titlebars when maximized (like Ubuntu)
+  We need to set `BorderlessMaximizedWindows=true` under the group `[Windows]` in the file `~/config/kwinrc`, then restart kwin.
+  It's easier to use these commmands than doing it by hand.
+  {% highlight bash %}
+  kwriteconfig5 --file ~/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true
+  kwin_x11 --replace & disown
+  {% endhighlight %}
+
 
 ### Login Screen (SDDM) / Lock Screen
 
