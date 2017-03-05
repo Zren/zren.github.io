@@ -566,7 +566,7 @@ PlasmaComponents.Label {
 
 {% capture label %}i18n(){% endcapture %}
 {% capture sectionLeft %}
-...
+Note that single quotes (`i18n('Test')`) will be ignored by the tool that parses your code for all the translation strings. Always use double quotes (`i18n("Test")`).
 {% endcapture %}{% capture sectionRight %}
 ...
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
