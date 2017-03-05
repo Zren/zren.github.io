@@ -251,6 +251,9 @@ function setActiveSection(id) {
 		var menuItem = li.parentNode.parentNode; // TODO: parentUntil('li')
 		menuItem.classList.add('active')
 	}
+
+	// Scroll to item
+	li.scrollIntoView()
 }
 function updateMenu() {
 	console.log('updateMenu')
