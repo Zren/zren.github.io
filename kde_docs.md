@@ -558,9 +558,21 @@ PlasmaComponents.Label {
 {% include docHeader.html label="Configuration" %}
 
 
+{% capture label %}Configuration Intro{% endcapture %}
+{% capture sectionLeft %}
+
+Every widget by default has a configure action when you right click the widget called `MyWidget Settings...`. By default it will contain a form to set a global shortcut to activate your widget.
+
+![](https://i.imgur.com/gle3dAy.png)
+
+{% endcapture %}{% capture sectionRight %}
+...
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
+
 {% capture label %}contents/config/main.xml{% endcapture %}
 {% capture sectionLeft %}
-...
+`main.xml` is where you define the properties that will be serialized into `~/.config/plasma-org.kde.plasma.desktop-appletsrc`. All properties will be accesible with `plasmoid.configuration.variableName` reguardless of was group it's in.
 {% endcapture %}{% capture sectionRight %}
 ...
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
@@ -568,18 +580,144 @@ PlasmaComponents.Label {
 
 {% capture label %}contents/config/config.qml{% endcapture %}
 {% capture sectionLeft %}
-...
+`config.qml` is where we define the tabs in the configuration window.
 {% endcapture %}{% capture sectionRight %}
 ...
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 {% capture label %}contents/ui/configGeneral.qml{% endcapture %}
 {% capture sectionLeft %}
-...
+`configGeneral.qml` is where we can place all the checkboxes and textboxes.
+
+By default, all values are copied to cfg_variableName. This is so the user can hit discard or apply at leisure.
+
+
 {% endcapture %}{% capture sectionRight %}
-...
+import QtQuick.Controls 1.4
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
+
+{% capture label %}configPage.cfg_variableName{% endcapture %}
+{% capture sectionLeft %}
+
+By default, all values are copied to the top level Item of the file prefixed with `cfg_` like `cfg_variableName`. This is so the user can hit discard or apply the changes. You will need to define each `cfg_` so you can assign to it with a QML control.
+
+Note that you can use a property [alias](http://doc.qt.io/qt-5/qtqml-syntax-objectattributes.html#property-aliases) to a control's property like `checkBox.checked` or `textField.text`.
+
+> TODO: Confirm if configuration keys from other groups are copied to the current page's `cfg_` variables.
+
+{% endcapture %}{% capture sectionRight %}
+{% highlight qml %}
+// configGeneral.qml
+import QtQuick 2.0
+import QtQuick.Layouts 1.0
+import QtQuick.Controls 1.4
+
+Item {
+    id: page
+    property alias cfg_variableName: variableName.checked
+
+    CheckBox {
+        id: variableName
+    }
+}
+{% endhighlight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
+
+{% capture label %}CheckBox{% endcapture %}
+{% capture sectionLeft %}
+
+[CheckBox](http://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html)es are usually used for boolean on/off types. See the [Visual Design Group's tips](https://community.kde.org/KDE_Visual_Design_Group/HIG/CheckBox) on usuing CheckBoxes.
+
+{% endcapture %}{% capture sectionRight %}
+{% highlight qml %}
+// configGeneral.qml
+import QtQuick 2.0
+import QtQuick.Layouts 1.0
+import QtQuick.Controls 1.4
+
+Item {
+    id: page
+    property alias cfg_variableName: variableName.checked
+
+    CheckBox {
+        id: variableName
+    }
+}
+{% endhighlight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
+
+{% capture label %}Assigning to plasmoid.configuration.variableName{% endcapture %}
+{% capture sectionLeft %}
+
+You can also assign directly to `plasmoid.configuration.variableName` if necessary in the configruation window or anywhere else in your widget. If you do this in the configuration page, you will skip the "apply" process and the property will be applied right away. I leave this up to the reader wither this is a pro or con.
+
+{% endcapture %}{% capture sectionRight %}
+{% highlight qml %}
+// configGeneral.qml
+import QtQuick 2.0
+import QtQuick.Layouts 1.0
+import QtQuick.Controls 1.4
+
+Item {
+    id: page
+
+    CheckBox {
+        id: variableName
+        checked: plasmoid.configuration.variableName
+        onCheckedChanged: plasmoid.configuration.variableName = checked
+    }
+}
+{% endhighlight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
+
+{% capture label %}No-Apply Control Library{% endcapture %}
+{% capture sectionLeft %}
+
+I have written a few files that apply the above pattern of skipping "Apply" and updating right after you change the value.
+
+{% endcapture %}{% capture sectionRight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
+
+{% capture label %}ConfigCheckBox{% endcapture %}
+{% capture sectionLeft %}
+...
+{% endcapture %}{% capture sectionRight %}
+{% highlight qml %}
+// ConfigCheckBox.qml
+import QtQuick 2.0
+import QtQuick.Controls 1.0
+import QtQuick.Layouts 1.0
+
+CheckBox {
+    id: configCheckBox
+
+    property string configKey: ''
+    checked: plasmoid.configuration[configKey]
+    onClicked: plasmoid.configuration[configKey] = !plasmoid.configuration[configKey]
+}
+{% endhighlight %}
+
+{% highlight qml %}
+// configGeneral.qml
+import QtQuick 2.0
+import QtQuick.Layouts 1.0
+import QtQuick.Controls 1.4
+
+Item {
+    id: page
+
+    ConfigCheckBox {
+        id: variableName
+        configKey: 'variableName'
+    }
+}
+{% endhighlight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
 <!-- ------- -->
