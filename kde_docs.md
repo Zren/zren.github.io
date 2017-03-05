@@ -232,11 +232,35 @@ The official QML tutorial can be found in the [QML Documentation](http://doc.qt.
 {% endcapture %}{% capture sectionRight %}
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
+{% capture label %}Item{% endcapture %}
+{% capture sectionLeft %}
+
+An [Item](http://doc.qt.io/qt-5/qml-qtquick-item.html) is a simple object. It can have children as well. Item's have a default width and height of 0px, and will not grow to fit their contents. So unlike the HTML box model, you'll need to use layouts mentioned below.
+
+{% endcapture %}{% capture sectionRight %}
+{% highlight qml %}
+// main.qml
+import QtQuick 2.0
+
+Item {
+    id: widget
+
+    Item {
+        id: childItemA
+    }
+
+    Item {
+        id: childItemB
+    }
+}
+{% endhighlight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
 
 {% capture label %}Rectangle{% endcapture %}
 {% capture sectionLeft %}
 
-If we want to draw a colored rectangle, we can easily do so with.
+If we want to draw a colored rectangle, we can easily do so with. For other properties of the [Rectangle](http://doc.qt.io/qt-5/qml-qtquick-rectangle.html), like border color and width, read it's [page in the QML Documentation](http://doc.qt.io/qt-5/qml-qtquick-rectangle.html).
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
@@ -253,7 +277,7 @@ Rectangle {
 {% capture label %}Items are 0px wide by default{% endcapture %}
 {% capture sectionLeft %}
 
-By default, an Item will not expand to fit it's contents. Nor will it expand to fit the width of it's parent (like a `<div>` in HTML). So we need to scale.
+By default, an [Item](http://doc.qt.io/qt-5/qml-qtquick-item.html) will not expand to fit it's contents. Nor will it expand to fit the width of it's parent (like a `<div>` in HTML). So we need to scale.
 
 In the this example, only the Teal Rectangle will be visible, since the Green Rectangle has the default width of 0px and height of 0px.
 
@@ -353,9 +377,11 @@ ColumnLayout {
 
 If you want an item to scale to the parent's width, you have the option of setting it to be the same width as the parent (which doesn't work in a Layout). You can also try anchoring to the left and right (which does work).
 
-Within a Layout however, the proper way to do so is to use the special property attached to the contents of a Layout, `Layout.fillWidth`. Setting it to `true` will make the item scale to fill up the empty space.
+Within a [Layout](http://doc.qt.io/qt-5/qml-qtquick-layouts-layout.html) however, the proper way to do so is to use the special property attached to the contents of a Layout, `Layout.fillWidth`. Setting it to `true` will make the item scale to fill up the empty space.
 
 ![](https://i.imgur.com/s2QXkON.png)
+
+The other Layout related properties can be [read here](http://doc.qt.io/qt-5/qml-qtquick-layouts-layout.html).
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
@@ -434,6 +460,8 @@ ColumnLayout {
 
 In the last screenshot you might have noticed how there is still spacing between the items. That's because the default [ColumnLayout.spacing](http://doc.qt.io/qt-5/qml-qtquick-layouts-columnlayout.html#spacing-prop) property is set to `5`. Assigning it to `0` will remove the extra whitespace.
 
+![](https://i.imgur.com/LuScHdK.png)
+
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
 // main.qml
@@ -471,6 +499,8 @@ ColumnLayout {
 {% capture sectionLeft %}
 
 There's also [RowLayout](http://doc.qt.io/qt-5/qml-qtquick-layouts-rowlayout.html) and [GridLayout](http://doc.qt.io/qt-5/qml-qtquick-layouts-gridlayout.html). Lastly there's [Flow](http://doc.qt.io/qt-5/qml-qtquick-flow.html) which will treat it's contents as if they all had the CSS `display: inline-block`.
+
+![](https://i.imgur.com/qrDdw8L.png)
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
