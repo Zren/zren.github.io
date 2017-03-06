@@ -53,6 +53,7 @@ permalink: /kde/repos/
 {% assign phabDiffsFramework = 'https://phabricator.kde.org/differential/query/7DrhVUSaAXrw/#R' %}
 {% assign phabDiffsDesktop = 'https://phabricator.kde.org/differential/query/7LklMmkHDcva/#R' %}
 {% assign phabDiffsWorkspace = 'https://phabricator.kde.org/differential/query/stR7aMSmxBU./#R' %}
+{% assign phabDiffsAddons = 'https://phabricator.kde.org/differential/query/iwcJtI0heMfD/#R' %}
 {% assign phabNewDiff = 'https://phabricator.kde.org/differential/diff/create/' %}
 
 <table class="repolist">
@@ -119,6 +120,14 @@ permalink: /kde/repos/
 		<td><a>New Bug</a></td>
 		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace))</a></td>
+	</tr>
+	<tr>
+		<td>Minimize All</td>
+		<td><a href="https://github.com/KDE/kdeplasma-addons/tree/master/applets/minimizeall">GitHub</a></td>
+		<td><a>All Bugs</a></td>
+		<td><a>New Bug</a></td>
+		<td><a href="{{phabDiffsAddons}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Addons))</a></td>
 	</tr>
 	<tr>
 		<td>Notifications</td>
