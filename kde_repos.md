@@ -116,8 +116,8 @@ permalink: /kde/repos/
 	<tr>
 		<td>Media Player [Controller]</td>
 		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/mediacontroller">GitHub</a></td>
-		<td><a>All Bugs</a></td>
-		<td><a>New Bug</a></td>
+		<td><a href="{{kdeBugList}}product=plasmashell&component=Media%20Player&list_id=1428170">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=plasmashell&component=Media%20Player">New Bug</a></td>
 		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace))</a></td>
 	</tr>
