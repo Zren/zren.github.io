@@ -167,7 +167,7 @@ permalink: /kde/repos/
 		<td><a href="{{kdeBugList}}product=plasmashell&component=Icons-only%20Task%20Manager&list_id=1407535">All Bugs</a></td>
 		<td><a href="{{kdeNewBug}}product=plasmashell&component=Icons-only%20Task%20Manager">New Bug</a></td>
 		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: OCS Webserver)</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop)</a></td>
 	</tr>
 </table>
 
@@ -207,7 +207,7 @@ permalink: /kde/repos/
 		<td><a href="https://phabricator.kde.org/tag/kde_store/">All Tasks</a></td>
 		<td><a href="https://phabricator.kde.org/tag/kde_store/">(▼ Create Task)</a></td>
 		<td><a href="https://phabricator.kde.org/differential/query/6v0DIohqTbc6/#R">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma SDK)</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: OCS Webserver)</a></td>
 	</tr>
 
 	<tr class="indent">
