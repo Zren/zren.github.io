@@ -87,7 +87,7 @@ permalink: /kde/repos/
 		<td><a>All Bugs</a></td>
 		<td><a>New Bug</a></td>
 		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace))</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace)</a></td>
 	</tr>
 	<tr>
 		<td>Digital Clock</td>
@@ -95,7 +95,7 @@ permalink: /kde/repos/
 		<td><a href="{{kdeBugList}}product=plasmashell&component=Digital%20Clock&list_id=1406061">All Bugs</a></td>
 		<td><a href="{{kdeNewBug}}product=plasmashell&component=Digital%20Clock">New Bug</a></td>
 		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace))</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace)</a></td>
 	</tr>
 	<tr class="indent">
 		<td>MonthView</td>
@@ -103,7 +103,7 @@ permalink: /kde/repos/
 		<td><a>All Bugs</a></td>
 		<td><a>New Bug</a></td>
 		<td><a href="{{phabDiffsFramework}}">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Framework))</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Framework)</a></td>
 	</tr>
 	<tr>
 		<td>[Desktop] Folder View</td>
@@ -111,7 +111,7 @@ permalink: /kde/repos/
 		<td><a href="{{kdeBugList}}product=plasmashell&component=Folder&list_id=1417574">All Bugs</a></td>
 		<td><a>New Bug</a></td>
 		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop))</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop)</a></td>
 	</tr>
 	<tr>
 		<td>Media Player [Controller]</td>
@@ -119,7 +119,7 @@ permalink: /kde/repos/
 		<td><a href="{{kdeBugList}}product=plasmashell&component=Media%20Player&list_id=1428170">All Bugs</a></td>
 		<td><a href="{{kdeNewBug}}product=plasmashell&component=Media%20Player">New Bug</a></td>
 		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace))</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace)</a></td>
 	</tr>
 	<tr>
 		<td>Minimize All</td>
@@ -127,7 +127,7 @@ permalink: /kde/repos/
 		<td><a>All Bugs</a></td>
 		<td><a>New Bug</a></td>
 		<td><a href="{{phabDiffsAddons}}">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Addons))</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Addons)</a></td>
 	</tr>
 	<tr>
 		<td>Notifications</td>
@@ -135,7 +135,7 @@ permalink: /kde/repos/
 		<td><a>All Bugs</a></td>
 		<td><a>New Bug</a></td>
 		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace))</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace)</a></td>
 	</tr>
 	<tr>
 		<td>Pager</td>
@@ -143,7 +143,7 @@ permalink: /kde/repos/
 		<td><a href="{{kdeBugList}}product=plasmashell&component=Pager&list_id=1411058">All Bugs</a></td>
 		<td><a href="{{kdeNewBug}}product=plasmashell&component=Pager">New Bug</a></td>
 		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop))</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop)</a></td>
 	</tr>
 	<tr>
 		<td>System Tray</td>
@@ -151,7 +151,7 @@ permalink: /kde/repos/
 		<td><a href="{{kdeBugList}}product=plasmashell&component=System%20Tray&list_id=1408524">All Bugs</a></td>
 		<td><a href="{{kdeNewBug}}product=plasmashell&component=System%20Tray">New Bug</a></td>
 		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace))</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace)</a></td>
 	</tr>
 	<tr>
 		<td>Task Manager</td>
@@ -159,7 +159,7 @@ permalink: /kde/repos/
 		<td><a href="{{kdeBugList}}product=plasmashell&component=Task%20Manager&list_id=1407534">All Bugs</a></td>
 		<td><a href="{{kdeNewBug}}product=plasmashell&component=Task%20Manager">New Bug</a></td>
 		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop))</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop)</a></td>
 	</tr>
 	<tr class="indent">
 		<td>Icon Tasks</td>
@@ -167,11 +167,38 @@ permalink: /kde/repos/
 		<td><a href="{{kdeBugList}}product=plasmashell&component=Icons-only%20Task%20Manager&list_id=1407535">All Bugs</a></td>
 		<td><a href="{{kdeNewBug}}product=plasmashell&component=Icons-only%20Task%20Manager">New Bug</a></td>
 		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop))</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: OCS Webserver)</a></td>
 	</tr>
 </table>
 
-## KDE Store
+## KDE Homepage
+
+<table class="repolist">
+	<tr>
+		<td>www.kde.org</td>
+		<td><a href="https://cgit.kde.org/scratch/kvermette/www-aether.git/tree/">Git Repo</a></td>
+		<td><a href="{{kdeBugList}}product=www.kde.org&component=general&list_id=1430354">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=www.kde.org&component=general">New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a>New PR</a></td>
+	</tr>
+	<tr class="indent">
+		<td>R848 Aether theme for Wordpress</td>
+		<td><a href="R848 Aether theme for Wordpress">Phabricator</a></td>
+	</tr>
+	<tr>
+		<td>docs.kde.org</td>
+		<td><a>Git Repo</a></td>
+		<td><a>All Bugs</a></td>
+		<td><a>New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Documentation Website (docs.kde.org))</a></td>
+		<td><a href="https://phabricator.kde.org/source/websites-docs-kde-org/">Phabricator</a></td>
+	</tr>
+</table>
+
+
+## KDE Store (store.kde.org)
 
 <table class="repolist">
 	<tr>
@@ -179,6 +206,8 @@ permalink: /kde/repos/
 		<td><a href="https://github.com/KDE/ocs-webserver/tree/master/application/modules/default/controllers">GitHub</a></td>
 		<td><a href="https://phabricator.kde.org/tag/kde_store/">All Tasks</a></td>
 		<td><a href="https://phabricator.kde.org/tag/kde_store/">(▼ Create Task)</a></td>
+		<td><a href="https://phabricator.kde.org/differential/query/6v0DIohqTbc6/#R">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma SDK)</a></td>
 	</tr>
 
 	<tr class="indent">
@@ -191,6 +220,7 @@ permalink: /kde/repos/
 	</tr>
 </table>
 
+
 ## Plasma SDK
 
 <table class="repolist">
@@ -200,6 +230,21 @@ permalink: /kde/repos/
 		<td><a href="{{kdeBugList}}product=Plasma%20SDK&component=plasmoidviewer&list_id=1422702">All Bugs</a></td>
 		<td><a href="{{kdeNewBug}}product=Plasma%20SDK&component=plasmoidviewer">New Bug</a></td>
 		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma SDK))</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma SDK)</a></td>
+	</tr>
+</table>
+
+
+## Other
+
+<table class="repolist">
+	<tr>
+		<td>Bugs</td>
+		<td><a href="https://bugs.kde.org/describecomponents.cgi">By Project</a></td>
+	</tr>
+	<tr>
+		<td>Pull Requests</td>
+		<td><a href="https://phabricator.kde.org/differential/query/all/">Latest</a></td>
+		<td><a href="https://phabricator.kde.org/differential/query/advanced/">Search</a></td>
 	</tr>
 </table>
