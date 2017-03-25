@@ -171,6 +171,7 @@ permalink: /kde/repos/
 	</tr>
 </table>
 
+
 ## KDE Homepage
 
 <table class="repolist">
@@ -181,10 +182,6 @@ permalink: /kde/repos/
 		<td><a href="{{kdeNewBug}}product=www.kde.org&component=general">New Bug</a></td>
 		<td><a>Pull Requests</a></td>
 		<td><a>New PR</a></td>
-	</tr>
-	<tr class="indent">
-		<td>R848 Aether theme for Wordpress</td>
-		<td><a href="R848 Aether theme for Wordpress">Phabricator</a></td>
 	</tr>
 	<tr>
 		<td>docs.kde.org</td>
