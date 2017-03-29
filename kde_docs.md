@@ -762,8 +762,6 @@ While it's bad practice to link to private code, if you know another widget a tr
 
 Eg: `plasma_applet_com.github.zren.helloworld`
 
-import org.kde.private.kquickcontrols 2.0 as KQuickControlsPrivate
-
 An example can be found in `org.kde.kquickcontrols`'s [KeySequenceItem](https://api.kde.org/frameworks/kdeclarative/html/KeySequenceItem_8qml_source.html).
 
 {% endcapture %}{% capture sectionRight %}
