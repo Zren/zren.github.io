@@ -756,6 +756,33 @@ Note that single quotes (`i18n('Test')`) will be ignored by the tool that parses
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
+{% capture label %}Reusing other translations{% endcapture %}
+{% capture sectionLeft %}
+While it's bad practice to link to private code, if you know another widget a translated sting, you can use [KQuickControlsPrivate.TranslationContext](https://api.kde.org/frameworks/kdeclarative/html/translationcontext_8h_source.html) to use translations from that domain. Note that a widget's domain starts with `plasma_applet_`, and ends with the widget's `X-KDE-PluginInfo-Name`.
+
+Eg: `plasma_applet_com.github.zren.helloworld`
+
+import org.kde.private.kquickcontrols 2.0 as KQuickControlsPrivate
+
+An example can be found in `org.kde.kquickcontrols`'s [KeySequenceItem](https://api.kde.org/frameworks/kdeclarative/html/KeySequenceItem_8qml_source.html).
+
+{% endcapture %}{% capture sectionRight %}
+{% highlight qml %}
+import org.kde.private.kquickcontrols 2.0 as KQuickControlsPrivate
+
+Item {
+    KQuickControlsPrivate.TranslationContext {
+        id: _tr
+        domain: "kdeclarative5"
+    }
+
+    Button {
+        text: _helper.shortcutDisplay
+        tooltip: _tr.i18n("Click on the button, then enter the shortcut like you would in the program.\nExample for Ctrl+A: hold the Ctrl key and press A.")
+    }
+}
+{% endhighlight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 <!-- ------- -->
 {% include docHeader.html label="Examples" %}
