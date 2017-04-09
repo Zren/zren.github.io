@@ -73,6 +73,14 @@ permalink: /kde/repos/
 		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop)</a></td>
 	</tr>
+	<tr class="indent">
+		<td>Meta Key (KWin: Input)</td>
+		<td><a href="https://github.com/KDE/kwin/">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=kwin&component=input&list_id=1432963">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=kwin&component=input">New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a>New PR</a></td>
+	</tr>
 	<tr>
 		<td>Audio Volume (plasma-pa)</td>
 		<td><a href="https://github.com/KDE/plasma-pa">GitHub</a></td>
@@ -228,6 +236,20 @@ permalink: /kde/repos/
 		<td><a href="{{kdeNewBug}}product=Plasma%20SDK&component=plasmoidviewer">New Bug</a></td>
 		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma SDK)</a></td>
+	</tr>
+</table>
+
+
+## KDE Apps
+
+<table class="repolist">
+	<tr>
+		<td>Dolphin</td>
+		<td><a href="https://github.com/KDE/Dolphin">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=dolphin&list_id=1431508">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=dolphin">New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a>New PR</a></td>
 	</tr>
 </table>
 
