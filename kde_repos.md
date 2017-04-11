@@ -230,6 +230,14 @@ permalink: /kde/repos/
 
 <table class="repolist">
 	<tr>
+		<td>plasmathemeexplorer</td>
+		<td><a href="https://github.com/KDE/plasma-sdk/tree/master/themeexplorer">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=Plasma%20SDK&component=plasmathemeexplorer&list_id=1433280">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=Plasma%20SDK&component=plasmathemeexplorer">New Bug</a></td>
+		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma SDK)</a></td>
+	</tr>
+	<tr>
 		<td>plasmoidviewer</td>
 		<td><a href="https://github.com/KDE/plasma-sdk/tree/master/plasmoidviewer">GitHub</a></td>
 		<td><a href="{{kdeBugList}}product=Plasma%20SDK&component=plasmoidviewer&list_id=1422702">All Bugs</a></td>
