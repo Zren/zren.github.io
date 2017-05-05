@@ -180,6 +180,20 @@ permalink: /kde/repos/
 </table>
 
 
+## Breeze Theme
+
+<table class="repolist">
+	<tr>
+		<td>Breeze Icons</td>
+		<td><a href="https://github.com/KDE/breeze-icons/">Git Repo</a></td>
+		<td><a href="{{kdeBugList}}product=Breeze&component=icons&list_id=1436777">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=Breeze&component=icons">New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a>New PR</a></td>
+	</tr>
+</table>
+
+
 ## KDE Homepage
 
 <table class="repolist">
