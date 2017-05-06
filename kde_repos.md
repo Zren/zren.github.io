@@ -121,6 +121,14 @@ permalink: /kde/repos/
 		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop)</a></td>
 	</tr>
+	<tr class="indent">
+		<td>Wallpaper Plugins</td>
+		<td><a>GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=Plasma%20Workspace%20Wallpapers&component=general&list_id=1437792">All Bugs</a></td>
+		<td><a>New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a>New PR</a></td>
+	</tr>
 	<tr>
 		<td>Media Player [Controller]</td>
 		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/mediacontroller">GitHub</a></td>
