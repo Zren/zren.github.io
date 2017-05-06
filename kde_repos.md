@@ -124,7 +124,7 @@ permalink: /kde/repos/
 	<tr class="indent">
 		<td>Wallpaper Plugins</td>
 		<td><a>GitHub</a></td>
-		<td><a href="{{kdeBugList}}product=Plasma%20Workspace%20Wallpapers&component=general&list_id=1437792">All Bugs</a></td>
+		<td><a href="{{kdeBugList}}product=Plasma%20Workspace%20Wallpapers&component=general&list_id=1437793">All Bugs</a></td>
 		<td><a>New Bug</a></td>
 		<td><a>Pull Requests</a></td>
 		<td><a>New PR</a></td>
