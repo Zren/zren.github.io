@@ -85,7 +85,7 @@ permalink: /kde/repos/
 		<td>Audio Volume (plasma-pa)</td>
 		<td><a href="https://github.com/KDE/plasma-pa">GitHub</a></td>
 		<td><a href="{{kdeBugList}}product=plasma-pa&list_id=1406062">All Bugs</a></td>
-		<td><a>New Bug</a></td>
+		<td><a href="{{kdeNewBug}}product=plasma-pa&component=applet">New Bug</a></td>
 		<td><a href="{{phabDiffs}}NlM7ES4ji2UX/#R">Pull Requests</a></td>
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Audio Volume Applet)</a></td>
 	</tr>
