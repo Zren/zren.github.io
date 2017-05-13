@@ -92,8 +92,8 @@ permalink: /kde/repos/
 	<tr>
 		<td>Battery and Brightness</td>
 		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/batterymonitor">GitHub</a></td>
-		<td><a>All Bugs</a></td>
-		<td><a>New Bug</a></td>
+		<td><a href="{{kdeBugList}}product=plasmashell&component=Battery%20Monitor&list_id=1439115">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=plasmashell&component=Battery%20Monitor">New Bug</a></td>
 		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace)</a></td>
 	</tr>
