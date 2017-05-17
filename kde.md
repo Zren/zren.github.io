@@ -264,7 +264,7 @@ li > p:first-line {
   It's easier to use these commmands than doing it by hand.
   {% highlight bash %}
   kwriteconfig --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta ""
-  qdbus org.kde.kwin /KWin reconfigure
+  qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
 
 {% assign i = i | plus: 1 %}
@@ -273,7 +273,7 @@ li > p:first-line {
   It's easier to use these commmands than doing it by hand.
   {% highlight bash %}
   kwriteconfig5 --file ~/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true
-  qdbus org.kde.kwin /KWin reconfigure
+  qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
 
 
