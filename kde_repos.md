@@ -121,15 +121,6 @@ permalink: /kde/repos/
 		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop)</a></td>
 	</tr>
-	<tr>
-		<td>Global Menu (AppMenu)</td>
-		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/appmenu">GitHub</a></td>
-		<td><a href="{{kdeBugList}}product=plasmashell&component=Global%20Menu&list_id=1440415">All Bugs</a></td>
-		<td><a href="{{kdeNewBug}}product=plasmashell&component=Global%20Menu">New Bug</a></td>
-		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
-		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace)</a></td>
-	</tr>
-
 	<tr class="indent">
 		<td>Wallpaper Plugins</td>
 		<td><a>GitHub</a></td>
@@ -137,6 +128,14 @@ permalink: /kde/repos/
 		<td><a>New Bug</a></td>
 		<td><a>Pull Requests</a></td>
 		<td><a>New PR</a></td>
+	</tr>
+	<tr>
+		<td>Global Menu (AppMenu)</td>
+		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/appmenu">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=plasmashell&component=Global%20Menu&list_id=1440415">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=plasmashell&component=Global%20Menu">New Bug</a></td>
+		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace)</a></td>
 	</tr>
 	<tr>
 		<td>Media Player [Controller]</td>
