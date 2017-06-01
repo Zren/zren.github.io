@@ -219,6 +219,16 @@ li > p:first-line {
   Select "Thumbnail Grid" in the dropdown.
 
 {% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Show Alt+Tab popup as fast as possible
+  Normally it will wait 90 milliseconds before trying to show the popup. This makes it quick switches faster since it doesn't need to draw anything.
+  We need to set `DelayTime=0` under the group `[TabBox]` in the file `~/config/kwinrc`, then reload kwin.
+  It's easier to use these commmands than doing it by hand.
+  {% highlight bash %}
+kwriteconfig --file ~/.config/kwinrc --group TabBox --key DelayTime 0
+qdbus org.kde.KWin /KWin reconfigure
+  {% endhighlight %}
+
+{% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Disable Lock Screen
   System Settings > Desktop Behaviour > Screen Locking Tab
   Uncheck: Lock screen automatically after __ min
@@ -260,20 +270,20 @@ li > p:first-line {
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Do not open the “Start Menu” with Windows/Meta key (KDE 5.8)
-  We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/config/kwinrc`, then restart kwin.
+  We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/config/kwinrc`, then reload kwin.
   It's easier to use these commmands than doing it by hand.
   {% highlight bash %}
-  kwriteconfig --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta ""
-  qdbus org.kde.KWin /KWin reconfigure
+kwriteconfig --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta ""
+qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Hide titlebars when maximized (like Ubuntu)
-  We need to set `BorderlessMaximizedWindows=true` under the group `[Windows]` in the file `~/config/kwinrc`, then restart kwin.
+  We need to set `BorderlessMaximizedWindows=true` under the group `[Windows]` in the file `~/config/kwinrc`, then reload kwin.
   It's easier to use these commmands than doing it by hand.
   {% highlight bash %}
-  kwriteconfig5 --file ~/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true
-  qdbus org.kde.KWin /KWin reconfigure
+kwriteconfig5 --file ~/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true
+qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
 
 
