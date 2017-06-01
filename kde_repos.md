@@ -210,6 +210,28 @@ permalink: /kde/repos/
 </table>
 
 
+## KWin (The Window Manager)
+
+<table class="repolist">
+	<tr>
+		<td>KWin</td>
+		<td><a href="https://github.com/KDE/kwin/">Git Repo</a></td>
+		<td><a href="{{kdeBugList}}product=kwin&list_id=1442047">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=kwin">New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a>New PR</a></td>
+	</tr>
+	<tr class="indent">
+		<td>Alt+Tab (TabBox)</td>
+		<td><a href="https://github.com/KDE/kwin/tree/master/tabbox">Git Repo</a></td>
+		<td><a href="{{kdeBugList}}product=kwin&component=tabbox&list_id=1442048">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=kwin&component=tabbox">New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a>New PR</a></td>
+	</tr>
+</table>
+
+
 ## KDE Homepage
 
 <table class="repolist">
