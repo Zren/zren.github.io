@@ -34,6 +34,9 @@ permalink: /kde/repos/
 	content: "";
 	width: 2em;
 }
+.repolist tr.indent.depth2 td:nth-of-type(1):before {
+	width: 4em;
+}
 .repolist td:nth-of-type(1):after {
 	content: ":";
 }
@@ -226,6 +229,22 @@ permalink: /kde/repos/
 		<td><a href="https://github.com/KDE/kwin/tree/master/tabbox">Git Repo</a></td>
 		<td><a href="{{kdeBugList}}product=kwin&component=tabbox&list_id=1442048">All Bugs</a></td>
 		<td><a href="{{kdeNewBug}}product=kwin&component=tabbox">New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a>New PR</a></td>
+	</tr>
+	<tr class="indent">
+		<td>Window Decorations</td>
+		<td><a href="https://github.com/KDE/kwin/tree/master/kdecorations">Git Repo</a></td>
+		<td><a href="{{kdeBugList}}product=kwin&component=decorations&list_id=1442298">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=kwin&component=decorations">New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a>New PR</a></td>
+	</tr>
+	<tr class="indent depth2">
+		<td>Aurorae Decorations</td>
+		<td><a href="https://github.com/KDE/kwin/tree/master/plugins/kdecorations/aurorae">Git Repo</a></td>
+		<td><a>All Bugs</a></td>
+		<td><a>New Bug</a></td>
 		<td><a>Pull Requests</a></td>
 		<td><a>New PR</a></td>
 	</tr>
