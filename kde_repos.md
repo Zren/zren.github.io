@@ -243,8 +243,8 @@ permalink: /kde/repos/
 	<tr class="indent depth2">
 		<td>Aurorae Decorations</td>
 		<td><a href="https://github.com/KDE/kwin/tree/master/plugins/kdecorations/aurorae">Git Repo</a></td>
-		<td><a>All Bugs</a></td>
-		<td><a>New Bug</a></td>
+		<td><a href="{{kdeBugList}}product=kwin&component=aurorae&list_id=1442301">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=kwin&component=aurorae">New Bug</a></td>
 		<td><a>Pull Requests</a></td>
 		<td><a>New PR</a></td>
 	</tr>
