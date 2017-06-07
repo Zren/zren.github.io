@@ -215,7 +215,7 @@ li > p:first-line {
 * {:#cfg-{{ i }}} “Normal” Alt+Tab popup
   System Settings > Window Management
   Task Switcher Tab > Click the "star icon"
-  Install "Thumbnail Grid", then close the installer window.
+  Install "[Thumbnail Grid](https://store.kde.org/p/1153173)", then close the installer window.
   Select "Thumbnail Grid" in the dropdown.
 
 {% assign i = i | plus: 1 %}
@@ -224,7 +224,7 @@ li > p:first-line {
   We need to set `DelayTime=0` under the group `[TabBox]` in the file `~/config/kwinrc`, then reload kwin.
   It's easier to use these commmands than doing it by hand.
   {% highlight bash %}
-kwriteconfig --file ~/.config/kwinrc --group TabBox --key DelayTime 0
+kwriteconfig5 --file ~/.config/kwinrc --group TabBox --key DelayTime 0
 qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
 
@@ -273,7 +273,7 @@ qdbus org.kde.KWin /KWin reconfigure
   We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/config/kwinrc`, then reload kwin.
   It's easier to use these commmands than doing it by hand.
   {% highlight bash %}
-kwriteconfig --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta ""
+kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta ""
 qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
 
