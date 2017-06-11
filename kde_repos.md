@@ -330,6 +330,22 @@ permalink: /kde/repos/
 		<td><a>Pull Requests</a></td>
 		<td><a>New PR</a></td>
 	</tr>
+	<tr>
+		<td>Kdenlive</td>
+		<td><a href="https://github.com/KDE/kdenlive">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=kdenlive&list_id=1444103">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=kdenlive">New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a>New PR</a></td>
+	</tr>
+	<tr>
+		<td>Krita</td>
+		<td><a href="https://github.com/KDE/krita">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=krita&list_id=1444104">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=krita">New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a>New PR</a></td>
+	</tr>
 </table>
 
 
