@@ -287,6 +287,15 @@ qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
 
 
+# Multi Screen
+
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Don't show `~/Desktop` folder on every screen (Workaround)
+  Create `~/Desktop2`, `~/Desktop3`... for each screen.
+  Right click wallpaper on screen 2 > Configure Desktop
+  Location > Check: Specify a folder > `~/Desktop2`
+
+
 ### Login Screen (SDDM) / Lock Screen
 
 {% assign i = i | plus: 1 %}
@@ -296,6 +305,7 @@ qdbus org.kde.KWin /KWin reconfigure
   We should also change the lock screen.
   System Settings > Desktop Bahviour
   Screen Locking Tab > Wallpaper > Wallpaper Type: Image
+
 
 ### Dolphin (File Manager)
 
