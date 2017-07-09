@@ -33,7 +33,7 @@ cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DKDE_INSTALL_LI
 make
 {% endhighlight %}
 
-Now, we tried to compile the `kdecoration` folder by itself, rather than compiling the `breeze` project as a whole. Lets edit the `kdecoration/CMakeList.txt` so that it doesn't need the `CMakeList.txt` in the parent directory.
+Note that we tried to compile the `kdecoration` folder by itself, rather than compiling the `breeze` project as a whole. Lets edit the `kdecoration/CMakeList.txt` so that it doesn't need the `CMakeList.txt` in the parent directory.
 
 Lets look at everything before it imports the `kdecoration` folder and calls it's `CMakeLists.txt`.
 
