@@ -1,0 +1,41 @@
+<style type="text/css">
+  #sidenav {
+    position: relative;
+  }
+  #sidenav ul {
+    margin-left: 0;
+  }
+  #sidenav li {
+    font-size: 0.8em;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    list-style: none;
+  }
+  @media (max-width: 1440px) {
+    #sidenav {
+      margin-bottom: 52px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .nav-contents {
+      position: absolute;
+      right: calc((100vw - 772px)/2 * -1);
+      width: calc((100vw - 772px)/2 - 30px);
+    }
+  }
+  .nav-contents > h3 {
+    font-variant: small-caps;
+    margin-bottom: 0;
+  }
+</style>
+<nav id="sidenav">
+  <div class="nav-contents">
+  <h3>Menu</h3>
+    <ul>
+      {% for page in site.pages %}
+        {% if page.title %}        
+          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
