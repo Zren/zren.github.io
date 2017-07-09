@@ -5,7 +5,7 @@ title: Patching Breeze Window Decorations
 
 KDE ships with the Breeze window decorations. Which are drawn via a C++ KDecoration2 "plugin". You can also download other decorations from the KDE Store (via Get Hot New Stuff) that are SVG based themes for the Aurorae KDecoration2 "plugin" (which is also preinstalled in KDE).
 
-Editing the other SVG based themes is pretty easy, however to edit the Breeze theme, you'll need to recompile some C++, which isn't as newbie friendly.
+Editing the other SVG based themes is pretty easy, however to edit the Breeze theme you'll need to recompile some C++ which isn't as newbie friendly.
 
 First off, lets download the source. The window decorations are a [subfolder](https://github.com/Zren/breeze/tree/zdev/kdecoration) of the [breeze repo](https://github.com/KDE/breeze), which means we have to download the breeze cursors and the wallpapers too. Luckily the icons are in [another repo](https://github.com/KDE/breeze-icons), but the repo is still several megabytes in size since each wallpaper updates every version and is in 10 different sizes including 4K.
 
