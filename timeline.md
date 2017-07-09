@@ -54,6 +54,24 @@ h3 + .tags {
 }
 </style>
 
+## 2017
+
+
+### Plasma5 Widget - Present Windows
+
+**Source:** <https://github.com/Zren/plasma-applets/tree/master/presentwindows>
+
+A simple buttons that with the Windows 10 "Task View" icon that triggers the "Desktop Grid" or "Present Windows" desktop effect.
+
+
+### KDE / Plasma (Contributor)
+
+**Link:** <https://phabricator.kde.org/people/commits/11270/>
+
+I started contributing patches to the Plasma desktop environment on Phabricator.
+
+
+
 ## 2016
 
 
