@@ -75,6 +75,9 @@ h1 {
 .site-github .icon > svg path {
   fill: $headerTextColor;
 }
+.icon + .username {
+  margin-left: 4px;
+}
 
 // Content
 p, li {
