@@ -101,7 +101,8 @@ index 5f8a873..eaba25f 100644
 +
  add_definitions(-DTRANSLATION_DOMAIN="breeze_kwin_deco")
  
- find_package(KF5 REQUIRED COMPONENTS CoreAddons GuiAddons ConfigWidgets WindowSystem I18n){% endhighlight %}
+ find_package(KF5 REQUIRED COMPONENTS CoreAddons GuiAddons ConfigWidgets WindowSystem I18n)
+{% endhighlight %}
 
 After editing the `kdecoration/CMakeList.txt`, you'll need to clean the build directory (just delete the folder `rm -r build`). Then you can try building again.
 
@@ -113,9 +114,11 @@ If everything compiled 100%, we can focus on patching Breeze with new features. 
 
 Here's the diffs for each.
 
-### 1. Remove the blue (highlight color) line under the titlebar when a window is focused.
+## 1. Remove the blue (highlight color) line under the titlebar when a window is focused.
 
 For this, we just need to comment out where it draws the line. This line is always drawn if the window's titlebar color and the window's background is different which you can [see here](https://github.com/KDE/breeze/blob/2cc0f8ba2da50ca3efa500ebdcc3655c8d0e47f8/kdecoration/breezedecoration.cpp#L154).
+
+![](https://i.imgur.com/kP0XG9Y.png)
 
 {% highlight diff %}
 diff --git a/kdecoration/breezedecoration.cpp b/kdecoration/breezedecoration.cpp
@@ -166,9 +169,11 @@ kwin_x11 --replace & disown
 {% endhighlight %}
 
 
-### 2. Remove the triangle in the bottom right when set to No Borders.
+## 2. Remove the triangle in the bottom right when set to No Borders.
 
 For some reason, when you chose "no borders" it adds this stupid little triangle, which is drawn *on top* of the window. For now I've been using "No side borders" which draws a bottom border but I'd like to fix that.
+
+![](https://i.imgur.com/c8getbo.png)
 
 It's also straightforward to remove by commenting out some code.
 
@@ -191,8 +196,48 @@ index 53d53ee..43698c1 100644
 {% endhighlight %}
 
 
-### 3. Attempt to draw the shadows as if the light source is coming from the top/north instead of the top-left.
+## 3. Attempt to draw the shadows as if the light source is coming from the top/north instead of the top-left.
 
 This was a request from someone in IRC one time since it's how OS X does shadows. So I'd already spotted where things we handled. Unfortunately, it was a bit more complicated than I thought, resulting in a bit of trial and error. I'm still not 100% sure I did it correctly, but it works.
 
 ![](https://i.imgur.com/6JBaYqr.png)
+
+{% highlight diff %}
+diff --git a/kdecoration/breezedecoration.cpp b/kdecoration/breezedecoration.cpp
+index 43698c1..b6f67a7 100644
+--- a/kdecoration/breezedecoration.cpp
++++ b/kdecoration/breezedecoration.cpp
+@@ -670,8 +670,8 @@ namespace Breeze
+ 
+             // contrast pixel
+             QRectF innerRect = QRectF(
+-                g_shadowSize - shadowOffset - Metrics::Shadow_Overlap, g_shadowSize - shadowOffset - Metrics::Shadow_Overlap,
+-                shadowOffset + 2*Metrics::Shadow_Overlap, shadowOffset + 2*Metrics::Shadow_Overlap );
++                g_shadowSize - Metrics::Shadow_Overlap, g_shadowSize - shadowOffset - Metrics::Shadow_Overlap,
++                2*Metrics::Shadow_Overlap, shadowOffset + 2*Metrics::Shadow_Overlap );
+ 
+             painter.setPen( gradientStopColor( g_shadowColor, g_shadowStrength*0.5 ) );
+             painter.setBrush( Qt::NoBrush );
+@@ -687,7 +687,7 @@ namespace Breeze
+ 
+             g_sShadow = QSharedPointer<KDecoration2::DecorationShadow>::create();
+             g_sShadow->setPadding( QMargins(
+-                g_shadowSize - shadowOffset - Metrics::Shadow_Overlap,
++                g_shadowSize - Metrics::Shadow_Overlap,
+                 g_shadowSize - shadowOffset - Metrics::Shadow_Overlap,
+                 g_shadowSize - Metrics::Shadow_Overlap,
+                 g_shadowSize - Metrics::Shadow_Overlap ) );
+diff --git a/kstyle/breezeshadowhelper.cpp b/kstyle/breezeshadowhelper.cpp
+index 80fcf73..e26b0e1 100644
+--- a/kstyle/breezeshadowhelper.cpp
++++ b/kstyle/breezeshadowhelper.cpp
+@@ -517,7 +517,7 @@ namespace Breeze
+         int size( shadowSize - Metrics::Shadow_Overlap );
+         int topSize = ( size - shadowOffset ) * devicePixelRatio;
+         int bottomSize = size * devicePixelRatio;
+-        const int leftSize( (size - shadowOffset) * devicePixelRatio );
++        const int leftSize( size * devicePixelRatio );
+         const int rightSize( size * devicePixelRatio );
+ 
+         if( widget->inherits( "QBalloonTip" ) )
+{% endhighlight %}
