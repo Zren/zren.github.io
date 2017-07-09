@@ -154,7 +154,7 @@ index b186798..53d53ee 100644
 
 ### Testing the changes
 
-Then build.
+Clean and build the project.
 
 If everything went without a hitch, we can now install it into your system.
 
