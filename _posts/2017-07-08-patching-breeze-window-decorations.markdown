@@ -198,7 +198,7 @@ index 53d53ee..43698c1 100644
 
 ## 3. Attempt to draw the shadows as if the light source is coming from the top/north instead of the top-left.
 
-This was a request from someone in IRC one time since it's how OS X does shadows. So I'd already spotted where things we handled. Unfortunately, it was a bit more complicated than I thought, resulting in a bit of trial and error. I'm still not 100% sure I did it correctly, but it works.
+This was a request from someone in IRC one time since it's how OS X does shadows. So I'd already spotted where things were handled. Unfortunately, it was a bit more complicated than I thought, resulting in a bit of trial and error. I'm still not 100% sure I did it correctly, but it works.
 
 ![](https://i.imgur.com/6JBaYqr.png)
 
