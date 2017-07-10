@@ -119,8 +119,8 @@ sudo apt install -y playonlinux
 {% assign i = 0 %}
 
 <style>
-li:first-line,
-li > p:first-line {
+.post-content li:first-line,
+.post-content li > p:first-line {
   font-weight: bold;
 }
 </style>

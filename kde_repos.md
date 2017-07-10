@@ -5,6 +5,9 @@ permalink: /kde/repos/
 ---
 
 <style type="text/css">
+#sidenav {
+	display: none;
+}
 .page-content .wrapper {
 	max-width: -webkit-calc(100vw - (30px * 2));
 	max-width: calc(100vw - (30px * 2));
