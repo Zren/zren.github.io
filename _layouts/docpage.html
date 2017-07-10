@@ -43,6 +43,9 @@ layout: default
 #sidemenu > ul > li.active > a:before {
 	content: "\f078";
 }
+#sidemenu > ul > li:not(.active) > ul {
+	display: none;
+}
 #sidemenu li.active > a {
 	font-weight: bold;
 }
