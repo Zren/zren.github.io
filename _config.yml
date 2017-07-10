@@ -9,8 +9,8 @@
 title: Chris Holland
 email: your-email@domain.com
 description: Programming projects.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/projects" # the subpath of your site, e.g. /blog
+url: "http://zren.github.io" # the base hostname & protocol for your site
 twitter_username: zrenfire
 github_username:  Zren
 
@@ -20,3 +20,6 @@ markdown: kramdown
 kramdown:
   hard_wrap: true
   input: GFM
+
+gems:
+  - jekyll-feed
