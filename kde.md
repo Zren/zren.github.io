@@ -287,7 +287,7 @@ qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
 
 
-# Multi Screen
+### Multi Screen
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Don't show `~/Desktop` folder on every screen (Workaround)
