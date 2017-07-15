@@ -104,6 +104,14 @@ permalink: /kde/repos/
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace)</a></td>
 	</tr>
 	<tr>
+		<td>Browser Integration</td>
+		<td><a href="https://github.com/kde/plasma-browser-integration">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=plasma-browser-integration&list_id=1451104">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=plasma-browser-integration">New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a>New PR (Repo: Plasma Workspace)</a></td>
+	</tr>
+	<tr>
 		<td>Digital Clock</td>
 		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/digital-clock">GitHub</a></td>
 		<td><a href="{{kdeBugList}}product=plasmashell&component=Digital%20Clock&list_id=1406061">All Bugs</a></td>
