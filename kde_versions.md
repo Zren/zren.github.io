@@ -6,14 +6,14 @@ permalink: /kde/versions/
 
 This page lists the versions for various kde software and it's dependencies for distro releases. This might be out of date for rolling releases, but should be handy for bugfix only distros like Ubuntu.
 
-<table>
+<table class="table">
   <thead>
     <tr>
-      <td>Distro Release</td>
-      <td>Qt</td>
-      <td>KDE Frameworks</td>
-      <td>KDE Plasma</td>
-      <td>KDE Apps</td>
+      <th>Distro Release</th>
+      <th>Qt</th>
+      <th>KDE Frameworks</th>
+      <th>KDE Plasma</th>
+      <th>KDE Apps</th>
     </tr>
   </thead>
   <tbody>
