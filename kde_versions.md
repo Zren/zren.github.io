@@ -6,6 +6,15 @@ permalink: /kde/versions/
 
 This page lists the versions for various kde software and it's dependencies for distro releases. This might be out of date for rolling releases, but should be handy for bugfix only distros like Ubuntu.
 
+<style type="text/css">
+.table tbody td {
+  text-align: center;
+}
+.table tbody td:first-of-type {
+  text-align: left;
+}
+</style>
+
 <table class="table">
   <thead>
     <tr>
@@ -17,6 +26,14 @@ This page lists the versions for various kde software and it's dependencies for 
     </tr>
   </thead>
   <tbody>
+
+    <tr>
+      <td><a href="https://antergos.com/">Antergos</a> 17.7</td>
+      <td title="qt">5.7.1</td>
+      <td title="frameworks">5.31</td>
+      <td title="plasma">5.9.2</td>
+      <td title="apps">17.04.2</td>
+    </tr>
     <tr>
       <td><a href="https://chakralinux.org/">Chakra</a> 2017.03</td>
       <td title="qt">5.7.1</td>
@@ -71,6 +88,13 @@ This page lists the versions for various kde software and it's dependencies for 
       <td title="qt">?</td>
       <td title="frameworks">?</td>
       <td title="plasma">?</td>
+      <td title="apps">?</td>
+    </tr>
+    <tr>
+      <td><a href="https://mauilinux.org/">Maui Linux</a> 17.06</td>
+      <td title="qt">5.7.1</td>
+      <td title="frameworks">5.35</td>
+      <td title="plasma">5.10.2</td>
       <td title="apps">?</td>
     </tr>
     <tr>
