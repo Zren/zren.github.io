@@ -87,5 +87,19 @@ This page lists the versions for various kde software and it's dependencies for 
       <td title="plasma">5.10.3</td>
       <td title="apps">17.04.2</td>
     </tr>
+    <tr>
+      <td><a href="https://nurunner.org/">Nurunner</a> 17.06</td>
+      <td title="qt">5.9.0</td>
+      <td title="frameworks">5.35</td>
+      <td title="plasma">5.10.3</td>
+      <td title="apps">17.04.2</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.pclinuxos.com/">PCLinuxOS</a> 2017.07</td>
+      <td title="qt">5.9.1</td>
+      <td title="frameworks">5.35</td>
+      <td title="plasma">5.10.3</td>
+      <td title="apps">17.04.2</td>
+    </tr>
   </tbody>
 </table>
