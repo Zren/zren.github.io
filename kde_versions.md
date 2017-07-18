@@ -19,31 +19,31 @@ This page lists the versions for various kde software and it's dependencies for 
   <tbody>
     <tr>
       <td>Kubutu 16.04</td>
-      <td>5.5.1</td>
-      <td>5.18.0</td>
-      <td>5.5.5</td>
-      <td>15.12.3</td>
+      <td title="qt">5.5.1</td>
+      <td title="frameworks">5.18.0</td>
+      <td title="plasma">5.5.5</td>
+      <td title="apps">15.12.3</td>
     </tr>
     <tr>
       <td>Kubutu 16.10</td>
-      <td>5.6.1</td>
-      <td>5.26.0</td>
-      <td>5.7.5</td>
-      <td>16.04.3</td>
+      <td title="qt">5.6.1</td>
+      <td title="frameworks">5.26.0</td>
+      <td title="plasma">5.7.5</td>
+      <td title="apps">16.04.3</td>
     </tr>
     <tr>
       <td>Kubutu 17.04</td>
-      <td>5.6.1</td>
-      <td>5.26.0</td>
-      <td>5.7.5</td>
-      <td>16.04.3</td>
+      <td title="qt">5.7.1</td>
+      <td title="frameworks">5.31.0</td>
+      <td title="plasma">5.9.4</td>
+      <td title="apps">16.12.3</td>
     </tr>
     <tr>
       <td>Kubutu 17.10</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
-      <td>?</td>
+      <td title="qt">?</td>
+      <td title="frameworks">?</td>
+      <td title="plasma">?</td>
+      <td title="apps">?</td>
     </tr>
   </tbody>
 </table>
