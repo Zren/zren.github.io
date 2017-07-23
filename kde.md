@@ -12,12 +12,10 @@ There are a few things missing from User Edition of KDE Neon for regular usage.
 
 {% highlight bash %}
 sudo apt install -y kdeplasma-addons # "Big Icons" Alt+Tab
-sudo apt install -y libnotify-bin
-    # notify-send (Dota 2 Notifications)
+sudo apt install -y libnotify-bin # notify-send (Dota 2 Notifications)
 sudo apt install -y p7zip-full p7zip-rar # (.7z)
 sudo apt install -y qapt-deb-installer # (.deb) GUI Installer
-sudo apt install -y software-properties-common
-    # add-apt-repository
+sudo apt install -y software-properties-common # add-apt-repository
 sudo apt install -y unrar # (.rar)
 {% endhighlight %}
 
