@@ -351,6 +351,12 @@ qdbus org.kde.KWin /KWin reconfigure
   Breeze
   Breeze Dark: [Chrome Theme](https://chrome.google.com/webstore/detail/breeze-dark/nkhdomjgcjkhipblklfchdkojecapgmc)
 
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Enable Hardware Acceleration
+  If you notice tearing while playing video, check `chrome://gpu` and see if it says hardware acceleration is unavailable. It's very likely that it's a just the chrome doesn't recognize that it can use your GPU.
+  > [Origional Article](http://www.webupd8.org/2014/01/enable-hardware-acceleration-in-chrome.html)
+  Go to `chrome://flags`, search for "Override software rendering list", enable it and restart Chrome.
+
 
 ### Steam
 
