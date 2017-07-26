@@ -170,7 +170,7 @@ permalink: /kde/repos/
 	<tr>
 		<td>Notifications</td>
 		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/notifications">GitHub</a></td>
-		<td><a href="{{kdeBugList}}product=plasmashell&component=Notifications&list_id=1453849"">All Bugs</a></td>
+		<td><a href="{{kdeBugList}}product=plasmashell&component=Notifications&list_id=1453849">All Bugs</a></td>
 		<td><a href="{{kdeNewBug}}product=plasmashell&component=Notifications">New Bug</a></td>
 		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace)</a></td>
