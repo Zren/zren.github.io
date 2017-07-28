@@ -29,7 +29,7 @@ That still didn't answer the issue of licensing though, so I'll only use them as
 
 As for the images, a simple google for "exercise filetype:svg" pointed me to a [wikipedia submiter](https://en.wikipedia.org/wiki/File:Push_up_feet_elevated_2_1.svg) who's put [a number of simple images](http://db.everkinetic.com/) under Creative Commons (BA-SA).
 
-He only uploaded the rasterized PNGs of his images though. We can't use PNGs since we need the images to follow the color scheme. We could get away with two outlines in black + white but it we can easily convert those monochromatic PNGs into SVGs with modern day tools.
+He only uploaded the rasterized PNGs of his images though. We can't use PNGs since we need the images to follow the color scheme. We could get away with two outlines in black + white, but we can easily convert those monochromatic PNGs into SVGs with modern day tools.
 
 Google found [this Gist]( https://gist.github.com/ykarikos/2892009) which uses `potrace` and `imagemagick`.
 
