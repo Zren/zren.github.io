@@ -67,6 +67,7 @@ else()
     find_package(KDecoration2 REQUIRED)
     add_subdirectory(kdecoration)
   endif()
+...
 {% endhighlight %}
 
 We can ignore the `USE_KDE4` and `WITH_DECORATIONS` conditionals since they are always going to be `false` and `true` in our case. We can also ignore the `GtkUpdateIconCache` include.
