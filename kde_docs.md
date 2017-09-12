@@ -781,25 +781,17 @@ Note that single quotes (`i18n('Test')`) will be ignored by the tool that parses
 
 {% capture label %}Reusing other translations{% endcapture %}
 {% capture sectionLeft %}
-While it's bad practice to link to private code, if you know another widget a translated sting, you can use [KQuickControlsPrivate.TranslationContext](https://api.kde.org/frameworks/kdeclarative/html/translationcontext_8h_source.html) to use translations from that domain. Note that a widget's domain starts with `plasma_applet_`, and ends with the widget's `X-KDE-PluginInfo-Name`.
+While it's bad practice to link to private code, if you know another widget a translated string, you can use `i18nd(domain, string, ...)` to use translations from that domain. Note that a widget's domain starts with `plasma_applet_`, and ends with the widget's `X-KDE-PluginInfo-Name`.
 
 Eg: `plasma_applet_com.github.zren.helloworld`
 
-An example can be found in `org.kde.kquickcontrols`'s [KeySequenceItem](https://api.kde.org/frameworks/kdeclarative/html/KeySequenceItem_8qml_source.html).
+An example can be found in `org.kde.image`'s [main.qml](https://github.com/KDE/plasma-workspace/blob/master/wallpapers/image/imagepackage/contents/ui/main.qml) which reuses the same code for the `org.kde.slideshow`.
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
-import org.kde.private.kquickcontrols 2.0 as KQuickControlsPrivate
-
 Item {
-    KQuickControlsPrivate.TranslationContext {
-        id: _tr
-        domain: "kdeclarative5"
-    }
-
     Button {
-        text: _helper.shortcutDisplay
-        tooltip: _tr.i18n("Click on the button, then enter the shortcut like you would in the program.\nExample for Ctrl+A: hold the Ctrl key and press A.")
+        text: i18nd("plasma_applet_org.kde.image", "Open Wallpaper Image")
     }
 }
 {% endhighlight %}
