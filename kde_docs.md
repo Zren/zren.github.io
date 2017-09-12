@@ -218,6 +218,29 @@ QT_SCALE_FACTOR=2 plasmoidviewer -a package -l floating -f horizontal -x 0 -y 0 
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
+{% capture label %}Enable logging{% endcapture %}
+{% capture sectionLeft %}
+By default in Qt 5.9, `console.log()`, which used to write a string to stdout (the Terminal output), is hidden by default. In order to reenable it, we need to run `kwriteconfig5 --file ~/.config/QtProject/qtlogging.ini --group "Rules" --key "qml.debug" "true"` to configure it to do so.
+{% endcapture %}{% capture sectionRight %}
+
+{% highlight qml %}
+Item {
+    Component.onCompleted: {
+        console.log("Hello World")
+    }
+}
+{% endhighlight %}
+{% highlight bash %}
+kwriteconfig5 --file ~/.config/QtProject/qtlogging.ini --group "Rules" --key "qml.debug" "true"
+{% endhighlight %}
+{% highlight ini %}
+[Rules]
+qml.debug=true
+{% endhighlight %}
+
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
+
 <!-- ------- -->
 {% include docHeader.html label="Qml" %}
 
@@ -416,7 +439,7 @@ ColumnLayout {
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
-{% capture label %}Layout.fitHeight: true{% endcapture %}
+{% capture label %}Layout.fillHeight: true{% endcapture %}
 {% capture sectionLeft %}
 
 If you want one item (or several) in a Layout to expand to take up the unused space, you can use `Layout.fitHeight : true`.
