@@ -184,6 +184,14 @@ permalink: /kde/repos/
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop)</a></td>
 	</tr>
 	<tr>
+		<td>Panel</td>
+		<td><a href="https://github.com/KDE/plasma-desktop/tree/master/desktoppackage">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=plasmashell&component=panel&list_id=1465776">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=plasmashell&component=panel">New Bug</a></td>
+		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop)</a></td>
+	</tr>
+	<tr>
 		<td>System Tray</td>
 		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/systemtray">GitHub</a></td>
 		<td><a href="{{kdeBugList}}product=plasmashell&component=System%20Tray&list_id=1408524">All Bugs</a></td>
