@@ -215,6 +215,14 @@ permalink: /kde/repos/
 		<td><a href="{{phabDiffsDesktop}}">Pull Requests</a></td>
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Desktop)</a></td>
 	</tr>
+	<tr>
+		<td>Vault</td>
+		<td><a href="https://github.com/KDE/plasma-vault/tree/master/plasma">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=Plasma%20Vault&list_id=1469737">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=plasmashell&component=Plasma%20Vault">New Bug</a></td>
+		<td><a href="https://phabricator.kde.org/differential/query/xviPAQ7cuNOx/#R">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Vault)</a></td>
+	</tr>
 </table>
 
 
