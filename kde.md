@@ -421,9 +421,10 @@ qdbus org.kde.KWin /KWin reconfigure
   <https://bugs.chromium.org/p/chromium/issues/detail?id=442111>
 
 {% assign i = i | plus: 1 %}
-* {:#bug-{{ i }}} Missing minimize/close buttons when not using systems titlebars when maximized in Chrome
-  <https://bugs.chromium.org/p/chromium/issues/detail?id=375650>
+* {:#bug-{{ i }}} ~~Missing minimize/close buttons when not using systems titlebars when maximized in Chrome
+  <https://bugs.chromium.org/p/chromium/issues/detail?id=594490>
   Workaround (disables progress bars in taskbar): `sudo apt remove libunity9`
+  Fixed in Chrome v63.
 
 {% assign i = i | plus: 1 %}
 * {:#bug-{{ i }}} Chrome v58: un-minimize zoom animation
