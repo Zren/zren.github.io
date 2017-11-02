@@ -82,7 +82,7 @@ ssh-copy-id -p 2222 neondev@localhost
 I've aliased the following in my `~/.bashrc` so all I need to type is `neondev` to start in my Code directory.
 
 {% highlight bash %}
-alias neondev='ssh -t -p 2222 neondev@localhost "cd ~/Code ; bash"'
+alias neondev='ssh -t -p 2222 neondev@localhost "cd ~/Code ; bash -l"'
 {% endhighlight %}
 
 Now open the Dolphin file browser (in the Host OS) and browse to:
