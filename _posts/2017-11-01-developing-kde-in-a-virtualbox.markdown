@@ -44,7 +44,8 @@ After finishing creating the virtualbox, right click on it and open it's Setting
 
 Click Okay and close the settings, then start the virtual machine.
 
-Install KDE Neon
+
+## Installing KDE Neon
 
 * Create a new user called `neondev`. Use the password `neondev` so you don't forget it.
 * When it asks you to remove the disk before restarting:
@@ -64,7 +65,7 @@ Inside the virtual machine, open the terminal and install openssh-server.
 sudo apt install openssh-server
 {% endhighlight %}
 
-We previously port forwarded the virtual machines port 22 (SSH) to port 2222 on the host OS.
+We previously port forwarded the virtual machines port 22 (SSH) to port 2222 on the host OS when configuring the VM. So we can now connect to it.
 
 Open up your terminal in your Host OS. You can now connect to it's terminal with:
 
@@ -78,11 +79,55 @@ It will prompt you for your password (`neondev`). If you want to skip the passwo
 ssh-copy-id -p 2222 neondev@localhost
 {% endhighlight %}
 
+I've aliased the following in my `~/.bashrc` so all I need to type is `neondev` to start in my Code directory.
 
-Now open dolphin (in the Host OS) and browse to:
+{% highlight bash %}
+alias neondev='ssh -t -p 2222 neondev@localhost "cd ~/Code ; bash"'
+{% endhighlight %}
+
+Now open the Dolphin file browser (in the Host OS) and browse to:
 
 {% highlight bash %}
 fish://neondev@localhost:2222/home/neondev/
 {% endhighlight %}
 
-Congrats, now you can develop with your current tools and test with a fresh environment without affecting your day to day OS.
+Save it as a favourite so you can easily navigate to it later.
+
+Congrats, you've now linked the virtual machine enough to develop with your current dev tools (at full speed), with the ability to build and test with a secluded environment that won't break your day to day OS.
+
+
+## Building a KDE Package
+
+I want to modify `frameworksintegration`. A mirror of the source code [can be found on GitHub](https://github.com/KDE/frameworkintegration).
+
+First we download the source with:
+
+{% highlight bash %}
+git clone git@github.com:KDE/frameworkintegration.git
+{% endhighlight %}
+
+Since KDE Neon already packages the code we want to build, we can find it with `apt search frameworkintegration`.
+
+
+{% highlight bash %}
+$ apt search frameworkintegration
+Sorting... Done
+Full Text Search... Done
+frameworkintegration/xenial,now 5.39.0-0neon+16.04+xenial+build42 amd64 [installed]
+  KF5 cross-framework integration plugins
+
+frameworkintegration-dbg/xenial 5.18.0-0ubuntu1 amd64
+  KF5 cross-framework integration plugins - debug files
+
+frameworkintegration-dbgsym/xenial 5.39.0-0neon+16.04+xenial+build42 amd64
+  Debug symbols for frameworkintegration
+{% endhighlight %}
+
+Looks like neon packages it under the name `frameworkintegration`. We can now install the dependencies with:
+
+{% highlight bash %}
+sudo apt-get build-dep frameworkintegration
+{% endhighlight %}
+
+
+
