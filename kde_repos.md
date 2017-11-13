@@ -366,6 +366,14 @@ permalink: /kde/repos/
 		<td><a>New PR</a></td>
 	</tr>
 	<tr>
+		<td>Konversation</td>
+		<td><a href="https://github.com/KDE/konversation">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=konversation&list_id=1475432">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=konversation">New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a>New PR</a></td>
+	</tr>
+	<tr>
 		<td>Krita</td>
 		<td><a href="https://github.com/KDE/krita">GitHub</a></td>
 		<td><a href="{{kdeBugList}}product=krita&list_id=1444104">All Bugs</a></td>
