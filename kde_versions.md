@@ -99,6 +99,13 @@ a:not([href]):hover {
     <tr>
       <td><a href="http://www.kubuntu.org/">Kubuntu</a> 17.10</td>
       <td title="qt">?</td>
+      <td title="frameworks">5.38</td>
+      <td title="plasma">5.10.5</td>
+      <td title="apps">17.04.3</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.kubuntu.org/">Kubuntu</a> 18.04</td>
+      <td title="qt">?</td>
       <td title="frameworks">?</td>
       <td title="plasma">?</td>
       <td title="apps">?</td>
@@ -165,6 +172,75 @@ a:not([href]):hover {
   </thead>
   <tbody>
 
+    <tr>
+      <td><a href="https://www.kde.org/announcements/plasma-5.11.5.php">Plasma 5.11.5</a></td>
+      <td><a>/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+      <td>
+        <ul>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.kde.org/announcements/plasma-5.11.4.php">Plasma 5.11.4</a></td>
+      <td><a>/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+      <td>
+        <ul>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.kde.org/announcements/plasma-5.11.3.php">Plasma 5.11.3</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/7bep5t/kde_plasma_5113_bugfix_release_for_november/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+      <td>
+        <ul>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.kde.org/announcements/plasma-5.11.2.php">Plasma 5.11.2</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/78gtns/kde_plasma_5112_bugfix_release_for_october/">/r/kde</a></td>
+      <td><a href="https://www.reddit.com/r/linux/comments/78h2tj/kde_plasma_5112_released/">/r/linux</a></td>
+      <td>
+        <ul>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.kde.org/announcements/plasma-5.11.1.php">Plasma 5.11.1</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/76ykst/kde_plasma_5111_bugfix_release_for_october/">/r/kde</a></td>
+      <td>
+        <a href="https://www.reddit.com/r/linux/comments/76z4ag/plasma_5111_released/">/r/linux</a>
+        <a href="https://www.reddit.com/r/linuxmasterrace/comments/772gek/kde_plasma_5111_released/">/r/linuxmasterrace</a>
+      </td>
+      <td>
+        <ul>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.kde.org/announcements/plasma-5.11.0.php">Plasma 5.11.0</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/75gmav/plasma_511_makes_the_desktop_more_powerful/">/r/kde</a></td>
+      <td>
+        <a href="https://www.reddit.com/r/linux/comments/75gn46/plasma_511_makes_the_desktop_more_powerful/">/r/linux</a>
+        <a href="https://www.reddit.com/r/Kubuntu/comments/75kgki/today_kde_publishes_this_autumns_plasma_feature/">/r/Kubuntu</a>
+      </td>
+      <td>
+        <ul>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.kde.org/announcements/plasma-5.10.5.php">Plasma 5.10.5</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/6vg252/kde_plasma_5105_released/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+      <td>
+        <ul>
+        </ul>
+      </td>
+    </tr>
     <tr>
       <td><a href="https://www.kde.org/announcements/plasma-5.10.4.php">Plasma 5.10.4</a></td>
       <td><a href="https://www.reddit.com/r/kde/comments/6o0rjr/kde_plasma_5104_bugfix_release_for_june/">/r/kde</a></td>
