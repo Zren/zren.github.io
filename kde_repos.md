@@ -127,6 +127,14 @@ permalink: /kde/repos/
 		<td><a href="{{phabDiffsFramework}}">Pull Requests</a></td>
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Framework)</a></td>
 	</tr>
+	<tr class="indent">
+		<td>Events: Holidays Plugin</td>
+		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/plasmacalendarintegration">GitHub</a></td>
+		<td><a>All Bugs</a></td>
+		<td><a>New Bug</a></td>
+		<td><a href="{{phabDiffsWorkspace}}">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace)</a></td>
+	</tr>
 	<tr>
 		<td>[Desktop] Folder View</td>
 		<td><a href="https://github.com/KDE/plasma-desktop/tree/master/containments/desktop/">GitHub</a></td>
