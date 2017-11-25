@@ -176,6 +176,14 @@ permalink: /kde/repos/
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Addons)</a></td>
 	</tr>
 	<tr>
+		<td>Network Manager</td>
+		<td><a href="https://github.com/KDE/plasma-nm">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=plasma-nm&list_id=1477710">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=plasma-nm">New Bug</a></td>
+		<td><a href="{{phabDiffs}}zTZoO20shXlW/#R">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: Repo: Plasma Network Management Applet)</a></td>
+	</tr>
+	<tr>
 		<td>Notifications</td>
 		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/notifications">GitHub</a></td>
 		<td><a href="{{kdeBugList}}product=plasmashell&component=Notifications&list_id=1453849">All Bugs</a></td>
