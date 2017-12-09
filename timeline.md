@@ -57,6 +57,60 @@ h3 + .tags {
 ## 2017
 
 
+### Plasma5 Widget - Volume Slider
+
+**Source:** <https://github.com/Zren/plasma-applets/tree/master/volumeslider>
+
+After convicing my parents to use Linux on their TV PC, I needed to simplify controlling the volume for them. So I stripped a bunch of stuff out of the Win7 Volume Mixer widget for a simple horizontal slider that sits in the panel that you see in various panels in /r/unixporn.
+
+
+
+### Plasma5 Wallpaper - Inactive Blur Wallpaper
+
+**Source:** <https://github.com/Zren/plasma-wallpapers/tree/master/inactiveblur>
+
+Someone on /r/unixporn had the idea of blurring the wallpaper when there was an active window, then bring it into focus when all windows are closed. I recreated the effect for plasma.
+
+
+### Plasma5 Wallpaper - Animated Hue Wallpaper
+
+**Source:** <https://github.com/Zren/plasma-wallpapers/tree/master/animatedhue>
+
+I made a simple wallpaper plugin that would shift the hue of a wallpaper every few seconds/minutes. Creating a cheap "animated wallpaper".
+
+
+### Plasma5 Widget - Workout Timer
+
+While trying to rewrite a more customizable timer, I tried creating a multi staged timer for a complete workout. It has 5s to 15s rest period to setup the next stretch. I also downloaded a few Text To Speech (TTS) phrases from google's API when a workout started and ended.
+
+
+### Dolphin - Personal Fork
+
+**Source:** <https://github.com/Zren/dolphin>
+
+![](https://i.imgur.com/6ESZLS9.png){:.pull-right}
+
+KDE's file manager was the most feature complete when compared to Window's File Explorer. The major reason I didn't stick with XFCE was because there wasn't any development in Thunar, and there wasn't a quick way to edit the addressbar by clicking the "empty area to the right" while keeping breadcrumb navigation. Dolphin also had a build in terminal at the bottom which was amazing.
+
+Unfortunately, there were also a few things I missed. A nice "progress bar" that displayed how much space was left on the device. This is present in other file managers directly on the sidebar. Windows also had a "This PC" view which listed all drives, removable drives and other things. So I tried drawing a simple progressbar if the folder was a mount point. I even make it change color to red when it's 95% full.
+
+One annoying thing about Linux, is `~/.hiddenFiles` which clutter the home folder. If you hide them all the time, there's no problem. But if you're a power user who just wants them always visible, then you'll find that they're always sorted at the top. If you have enough hidden folders, you might have to scroll down just to see `~/Desktop`. This isn't ideal, so I patched it to sort all hidden folders and files at the bottom reguardless of the current sort.
+
+Another thing that annoyed me was that I had to waste an entire row or column to have 3-4 toolbar buttons (back/forward/up). So I made a "dockable panel" that only contained those buttons.
+
+
+### Plasma5 Widget - System Dash
+
+A quick fullscreen view to see wifi speed, disk I/O, disk space, fan speeds, temperatures, and cpu/ram use. All mesured in graphs over time so that you can see how far the temperature/fan speed dropped after you exited a game. The panel button is even a CPU graph (that only shows the last 7 seconds) styled like the KSysGuard icon.
+
+
+### Plasma5 Widget - Terminal Update
+
+**Source:** <https://github.com/Zren/plasma-applets/tree/master/terminalupdate>
+
+KDE Discover is still in active development, which isn't the greatest thing for using as a package manager/updater. I'd usually use the terminal to perform updates, so I made a simple modification in the Discover widget to launch my custom bash scripts that call `apt upgrade` in Konsole.
+
+
 ### Plasma5 Widget - Present Windows
 
 **Source:** <https://github.com/Zren/plasma-applets/tree/master/presentwindows>
