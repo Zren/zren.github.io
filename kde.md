@@ -420,12 +420,6 @@ qdbus org.kde.KWin /KWin reconfigure
 * {:#bug-{{ i }}} Tooltips broken in Chrome/Chromium
   <https://bugs.chromium.org/p/chromium/issues/detail?id=442111>
 
-{% assign i = i | plus: 1 %}
-* {:#bug-{{ i }}} Chrome v58: un-minimize zoom animation
-  <https://bugs.chromium.org/p/chromium/issues/detail?id=695943>
-  A future chrome update should fix this.
-
-
 -----
 
 {% assign i = i | plus: 1 %}
