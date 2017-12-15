@@ -7,6 +7,14 @@ layout: page
     max-width: -webkit-calc(1024px - (30px * 2));
     max-width: calc(1024px - (30px * 2));
 }
+
+@media screen and (min-width: 1440px) {
+    .nav-contents {
+        position: absolute;
+        right: calc((100vw - 1024px)/2 * -1);
+        width: calc((100vw - 1024px)/2 - 30px);
+    }
+}
 </style>
 
 {{ content }}
