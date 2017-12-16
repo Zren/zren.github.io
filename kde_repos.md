@@ -382,6 +382,14 @@ permalink: /kde/repos/
 		<td><a>New PR</a></td>
 	</tr>
 	<tr>
+		<td>KDialog</td>
+		<td><a href="https://github.com/KDE/kdialog">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=kdialog&list_id=1481711">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=kdialog">New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a>New PR</a></td>
+	</tr>
+	<tr>
 		<td>Konversation</td>
 		<td><a href="https://github.com/KDE/konversation">GitHub</a></td>
 		<td><a href="{{kdeBugList}}product=konversation&list_id=1475432">All Bugs</a></td>
