@@ -100,6 +100,7 @@ pre > code {
   margin-left: -1em;
   font-weight: bold;
   opacity: 0;
+  user-select: none;
 
   &,
   &:hover,
