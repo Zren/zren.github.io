@@ -111,6 +111,22 @@ sudo apt install -y playonlinux
 {% endhighlight %}
 
 
+### LibreOffice (Microsoft Office/Word Substitute)
+
+(Optional) If you want a more up to date version of libreoffice (v5.4) vs the LTS version (v5.1), use the following ppa.
+
+{% highlight bash %}
+sudo add-apt-repository ppa:libreoffice/ppa
+sudo apt update
+{% endhighlight %}
+
+Otherwise, install the gtk3 version (since it's designed for it) and the breeze style. We need the Calibri and Cambria replacement fonts otherwise Microsoft Office files will look weird. Lastly we should clean the icon cache just in case.
+
+{% highlight bash %}
+sudo apt install -y libreoffice libreoffice-gtk3 libreoffice-style-* fonts-crosextra-carlito fonts-crosextra-caladea
+rm ~/.cache/icon-cache.kcache
+{% endhighlight %}
+
 
 ## Configuration
 
