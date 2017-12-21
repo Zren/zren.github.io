@@ -123,7 +123,8 @@ sudo apt update
 Otherwise, install the gtk3 version (since it's designed for it) and the breeze style. We need the Calibri and Cambria replacement fonts otherwise Microsoft Office files will look weird. Lastly we should clean the icon cache just in case.
 
 {% highlight bash %}
-sudo apt install -y libreoffice libreoffice-gtk3 libreoffice-style-* fonts-crosextra-carlito fonts-crosextra-caladea
+sudo apt install -y libreoffice libreoffice-gtk3 libreoffice-style-*
+sudo apt install -y fonts-crosextra-carlito fonts-crosextra-caladea
 rm ~/.cache/icon-cache.kcache
 {% endhighlight %}
 
