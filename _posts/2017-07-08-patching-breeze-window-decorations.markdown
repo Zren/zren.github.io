@@ -117,6 +117,8 @@ Here's the diffs for each.
 
 ## 1. Remove the blue (highlight color) line under the titlebar when a window is focused.
 
+> Note: Someone has made this line a config option in breeze's config now.
+
 For this, we just need to comment out where it draws the line. This line is always drawn if the window's titlebar color and the window's background is different which you can [see here](https://github.com/KDE/breeze/blob/2cc0f8ba2da50ca3efa500ebdcc3655c8d0e47f8/kdecoration/breezedecoration.cpp#L154).
 
 ![](https://i.imgur.com/kP0XG9Y.png)
@@ -171,6 +173,8 @@ kwin_x11 --replace & disown
 
 
 ## 2. Remove the triangle in the bottom right when set to No Borders.
+
+> Note: I didn't realize there was a config option to disable this at the time.
 
 For some reason, when you chose "no borders" it adds this stupid little triangle, which is drawn *on top* of the window. For now I've been using "No side borders" which draws a bottom border but I'd like to fix that.
 
