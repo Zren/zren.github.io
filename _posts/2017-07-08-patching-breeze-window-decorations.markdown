@@ -117,7 +117,7 @@ Here's the diffs for each.
 
 ## 1. Remove the blue (highlight color) line under the titlebar when a window is focused.
 
-> Note: Someone has made this line a config option in breeze's config now.
+> Note: Someone has recently made this into a config option in breeze's config.
 
 For this, we just need to comment out where it draws the line. This line is always drawn if the window's titlebar color and the window's background is different which you can [see here](https://github.com/KDE/breeze/blob/2cc0f8ba2da50ca3efa500ebdcc3655c8d0e47f8/kdecoration/breezedecoration.cpp#L154).
 
