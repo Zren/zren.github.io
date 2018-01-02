@@ -253,6 +253,14 @@ permalink: /kde/repos/
 		<td><a>Pull Requests</a></td>
 		<td><a>New PR</a></td>
 	</tr>
+	<tr>
+		<td>Breeze DesktopTheme</td>
+		<td><a href="https://github.com/KDE/plasma-framework/blob/master/src/desktoptheme/breeze/">Git Repo</a></td>
+		<td><a href="{{kdeBugList}}product=frameworks-plasma&list_id=1484319">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=frameworks-plasma">New Bug</a></td>
+		<td><a>Pull Requests</a></td>
+		<td><a>New PR</a></td>
+	</tr>
 </table>
 
 
