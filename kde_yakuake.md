@@ -42,8 +42,8 @@ So add this to your `~/.bashrc`.
 # \a     an ASCII bell character (07)
 # \n     newline
 # \[     begin a sequence of non-printing characters,
-#        which could be used to embed a terminal con­
-#        trol sequence into the prompt
+#        which could be used to embed a terminal
+#        con­trol sequence into the prompt
 # \w     the current working directory
 ### https://wiki.archlinux.org/index.php/Bash/Prompt_customization#Colors
 # \e[1      bold
