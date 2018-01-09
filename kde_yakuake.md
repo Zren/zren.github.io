@@ -78,12 +78,12 @@ PS1="$PS1_a$PS1_b$PS1_c$PS1_d"
 
 > Note: This was based off the [KDE3 Service menu on the KDE Store](https://store.kde.org/p/998412/).
 
-Create `~/bin/yakuakehere`
+Create the `/usr/local/bin/yakuakehere` command.
 
 {% highlight bash %}
-mkdir -p ~/bin
-touch ~/bin/yakuakehere
-chmod +x ~/bin/yakuakehere
+sudo touch /usr/local/bin/yakuakehere
+sudo chmod +x /usr/local/bin/yakuakehere
+SUDO_EDITOR=kwrite sudoedit /usr/local/bin/yakuakehere
 {% endhighlight %}
 
 with the contents:
