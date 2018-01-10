@@ -8,6 +8,8 @@ The Yakuake terminal is installed by default on some ditros. It's basically a fa
 
 There are a few mods I apply to it to make it and Konsole look better.
 
+![](https://i.imgur.com/baM5xrA.png)
+
 ## 1. Use a skin with a thin/hidden titlebar.
 
 I personally use [a skin I made](https://store.kde.org/p/1165686/) based on Sublime Text 3 called Soda Dark.
@@ -130,3 +132,12 @@ Comment=Opens a new tab in Yakuake at the current folder
 {% endhighlight %}
 
 then finally run `kbuildsycoca5` to apply the changes.
+
+## 7. Make shortcuts similiar to the web browser
+
+* Close Session: `Ctrl+W`
+* New Session: `Ctrl+T`
+* Next Session: `Ctrl+Tab`
+* Previous Session: `Ctrl+Shift+Tab`
+
+I also set the global shortcut to toggle Yakuake to be <code>Meta+`</code> (the backtick underneath `~`).
