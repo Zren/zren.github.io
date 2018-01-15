@@ -173,6 +173,17 @@ a:not([href]):hover {
   <tbody>
 
     <tr>
+      <td><a href="https://www.kde.org/announcements/plasma-5.11.95.php">Plasma 5.12.0 Beta</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/7qmc4u/plasma_512_lts_beta_makes_your_desktop_smoother/">/r/kde</a></td>
+      <td>
+        <a href="https://www.reddit.com/r/linux/comments/7qmc2p/plasma_512_lts_beta_makes_your_desktop_smoother/">/r/linux</a>
+      </td>
+      <td>
+        <ul>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td><a href="https://www.kde.org/announcements/plasma-5.11.5.php">Plasma 5.11.5</a></td>
       <td><a href="https://www.reddit.com/r/kde/comments/7nqfbh/kde_plasma_5115_bugfix_release_for_january/">/r/kde</a></td>
       <td><a>/r/linux</a></td>
@@ -232,7 +243,6 @@ a:not([href]):hover {
         </ul>
       </td>
     </tr>
-
     <tr>
       <td><a href="https://www.kde.org/announcements/plasma-5.10.95.php">Plasma 5.11.0 Beta</a></td>
       <td><a href="https://www.reddit.com/r/kde/comments/701b76/plasma_511_beta_makes_the_desktop_more_powerful/">/r/kde</a></td>
