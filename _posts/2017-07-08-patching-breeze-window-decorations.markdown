@@ -117,7 +117,7 @@ Here's the diffs for each.
 
 ## 1. Remove the blue (highlight color) line under the titlebar when a window is focused.
 
-> Note: Someone has recently made this into a config option in breeze's config, and will be available in Breeze's settings in Plasma 5.12.
+> Note: Someone has [recently made this into a config option in breeze's config](https://phabricator.kde.org/D8362), and will be available in Breeze's settings in Plasma 5.12.
 
 For this, we just need to comment out where it draws the line. This line is always drawn if the window's titlebar color and the window's background is different which you can [see here](https://github.com/KDE/breeze/blob/2cc0f8ba2da50ca3efa500ebdcc3655c8d0e47f8/kdecoration/breezedecoration.cpp#L154).
 
@@ -203,7 +203,7 @@ index 53d53ee..43698c1 100644
 
 ## 3. Attempt to draw the shadows as if the light source is coming from the top/north instead of the top-left.
 
-> Note: As of Plasma 5.12, the shadows are centered.
+> Note: As of Plasma 5.12, [the shadows are centered](https://phabricator.kde.org/D9549).
 
 This was a request from someone in IRC one time since it's how OS X does shadows. So I'd already spotted where things were handled. Unfortunately, it was a bit more complicated than I thought, resulting in a bit of trial and error. I'm still not 100% sure I did it correctly, but it works.
 
