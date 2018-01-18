@@ -248,3 +248,10 @@ index 80fcf73..e26b0e1 100644
  
          if( widget->inherits( "QBalloonTip" ) )
 {% endhighlight %}
+
+
+### Sierra Breeze
+
+Lastly, I would like to point you to the SierraBreeze project, which has forked the C++ Breeze decorations we fussed with above to look like Mac OS. Unlike a `.svg` Aurorae based theme, it has several options and can follow the KDE/app specific color scheme like Breeze can.
+
+https://github.com/ishovkun/SierraBreeze
