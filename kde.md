@@ -434,7 +434,7 @@ qdbus org.kde.KWin /KWin reconfigure
 # Known Bugs
 
 {% assign i = i | plus: 1 %}
-* {:#bug-{{ i }}} Tooltips broken in Chrome/Chromium
+* {:#bug-{{ i }}} Tooltips broken in Chrome/Chromium (Fixed?)
   <https://bugs.chromium.org/p/chromium/issues/detail?id=442111>
 
 -----
