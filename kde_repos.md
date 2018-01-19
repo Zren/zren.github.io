@@ -160,6 +160,22 @@ permalink: /kde/repos/
 		<td><a href="{{phabNewDiff}}">New PR (Repo: Plasma Workspace)</a></td>
 	</tr>
 	<tr>
+		<td>KDE Connect</td>
+		<td><a href="https://github.com/KDE/kdeconnect-kde/tree/master/plasmoid">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=kdeconnect&list_id=1488080">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=kdeconnect">New Bug</a></td>
+		<td><a href="https://phabricator.kde.org/differential/query/ukrPN51zGqf8/#R">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: KDE Connect)</a></td>
+	</tr>
+	<tr class="indent">
+		<td>Android App</td>
+		<td><a href="https://github.com/KDE/kdeconnect-android">GitHub</a></td>
+		<td><a href="{{kdeBugList}}product=kdeconnect&list_id=1488080">All Bugs</a></td>
+		<td><a href="{{kdeNewBug}}product=kdeconnect&component=android-application">New Bug</a></td>
+		<td><a href="https://phabricator.kde.org/differential/query/O5uLyNhBHBeF/#R">Pull Requests</a></td>
+		<td><a href="{{phabNewDiff}}">New PR (Repo: KDE Connect - Android Application)</a></td>
+	</tr>
+	<tr>
 		<td>Media Player [Controller]</td>
 		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/mediacontroller">GitHub</a></td>
 		<td><a href="{{kdeBugList}}product=plasmashell&component=Media%20Player&list_id=1428170">All Bugs</a></td>
