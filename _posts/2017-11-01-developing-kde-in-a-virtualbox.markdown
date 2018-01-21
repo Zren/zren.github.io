@@ -29,7 +29,6 @@ Create a new virtual hard disk.
 After finishing creating the virtualbox, right click on it and open it's Settings.
 
 * System Tab > Processor Tab > Give it 2-3 CPUs. Leave at least 1 CPU for your Host OS.
-* Display Tab > Acceleration > Check enabled 3D Acceleration if you can.
 * Storage Tab
     1. Click the "DVD disk icon" / Add Optical Drive
     2. Choose the neon iso.
