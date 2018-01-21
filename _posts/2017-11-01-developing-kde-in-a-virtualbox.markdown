@@ -78,19 +78,25 @@ It will prompt you for your password (`neondev`). If you want to skip the passwo
 ssh-copy-id -p 2222 neondev@localhost
 {% endhighlight %}
 
-I've aliased the following in my `~/.bashrc` so all I need to type is `neondev` to start in my Code directory.
+## Installing VirtualBox Additions
+
+Next we need to link our "Code" folder in the host OS to the client OS so that if the client OS breaks, we still have access to the code.
+
+... TODO
+
+Now that's we've installed the VBox Additions, we can now create shared folders.
+
+Go to the NeonDev's Settings and visit the Shared Folders section.
+
+Create a new shared folder with the name `Code` that auto-mounts, and is permanent. Do not make it read only.
+
+After restarting the VM, you should now be able to visit your host OS's folder at `/media/sf_Code`.
+
+I've aliased the following in my Host OS's `~/.bashrc` so all I need is to type `neondev` to start in my Code directory.
 
 {% highlight bash %}
-alias neondev='ssh -t -p 2222 neondev@localhost "cd ~/Code ; bash -l"'
+alias neondev='ssh -t -p 2222 neondev@localhost "cd /media/sf_Code ; bash -l"'
 {% endhighlight %}
-
-Now open the Dolphin file browser (in the Host OS) and browse to:
-
-{% highlight bash %}
-fish://neondev@localhost:2222/home/neondev/
-{% endhighlight %}
-
-Save it as a favourite so you can easily navigate to it later.
 
 Congrats, you've now linked the virtual machine enough to develop with your current dev tools (at full speed), with the ability to build and test with a secluded environment that won't break your day to day OS.
 
@@ -103,6 +109,7 @@ First we download the source with:
 
 {% highlight bash %}
 git clone git@github.com:KDE/frameworkintegration.git
+cd frameworkintegration
 {% endhighlight %}
 
 Since KDE Neon already packages the code we want to build, we can find it with `apt search frameworkintegration`.
@@ -127,6 +134,27 @@ Looks like neon packages it under the name `frameworkintegration`. We can now in
 {% highlight bash %}
 sudo apt-get build-dep frameworkintegration
 {% endhighlight %}
+
+Next we test building the project.
+
+{% highlight bash %}
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug -DBUILD_TESTING=ON -DKDE_INSTALL_USE_QT_SYS_PATHS=ON
+make
+sudo make install
+{% endhighlight %}
+
+I've personally made a `/usr/local/bin/kmake` script to simplify the above.
+
+<https://gist.github.com/Zren/55ef7c10088ee69480ae73a594e00456>
+
+{% highlight bash %}
+SUDO_EDITOR=kwrite sudoedit /usr/local/bin/kmake
+sudo chmod +x /usr/local/bin/kmake
+{% endhighlight %}
+
+If all went well, we can move onto trying to modify the code.
 
 
 
