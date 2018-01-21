@@ -62,14 +62,14 @@ a:not([href]):hover {
       <td title="apps">17.04.2</td>
     </tr>
     <tr>
-      <td><a href="https://chakralinux.org/">KDE Neon</a> User</td>
+      <td><a href="https://neon.kde.org/">KDE Neon</a> User</td>
       <td title="qt">5.9.1</td>
       <td title="frameworks">5.40</td>
       <td title="plasma">5.11.3</td>
       <td title="apps">17.08.3</td>
     </tr>
     <tr>
-      <td><a href="https://chakralinux.org/">KDE Neon</a> User LTS</td>
+      <td><a href="https://neon.kde.org/">KDE Neon</a> User LTS</td>
       <td title="qt">5.7.1</td>
       <td title="frameworks">5.40</td>
       <td title="plasma">5.8.8</td>
