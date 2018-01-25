@@ -102,7 +102,7 @@ permalink: /kde/repos/
 	</tr>
 	<tr>
 		<td>Browser Integration</td>
-		<td><a href="https://github.com/kde/plasma-browser-integration">GitHub</a></td>
+		<td><a href="https://github.com/KDE/plasma-browser-integration">GitHub</a></td>
 		<td><a href="{{kdeBugList}}product=plasma-browser-integration&list_id=1451104">All Bugs</a></td>
 		<td><a href="{{kdeNewBug}}product=plasma-browser-integration">New Bug</a></td>
 		{% include phabLinks.html
