@@ -46,6 +46,9 @@ permalink: /kde/repos/
 .repolist td a:not([href]) {
 	color: #aaa;
 }
+.repolist td a:not([href]):hover {
+	text-decoration: none;
+}
 </style>
 
 
