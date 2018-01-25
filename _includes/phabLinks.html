@@ -1,0 +1,3 @@
+<td><a {% if include.phabRepo %}href="https://phabricator.kde.org/source/{{include.phabRepo}}/"{% endif %}>Phabricator</a></td>
+<td><a {% if include.phabDiffQuery %}href="https://phabricator.kde.org/differential/query/{{include.phabDiffQuery}}/#R"{% endif %}>Pull Requests</a></td>
+<td><a {% if include.phabRepoName %}href="https://phabricator.kde.org/differential/diff/create/"{% endif %}>New PR {% if include.phabRepoName %}(Repo: {{include.phabRepoName}}){% endif %}</a></td>
