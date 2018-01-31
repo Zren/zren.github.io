@@ -3,6 +3,8 @@ layout: post
 title: Installing KPatience Solitaire Suite
 ---
 
+![](https://i.imgur.com/39JnyH1.png)
+
 I was recently asked "where's solitaire"? Since they were using KDE Neon, I skimmed to Ubuntu LTS apps. There's the `aisleriot` solitaire that uses Gtk, but there's also [KPatience](https://www.kde.org/applications/games/kpatience/) (`kpat`) in the KDE Apps. After installing, I noticed it only created 1 launcher called KPatience, which isn't friendly to a branch new linux user. So I made a few `.desktop` launchers for the 3 more popular games: Solitaire (aka Klondike), Spider Solitaire, and FreeCell.
 
 The icons are from various Android games found by [googling](https://www.google.com/search?q=solitaire+icon+type:png&tbm=isch) `solitaire icon type:png` image search.
@@ -89,3 +91,19 @@ X-DocPath=kpat/index.html
 ## Apply Changes
 
 Finally, we need to run `kbuildsycoca5` to update the list of apps in the panel launcher and KRunner.
+
+## Settings
+
+Next I changed a few default settings. I turned on sound effects, changed the theme, and made the "new game" buttons less confusing.
+
+* Settings > Check: Play Sounds
+* Settings > Check: Remember State On Exit
+* Settings > Change Appearance > Card Deck: Jolly Royal
+* Settings > Change Appearance > Game Theme: Green Blaze
+* Settings > Configure Toolbars >
+	* New Game
+		* Icon: "arrow-left"
+		* Text: "Switch Game"
+	* New Deal
+		* Icon: "tab-new"
+		* Text: "New Game"
