@@ -372,7 +372,7 @@ qdbus org.kde.KWin /KWin reconfigure
 * {:#cfg-{{ i }}} Enable Hardware Acceleration
   If you notice tearing while playing video, check `chrome://gpu` and see if it says hardware acceleration is unavailable. It's very likely that it's just that chrome doesn't recognize that it can use your GPU.
   > [Origional Article](http://www.webupd8.org/2014/01/enable-hardware-acceleration-in-chrome.html)
-  Go to `chrome://flags`, search for "Override software rendering list", enable it and restart Chrome.
+  Go to `chrome://flags#ignore-gpu-blacklist`, search for "Override software rendering list", enable it and restart Chrome.
 
 
 ### Steam
