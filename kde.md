@@ -374,6 +374,11 @@ qdbus org.kde.KWin /KWin reconfigure
   > [Origional Article](http://www.webupd8.org/2014/01/enable-hardware-acceleration-in-chrome.html)
   Go to `chrome://flags#ignore-gpu-blacklist`, search for "Override software rendering list", enable it and restart Chrome.
 
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Don't use native Linux notifications
+  Since Chrome v64, Chrome now uses native notifications. If you prefer Chrome's however, you can still use them.
+  Go to `chrome://flags#enable-native-notifications`, search for "Enable native notifications", disable it and restart Chrome.
+
 
 ### Steam
 
