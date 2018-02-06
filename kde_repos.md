@@ -172,8 +172,7 @@ permalink: /kde/repos/
 	<tr>
 		<td>Minimize All</td>
 		<td><a href="https://github.com/KDE/kdeplasma-addons/tree/master/applets/minimizeall">GitHub</a></td>
-		<td><a>All Bugs</a></td>
-		<td><a>New Bug</a></td>
+		{% include kdeBugs.html product='kdeplasma-addons&component=General' %}
 		{% include phabLinks.html
 			phabRepo='kdeplasma-addons'
 			phabRepoName='Plasma Addons'
@@ -225,6 +224,16 @@ permalink: /kde/repos/
 		<td><a href="https://github.com/KDE/plasma-desktop/blob/master/applets/taskmanager">GitHub</a></td>
 		{% include kdeBugs.html product='plasmashell&component=Icons-only%20Task%20Manager' %}
 		{% include phabLinksDesktop.html %}
+	</tr>
+	<tr>
+		<td>Timer</td>
+		<td><a href="https://github.com/KDE/kdeplasma-addons/tree/master/applets/timer">GitHub</a></td>
+		{% include kdeBugs.html product='kdeplasma-addons&component=timer' %}
+		{% include phabLinks.html
+			phabRepo='kdeplasma-addons'
+			phabRepoName='Plasma Addons'
+			phabDiffQuery='iwcJtI0heMfD'
+		%}
 	</tr>
 	<tr>
 		<td>Vault</td>
