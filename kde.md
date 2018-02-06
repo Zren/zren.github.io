@@ -442,19 +442,6 @@ qdbus org.kde.KWin /KWin reconfigure
 * {:#bug-{{ i }}} Tooltips broken in Chrome/Chromium (Fixed?)
   <https://bugs.chromium.org/p/chromium/issues/detail?id=442111>
 
------
-
-{% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} 
-
-{% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} 
-
-{% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} 
-
-
-
 <script>
 function el(html) {
   var e = document.createElement('div');
