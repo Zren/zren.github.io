@@ -383,13 +383,6 @@ qdbus org.kde.KWin /KWin reconfigure
 ### Steam
 
 {% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} PixelVision2 Skin
-  `cd ~/.steam/skins `
-  `git clone https://github.com/somini/Pixelvision2.git`
-  Steam > Settings
-  Interface Tab > Select Skin: default skin => PixelVision2
-
-{% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Hide “Big Picture”, etc in the System Tray Context Menu
   Steam > Settings > Interface Tab
   Set Taskbar Preferences > Only Check: Library, Exit Steam
