@@ -154,6 +154,7 @@ a:not([href]):hover {
 .table.versiontable tbody td {
   text-align: left;
 }
+.table.versiontable td:nth-of-type(2) a,
 .table.versiontable td:nth-of-type(3) a {
   display: block;
 }
@@ -172,6 +173,41 @@ a:not([href]):hover {
   </thead>
   <tbody>
 
+    <tr>
+      <td><a href="https://www.kde.org/announcements/plasma-5.12.1.php">Plasma 5.12.1</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/7xaa14/kde_plasma_5121_bugfix_release_for_february/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+      <td>
+        <ul>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.kde.org/announcements/plasma-5.12.0.php">Plasma 5.12.0</a></td>
+      <td>
+        <a href="https://www.reddit.com/r/kde/comments/7vnxhc/plasma_512_is_out_and_it_is_faster_stabler_and/">/r/kde</a>
+        <a href="https://www.reddit.com/r/kde/comments/7vpwb5/plasma_512_bug_thread/">/r/kde bug thread</a>
+      </td>
+      <td>
+        <a href="https://www.reddit.com/r/linux/comments/7vnxt7/kde_plasma_5120_lts_speed_stability_simplicity/">/r/linux</a>
+        <a href="https://www.reddit.com/r/linux/comments/7vnxo1/plasma_512_is_out_and_it_is_faster_stabler_and/">/r/linux thread #2</a>
+        <a href="https://www.reddit.com/r/linuxmasterrace/comments/7vufy7/kde_plasma_5120_lts_speed_stability_simplicity/">/r/linuxmasterrace</a>
+        <a href="https://www.reddit.com/r/linuxunplugged/comments/7vszzn/the_new_plasma_512_lts_is_out_with_a_focus_on/">/r/linuxunplugged</a>
+      </td>
+      <td>
+        <ul>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.kde.org/announcements/plasma-5.11.5.php">Plasma 5.11.5</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/7nqfbh/kde_plasma_5115_bugfix_release_for_january/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+      <td>
+        <ul>
+        </ul>
+      </td>
+    </tr>
     <tr>
       <td><a href="https://www.kde.org/announcements/plasma-5.11.95.php">Plasma 5.12.0 Beta</a></td>
       <td><a href="https://www.reddit.com/r/kde/comments/7qmc4u/plasma_512_lts_beta_makes_your_desktop_smoother/">/r/kde</a></td>
