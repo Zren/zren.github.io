@@ -80,6 +80,17 @@ permalink: /kde/repos/
 		{% include phabLinksKwin.html %}
 	</tr>
 	<tr>
+		<td>Active Window Control</td>
+		<td><a href="https://github.com/kotelnik/plasma-applet-active-window-control">GitHub</a></td>
+		<td><a>All Bugs</a></td>
+		<td><a>New Bug</a></td>
+		{% include phabLinks.html
+			phabRepo='plasma-active-window-control'
+			phabRepoName='Active Window Control Applet for Plasma'
+			phabDiffQuery='sv1JhxTYnBq6'
+		%}
+	</tr>
+	<tr>
 		<td>Audio Volume (plasma-pa)</td>
 		<td><a href="https://github.com/KDE/plasma-pa">GitHub</a></td>
 		<td><a href="{{kdeBugList}}product=plasma-pa">All Bugs</a></td>
