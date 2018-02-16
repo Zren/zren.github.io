@@ -435,6 +435,14 @@ qdbus org.kde.KWin /KWin reconfigure
 * {:#bug-{{ i }}} Tooltips broken in Chrome/Chromium (Fixed?)
   <https://bugs.chromium.org/p/chromium/issues/detail?id=442111>
 
+
+{% assign i = i | plus: 1 %}
+* {:#bug-{{ i }}} Slideshow wallpaper memory leak / heavy cpu usage
+  <https://bugs.kde.org/show_bug.cgi?id=368838>
+  Sadly, the workaround is to just not use the slideshow.
+
+
+
 <script>
 function el(html) {
   var e = document.createElement('div');
