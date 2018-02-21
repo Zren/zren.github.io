@@ -149,6 +149,12 @@ permalink: /kde/repos/
 		{% include phabLinksWorkspace.html %}
 	</tr>
 	<tr>
+		<td>Device Notifier</td>
+		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/devicenotifier">GitHub</a></td>
+		{% include kdeBugs.html product='plasmashell&component=Device%20Notifier' %}
+		{% include phabLinksWorkspace.html %}
+	</tr>
+	<tr>
 		<td>Global Menu (AppMenu)</td>
 		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/appmenu">GitHub</a></td>
 		{% include kdeBugs.html product='plasmashell&component=Global%20Menu' %}
