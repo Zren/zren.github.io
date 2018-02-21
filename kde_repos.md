@@ -452,6 +452,34 @@ permalink: /kde/repos/
 </table>
 
 
+
+## KDE Services
+
+<table class="repolist">
+	<tr>
+		<td>KScreenLocker</td>
+		<td><a href="https://github.com/KDE/kscreenlocker">GitHub</a></td>
+		{% include kdeBugs.html product='kscreenlocker' %}
+		{% include phabLinks.html
+			phabRepo='kscreenlocker'
+			phabRepoName='KScreenLocker'
+			phabDiffQuery='54ALVMVJRT2S'
+		%}
+	</tr>
+	<tr>
+		<td>Powerdevil</td>
+		<td><a href="https://github.com/KDE/powerdevil">GitHub</a></td>
+		{% include kdeBugs.html product='Powerdevil' %}
+		{% include phabLinks.html
+			phabRepo='powerdevil'
+			phabRepoName='Powerdevil'
+			phabDiffQuery='bOaiSgfPQGoI'
+		%}
+	</tr>
+</table>
+
+
+
 ## Other
 
 <table class="repolist">
