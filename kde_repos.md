@@ -449,6 +449,16 @@ permalink: /kde/repos/
 			phabDiffQuery='Apm2jNyZrawx'
 		%}
 	</tr>
+	<tr>
+		<td>KSysGuard</td>
+		<td><a href="https://github.com/KDE/ksysguard">GitHub</a></td>
+		{% include kdeBugs.html product='ksysguard' %}
+		{% include phabLinks.html
+			phabRepo='ksysguard'
+			phabRepoName='KSysguard'
+			phabDiffQuery='sL4hOEh5QL6Z'
+		%}
+	</tr>
 </table>
 
 
