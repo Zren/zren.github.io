@@ -19,7 +19,7 @@ cd breeze/kdecoration
 When you try to build, you'll probably be missing dependencies, 
 
 {% highlight bash %}
-sudo apt install libkf5config-dev libkdecorations2-dev libqt5x11extras5-dev qtdeclarative5-dev
+sudo apt install libkf5config-dev libkdecorations2-dev libqt5x11extras5-dev qtdeclarative5-dev extra-cmake-modules libkf5guiaddons-dev libkf5configwidgets-dev libkf5windowsystem-dev libkf5coreaddons-dev
 {% endhighlight %}
 
 If you're missing something else, it'll tell you the name, and it's probably [in this list of packages](https://askubuntu.com/a/577334/513249) you can install.
