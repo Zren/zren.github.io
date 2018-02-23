@@ -59,7 +59,7 @@ permalink: /kde/repos/
 	left: -22px;
 	width: 22px;
 	text-align: center;
-	backgound-color: #f00;
+	user-select: none;
 }
 
 .repolist tr.selected td {
