@@ -410,6 +410,16 @@ permalink: /kde/repos/
 		%}
 	</tr>
 	<tr>
+		<td>Falkon</td>
+		<td><a href="https://github.com/KDE/falkon">GitHub</a></td>
+		{% include kdeBugs.html product='Falkon' %}
+		{% include phabLinks.html
+			phabRepo='falkon'
+			phabRepoName='Falkon'
+			phabDiffQuery='a6LykVQZeOj5'
+		%}
+	</tr>
+	<tr>
 		<td>Kdenlive</td>
 		<td><a href="https://github.com/KDE/kdenlive">GitHub</a></td>
 		{% include kdeBugs.html product='kdenlive' %}
