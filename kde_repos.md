@@ -49,6 +49,31 @@ permalink: /kde/repos/
 .repolist td a:not([href]):hover {
 	text-decoration: none;
 }
+
+.repolist {
+	position: relative;
+}
+.repoanchorlink {
+	opacity: 0;
+	position: absolute;
+	left: -22px;
+	width: 22px;
+	text-align: center;
+	backgound-color: #f00;
+}
+
+.repolist tr.selected td {
+	background: #ffe2a8;
+}
+
+.repolist tr.selected .repoanchorlink,
+.repolist tr:hover .repoanchorlink {
+	opacity: 1;
+}
+.repoanchorlink:hover {
+	text-decoration: none;
+}
+
 </style>
 
 
@@ -513,3 +538,22 @@ permalink: /kde/repos/
 		<td><a href="https://phabricator.kde.org/differential/query/advanced/">Search</a></td>
 	</tr>
 </table>
+
+
+<script type="text/javascript">
+	function updateSelectedRow() {
+		var selectedRow = document.querySelector('.repolist tr.selected')
+		if (selectedRow) {
+			selectedRow.classList.remove('selected')
+		}
+		if (window.location.hash) {
+			var selectedAnchor = document.querySelector('.repoanchorlink[href="' + window.location.hash + '"]')
+			if (selectedAnchor) {
+				var tr = selectedAnchor.parentNode.parentNode // $.parent('tr')
+				tr.classList.add('selected')
+			}
+		}
+	}
+	window.addEventListener('hashchange', updateSelectedRow)
+	updateSelectedRow()
+</script>
