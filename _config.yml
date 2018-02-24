@@ -23,6 +23,4 @@ kramdown:
 
 gems:
   - jekyll-feed
-
-plugins_dir:
   - jekyll-redirect-from
