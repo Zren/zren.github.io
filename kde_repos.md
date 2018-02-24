@@ -309,6 +309,23 @@ redirect_from: /projects/kde/repos/
 			phabDiffQuery='xviPAQ7cuNOx'
 		%}
 	</tr>
+	<tr>
+		{% include kdeRepo.html
+			repoName='Weather Forecast'
+			githubLink='https://github.com/KDE/kdeplasma-addons/blob/master/applets/weather'
+			product='kdeplasma-addons&component=weather'
+			phabRepo='kdeplasma-addons'
+			phabRepoName='Plasma Addons'
+			phabDiffQuery='iwcJtI0heMfD'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Weather Sources'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/dataengines/weather/ions'
+			product='plasmashell&component=Weather'
+		%}
+	</tr>
 </table>
 
 
