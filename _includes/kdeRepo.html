@@ -1,0 +1,8 @@
+<td>{% if include.repoName %}<a class="repoanchorlink" name="{{include.repoName | slugify}}" href="#{{include.repoName | slugify}}">¶</a>{{include.repoName}}{% endif %}</td>
+{% if include.githubLink %}<td><a href="{{include.githubLink}}">GitHub</a></td>{% endif %}
+{% if include.product %}{% include kdeBugs.html product=include.product %}{% endif %}
+{% if include.phabRepo %}{% include phabLinks.html
+	phabRepo=include.phabRepo
+	phabRepoName=include.phabRepoName
+	phabDiffQuery=include.phabDiffQuery
+%}{% endif %}

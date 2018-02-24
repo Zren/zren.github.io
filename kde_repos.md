@@ -87,26 +87,31 @@ permalink: /kde/repos/
 
 <table class="repolist">
 	<tr>
-		<td>Application Launcher (Kickoff)</td>
-		<td><a href="https://github.com/KDE/plasma-desktop/blob/master/applets/kickoff/">GitHub</a></td>
-		{% include kdeBugs.html product='plasmashell&component=Application%20Launcher%20%28Kickoff%29' %}
-		{% include phabLinksDesktop.html %}
+		{% include kdeRepoDesktop.html
+			repoName='Application Launcher (Kickoff)'
+			githubLink='https://github.com/KDE/plasma-desktop/blob/master/applets/kickoff'
+			product='plasmashell&component=Application%20Launcher%20%28Kickoff%29'
+		%}
 	</tr>
 	<tr>
-		<td>Application Menu/Dashboard (Kicker)</td>
-		<td><a href="https://github.com/KDE/plasma-desktop/blob/master/applets/kicker/">GitHub</a></td>
-		{% include kdeBugs.html product='plasmashell&component=Application%20Menu%20%28Kicker%29' %}
-		{% include phabLinksDesktop.html %}
+		{% include kdeRepoDesktop.html
+			repoName='Application Menu/Dashboard (Kicker)'
+			githubLink='https://github.com/KDE/plasma-desktop/blob/master/applets/kicker'
+			product='plasmashell&component=Application%20Menu%20%28Kicker%29'
+		%}
 	</tr>
 	<tr class="indent">
-		<td>Meta Key (KWin: Input)</td>
-		<td><a href="https://github.com/KDE/kwin/">GitHub</a></td>
-		{% include kdeBugs.html product='kwin&component=input' %}
-		{% include phabLinksKwin.html %}
+		{% include kdeRepoKwin.html
+			repoName='Meta Key (KWin: Input)'
+			githubLink='https://github.com/KDE/kwin'
+			product='kwin&component=input'
+		%}
 	</tr>
 	<tr>
-		<td>Active Window Control</td>
-		<td><a href="https://github.com/kotelnik/plasma-applet-active-window-control">GitHub</a></td>
+		{% include kdeRepo.html
+			repoName='Active Window Control'
+			githubLink='https://github.com/kotelnik/plasma-applet-active-window-control'
+		%}
 		<td><a>All Bugs</a></td>
 		<td><a>New Bug</a></td>
 		{% include phabLinks.html
@@ -116,172 +121,188 @@ permalink: /kde/repos/
 		%}
 	</tr>
 	<tr>
-		<td>Audio Volume (plasma-pa)</td>
-		<td><a href="https://github.com/KDE/plasma-pa">GitHub</a></td>
-		<td><a href="{{kdeBugList}}product=plasma-pa">All Bugs</a></td>
-		<td><a href="{{kdeNewBug}}product=plasma-pa&component=applet">New Bug</a></td>
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='Audio Volume (plasma-pa)'
+			githubLink='https://github.com/KDE/plasma-pa'
+			product='plasma-pa'
 			phabRepo='plasma-pa'
 			phabRepoName='Plasma Audio Volume Applet'
 			phabDiffQuery='NlM7ES4ji2UX'
 		%}
 	</tr>
 	<tr>
-		<td>Battery and Brightness</td>
-		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/batterymonitor">GitHub</a></td>
-		{% include kdeBugs.html product='plasmashell&component=Battery%20Monitor' %}
-		{% include phabLinksWorkspace.html %}
+		{% include kdeRepoWorkspace.html
+			repoName='Battery and Brightness'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/batterymonitor'
+			product='plasmashell&component=Battery%20Monitor'
+		%}
 	</tr>
 	<tr>
-		<td>Browser Integration</td>
-		<td><a href="https://github.com/KDE/plasma-browser-integration">GitHub</a></td>
-		{% include kdeBugs.html product='plasma-browser-integration' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='Browser Integration'
+			githubLink='https://github.com/KDE/plasma-browser-integration'
+			product='plasma-browser-integration'
 			phabRepo='plasma-browser-integration'
 			phabRepoName='Plasma Browser Integration'
 			phabDiffQuery='zVTBKyUKLVBi'
 		%}
 	</tr>
 	<tr>
-		<td>Digital Clock</td>
-		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/digital-clock">GitHub</a></td>
-		{% include kdeBugs.html product='plasmashell&component=Digital%20Clock' %}
-		{% include phabLinksWorkspace.html %}
+		{% include kdeRepoWorkspace.html
+			repoName='Digital Clock'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/digital-clock'
+			product='plasmashell&component=Digital%20Clock'
+		%}
 	</tr>
 	<tr class="indent">
-		<td>MonthView</td>
-		<td><a href="https://github.com/KDE/plasma-framework/tree/master/src/declarativeimports/calendar">GitHub</a></td>
-		{% include kdeBugs.html product='frameworks-kdeclarative' %}
-		{% include phabLinksFramework.html %}
+		{% include kdeRepoFramework.html
+			repoName='MonthView'
+			githubLink='https://github.com/KDE/plasma-framework/tree/master/src/declarativeimports/calendar'
+			product='frameworks-kdeclarative'
+		%}
 	</tr>
 	<tr class="indent">
-		<td>Events: Holidays Plugin</td>
-		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/plasmacalendarintegration">GitHub</a></td>
+		{% include kdeRepo.html
+			repoName='Events: Holidays Plugin'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/plasmacalendarintegration'
+		%}
 		<td><a>All Bugs</a></td>
 		<td><a>New Bug</a></td>
 		{% include phabLinksWorkspace.html %}
 	</tr>
 	<tr>
-		<td>[Desktop] Folder View</td>
-		<td><a href="https://github.com/KDE/plasma-desktop/tree/master/containments/desktop/">GitHub</a></td>
-		{% include kdeBugs.html product='plasmashell&component=Folder' %}
-		{% include phabLinksDesktop.html %}
+		{% include kdeRepoDesktop.html
+			repoName='[Desktop] Folder View'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/containments/desktop'
+			product='plasmashell&component=Folder'
+		%}
 	</tr>
 	<tr class="indent">
-		<td>Wallpaper Plugins</td>
+		{% include kdeRepo.html
+			repoName='Wallpaper Plugins'
+		%}
 		<td><a>GitHub</a></td>
 		{% include kdeBugs.html product='Plasma%20Workspace%20Wallpapers&component=general' %}
 		{% include phabLinksWorkspace.html %}
 	</tr>
 	<tr>
-		<td>Device Notifier</td>
-		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/devicenotifier">GitHub</a></td>
-		{% include kdeBugs.html product='plasmashell&component=Device%20Notifier' %}
-		{% include phabLinksWorkspace.html %}
+		{% include kdeRepoWorkspace.html
+			repoName='Device Notifier'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/devicenotifier'
+			product='plasmashell&component=Device%20Notifier'
+		%}
 	</tr>
 	<tr>
-		<td>Global Menu (AppMenu)</td>
-		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/appmenu">GitHub</a></td>
-		{% include kdeBugs.html product='plasmashell&component=Global%20Menu' %}
-		{% include phabLinksWorkspace.html %}
+		{% include kdeRepoWorkspace.html
+			repoName='Global Menu (AppMenu)'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/appmenu'
+			product='plasmashell&component=Global%20Menu'
+		%}
 	</tr>
 	<tr>
-		<td>KDE Connect</td>
-		<td><a href="https://github.com/KDE/kdeconnect-kde/tree/master/plasmoid">GitHub</a></td>
-		{% include kdeBugs.html product='kdeconnect' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='KDE Connect'
+			githubLink='https://github.com/KDE/kdeconnect-kde/tree/master/plasmoid'
+			product='kdeconnect'
 			phabRepo='kdeconnect-kde'
 			phabRepoName='KDE Connect'
 			phabDiffQuery='ukrPN51zGqf8'
 		%}
 	</tr>
 	<tr class="indent">
-		<td>Android App</td>
-		<td><a href="https://github.com/KDE/kdeconnect-android">GitHub</a></td>
-		{% include kdeBugs.html product='kdeconnect&component=android-application' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='Android App'
+			githubLink='https://github.com/KDE/kdeconnect-android'
+			product='kdeconnect&component=android-application'
 			phabRepo='kdeconnect-android'
 			phabRepoName='KDE Connect - Android Application'
 			phabDiffQuery='O5uLyNhBHBeF'
 		%}
 	</tr>
 	<tr>
-		<td>Media Player [Controller]</td>
-		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/mediacontroller">GitHub</a></td>
-		{% include kdeBugs.html product='plasmashell&component=Media%20Player' %}
-		{% include phabLinksWorkspace.html %}
+		{% include kdeRepoWorkspace.html
+			repoName='Media Player [Controller]'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/mediacontroller'
+			product='plasmashell&component=Media%20Player'
+		%}
 	</tr>
 	<tr>
-		<td>Minimize All</td>
-		<td><a href="https://github.com/KDE/kdeplasma-addons/tree/master/applets/minimizeall">GitHub</a></td>
-		{% include kdeBugs.html product='kdeplasma-addons&component=General' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='Minimize All'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/minimizeall'
+			product='kdeplasma-addons&component=General'
 			phabRepo='kdeplasma-addons'
 			phabRepoName='Plasma Addons'
 			phabDiffQuery='iwcJtI0heMfD'
 		%}
 	</tr>
 	<tr>
-		<td>Network Manager</td>
-		<td><a href="https://github.com/KDE/plasma-nm">GitHub</a></td>
-		{% include kdeBugs.html product='plasma-nm' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='Network Manager'
+			githubLink='https://github.com/KDE/plasma-nm'
+			product='plasma-nm'
 			phabRepo='plasma-nm'
 			phabRepoName='Plasma Network Management Applet'
 			phabDiffQuery='zTZoO20shXlW'
 		%}
 	</tr>
 	<tr>
-		<td>Notifications</td>
-		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/notifications">GitHub</a></td>
-		{% include kdeBugs.html product='plasmashell&component=Notifications' %}
-		{% include phabLinksWorkspace.html %}
+		{% include kdeRepoWorkspace.html
+			repoName='Notifications'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/notifications'
+			product='plasmashell&component=Notifications'
+		%}
 	</tr>
 	<tr>
-		<td>Pager</td>
-		<td><a href="https://github.com/KDE/plasma-desktop/blob/master/applets/pager">GitHub</a></td>
-		{% include kdeBugs.html product='plasmashell&component=Pager' %}
-		{% include phabLinksDesktop.html %}
+		{% include kdeRepoDesktop.html
+			repoName='Device Notifier'
+			githubLink='https://github.com/KDE/plasma-desktop/blob/master/applets/pager'
+			product='plasmashell&component=Pager'
+		%}
 	</tr>
 	<tr>
-		<td>Panel</td>
-		<td><a href="https://github.com/KDE/plasma-desktop/tree/master/desktoppackage">GitHub</a></td>
-		{% include kdeBugs.html product='plasmashell&component=panel' %}
-		{% include phabLinksDesktop.html %}
+		{% include kdeRepoDesktop.html
+			repoName='Panel'
+			githubLink='https://github.com/KDE/plasma-desktop/blob/master/desktoppackage'
+			product='plasmashell&component=panel'
+		%}
 	</tr>
 	<tr>
-		<td>System Tray</td>
-		<td><a href="https://github.com/KDE/plasma-workspace/tree/master/applets/systemtray">GitHub</a></td>
-		{% include kdeBugs.html product='plasmashell&component=System%20Tray' %}
-		{% include phabLinksWorkspace.html %}
+		{% include kdeRepoWorkspace.html
+			repoName='System Tray'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/systemtray'
+			product='plasmashell&component=System%20Tray'
+		%}
 	</tr>
 	<tr>
-		<td>Task Manager</td>
-		<td><a href="https://github.com/KDE/plasma-desktop/blob/master/applets/taskmanager">GitHub</a></td>
-		{% include kdeBugs.html product='plasmashell&component=Task%20Manager' %}
-		{% include phabLinksDesktop.html %}
+		{% include kdeRepoDesktop.html
+			repoName='Task Manager'
+			githubLink='https://github.com/KDE/plasma-desktop/blob/master/applets/taskmanager'
+			product='plasmashell&component=Task%20Manager'
+		%}
 	</tr>
 	<tr class="indent">
-		<td>Icon Tasks</td>
-		<td><a href="https://github.com/KDE/plasma-desktop/blob/master/applets/taskmanager">GitHub</a></td>
-		{% include kdeBugs.html product='plasmashell&component=Icons-only%20Task%20Manager' %}
-		{% include phabLinksDesktop.html %}
+		{% include kdeRepoDesktop.html
+			repoName='Icon Tasks'
+			githubLink='https://github.com/KDE/plasma-desktop/blob/master/applets/taskmanager'
+			product='plasmashell&component=Icons-only%20Task%20Manager'
+		%}
 	</tr>
 	<tr>
-		<td>Timer</td>
-		<td><a href="https://github.com/KDE/kdeplasma-addons/tree/master/applets/timer">GitHub</a></td>
-		{% include kdeBugs.html product='kdeplasma-addons&component=timer' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='Timer'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/timer'
+			product='kdeplasma-addons&component=timer'
 			phabRepo='kdeplasma-addons'
 			phabRepoName='Plasma Addons'
 			phabDiffQuery='iwcJtI0heMfD'
 		%}
 	</tr>
 	<tr>
-		<td>Vault</td>
-		<td><a href="https://github.com/KDE/plasma-vault/tree/master/plasma">GitHub</a></td>
-		{% include kdeBugs.html product='Plasma%20Vault' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='Vault'
+			githubLink='https://github.com/KDE/plasma-vault/tree/master/plasma'
+			product='Plasma%20Vault'
 			phabRepo='plasma-vault'
 			phabRepoName='Plasma Vault'
 			phabDiffQuery='xviPAQ7cuNOx'
@@ -294,20 +315,21 @@ permalink: /kde/repos/
 
 <table class="repolist">
 	<tr>
-		<td>Breeze Icons</td>
-		<td><a href="https://github.com/KDE/breeze-icons/">Git Repo</a></td>
-		{% include kdeBugs.html product='Breeze&component=icons' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='Breeze Icons'
+			githubLink='https://github.com/KDE/breeze-icons'
+			product='Breeze&component=icons'
 			phabRepo='breeze-icons'
 			phabRepoName='Breeze Icons'
 			phabDiffQuery='5_HzpnwoEZjH'
 		%}
 	</tr>
 	<tr>
-		<td>Breeze DesktopTheme</td>
-		<td><a href="https://github.com/KDE/plasma-framework/blob/master/src/desktoptheme/breeze/">Git Repo</a></td>
-		{% include kdeBugs.html product='frameworks-plasma' %}
-		{% include phabLinksFramework.html %}
+		{% include kdeRepoFramework.html
+			repoName='Breeze DesktopTheme'
+			githubLink='https://github.com/KDE/plasma-framework/blob/master/src/desktoptheme/breeze'
+			product='frameworks-plasma'
+		%}
 	</tr>
 </table>
 
@@ -316,27 +338,34 @@ permalink: /kde/repos/
 
 <table class="repolist">
 	<tr>
-		<td>KWin</td>
-		<td><a href="https://github.com/KDE/kwin/">Git Repo</a></td>
-		{% include kdeBugs.html product='kwin' %}
-		{% include phabLinksKwin.html %}
+		{% include kdeRepoKwin.html
+			repoName='KWin'
+			githubLink='https://github.com/KDE/kwin'
+			product='kwin'
+		%}
 	</tr>
 	<tr class="indent">
-		<td>Alt+Tab (TabBox)</td>
-		<td><a href="https://github.com/KDE/kwin/tree/master/tabbox">Git Repo</a></td>
-		{% include kdeBugs.html product='kwin&component=tabbox' %}
+		{% include kdeRepo.html
+			repoName='Alt+Tab (TabBox)'
+			githubLink='https://github.com/KDE/kwin/tree/master/tabbox'
+			product='kwin&component=tabbox'
+		%}
 		{% include phabLinks.html %}
 	</tr>
 	<tr class="indent">
-		<td>Window Decorations</td>
-		<td><a href="https://github.com/KDE/kwin/tree/master/kdecorations">Git Repo</a></td>
-		{% include kdeBugs.html product='kwin&component=decorations' %}
+		{% include kdeRepo.html
+			repoName='Window Decorations'
+			githubLink='https://github.com/KDE/kwin/tree/master/kdecorations'
+			product='kwin&component=decorations'
+		%}
 		{% include phabLinks.html %}
 	</tr>
 	<tr class="indent depth2">
-		<td>Aurorae Decorations</td>
-		<td><a href="https://github.com/KDE/kwin/tree/master/plugins/kdecorations/aurorae">Git Repo</a></td>
-		{% include kdeBugs.html product='kwin&component=aurorae' %}
+		{% include kdeRepo.html
+			repoName='Aurorae Decorations'
+			githubLink='https://github.com/KDE/kwin/tree/master/plugins/kdecorations/aurorae'
+			product='kwin&component=aurorae'
+		%}
 		{% include phabLinks.html %}
 	</tr>
 </table>
@@ -346,7 +375,9 @@ permalink: /kde/repos/
 
 <table class="repolist">
 	<tr>
-		<td>www.kde.org</td>
+		{% include kdeRepo.html
+			repoName='www.kde.org'
+		%}
 		<td><a href="https://cgit.kde.org/scratch/kvermette/www-aether.git/tree/">Git Repo</a></td>
 		{% include kdeBugs.html product='www.kde.org&component=general' %}
 		{% include phabLinks.html
@@ -356,7 +387,9 @@ permalink: /kde/repos/
 		%}
 	</tr>
 	<tr>
-		<td>docs.kde.org</td>
+		{% include kdeRepo.html
+			repoName='docs.kde.org'
+		%}
 		<td><a>Git Repo</a></td>
 		<td><a>All Bugs</a></td>
 		<td><a>New Bug</a></td>
@@ -373,8 +406,10 @@ permalink: /kde/repos/
 
 <table class="repolist">
 	<tr>
-		<td>ocs-webserver</td>
-		<td><a href="https://github.com/KDE/ocs-webserver/tree/master/application/modules/default/controllers">GitHub</a></td>
+		{% include kdeRepo.html
+			repoName='ocs-webserver'
+			githubLink='https://github.com/KDE/ocs-webserver/tree/master/application/modules/default/controllers'
+		%}
 		<td><a href="https://phabricator.kde.org/tag/kde_store/">All Tasks</a></td>
 		<td><a href="https://phabricator.kde.org/tag/kde_store/">(▼ Create Task)</a></td>
 		{% include phabLinks.html
@@ -385,12 +420,16 @@ permalink: /kde/repos/
 	</tr>
 
 	<tr class="indent">
-		<td>Product Page</td>
-		<td><a href="https://github.com/KDE/ocs-webserver/blob/master/application/modules/default/controllers/ProductController.php">GitHub</a></td>
+		{% include kdeRepo.html
+			repoName='Product Page'
+			githubLink='https://github.com/KDE/ocs-webserver/blob/master/application/modules/default/controllers/ProductController.php'
+		%}
 	</tr>
 	<tr class="indent">
-		<td>Product Comments</td>
-		<td><a href="https://github.com/KDE/ocs-webserver/blob/master/application/modules/default/controllers/ProductcommentController.php">GitHub</a></td>
+		{% include kdeRepo.html
+			repoName='Product Comments'
+			githubLink='https://github.com/KDE/ocs-webserver/blob/master/application/modules/default/controllers/ProductcommentController.php'
+		%}
 	</tr>
 </table>
 
@@ -399,20 +438,20 @@ permalink: /kde/repos/
 
 <table class="repolist">
 	<tr>
-		<td>plasmathemeexplorer</td>
-		<td><a href="https://github.com/KDE/plasma-sdk/tree/master/themeexplorer">GitHub</a></td>
-		{% include kdeBugs.html product='Plasma%20SDK&component=plasmathemeexplorer' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='plasmathemeexplorer'
+			githubLink='https://github.com/KDE/plasma-sdk/tree/master/themeexplorer'
+			product='Plasma%20SDK&component=plasmathemeexplorer'
 			phabRepo='plasma-sdk'
 			phabRepoName='Plasma SDK'
 			phabDiffQuery='40hfBk8vxVpb'
 		%}
 	</tr>
 	<tr>
-		<td>plasmoidviewer</td>
-		<td><a href="https://github.com/KDE/plasma-sdk/tree/master/plasmoidviewer">GitHub</a></td>
-		{% include kdeBugs.html product='Plasma%20SDK&component=plasmoidviewer' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='plasmoidviewer'
+			githubLink='https://github.com/KDE/plasma-sdk/tree/master/plasmoidviewer'
+			product='Plasma%20SDK&component=plasmoidviewer'
 			phabRepo='plasma-sdk'
 			phabRepoName='Plasma SDK'
 			phabDiffQuery='40hfBk8vxVpb'
@@ -425,70 +464,70 @@ permalink: /kde/repos/
 
 <table class="repolist">
 	<tr>
-		<td>Dolphin</td>
-		<td><a href="https://github.com/KDE/dolphin">GitHub</a></td>
-		{% include kdeBugs.html product='dolphin' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='Dolphin'
+			githubLink='https://github.com/KDE/dolphin'
+			product='dolphin'
 			phabRepo='dolphin'
 			phabRepoName='Dolphin'
 			phabDiffQuery='Q.uZMhKXjose'
 		%}
 	</tr>
 	<tr>
-		<td>Falkon</td>
-		<td><a href="https://github.com/KDE/falkon">GitHub</a></td>
-		{% include kdeBugs.html product='Falkon' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='Falkon'
+			githubLink='https://github.com/KDE/falkon'
+			product='Falkon'
 			phabRepo='falkon'
 			phabRepoName='Falkon'
 			phabDiffQuery='a6LykVQZeOj5'
 		%}
 	</tr>
 	<tr>
-		<td>Kdenlive</td>
-		<td><a href="https://github.com/KDE/kdenlive">GitHub</a></td>
-		{% include kdeBugs.html product='kdenlive' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='Kdenlive'
+			githubLink='https://github.com/KDE/kdenlive'
+			product='kdenlive'
 			phabRepo='kdenlive'
 			phabRepoName='Kdenlive'
 			phabDiffQuery='3i8H_hCbT9lu'
 		%}
 	</tr>
 	<tr>
-		<td>KDialog</td>
-		<td><a href="https://github.com/KDE/kdialog">GitHub</a></td>
-		{% include kdeBugs.html product='kdialog' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='KDialog'
+			githubLink='https://github.com/KDE/kdialog'
+			product='kdialog'
 			phabRepo='kdialog'
 			phabRepoName='KDialog'
 			phabDiffQuery='pJGwlCW8NtAk'
 		%}
 	</tr>
 	<tr>
-		<td>Konversation</td>
-		<td><a href="https://github.com/KDE/konversation">GitHub</a></td>
-		{% include kdeBugs.html product='konversation' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='Konversation'
+			githubLink='https://github.com/KDE/konversation'
+			product='konversation'
 			phabRepo='konversation'
 			phabRepoName='Konversation'
 			phabDiffQuery='MqFWDNoLKvbO'
 		%}
 	</tr>
 	<tr>
-		<td>Krita</td>
-		<td><a href="https://github.com/KDE/krita">GitHub</a></td>
-		{% include kdeBugs.html product='krita' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='Krita'
+			githubLink='https://github.com/KDE/krita'
+			product='krita'
 			phabRepo='krita'
 			phabRepoName='Krita'
 			phabDiffQuery='Apm2jNyZrawx'
 		%}
 	</tr>
 	<tr>
-		<td>KSysGuard</td>
-		<td><a href="https://github.com/KDE/ksysguard">GitHub</a></td>
-		{% include kdeBugs.html product='ksysguard' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='KSysGuard'
+			githubLink='https://github.com/KDE/ksysguard'
+			product='ksysguard'
 			phabRepo='ksysguard'
 			phabRepoName='KSysguard'
 			phabDiffQuery='sL4hOEh5QL6Z'
@@ -502,20 +541,20 @@ permalink: /kde/repos/
 
 <table class="repolist">
 	<tr>
-		<td>KScreenLocker</td>
-		<td><a href="https://github.com/KDE/kscreenlocker">GitHub</a></td>
-		{% include kdeBugs.html product='kscreenlocker' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='KScreenLocker'
+			githubLink='https://github.com/KDE/kscreenlocker'
+			product='kscreenlocker'
 			phabRepo='kscreenlocker'
 			phabRepoName='KScreenLocker'
 			phabDiffQuery='54ALVMVJRT2S'
 		%}
 	</tr>
 	<tr>
-		<td>Powerdevil</td>
-		<td><a href="https://github.com/KDE/powerdevil">GitHub</a></td>
-		{% include kdeBugs.html product='Powerdevil' %}
-		{% include phabLinks.html
+		{% include kdeRepo.html
+			repoName='Powerdevil'
+			githubLink='https://github.com/KDE/powerdevil'
+			product='Powerdevil'
 			phabRepo='powerdevil'
 			phabRepoName='Powerdevil'
 			phabDiffQuery='bOaiSgfPQGoI'
