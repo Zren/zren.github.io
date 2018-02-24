@@ -2,6 +2,7 @@
 layout: page
 title: Yakuake
 permalink: /kde/yakuake/
+redirect_from: /projects/kde/yakuake/
 ---
 
 The Yakuake terminal is installed by default on some ditros. It's basically a fancy dropdown terminal with a global shortcut that will hide when it loses focus.

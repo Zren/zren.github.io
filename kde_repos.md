@@ -2,6 +2,7 @@
 layout: widepage
 title: KDE Repositories
 permalink: /kde/repos/
+redirect_from: /projects/kde/repos/
 ---
 
 <style type="text/css">

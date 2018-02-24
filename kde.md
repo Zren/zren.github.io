@@ -2,6 +2,7 @@
 layout: widepage
 title: KDE Plasma5 Fixes
 permalink: /kde/
+redirect_from: /projects/kde/
 ---
 
 This page aims to setup a nice KDE Plasma5 desktop for someone who's coming from Windows.

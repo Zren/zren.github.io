@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Patching Breeze Window Decorations
+redirect_from: /projects/2017/07/08/patching-breeze-window-decorations.html
 ---
 
 KDE ships with the Breeze window decorations. Which are drawn via a C++ KDecoration2 "plugin". You can also download other decorations from the KDE Store (via Get Hot New Stuff) that are SVG based themes for the Aurorae KDecoration2 "plugin" (which is also preinstalled in KDE).
