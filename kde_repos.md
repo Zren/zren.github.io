@@ -349,6 +349,16 @@ redirect_from: /projects/kde/repos/
 			product='frameworks-plasma'
 		%}
 	</tr>
+	<tr>
+		{% include kdeRepo.html
+			repoName='Breeze Gtk'
+			githubLink='https://github.com/KDE/breeze-gtk'
+			product='Breeze&component=gtk%20theme'
+			phabRepo='breeze-gtk'
+			phabRepoName='Breeze for Gtk'
+			phabDiffQuery='oZtk.c1MpUIx'
+		%}
+	</tr>
 </table>
 
 
