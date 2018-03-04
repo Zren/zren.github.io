@@ -570,6 +570,16 @@ redirect_from: /projects/kde/repos/
 <table class="repolist">
 	<tr>
 		{% include kdeRepo.html
+			repoName='Baloo'
+			githubLink='https://github.com/KDE/baloo'
+			product='frameworks-baloo'
+			phabRepo='baloo'
+			phabRepoName='Baloo'
+			phabDiffQuery='dxa5q95Y92MO'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
 			repoName='KScreenLocker'
 			githubLink='https://github.com/KDE/kscreenlocker'
 			product='kscreenlocker'
