@@ -361,7 +361,7 @@ qdbus org.kde.KWin /KWin reconfigure
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Overlay tabs on top of the title bar
-  ⋮Button > Settings
+  `⋮` Button > Settings
   Appearance > Uncheck: Use system title bar and borders
 
 {% assign i = i | plus: 1 %}
