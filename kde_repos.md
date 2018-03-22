@@ -553,6 +553,16 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepo.html
+			repoName='KRunner'
+			githubLink='https://github.com/KDE/krunner'
+			product='krunner'
+			phabRepo='krunner'
+			phabRepoName='KRunner'
+			phabDiffQuery='bGOsxqpDNf1b'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
 			repoName='KSysGuard'
 			githubLink='https://github.com/KDE/ksysguard'
 			product='ksysguard'
