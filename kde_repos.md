@@ -80,6 +80,65 @@ redirect_from: /projects/kde/repos/
 
 > **Note:** All GitHub links are source mirrors only. Do not submit issues to those repos. KDE uses <https://bugs.kde.org> for issues, and <https://phabricator.kde.org> for pull requests. The official source browser is at <https://cgit.kde.org/> but GitHub is much easier to navigate.
 
+<style type="text/css">
+#search input {
+	width: 100%;
+	position: relative;
+	padding: .5em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.hidden {
+	display: none;
+}
+</style>
+
+<div id="search">
+	<input type="search">
+</div>
+
+<script type="text/javascript">
+	var searchInput = document.querySelector('#search input')
+	var searchThrottleId = 0
+	function updateSearch() {
+		searchThrottleId = 0
+		var query = searchInput.value.toLowerCase()
+		var showAll = !query
+		var visibleRows = []
+		for (var table of document.querySelectorAll('table.repolist')) {
+			var visibleCount = 0
+			for (var tr of table.querySelectorAll('tr')) {
+				var nameCell = tr.querySelector('td')
+				var queryIndex = nameCell.textContent.toLowerCase().indexOf(query)
+				if (showAll || queryIndex >= 0) {
+					tr.classList.remove('hidden')
+					visibleCount += 1
+					visibleRows.push(tr)
+				} else {
+					tr.classList.add('hidden')
+				}
+			}
+			var heading = table.previousElementSibling
+
+			if (visibleCount > 0) {
+				table.classList.remove('hidden')
+				heading.classList.remove('hidden')
+			} else {
+				table.classList.add('hidden')
+				heading.classList.add('hidden')
+			}
+		}
+		console.log('updateSearch', query, visibleRows)
+	}
+	function throttledUpdateSearch() {
+		if (searchThrottleId) {
+			clearTimeout(searchThrottleId)
+		}
+		searchThrottleId = setTimeout(updateSearch, 100)
+	}
+	searchInput.addEventListener('input', throttledUpdateSearch)
+</script>
+
 ## PlasmaShell
 
 {% assign kdeBugList = 'https://bugs.kde.org/buglist.cgi?order=bug_id%20DESC&query_format=advanced&' %}
