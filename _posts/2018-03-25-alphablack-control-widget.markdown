@@ -11,7 +11,7 @@ Rather than trying to read the rendered `background.svg` file for the color, a s
 
 {% include streamable.html streamableId="jxe60" %}
 
-### How stuff works
+## How stuff works
 
 A long time ago, I learned that in order to reload a desktop theme, you needed to switch to another theme first (I use `breeze-dark`) then back again a second later. The `~/.config/plasmarc` file is watched by Plasma, so we can easily write to it with `kwriteconfig5` to switch themes.
 
