@@ -14,6 +14,8 @@ body {
   color: $headerTextColor;
   text-align: center;
   box-shadow: 0 0 10px #e8e8e8;
+  box-sizing: border-box;
+  height: 92px;
   
   nav a,
   nav a:visited {
@@ -229,6 +231,8 @@ li[id]:hover > .header-link {
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    box-sizing: border-box;
+    height: 160px;
 }
 
 .footer-heading {
@@ -298,6 +302,8 @@ li[id]:hover > .header-link {
  */
 .page-content {
     padding: $spacing-unit 0;
+    box-sizing: border-box;
+    min-height: calc(100vh - 92px - 160px);
 }
 
 .page-heading {
