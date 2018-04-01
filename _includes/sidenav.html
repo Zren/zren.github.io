@@ -18,8 +18,14 @@
   @media screen and (min-width: 1440px) {
     .nav-contents {
       position: absolute;
-      right: calc((100vw - 772px)/2 * -1);
       width: calc((100vw - 772px)/2 - 30px);
+    }
+    .nav-contents.nav-left {
+      left: calc((100vw - 772px)/2 * -1);
+      text-align: right;
+    }
+    .nav-contents.nav-right {
+      right: calc((100vw - 772px)/2 * -1);
     }
   }
   .nav-contents > h3 {
@@ -28,7 +34,7 @@
   }
 </style>
 <nav id="sidenav">
-  <div class="nav-contents">
+  <div class="nav-contents nav-right">
     <h3>Menu</h3>
     <ul>
       {% for page in site.pages %}
@@ -37,6 +43,8 @@
         {% endif %}
       {% endfor %}
     </ul>
+  </div>
+  <div class="nav-contents nav-left">
     <h3>Recent Articles</h3>
     <ul>
       {% for page in site.posts %}

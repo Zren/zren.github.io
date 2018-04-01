@@ -5,6 +5,10 @@ permalink: /timeline/
 ---
 
 <style type="text/css">
+.nav-left {
+    display: none;
+}
+
 .page-content .wrapper {
     border-left: 4px solid #333;
 }

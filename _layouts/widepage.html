@@ -11,8 +11,13 @@ layout: page
 @media screen and (min-width: 1440px) {
     .nav-contents {
         position: absolute;
-        right: calc((100vw - 1024px)/2 * -1);
         width: calc((100vw - 1024px)/2 - 30px);
+    }
+    .nav-contents.nav-left {
+        left: calc((100vw - 1024px)/2 * -1);
+    }
+    .nav-contents.nav-right {
+        right: calc((100vw - 1024px)/2 * -1);
     }
 }
 </style>
