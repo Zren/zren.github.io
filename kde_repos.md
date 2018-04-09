@@ -137,6 +137,7 @@ redirect_from: /projects/kde/repos/
 		searchThrottleId = setTimeout(updateSearch, 100)
 	}
 	searchInput.addEventListener('input', throttledUpdateSearch)
+	searchInput.focus();
 </script>
 
 ## PlasmaShell
