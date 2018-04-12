@@ -9,7 +9,7 @@ This weekend I got around to cleaning fixing the more pressing issue that the co
 
 Rather than trying to read the rendered `background.svg` file for the color, a simpler fix was to just serialize the color we used into an `config.ini` file.
 
-{% include streamable.html streamableId="jxe60" %}
+{% include video.html streamableId="jxe60" %}
 
 As you can see in the video. We can currently do 3 things:
 

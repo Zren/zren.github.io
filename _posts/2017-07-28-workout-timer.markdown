@@ -9,7 +9,7 @@ title: Workout Timer
 
 Recently I've wanted to make a workout fitness timer. I've already worked on a fancy circle progressbar when working on a battery percent indicator, so I reused that in a system tray plasmoid I've been mocking up.
 
-{% include streamable.html streamableId="a1urw" %}
+{% include video.html streamableId="a1urw" %}
 
 I decided to try copying the look of the [Sworkit](https://play.google.com/store/apps/details?id=sworkitapp.sworkit.com&hl=en) android app since it seemed simple to replicate the core bits.
 

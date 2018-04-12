@@ -46,7 +46,7 @@ If we eventually add autocompletion, we can focus on refactoring and doing thing
 
 Another feature I implemented was animating propety changes in the ElementsView.
 
-{% include streamable.html streamableId="0e9xm" %}
+{% include video.html streamableId="0e9xm" %}
 
 I had to do a number of refactoring in the property view since I was doing a very naive update (1 property change will cause it to check every property). I needed to `bind()` the property we're updating and store all the singal handlers we connect with so that we can disconnect them later.
 
