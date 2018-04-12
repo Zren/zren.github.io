@@ -19,7 +19,9 @@ Basically all I did was:
 2. Copy the ["grid" from the default pager](https://github.com/KDE/plasma-desktop/blob/master/applets/pager/package/contents/ui/main.qml#L223). I removed the part where it the rectangles use the same aspect ratio as your screen, and removed the "pager.svg" it drew.
 3. Make sure the grid [fit inside the "tasks.svg" padding](https://github.com/KDE/plasma-desktop/blob/master/applets/taskmanager/package/contents/ui/Task.qml#L400-L405).
 4. Drew seperators on the right and bottom of a grid cell, unless it's the last cell in a row/column.
-5. Converted Unity 7's "selected desktop" icon into a svg: https://i.imgur.com/UR3sEl6.png
+5. Converted Unity 7's "selected desktop" icon into a svg: 
+
+![](https://i.imgur.com/UR3sEl6.png)
 
 The more annoying part was to make it only use this "skin" on the Unity Ambiance theme.
 
