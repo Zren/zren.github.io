@@ -1,0 +1,13 @@
+<div class="outset">
+	<div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;">
+		<iframe src="{% if
+			include.streamableId
+		%}https://streamable.com/e/{{ include.streamableId }}{%
+			endif
+		%}{% if
+			include.youtubeId
+		%}https://www.youtube.com/embed/{{ include.youtubeId }}{%
+			endif
+		%}" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no" style="width: 100%; height: 100%; position: absolute;"></iframe>
+	</div>
+</div>
