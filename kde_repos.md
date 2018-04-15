@@ -163,7 +163,7 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
-			repoName='Application Dashboard (Kicker)'
+			repoName='Application Dashboard (KickerDash)'
 			githubLink='https://github.com/KDE/plasma-desktop/blob/master/applets/kicker'
 			product='kdeplasma-addons&component=Application%20Dashboard'
 		%}
