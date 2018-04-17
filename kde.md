@@ -381,6 +381,22 @@ qdbus org.kde.KWin /KWin reconfigure
   Go to `chrome://flags#enable-native-notifications`, search for "Enable native notifications", disable it and restart Chrome.
 
 
+### LibreOffice Calc
+
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Set Default Font Size/Family/CellPadding
+  Styles > Manage Styles
+  Right click Default > Modify
+  Font > Family: Noto Sans (Office uses Carlito/Calibri)
+  Font > Size: 12 (Office uses 11)
+  Borders > Padding: 1.00mm
+  Ok
+  File > Templates > Save As Template
+  Name: Default
+  Category: My Templates
+  Check "Set as default template"
+
+
 ### Steam
 
 {% assign i = i | plus: 1 %}
