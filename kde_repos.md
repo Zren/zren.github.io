@@ -638,6 +638,16 @@ redirect_from: /projects/kde/repos/
 			phabDiffQuery='sL4hOEh5QL6Z'
 		%}
 	</tr>
+	<tr>
+		{% include kdeRepo.html
+			repoName='Yakuake'
+			githubLink='https://github.com/KDE/yakuake'
+			product='yakuake'
+			phabRepo='yakuake'
+			phabRepoName='Yakuake'
+			phabDiffQuery='LDXG9mAnVUkh'
+		%}
+	</tr>
 </table>
 
 
