@@ -238,7 +238,7 @@ redirect_from: /projects/kde/repos/
 		<td><a>New Bug</a></td>
 		{% include phabLinksWorkspace.html %}
 	</tr>
-	<tr class="indent2">
+	<tr class="indent depth2">
 		{% include kdeRepo.html
 			repoName='KHolidays'
 			githubLink='https://github.com/KDE/kholidays/tree/master/holidays/plan2'
