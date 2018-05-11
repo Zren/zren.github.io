@@ -217,6 +217,13 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
+			repoName='CPU Load Monitor'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/systemmonitor'
+			product='plasmashell&component=System%20Monitor'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoWorkspace.html
 			repoName='Digital Clock'
 			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/digital-clock'
 			product='plasmashell&component=Digital%20Clock'
@@ -278,6 +285,20 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
+		{% include kdeRepoWorkspace.html
+			repoName='Hard Disk I/O Monitor'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/systemmonitor'
+			product='plasmashell&component=System%20Monitor'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoWorkspace.html
+			repoName='Hard Disk Space Usage'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/systemmonitor'
+			product='plasmashell&component=System%20Monitor'
+		%}
+	</tr>
+	<tr>
 		{% include kdeRepo.html
 			repoName='KDE Connect'
 			githubLink='https://github.com/KDE/kdeconnect-kde/tree/master/plasmoid'
@@ -305,6 +326,13 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
+		{% include kdeRepoWorkspace.html
+			repoName='Memory Status'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/systemmonitor'
+			product='plasmashell&component=System%20Monitor'
+		%}
+	</tr>
+	<tr>
 		{% include kdeRepo.html
 			repoName='Minimize All'
 			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/minimizeall'
@@ -326,6 +354,13 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
+			repoName='Network Monitor'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/systemmonitor'
+			product='plasmashell&component=System%20Monitor'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoWorkspace.html
 			repoName='Notifications'
 			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/notifications'
 			product='plasmashell&component=Notifications'
@@ -343,6 +378,16 @@ redirect_from: /projects/kde/repos/
 			repoName='Panel'
 			githubLink='https://github.com/KDE/plasma-desktop/blob/master/desktoppackage'
 			product='plasmashell&component=panel'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
+			repoName='System Load Viewer'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/systemloadviewer'
+			product='kdeplasma-addons&component=systemloadviewer'
+			phabRepo='kdeplasma-addons'
+			phabRepoName='Plasma Addons'
+			phabDiffQuery='iwcJtI0heMfD'
 		%}
 	</tr>
 	<tr>
