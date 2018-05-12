@@ -368,7 +368,7 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
-			repoName='Device Notifier'
+			repoName='Pager'
 			githubLink='https://github.com/KDE/plasma-desktop/blob/master/applets/pager'
 			product='plasmashell&component=Pager'
 		%}
