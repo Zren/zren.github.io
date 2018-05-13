@@ -206,6 +206,13 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
+		{% include kdeRepoAddons.html
+			repoName='Binary Clock'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/binary-clock'
+			product='kdeplasma-addons&component=General'
+		%}
+	</tr>
+	<tr>
 		{% include kdeRepo.html
 			repoName='Browser Integration'
 			githubLink='https://github.com/KDE/plasma-browser-integration'
@@ -216,10 +223,38 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
+		{% include kdeRepoAddons.html
+			repoName='Calculator'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/calculator'
+			product='kdeplasma-addons&component=calculator'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoAddons.html
+			repoName='Color Picker'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/colorpicker'
+			product='kdeplasma-addons&component=Color%20Picker'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoAddons.html
+			repoName='Comic Applet'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/comic'
+			product='kdeplasma-addons&component=Comic%20Applet'
+		%}
+	</tr>
+	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='CPU Load Monitor'
 			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/systemmonitor'
 			product='plasmashell&component=System%20Monitor'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoAddons.html
+			repoName='Dictionary'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/dict'
+			product='kdeplasma-addons&component=dictionary'
 		%}
 	</tr>
 	<tr>
@@ -278,10 +313,38 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
+		{% include kdeRepoAddons.html
+			repoName='Disk Quota'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/diskquota'
+			product='kdeplasma-addons&component=Disk%20Quota'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoAddons.html
+			repoName='Fifteen Puzzle'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/fifteenPuzzle'
+			product='kdeplasma-addons&component=General'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoAddons.html
+			repoName='Fuzzy Clock'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/fuzzy-clock'
+			product='kdeplasma-addons&component=fuzzy-clock'
+		%}
+	</tr>
+	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Global Menu (AppMenu)'
 			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/appmenu'
 			product='plasmashell&component=Global%20Menu'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoAddons.html
+			repoName='Grouping'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/grouping'
+			product='kdeplasma-addons&component=General'
 		%}
 	</tr>
 	<tr>
@@ -316,6 +379,27 @@ redirect_from: /projects/kde/repos/
 			phabRepo='kdeconnect-android'
 			phabRepoName='KDE Connect - Android Application'
 			phabDiffQuery='O5uLyNhBHBeF'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoAddons.html
+			repoName='Keyboard Indicator'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/keyboardindicator'
+			product='kdeplasma-addons&component=General'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoAddons.html
+			repoName='Konsole Profiles'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/konsoleprofiles'
+			product='kdeplasma-addons&component=konsoleprofiles'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoAddons.html
+			repoName='Media Frame'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/mediaframe'
+			product='kdeplasma-addons&component=General'
 		%}
 	</tr>
 	<tr>
@@ -357,6 +441,13 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
+		{% include kdeRepoAddons.html
+			repoName='Notes'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/notes'
+			product='kdeplasma-addons&component=notes'
+		%}
+	</tr>
+	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Notifications'
 			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/notifications'
@@ -379,9 +470,23 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
+			repoName='Quicklaunch'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/quicklaunch'
+			product='kdeplasma-addons&component=Quicklaunch'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoAddons.html
 			repoName='Quick Share'
 			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/quickshare'
 			product='kdeplasma-addons&component=QuickShare'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoAddons.html
+			repoName='Show Desktop'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/showdesktop'
+			product='kdeplasma-addons&component=General'
 		%}
 	</tr>
 	<tr>
@@ -420,6 +525,13 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
+		{% include kdeRepoAddons.html
+			repoName='User Switcher'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/userswitcher'
+			product='kdeplasma-addons&component=User%20Switcher'
+		%}
+	</tr>
+	<tr>
 		{% include kdeRepo.html
 			repoName='Vault'
 			githubLink='https://github.com/KDE/plasma-vault/tree/master/plasma'
@@ -441,6 +553,13 @@ redirect_from: /projects/kde/repos/
 			repoName='Weather Sources'
 			githubLink='https://github.com/KDE/plasma-workspace/tree/master/dataengines/weather/ions'
 			product='plasmashell&component=Weather'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoAddons.html
+			repoName='Web browser'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/webbrowser'
+			product='kdeplasma-addons&component=webbrowser'
 		%}
 	</tr>
 </table>
