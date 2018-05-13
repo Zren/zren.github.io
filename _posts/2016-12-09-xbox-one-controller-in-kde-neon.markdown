@@ -1,9 +1,7 @@
 ---
-layout: page
+layout: post
 title: XBox One Controller in KDE Neon
-permalink: /kde/xbox/
 ---
-
 
 As of Dec 9th 2016, KDE Neon (which is based on Ubuntu 16.04 LTS) is only using the Linux 4.4.0-53 kernel. Which means the XBox One controller isn't fully supported without some running some commands manually.
 
