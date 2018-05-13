@@ -145,6 +145,11 @@ li[id]:hover > .header-link {
     margin: 0 -140px 1em -140px;
     max-width: 1020px;
   }
+  /* Don't overlap the nav if we .outset at the start of a post */
+  .post:nth-of-type(1) .post-content .outset:nth-child(-n+8) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 
   .post-content img {
     box-shadow: 0 0 4px #000;
