@@ -48,7 +48,8 @@
   <div class="nav-contents nav-right">
     <h3>Menu</h3>
     <ul>
-      {% for page in site.pages %}
+      {% assign sorted_pages = site.pages | sort:"title" %}
+      {% for page in sorted_pages %}
         {% if page.title %}        
           <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
         {% endif %}
