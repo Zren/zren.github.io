@@ -150,21 +150,21 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Application Launcher (Kickoff)'
-			githubLink='https://github.com/KDE/plasma-desktop/blob/master/applets/kickoff'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/kickoff'
 			product='plasmashell&component=Application%20Launcher%20%28Kickoff%29'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Application Menu (Kicker)'
-			githubLink='https://github.com/KDE/plasma-desktop/blob/master/applets/kicker'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/kicker'
 			product='plasmashell&component=Application%20Menu%20%28Kicker%29'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Application Dashboard (KickerDash)'
-			githubLink='https://github.com/KDE/plasma-desktop/blob/master/applets/kicker'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/kicker'
 			product='kdeplasma-addons&component=Application%20Dashboard'
 		%}
 	</tr>
@@ -457,14 +457,14 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Pager'
-			githubLink='https://github.com/KDE/plasma-desktop/blob/master/applets/pager'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/pager'
 			product='plasmashell&component=Pager'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Panel'
-			githubLink='https://github.com/KDE/plasma-desktop/blob/master/desktoppackage'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/desktoppackage'
 			product='plasmashell&component=panel'
 		%}
 	</tr>
@@ -506,14 +506,14 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Task Manager'
-			githubLink='https://github.com/KDE/plasma-desktop/blob/master/applets/taskmanager'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/taskmanager'
 			product='plasmashell&component=Task%20Manager'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Icon Tasks'
-			githubLink='https://github.com/KDE/plasma-desktop/blob/master/applets/taskmanager'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/taskmanager'
 			product='plasmashell&component=Icons-only%20Task%20Manager'
 		%}
 	</tr>
@@ -544,7 +544,7 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Weather Forecast'
-			githubLink='https://github.com/KDE/kdeplasma-addons/blob/master/applets/weather'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/weather'
 			product='kdeplasma-addons&component=weather'
 		%}
 	</tr>
@@ -581,7 +581,7 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoFramework.html
 			repoName='Breeze DesktopTheme'
-			githubLink='https://github.com/KDE/plasma-framework/blob/master/src/desktoptheme/breeze'
+			githubLink='https://github.com/KDE/plasma-framework/tree/master/src/desktoptheme/breeze'
 			product='frameworks-plasma'
 		%}
 	</tr>
