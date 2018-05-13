@@ -333,13 +333,10 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
-		{% include kdeRepo.html
+		{% include kdeRepoAddons.html
 			repoName='Minimize All'
 			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/minimizeall'
 			product='kdeplasma-addons&component=General'
-			phabRepo='kdeplasma-addons'
-			phabRepoName='Plasma Addons'
-			phabDiffQuery='iwcJtI0heMfD'
 		%}
 	</tr>
 	<tr>
@@ -381,13 +378,17 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
-		{% include kdeRepo.html
+		{% include kdeRepoAddons.html
+			repoName='Quick Share'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/quickshare'
+			product='kdeplasma-addons&component=QuickShare'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoAddons.html
 			repoName='System Load Viewer'
 			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/systemloadviewer'
 			product='kdeplasma-addons&component=systemloadviewer'
-			phabRepo='kdeplasma-addons'
-			phabRepoName='Plasma Addons'
-			phabDiffQuery='iwcJtI0heMfD'
 		%}
 	</tr>
 	<tr>
@@ -412,13 +413,10 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
-		{% include kdeRepo.html
+		{% include kdeRepoAddons.html
 			repoName='Timer'
 			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/timer'
 			product='kdeplasma-addons&component=timer'
-			phabRepo='kdeplasma-addons'
-			phabRepoName='Plasma Addons'
-			phabDiffQuery='iwcJtI0heMfD'
 		%}
 	</tr>
 	<tr>
@@ -432,13 +430,10 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
-		{% include kdeRepo.html
+		{% include kdeRepoAddons.html
 			repoName='Weather Forecast'
 			githubLink='https://github.com/KDE/kdeplasma-addons/blob/master/applets/weather'
 			product='kdeplasma-addons&component=weather'
-			phabRepo='kdeplasma-addons'
-			phabRepoName='Plasma Addons'
-			phabDiffQuery='iwcJtI0heMfD'
 		%}
 	</tr>
 	<tr class="indent">
