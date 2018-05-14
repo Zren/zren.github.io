@@ -83,6 +83,7 @@ redirect_from: /projects/kde/repos/
 <style type="text/css">
 #search input {
 	width: 100%;
+	max-width: 800px;
 	position: relative;
 	padding: .5em;
 	border: 1px solid #ccc;
