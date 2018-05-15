@@ -193,6 +193,13 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
+			repoName='[Show] Activities [Switcher]'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/showActivityManager'
+			product='plasmashell&component=Activity%20Switcher'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoDesktop.html
 			repoName='Application Launcher (Kickoff)'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/kickoff'
 			product='plasmashell&component=Application%20Launcher%20%28Kickoff%29'
@@ -597,6 +604,13 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
+		{% include kdeRepoDesktop.html
+			repoName='Trash'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/trash'
+			product='plasmashell&component=general'
+		%}
+	</tr>
+	<tr>
 		{% include kdeRepoAddons.html
 			repoName='User Switcher'
 			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/userswitcher'
@@ -632,6 +646,13 @@ redirect_from: /projects/kde/repos/
 			repoName='Web browser'
 			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/webbrowser'
 			product='kdeplasma-addons&component=webbrowser'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoDesktop.html
+			repoName='Window list'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/window-list'
+			product='plasmashell&component=Window%20List'
 		%}
 	</tr>
 </table>
