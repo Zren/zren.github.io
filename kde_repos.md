@@ -282,7 +282,7 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
-			repoName='Clipboard'
+			repoName='Clipboard (Klipper)'
 			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/clipboard'
 			product='klipper&component=plasma-widget'
 		%}
