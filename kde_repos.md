@@ -185,6 +185,13 @@ redirect_from: /projects/kde/repos/
 
 <table class="repolist">
 	<tr>
+		{% include kdeRepoWorkspace.html
+			repoName='Activity Bar'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/activitybar'
+			product='plasmashell&component=Activity%20Switcher'
+		%}
+	</tr>
+	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Application Launcher (Kickoff)'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/kickoff'
@@ -264,6 +271,13 @@ redirect_from: /projects/kde/repos/
 			repoName='Calculator'
 			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/calculator'
 			product='kdeplasma-addons&component=calculator'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoWorkspace.html
+			repoName='Clipboard'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/clipboard'
+			product='klipper&component=plasma-widget'
 		%}
 	</tr>
 	<tr>
@@ -399,6 +413,13 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
+		{% include kdeRepoWorkspace.html
+			repoName='Icon'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/icon'
+			product='plasmashell&component=Icon%20Applet'
+		%}
+	</tr>
+	<tr>
 		{% include kdeRepo.html
 			repoName='KDE Connect'
 			githubLink='https://github.com/KDE/kdeconnect-kde/tree/master/plasmoid'
@@ -430,6 +451,13 @@ redirect_from: /projects/kde/repos/
 			repoName='Konsole Profiles'
 			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/konsoleprofiles'
 			product='kdeplasma-addons&component=konsoleprofiles'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoWorkspace.html
+			repoName='Lock/Logout'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/lock_logout'
+			product='plasmashell&component=general'
 		%}
 	</tr>
 	<tr>
@@ -502,7 +530,14 @@ redirect_from: /projects/kde/repos/
 		{% include kdeRepoDesktop.html
 			repoName='Panel'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/desktoppackage'
-			product='plasmashell&component=panel'
+			product='plasmashell&component=Panel'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoWorkspace.html
+			repoName='Panel Spacer'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/panelspacer'
+			product='plasmashell&component=Panel'
 		%}
 	</tr>
 	<tr>
