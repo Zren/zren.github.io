@@ -225,6 +225,11 @@ rm ~/.cache/icon-cache.kcache
   Mouse Actions Tab > Remove: Vertical Scroll => Switch Desktop
 
 {% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Disable bouncing cursor when apps open
+  System Settings > Applications
+  Change "Bouncing" Cursor to "No Feedback"
+
+{% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Disable focus stealing prevention
   System Settings > Window Management
   Window Behaviour Tab > Focus Stealing Prevention: None
