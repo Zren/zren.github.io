@@ -12,7 +12,7 @@ This page aims to setup a nice KDE Plasma5 desktop for someone who's coming from
 There are a few things missing from User Edition of KDE Neon for regular usage.
 
 {% highlight bash %}
-sudo apt install -y kubuntu-driver-manager # Proprietary/Nvidia Drivers
+sudo apt install -y kubuntu-driver-manager # Proprietary/Nvidia Driver Installer
 sudo apt install -y kdeplasma-addons # "Big Icons" Alt+Tab
 sudo apt install -y libnotify-bin # notify-send (Dota 2 Notifications)
 sudo apt install -y p7zip-full p7zip-rar # (.7z)
