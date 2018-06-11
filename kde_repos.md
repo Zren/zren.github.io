@@ -282,6 +282,13 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
+			repoName='Calendar'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/calendar'
+			product='plasmashell&component=Calendar'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoWorkspace.html
 			repoName='Clipboard (Klipper)'
 			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/clipboard'
 			product='klipper&component=plasma-widget'
