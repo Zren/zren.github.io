@@ -63,17 +63,17 @@ a:not([href]):hover {
     </tr>
     <tr>
       <td><a href="https://neon.kde.org/">KDE Neon</a> User</td>
-      <td title="qt">5.9.1</td>
-      <td title="frameworks">5.40</td>
-      <td title="plasma">5.11.3</td>
-      <td title="apps">17.08.3</td>
+      <td title="qt">5.11.0</td>
+      <td title="frameworks">5.46</td>
+      <td title="plasma">5.12.5</td>
+      <td title="apps">18.04.2</td>
     </tr>
     <tr>
       <td><a href="https://neon.kde.org/">KDE Neon</a> User LTS</td>
-      <td title="qt">5.7.1</td>
-      <td title="frameworks">5.40</td>
-      <td title="plasma">5.8.8</td>
-      <td title="apps">17.08.3</td>
+      <td title="qt">5.11.0</td>
+      <td title="frameworks">5.46</td>
+      <td title="plasma">5.12.5</td>
+      <td title="apps">8.04.2</td>
     </tr>
     <tr>
       <td><a href="http://www.kubuntu.org/">Kubuntu</a> 16.04</td>
@@ -107,7 +107,7 @@ a:not([href]):hover {
       <td><a href="http://www.kubuntu.org/">Kubuntu</a> 18.04</td>
       <td title="qt">?</td>
       <td title="frameworks">?</td>
-      <td title="plasma">?</td>
+      <td title="plasma">5.12</td>
       <td title="apps">?</td>
     </tr>
     <tr>
@@ -172,6 +172,18 @@ a:not([href]):hover {
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://www.kde.org/announcements/plasma-5.13.0.php">Plasma 5.12.4</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/8qiei3/kdes_plasma_513_desktop_has_launched/">/r/kde</a></td>
+      <td>
+        <a href="https://www.reddit.com/r/linux/comments/8qienb/kdes_plasma_513_desktop_has_launched/">/r/linux</a>
+        <a href="https://www.reddit.com/r/kdeneon/comments/8qieqq/kdes_plasma_513_desktop_has_launched/">/r/kdeneon</a>
+      </td>
+      <td>
+        <ul>
+        </ul>
+      </td>
+    </tr>
     <tr>
       <td><a href="https://www.kde.org/announcements/plasma-5.12.90.php">Plasma 5.13.0 Beta</a></td>
       <td><a href="https://www.reddit.com/r/kde/comments/8kdjz7/kde_plasma_513_beta_fast_lightweight_and_full/">/r/kde</a></td>
