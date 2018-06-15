@@ -4,7 +4,14 @@ title: AMD Gaming with KDE Neon
 permalink: /amdgaming/
 ---
 
-
+<style type="text/css">
+.post-content h2 {
+    border-bottom: 1px solid;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 1.5em;
+}
+</style>
 
 ## Shadow Warrior
 
@@ -12,6 +19,7 @@ permalink: /amdgaming/
 
 I tried out Shadow Warrior today. Experience a few freezes, so I think I'll wait for the next Mesa update before trying again.
 
+* KDE Neon / Ubuntu 16.04.4
 * [XFX - Radeon R7 370 2GB](https://ca.pcpartpicker.com/product/9jyxFT/xfx-video-card-r7370p2255)
 * Linux Kernel: `v4.13.0-45-generic`
 * `glxinfo | grep OpenGL`
