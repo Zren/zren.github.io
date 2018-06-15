@@ -1,6 +1,6 @@
 ---
 layout: page
-title: AMD Gaming with KDE Neon (Ubuntu 16.04)
+title: AMD Gaming with KDE Neon
 permalink: /amdgaming/
 ---
 
