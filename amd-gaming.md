@@ -13,6 +13,32 @@ permalink: /amdgaming/
 }
 </style>
 
+
+
+## Dead Island
+
+**Updated:** June 16, 2018
+
+I previously tried running this game around the release of Ubuntu 16.04.0, and it could not get past the "New Game" menu. It would crash when trying to load the actual game.
+
+Note, I only own the original version, not the [Dead Island Definitive Edition](https://store.steampowered.com/app/383150/Dead_Island_Definitive_Edition/).
+
+24 months later, I hoped the AMD drivers had gotten good enough to play this game. Unfortunately, it was worse. I couldn't even get pass the "title screen" after the intro movie. It crashes while loading after the "Press any key to continue" screen when trying to load the Main Menu.
+
+* KDE Neon / Ubuntu 16.04.4
+* [XFX - Radeon R7 370 2GB](https://ca.pcpartpicker.com/product/9jyxFT/xfx-video-card-r7370p2255)
+* Linux Kernel: `v4.13.0-45-generic`
+* `glxinfo | grep OpenGL`
+    * OpenGL renderer string: AMD PITCAIRN (DRM 2.50.0 / 4.13.0-45-generic, LLVM 5.0.0)
+    * OpenGL core profile version string: 4.5 (Core Profile) Mesa 17.2.8
+
+### Crashes
+
+* Game crashes when trying to load the main menu after the title screen.
+
+
+
+
 ## Shadow Warrior
 
 **Updated:** June 14, 2018
