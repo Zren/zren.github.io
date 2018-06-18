@@ -117,7 +117,7 @@ sudo apt install -y playonlinux
 
 ### LibreOffice (Microsoft Office/Word Substitute)
 
-(Optional) If you want a more up to date version of libreoffice (v5.4) vs the LTS version (v5.1), use the following ppa.
+(Optional) If you want a more up to date version of libreoffice (v6.0) vs the LTS version (v5.1), use the following ppa.
 
 {% highlight bash %}
 sudo add-apt-repository ppa:libreoffice/ppa
