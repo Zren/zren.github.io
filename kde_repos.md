@@ -618,6 +618,16 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
+		{% include kdeRepo.html
+			repoName='Updates (Discover)'
+			githubLink='https://github.com/KDE/discover/tree/master/notifier'
+			product='Discover&component=Updater'
+			phabRepo='discover'
+			phabRepoName='Discover Software Store'
+			phabDiffQuery='XBRvBuRvMiM5'
+		%}
+	</tr>
+	<tr>
 		{% include kdeRepoAddons.html
 			repoName='User Switcher'
 			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/userswitcher'
@@ -827,6 +837,16 @@ redirect_from: /projects/kde/repos/
 ## KDE Apps
 
 <table class="repolist">
+	<tr>
+		{% include kdeRepo.html
+			repoName='Discover'
+			githubLink='https://github.com/KDE/discover'
+			product='Discover'
+			phabRepo='discover'
+			phabRepoName='Discover Software Store'
+			phabDiffQuery='XBRvBuRvMiM5'
+		%}
+	</tr>
 	<tr>
 		{% include kdeRepo.html
 			repoName='Dolphin'
