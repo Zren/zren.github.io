@@ -335,8 +335,12 @@ qdbus org.kde.KWin /KWin reconfigure
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Double Click to open files
-  System Settings > Input Devices
-  Mouse Tab > Icons: Double Click to open files and folders
+  * KDE 5.13
+    System Settings > Desktop Behavior > Workspace
+    Click Behavior: Double Click to open files and folders
+  * <= KDE 5.12
+    System Settings > Input Devices
+    Mouse Tab > Icons: Double Click to open files and folders
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Always Show Hidden Files
