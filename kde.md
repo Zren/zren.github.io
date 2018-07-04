@@ -281,19 +281,19 @@ qdbus org.kde.KWin /KWin reconfigure
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Open “Start Menu” with Windows/Meta key
-  * KDE 5.8.2
+  * Plasma 5.8.2
     Feature has been added by default.
     If it's not working, make sure your "Start Menu" has a global shortcut like Alt+F1 set (you can't assign it only to Meta, but it will open with Meta if another shortcut is assigned).
     Right Click the KDE Icon > Application Menu Settings
     Keyboard Shortcuts Tab > Shortcut: Alt+F1
-  * <= KDE 5.7
+  * <= Plasma 5.7
     `sudo apt install ksuperkey`
-  * <= KDE 5.7 (Or just use Win+Space)
+  * <= Plasma 5.7 (Or just use Win+Space)
     Right Click the KDE Icon > Application Menu Settings
     Keyboard Shortcuts Tab > Shortcut: Meta+Space
 
 {% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} Do not open the “Start Menu” with Windows/Meta key (KDE 5.8)
+* {:#cfg-{{ i }}} Do not open the “Start Menu” with Windows/Meta key (Plasma 5.8)
   We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/config/kwinrc`, then reload kwin.
   It's easier to use these commmands than doing it by hand.
   {% highlight bash %}
@@ -335,10 +335,10 @@ qdbus org.kde.KWin /KWin reconfigure
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Double Click to open files
-  * KDE 5.13
+  * Plasma 5.13
     System Settings > Desktop Behavior > Workspace
     Click Behavior: Double Click to open files and folders
-  * <= KDE 5.12
+  * <= Plasma 5.12
     System Settings > Input Devices
     Mouse Tab > Icons: Double Click to open files and folders
 
