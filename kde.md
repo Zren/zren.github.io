@@ -420,9 +420,11 @@ qdbus org.kde.KWin /KWin reconfigure
 * {:#cfg-{{ i }}} Cleanup Friends List
   Steam > Friends > View Friends List
   Click on the Cog / Settings Icon
+  Ignore 'Away' status when sorting friends: On
   Compact Favorites Area: On
   Compact Friends List: On
   Append nickname to friend's name: On
+  Hide offline friends in custom categories: On
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Hide “Friend is playing ___” Notifications
