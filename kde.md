@@ -414,17 +414,28 @@ qdbus org.kde.KWin /KWin reconfigure
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Hide “Big Picture”, etc in the System Tray Context Menu
   Steam > Settings > Interface Tab
-  Set Taskbar Preferences > Only Check: Library, Exit Steam
+  Set Taskbar Preferences > Only Check: Library, Friends, Exit Steam
+
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Cleanup Friends List
+  Steam > Friends > View Friends List
+  Click on the Cog / Settings Icon
+  Compact Favorites Area: On
+  Compact Friends List: On
+  Append nickname to friend's name: On
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Hide “Friend is playing ___” Notifications
-  Steam > Settings > Friends Tab
-  Uncheck: When friend joins a game: display a notification
+  Steam > Friends > View Friends List
+  Click on the Cog / Settings Icon
+  Notifications > Uncheck: When friend joins a game
+  Notifications > Uncheck: When comes online
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Never Show Advertisement Popups
   Steam > Settings > Interface Tab
   Uncheck: Notify me about additions to my games and other releases
+
 
 
 ### Clementine
