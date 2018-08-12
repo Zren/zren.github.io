@@ -29,6 +29,7 @@ sudo apt install -y comix # Image Viewer (.cbr .zip .rar)
 sudo apt install -y gimp # Image Editor (.jpg .png)
 sudo apt install -y htop # Command Line Task Manager
 sudo apt install -y inkscape # Vector Image Editor (.svg)
+sudo apt install -y krita # Digital Painting (.jpg .png)
 sudo apt install -y scrot # Command Line Screen Capture
 sudo apt install -y xbindkey # Remap Mouse Buttons / Keys
 sudo apt install -y xdotool # Command Line Trigger Mouse/Keys
