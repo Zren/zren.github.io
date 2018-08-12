@@ -956,6 +956,22 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepo.html
+			repoName='KSMServer (Session Manager)'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/ksmserver'
+			product='ksmserver'
+		%}
+		{% include phabLinksWorkspace.html %}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='Logout Theme'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/lookandfeel/contents/logout'
+			product='ksmserver&component=ui'
+		%}
+		{% include phabLinksWorkspace.html %}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
 			repoName='KScreenLocker'
 			githubLink='https://github.com/KDE/kscreenlocker'
 			product='kscreenlocker'
