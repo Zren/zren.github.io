@@ -475,7 +475,7 @@ qdbus org.kde.KWin /KWin reconfigure
 # Known Bugs
 
 {% assign i = i | plus: 1 %}
-* {:#bug-{{ i }}} Slideshow wallpaper memory leak / heavy cpu usage
+* {:#bug-{{ i }}} Slideshow wallpaper memory leak / heavy cpu usage (Fixed)
   <https://bugs.kde.org/show_bug.cgi?id=368838>
   Sadly, the workaround is to just not use the slideshow.
 
