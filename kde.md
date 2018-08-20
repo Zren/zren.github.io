@@ -479,6 +479,13 @@ qdbus org.kde.KWin /KWin reconfigure
   <https://bugs.kde.org/show_bug.cgi?id=368838>
   Sadly, the workaround is to just not use the slideshow.
 
+{% assign i = i | plus: 1 %}
+* Open Bugs in Plasma (the taskbar/panel)
+  [bugs.kde.org search](https://bugs.kde.org/buglist.cgi?list_id=1536784&order=bug_id%20DESC&product=plasmashell&product=kdeplasma-addons&product=plasma-nm&product=plasma-pa&product=Plasma%20Vault&product=frameworks-plasma&product=plasma-browser-integration&product=plasma-integration&query_format=advanced)
+
+{% assign i = i | plus: 1 %}
+* File a New Bug
+  <https://bugs.kde.org/>
 
 
 <script>
