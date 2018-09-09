@@ -19,6 +19,7 @@ sudo apt install -y p7zip-full p7zip-rar # (.7z)
 sudo apt install -y qapt-deb-installer # (.deb) GUI Installer
 sudo apt install -y software-properties-common # add-apt-repository
 sudo apt install -y unrar # (.rar)
+sudo apt install -y kcron # Task Scheduler in System Settings
 {% endhighlight %}
 
 ## Useful Software
