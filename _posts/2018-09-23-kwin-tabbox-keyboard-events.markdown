@@ -46,7 +46,7 @@ If things didn't compile correctly:
 
 If everything compiled correctly, we should now test to make sure it runs correctly before we start messing with it.
 
-Before we do, rememeber this command so you can restart your distro's copy of `kwin_x11` if things go bad.
+Before we do, make sure to remember this command so you can restart your distro's copy of `kwin_x11` if things go bad.
 
 {% highlight bash %}
 kwin_x11 --replace &
