@@ -38,15 +38,15 @@ cd ..
 
 If things didn't compile correctly:
 
-* If it needs a newer kde dependency
-    a) you could either checkout and older branch and develop on that
-    b) or you could follow the `kdesrc-build` [instructions](https://community.kde.org/Guidelines_and_HOWTOs/Build_from_source) to build everything.
+* If it needs a newer kde dependency:
+    * (A) You could either checkout and older branch and develop on that.
+    * (B) Or you could follow the `kdesrc-build` [instructions](https://community.kde.org/Guidelines_and_HOWTOs/Build_from_source) to build the entire kde stack from source.
 
 ### Testing
 
-If everything compiled correctly, we can now test to make sure it runs correctly before we start messing with it.
+If everything compiled correctly, we should now test to make sure it runs correctly before we start messing with it.
 
-Before we do, rememeber this command so you can restart your distros copy of `kwin_x11`.
+Before we do, rememeber this command so you can restart your distro's copy of `kwin_x11` if things go bad.
 
 {% highlight bash %}
 kwin_x11 --replace &
@@ -66,9 +66,9 @@ If everything went well, we can then start modifying kwin.
 
 First open up `tabbox/tabboxhandler.cpp` and navigate to the `TabBoxHandler::eventFilter` function.
 
-https://github.com/KDE/kwin/blob/master/tabbox/tabboxhandler.cpp#L621
+<https://github.com/KDE/kwin/blob/master/tabbox/tabboxhandler.cpp#L621>
 
-The easiest way to debug is to make it log to the terminal whenever a function is called. In Qt, we usually use `qDebug()` to log to file, but as we can see elsewhere in this file, [a logging category](http://doc.qt.io/qt-5/qloggingcategory.html) for tabbox has already been set up so lets use that.
+The easiest way to debug is to log to the terminal whenever a function is called. In Qt, we usually use `qDebug()` to log to file, but as we can see elsewhere in this file, [a logging category](http://doc.qt.io/qt-5/qloggingcategory.html) for tabbox has already been set up so lets use that.
 
 {% highlight cpp %}
 bool TabBoxHandler::eventFilter(QObject *watched, QEvent *e)
@@ -82,7 +82,7 @@ After building and testing kwin, I wasn't able to see any logging though. It's p
 
 If we look at `tabbox_logging.cpp` we'll find out that the exact category name is `kwin_tabbox`.
 
-https://github.com/KDE/kwin/blob/master/tabbox/tabbox_logging.cpp
+<https://github.com/KDE/kwin/blob/master/tabbox/tabbox_logging.cpp>
 
 {% highlight cpp %}
 Q_LOGGING_CATEGORY(KWIN_TABBOX, "kwin_tabbox", QtCriticalMsg)
@@ -98,12 +98,12 @@ QT_LOGGING_RULES="kwin_tabbox.debug=true" build/bin/kwin_x11 --replace &
 
 ### QML Skins
 
-If your like me and was wondering which repo contains the QML tabbox skins, you can easily find out which package owns a file with `dpkg -S`.
+If you're like me and was wondering which repo contains the QML tabbox skins, you can easily find out which package owns a file with `dpkg -S`.
 
 {% highlight bash %}
 $ dpkg -S /usr/share/kwin/tabbox/big_icons/
 kwin-addons: /usr/share/kwin/tabbox/big_icons
 {% endhighlight %}
 
-In this case, it seems they are shipped in [kwin-addons](https://packages.debian.org/stretch/kwin-addons) package, but grabs it's source from the [kdeplasma-addons](https://github.com/KDE/kdeplasma-addons/tree/master/windowswitchers) git repo.
+In this case, it seems they are shipped in the [kwin-addons](https://packages.debian.org/stretch/kwin-addons) package, which grabs it's source from the [kdeplasma-addons](https://github.com/KDE/kdeplasma-addons/tree/master/windowswitchers) git repo.
 
