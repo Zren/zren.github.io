@@ -97,4 +97,4 @@ So after reading the [QLoggingCategory documentation](http://doc.qt.io/qt-5/qlog
 QT_LOGGING_RULES="kwin_tabbox.debug=true" build/bin/kwin_x11 --replace &
 {% endhighlight %}
 
-
+{% include video.html youtubeId="noR582a0eBU" %}
