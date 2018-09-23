@@ -9,7 +9,7 @@ In case you didn't know, TabBox is the codename for the Alt+Tab Task Switcher. T
 
 ### Setting up a Dev Environemnt
 
-To get started, let's build `kwin`. Sometimes it requires an unreleased dependency, but right now I simply clone the repo and build the master branch in KDE Neon.
+To get started, let's build `kwin`. Sometimes it requires an unreleased dependency, but right now I can simply clone the repo and build the master branch in KDE Neon.
 
 First download the code with:
 
@@ -24,9 +24,9 @@ Then install the build dependencies (this is the Neon/Ubuntu/Debian command).
 sudo apt-get build-dep kwin
 {% endhighlight %}
 
-Now we can build kwin. I use [my own script](https://gist.github.com/Zren/3f859c267ac1148aaedcf54a9bacb00f) which does the same thing.
+Now we can build kwin. I use [my own script](https://gist.github.com/Zren/3f859c267ac1148aaedcf54a9bacb00f) but you can use the commands below.
 
-Note that we're not building the tests since it takes forever and requires over several gigabytes of storage. Even without building the tests, the build directory will use up 1.7 Gb of space (so you'll want to delete it when you're done).
+Note that we're not building the tests since it takes forever and adds an entire gigabyte of storage. The build directory will be 0.8 Gb without tests, and 1.8 Gb with them. Even without building the tests, the build directory will use up plenty of space (so you'll want to delete it when you're done).
 
 {% highlight bash %}
 mkdir -p build
