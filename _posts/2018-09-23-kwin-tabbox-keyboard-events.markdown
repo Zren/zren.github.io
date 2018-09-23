@@ -14,7 +14,7 @@ $ dpkg -S /usr/share/kwin/tabbox/big_icons/
 kwin-addons: /usr/share/kwin/tabbox/big_icons
 {% endhighlight %}
 
-In this case, it seems they are shipped in [kwin-addons](https://packages.debian.org/stretch/kwin-addons) package, but grabs it's source from the [kdeplasma-addons](https://github.com/KDE/kdeplasma-addons/tree/master/windowswitchers] git repo.
+In this case, it seems they are shipped in [kwin-addons](https://packages.debian.org/stretch/kwin-addons) package, but grabs it's source from the [kdeplasma-addons](https://github.com/KDE/kdeplasma-addons/tree/master/windowswitchers) git repo.
 
 To get started, let's build `kwin`. Sometimes it requires an unreleased dependency, but right now I simply clone the repo and build the master branch in KDE Neon.
 
