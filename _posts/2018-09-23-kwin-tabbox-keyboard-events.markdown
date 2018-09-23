@@ -7,14 +7,7 @@ In case you didn't know, TabBox is the codename for the Alt+Tab Task Switcher. T
 
 <https://bugs.kde.org/show_bug.cgi?id=370185>
 
-If your like me and was wondering which repo contains the QML tabbox skins, you can easily find out which package owns a file with `dpkg -S`.
-
-{% highlight bash %}
-$ dpkg -S /usr/share/kwin/tabbox/big_icons/
-kwin-addons: /usr/share/kwin/tabbox/big_icons
-{% endhighlight %}
-
-In this case, it seems they are shipped in [kwin-addons](https://packages.debian.org/stretch/kwin-addons) package, but grabs it's source from the [kdeplasma-addons](https://github.com/KDE/kdeplasma-addons/tree/master/windowswitchers) git repo.
+### Setting up a Dev Environemnt
 
 To get started, let's build `kwin`. Sometimes it requires an unreleased dependency, but right now I simply clone the repo and build the master branch in KDE Neon.
 
@@ -49,6 +42,8 @@ If things didn't compile correctly:
     a) you could either checkout and older branch and develop on that
     b) or you could follow the `kdesrc-build` [instructions](https://community.kde.org/Guidelines_and_HOWTOs/Build_from_source) to build everything.
 
+### Testing
+
 If everything compiled correctly, we can now test to make sure it runs correctly before we start messing with it.
 
 Before we do, rememeber this command so you can restart your distros copy of `kwin_x11`.
@@ -64,6 +59,8 @@ build/bin/kwin_x11 --replace &
 {% endhighlight %}
 
 Note that we used `&` to run `kwin_x11` in the background. This lets us restart kwin smoothly in the same Konsole terminal by hitting `Up Arrow` then `Enter`.
+
+### Adding Simple Debug Logging
 
 If everything went well, we can then start modifying kwin.
 
@@ -98,3 +95,15 @@ QT_LOGGING_RULES="kwin_tabbox.debug=true" build/bin/kwin_x11 --replace &
 {% endhighlight %}
 
 {% include video.html youtubeId="noR582a0eBU" %}
+
+### QML Skins
+
+If your like me and was wondering which repo contains the QML tabbox skins, you can easily find out which package owns a file with `dpkg -S`.
+
+{% highlight bash %}
+$ dpkg -S /usr/share/kwin/tabbox/big_icons/
+kwin-addons: /usr/share/kwin/tabbox/big_icons
+{% endhighlight %}
+
+In this case, it seems they are shipped in [kwin-addons](https://packages.debian.org/stretch/kwin-addons) package, but grabs it's source from the [kdeplasma-addons](https://github.com/KDE/kdeplasma-addons/tree/master/windowswitchers) git repo.
+
