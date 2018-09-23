@@ -16,7 +16,7 @@ kwin-addons: /usr/share/kwin/tabbox/big_icons
 
 In this case, it seems they are shipped in [kwin-addons](https://packages.debian.org/stretch/kwin-addons) package, but grabs it's source from the [kdeplasma-addons](https://github.com/KDE/kdeplasma-addons/tree/master/windowswitchers] git repo.
 
-To get started, let's build `kwin`. Sometimes it requires an unreleased dependency, but right now I simply clone the repo and build the master branch.
+To get started, let's build `kwin`. Sometimes it requires an unreleased dependency, but right now I simply clone the repo and build the master branch in KDE Neon.
 
 First download the code with:
 
@@ -33,6 +33,8 @@ sudo apt-get build-dep kwin
 
 Now we can build kwin. I use [my own script](https://gist.github.com/Zren/3f859c267ac1148aaedcf54a9bacb00f) which does the same thing.
 
+Note that we're not building the tests since it takes forever and requires over several gigabytes of storage. Even without building the tests, the build directory will use up 1.7 Gb of space (so you'll want to delete it when you're done).
+
 {% highlight bash %}
 mkdir -p build
 cd build
@@ -40,6 +42,12 @@ cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug -DBUILD_TESTING=OF
 make
 cd ..
 {% endhighlight %}
+
+If things didn't compile correctly:
+
+* If it needs a newer kde dependency
+    a) you could either checkout and older branch and develop on that
+    b) or you could follow the `kdesrc-build` [instructions](https://community.kde.org/Guidelines_and_HOWTOs/Build_from_source) to build everything.
 
 If everything compiled correctly, we can now test to make sure it runs correctly before we start messing with it.
 
@@ -58,4 +66,35 @@ build/bin/kwin_x11 --replace &
 Note that we used `&` to run `kwin_x11` in the background. This lets us restart kwin smoothly in the same Konsole terminal by hitting `Up Arrow` then `Enter`.
 
 If everything went well, we can then start modifying kwin.
+
+First open up `tabbox/tabboxhandler.cpp` and navigate to the `TabBoxHandler::eventFilter` function.
+
+https://github.com/KDE/kwin/blob/master/tabbox/tabboxhandler.cpp#L621
+
+The easiest way to debug is to make it log to the terminal whenever a function is called. In Qt, we usually use `qDebug()` to log to file, but as we can see elsewhere in this file, [a logging category](http://doc.qt.io/qt-5/qloggingcategory.html) for tabbox has already been set up so lets use that.
+
+{% highlight cpp %}
+bool TabBoxHandler::eventFilter(QObject *watched, QEvent *e)
+{
+    qCDebug(KWIN_TABBOX) << "eventFilter " << e->type();
+
+    if (e->type() == QEvent::Wheel && watched == d->window()) {
+{% endhighlight %}
+
+After building and testing kwin, I wasn't able to see any logging though. It's possible that logging from this category is hidden by default.
+
+If we look at `tabbox_logging.cpp` we'll find out that the exact category name is `kwin_tabbox`.
+
+https://github.com/KDE/kwin/blob/master/tabbox/tabbox_logging.cpp
+
+{% highlight cpp %}
+Q_LOGGING_CATEGORY(KWIN_TABBOX, "kwin_tabbox", QtCriticalMsg)
+{% endhighlight %}
+
+So after reading the [QLoggingCategory documentation](http://doc.qt.io/qt-5/qloggingcategory.html#logging-rules), we can change our test command to:
+
+{% highlight bash %}
+QT_LOGGING_RULES="kwin_tabbox.debug=true" build/bin/kwin_x11 --replace &
+{% endhighlight %}
+
 
