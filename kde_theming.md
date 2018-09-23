@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Theming KDE Plasma5
+title: KDE Plasma5 Theming
 permalink: /kde/theming/
 ---
 
