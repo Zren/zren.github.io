@@ -184,6 +184,10 @@ After testing it... It works!
 	* Source: `kdeplasma-addons`
 	* KeyHandler: `Dialog.mainItem.Keys.onPressed`
 	* <https://github.com/KDE/kdeplasma-addons/blob/master/windowswitchers/small_icons/contents/ui/main.qml>
+* Grid
+	* Source: `kdeplasma-addons`
+	* KeyHandler: `Dialog.mainItem.Keys.onPressed`
+	* <https://github.com/KDE/kdeplasma-addons/blob/master/windowswitchers/present_windows/contents/ui/main.qml>
 * Informative
 	* Source: `kdeplasma-addons`
 	* KeyHandler: `Dialog.Keys.onPressed`
