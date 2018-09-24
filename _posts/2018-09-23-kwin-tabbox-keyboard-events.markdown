@@ -133,7 +133,7 @@ d->frameSvgItem = new Plasma::FrameSvgItem(contentItem());
 mainItem->setParentItem(contentItem());
 {% endhighlight %}
 
-So, the question is why the second `sendEvent` is sent to a `ColorScope` instance...
+So, the question is why the second `sendEvent` is sent to a `ColorScope` instance?
 
 
 ### QML Skins
