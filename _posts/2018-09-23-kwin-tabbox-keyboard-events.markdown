@@ -96,6 +96,46 @@ QT_LOGGING_RULES="kwin_tabbox.debug=true" build/bin/kwin_x11 --replace &
 
 {% include video.html youtubeId="noR582a0eBU" %}
 
+Alright, next we'll look at where it handles the Alt+Tab, and Alt+Shift+Tab shortcuts, as it appears that code it "stealing" the keypress event. So next we'll add some debug statements in the `tabbox/tabbox.cpp` file.
+
+{% highlight cpp %}
+qCDebug(KWIN_TABBOX) << "TabBox::grabbedKeyEvent " << event->key();
+qCDebug(KWIN_TABBOX) << "TabBox::keyPress " << keyQt;
+{% endhighlight %}
+
+Now pressing the left arrow key logs the following:
+
+{% highlight log %}
+# Left Arrow
+kwin_tabbox: TabBox::keyPress        150994962
+kwin_tabbox: TabBox::grabbedKeyEvent  16777234
+{% endhighlight %}
+
+It seems the `keyQt` in the `TabBox::keyPress` line includes the AltModifier bit flag as the number is larger. Also, it seems that it's also sent to `TabBoxHandler::grabbedKeyEvent`.
+
+<https://github.com/KDE/kwin/blob/master/tabbox/tabboxhandler.cpp#L525>
+
+{% highlight log %}
+kwin_tabbox: TabBoxHandler::grabbedKeyEvent 16777234
+kwin_tabbox:     d->m_mainItem && d->window()
+kwin_tabbox:     d->window() PlasmaQuick::Dialog(0x15bcc30 exposed, visibility=QWindow::Visibility(Windowed), flags=QFlags<Qt::WindowType>(X11BypassWindowManagerHint|FramelessWindowHint), geometry=498,441 932x206)
+kwin_tabbox:     d->window()->contentItem() QQuickRootItem(0x15820e0, parent=0x0, geometry=0,0 932x206)
+kwin_tabbox:     d->window()->sendEvent Plasma::FrameSvgItem(0x15be890, parent=0x15820e0, geometry=0,0 932x206)
+kwin_tabbox:     d->window()->sendEvent ColorScope(0x16862a0, parent=0x0, geometry=0,0 0x0)
+{% endhighlight %}
+
+Interesting. I'm testing with my [Thumbnail Grid](https://github.com/Zren/kwin-tabbox-thumbnail_grid/blob/master/package/contents/ui/main.qml) skin, and it appears it's sending the events to a `FrameSvgItem` and `ColorScope`. My theory is that it's sending the events to the children of my `PlasmaCore.Dialog`.
+
+<https://github.com/KDE/plasma-framework/blob/master/src/plasmaquick/dialog.cpp#L757>
+
+{% highlight cpp %}
+d->frameSvgItem = new Plasma::FrameSvgItem(contentItem());
+mainItem->setParentItem(contentItem());
+{% endhighlight %}
+
+So, the question is why the second `sendEvent` is sent to a `ColorScope` instance...
+
+
 ### QML Skins
 
 If you're like me and was wondering which repo contains the QML tabbox skins, you can easily find out which package owns a file with `dpkg -S`.
