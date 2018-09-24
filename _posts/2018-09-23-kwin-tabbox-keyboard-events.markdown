@@ -135,6 +135,100 @@ mainItem->setParentItem(contentItem());
 
 So, the question is why the second `sendEvent` is sent to a `ColorScope` instance?
 
+Wait, I just noticed the `ColorScope`'s `parent=0x0`, which means the Dialog is not the "parent"?
+
+Actually why do we even care about the children of `contentItem()`?! Why not just iterate the children of the `window()`/Dialog?
+
+{% highlight diff %}
+diff --git a/tabbox/tabboxhandler.cpp b/tabbox/tabboxhandler.cpp
+index 9d8f16c..0d73d4a 100644
+--- a/tabbox/tabboxhandler.cpp
++++ b/tabbox/tabboxhandler.cpp
+@@ -527,7 +527,7 @@ void TabBoxHandler::grabbedKeyEvent(QKeyEvent* event) const
+     if (!d->m_mainItem || !d->window()) {
+         return;
+     }
+-    const QList<QQuickItem*> items = d->window()->contentItem()->findChildren<QQuickItem*>(QString(), Qt::FindDirectChildrenOnly);
++    const QList<QQuickItem*> items = d->window()->findChildren<QQuickItem*>(QString(), Qt::FindDirectChildrenOnly);
+     for (QQuickItem *item : items) {
+         d->window()->sendEvent(item, event);
+         if (event->isAccepted()) {
+{% endhighlight %}
+
+After testing it... It works!
+
+{% include video.html youtubeId="S8RL9NlHL8g" %}
+
+### Status After Patch
+
+* Breeze (Look and Feel)
+	* Source: `plasma-workspace`
+	* KeyHandler: None
+	* <https://github.com/KDE/plasma-workspace/blob/master/lookandfeel/contents/windowswitcher/WindowSwitcher.qml>
+* Breeze Dark (Look and Feel)
+	* Source: `breeze`
+	* Defined to use same as Breeze, but uses Informative.
+	* KeyHandler: None
+	* <https://github.com/KDE/breeze/blob/master/lookandfeel.dark/contents/defaults#L17>
+* Thumbnail Grid
+	* Source: <https://store.kde.org/p/1153173/>
+	* KeyHandler: `Dialog.mainItem.Keys.onPressed`
+	* <https://github.com/Zren/kwin-tabbox-thumbnail_grid/blob/master/package/contents/ui/main.qml>
+* Preview Stack
+	* Source: <https://store.kde.org/p/1163050>
+	* KeyHandler: None
+* Preview Reel
+	* Source: <https://store.kde.org/p/1161720>
+	* KeyHandler: None
+* Small Icons
+	* Source: `kdeplasma-addons`
+	* KeyHandler: `Dialog.mainItem.Keys.onPressed`
+	* <https://github.com/KDE/kdeplasma-addons/blob/master/windowswitchers/small_icons/contents/ui/main.qml>
+* Informative
+	* Source: `kdeplasma-addons`
+	* KeyHandler: `Dialog.Keys.onPressed`
+	* <https://github.com/KDE/kdeplasma-addons/blob/master/windowswitchers/informative/contents/ui/main.qml>
+* Compact
+	* Source: `kdeplasma-addons`
+	* KeyHandler: `Dialog.mainItem.Keys.onPressed`
+	* <https://github.com/KDE/kdeplasma-addons/blob/master/windowswitchers/compact/contents/ui/main.qml>
+* Thumbnails
+	* Source: `kdeplasma-addons`
+	* KeyHandler: `Dialog.mainItem.Keys.onPressed`
+	* <https://github.com/KDE/kdeplasma-addons/blob/master/windowswitchers/thumbnails/contents/ui/main.qml>
+* Large Icons
+	* Source: `kdeplasma-addons`
+	* KeyHandler: `Dialog.mainItem.Keys.onPressed`
+	* <https://github.com/KDE/kdeplasma-addons/blob/master/windowswitchers/big_icons/contents/ui/main.qml>
+* Text Only
+	* Source: `kdeplasma-addons`
+	* KeyHandler: `Dialog.mainItem.Keys.onPressed`
+	* <https://github.com/KDE/kdeplasma-addons/blob/master/windowswitchers/text/contents/ui/main.qml>
+
+Broken:
+
+* United (Look and Feel)
+	* Source: <https://store.kde.org/p/1167950/>
+	* Defined to use same as Breeze, but does not load.
+	* <https://github.com/llucassaw/United/blob/master/contents/defaults#L14>
+* Window Wall
+	* Source: <https://store.kde.org/p/1112559>
+	* Broken (org.kde.kwin 0.1)
+* Black Icons
+	* Source: <https://store.kde.org/p/1112557>
+	* Broken (org.kde.kwin ?)
+* present windows clone with a background
+	* Source: <https://store.kde.org/p/1112555>
+	* Broken (org.kde.kwin 0.1)
+* Informative with thumbnail
+	* Source: <https://store.kde.org/p/1112556>
+	* Broken (org.kde.kwin 0.1)
+* Present Windows Clone
+	* Source: <https://store.kde.org/p/1112558>
+	* Broken (org.kde.kwin 0.1)
+* Scaling Switcher
+	* Source: <https://store.kde.org/p/1112560>
+	* Broken (org.kde.kwin 0.1)
 
 ### QML Skins
 
