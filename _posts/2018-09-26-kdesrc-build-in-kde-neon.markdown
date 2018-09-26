@@ -54,3 +54,11 @@ Welp. A glance at the file list on <https://packages.ubuntu.com> for xenial and 
 * <https://packages.ubuntu.com/xenial/amd64/libudev-dev/filelist>
 * <https://packages.ubuntu.com/bionic/amd64/libudev-dev/filelist>
 
+For now, I'll try symlinking the file to the one in `/lib`.
+
+{% highlight bash %}
+cd /usr/lib/x86_64-linux-gnu
+sudo ln -s /lib/i386-linux-gnu/libudev.so.1 libudev.so
+{% endhighlight %}
+
+
