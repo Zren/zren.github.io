@@ -61,4 +61,55 @@ cd /usr/lib/x86_64-linux-gnu
 sudo ln -s /lib/i386-linux-gnu/libudev.so.1 libudev.so
 {% endhighlight %}
 
+Running `kdesrc-build plasma-workspace` will now build everything without errors, huzzah!
 
+Now I tried building a few more packages with `plasma-desktop`. I first noticed it tried to rebuid everything `plama-workspace` needed as well, before finally trying to build `plasma-desktop`. After checking `kdesrc-build --help`, I realized I'd need to run the following every time I wanted to build a single package.
+
+{% highlight bash %}
+kdesrc-build plasma-desktop --resume-from=plasma-desktop
+{% endhighlight %}
+
+For now though, lets build `plasma-desktop` starting with `plasma-workspace`.
+
+{% highlight bash %}
+kdesrc-build plasma-desktop --resume-from=plasma-workspace
+{% endhighlight %}
+
+I ran into a new problem when building the `plasma-desktop` package.
+
+{% highlight log %}
+virtual memory exhausted: Cannot allocate memory
+kcms/keyboard/CMakeFiles/kcm_keyboard.dir/build.make:386: recipe for target 'kcms/keyboard/CMakeFiles/kcm_keyboard.dir/preview/geometry_parser.cpp.o' failed
+make[2]: *** [kcms/keyboard/CMakeFiles/kcm_keyboard.dir/preview/geometry_parser.cpp.o] Error 1
+{% endhighlight %}
+
+Turns out I was running out of RAM! This time I ran `kdesrc-build` with KSysGuard open with the RAM graph visible.
+
+![](https://i.imgur.com/7jBMHMC.png)
+
+Turns out building that package uses 1Gb more RAM than normal, climbing up to the max of 2Gb my VM is setup with. It also seems I forgot to properly setup the swap partition after resizing the partitions. Oops.
+
+I first tried adding another gig of RAM to my VM, but even with 3Gb, it ran out.
+
+![](https://i.imgur.com/rTk5fRJ.png)
+
+So I formatted the swap and turned it on. Maybe it requires less RAM if you only build with 1 cpu core.
+
+![](https://i.imgur.com/7DRoXDQ.png)
+![](https://i.imgur.com/bI1n7vQ.png)
+
+After setting up the swap, everything built correctly.
+
+## Testing
+
+The next step from building from source is appearently [setting up a runtime environment](https://community.kde.org/Guidelines_and_HOWTOs/Build_from_source#Set_up_the_runtime_environment). This involves creating a script that overrides a bunch of environment variables in the current Terminal session.
+
+It mentions there's extra steps for Plasma, but I was interested in what would happened if I run plasmashell now? Well I tested it with the following:
+
+{% highlight bash %}
+# Don't do this yet!
+source ~/kde/.setup-env
+killall plasmashell; kstart5 plasmashell
+{% endhighlight %}
+
+Suprisingly, everything loaded okay.
