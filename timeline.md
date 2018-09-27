@@ -58,12 +58,37 @@ h3 + .tags {
 }
 </style>
 
+## 2018
+
+
+### Plasma5 Widget - System Monitor Dashboard
+
+**Source:** <https://github.com/Zren/plasma-applet-sysmonitordash>
+
+I refactored my "System Dash" widget to work for other computer by replacing all the hardcoded sensor names, labels, and colors with a configuration table.
+
+### Plasma5 Widget - KDE Connect Device
+
+**Source:** <https://github.com/Zren/plasma-applet-kdeconnectdevice>
+
+I refactored the earlier "KDE Connect Phone Charge" to have the ability to drag and drop a file/link to share it with that device. I also added a simple way to select which device the widget shows the battery for + shares with.
+
+
+### Plasma5 Widget - MPVZ
+
+**Source:** <https://github.com/Zren/mpvz>
+
+After development for the [bomi](https://github.com/xylosper/bomi) video player died off, I started looking into how hard it would be to make a simple QML GUI for the [mpv](https://github.com/mpv-player/mpv) which overlayed the controls onto the video player when the mouse moves like practically all modern video players.
+
+
+
+
 ## 2017
 
 
 ### Plasma5 Widget - Volume Slider
 
-**Source:** <https://github.com/Zren/plasma-applets/tree/master/volumeslider>
+**Source:** <https://github.com/Zren/plasma-applet-volumeslider>
 
 After convicing my parents to use Linux on their TV PC, I needed to simplify controlling the volume for them. So I stripped a bunch of stuff out of the Win7 Volume Mixer widget for a simple horizontal slider that sits in the panel that you see in various panels in /r/unixporn.
 
@@ -110,14 +135,14 @@ A quick fullscreen view to see wifi speed, disk I/O, disk space, fan speeds, tem
 
 ### Plasma5 Widget - Terminal Update
 
-**Source:** <https://github.com/Zren/plasma-applets/tree/master/terminalupdate>
+**Source:** <https://github.com/Zren/plasma-applet-terminalupdate>
 
 KDE Discover is still in active development, which isn't the greatest thing for using as a package manager/updater. I'd usually use the terminal to perform updates, so I made a simple modification in the Discover widget to launch my custom bash scripts that call `apt upgrade` in Konsole.
 
 
 ### Plasma5 Widget - Present Windows
 
-**Source:** <https://github.com/Zren/plasma-applets/tree/master/presentwindows>
+**Source:** <https://github.com/Zren/plasma-applet-presentwindows>
 
 A simple buttons that with the Windows 10 "Task View" icon that triggers the "Desktop Grid" or "Present Windows" desktop effect.
 
@@ -135,14 +160,14 @@ I started contributing patches to the Plasma desktop environment on Phabricator.
 
 ### Plasma5 Widget - Battery Time
 
-**Source:** <https://github.com/Zren/plasma-applets/tree/master/batterytime>
+**Source:** <https://github.com/Zren/plasma-applet-batterytime>
 
 Made a simple widget which will always use the breeze battery icon and also shows the percentage and how many minutes are left.
 
 
 ### Plasma5 Widget - Command Output
 
-**Source:** <https://github.com/Zren/plasma-applets/tree/master/commandoutput>
+**Source:** <https://github.com/Zren/plasma-applet-commandoutput>
 
 Simple widget that runs a command every second and display the output in the panel.
 
@@ -151,7 +176,7 @@ Simple widget that runs a command every second and display the output in the pan
 
 **Link:** [Blog Post]({% post_url 2016-10-30-tiled-menu-win10-start-menu %})
 
-**Source:** <https://github.com/Zren/plasma-applets/tree/master/tiledmenu>
+**Source:** <https://github.com/Zren/plasma-applet-tiledmenu>
 
 I reskinned the app menu based on the Win10 Start Menu. I mainly did this because I wanted an A-Z menu without the dashboard (and a grid of favourites).
 
@@ -170,29 +195,41 @@ After KDE Connect was released, I was very interested in learning it's API. So I
 
 ### Plasma5 TabBox - Thumbnail Grid
 
+**Source:** <https://github.com/Zren/kwin-tabbox-thumbnail_grid>
+
 Plasma ships with an odd Alt Tab skin (a scrollable list on the left side). There were a few skins similar to Window's thumbnail skin but to my amazement, it didn't expand to a second row, but instead scrolled in a single row. It didn't really bother me till someone pointed it out. It's a bit sad that this is the only downloadable skin that works. To be fair though, all the many many working skins are in KDE repos.
 
 
 ### Plasma5 Widget - Todo List
+
+**Source:** <https://github.com/Zren/plasma-applet-todolist>
 
 The Note widget is a little ugly (all that look like a sticky note do) so I reskinned to to be a list of items with checkboxes. I also parse http links and render them as clickable links.
 
 
 ### Plasma5 Widget - Win7 Volume Mixer
 
+**Source:** <https://github.com/Zren/plasma-applet-volumewin7mixer>
+
 I loved the look of the volume mixer in Win7. I was dissapointed that most volume applets in linux are horizontal (as is Win10's) so I reskinned the applet to have vertical sliders. I also presented the streams similar to Win7 expanded view. 2 after writing this applet, I learned about KMix (which also had vertical sliders). Luckily it was being deprecated so my work didn't go to waste. It's now got a few features more than the default widget.
 
 
 ### Plasma5 Widget - Event Calendar
+
+**Source:** <https://github.com/Zren/plasma-applet-eventcalendar>
 
 The default clock didn't have the ability to sync with Google Calendar at the time, so I figured out how to obtain a Google API session without the browser. I added a timer and weather forecast similar to what my Android phone layout has. I also changed the scrolling over the clock to change the volume instead of time zones.
 
 
 ### Plasma5 Widget - Win7 Show Desktop
 
+**Source:** <https://github.com/Zren/plasma-applet-win7showdesktop>
+
 I liked the slim little button in Windows so I modified the default widget to be visually similar. I also added the ability to control volume when scrolling over it, so that it's easy to blindly control the volume by flicking to the bottom right corner.
 
 ### NixShot
+
+**Source:** <https://github.com/Zren/nixshot>
 
 After moving to linux, I needed a new screenshot tool that would easily capture a region of the screen and upload it to imgur (authed to an account). While I found a few that did *some* of that, none of them did everything, or opened a window on completion.
 
@@ -200,6 +237,8 @@ In the process, I found out that KDE Global Shortcuts don't fire immediately, ca
 
 
 ### Plasma5 Theme - Breeze AlphaBlack
+
+**Source:** <https://github.com/Zren/breeze-alphablack>
 
 I needed a light theme with a black panel, and I wanted to make a few adjustments to the default theme.
 
