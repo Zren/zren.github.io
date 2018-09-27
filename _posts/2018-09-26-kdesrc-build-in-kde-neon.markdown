@@ -7,7 +7,7 @@ I setup a [KDE Neon Git-Unstable](https://files.kde.org/neon/images/neon-devedit
 
 After installing all the dependencies to get `kdesrc-build plasma-workspace` to get 99% complete, I soon discovered that `networkmonitor-qt` would not build since `libnm0` (managed by ubuntu) was `v1.2` [in xenial](https://packages.ubuntu.com/xenial/libnm0).
 
-I'd been meaning to try the [Neon update to bionic](https://community.kde.org/Neon/BionicUpgrades) so I figured why not upgrade it. `libnm0` [in bionic is](https://packages.ubuntu.com/bionic/libnm0) `v1.10` which should fix the dependency issue. (Update: Neon starts is now shipping bionic by default now)
+I'd been meaning to try the [Neon update to bionic](https://community.kde.org/Neon/BionicUpgrades) so I figured why not upgrade it. `libnm0` [in bionic is](https://packages.ubuntu.com/bionic/libnm0) `v1.10` which should fix the dependency issue. (Update: Neon is now shipping bionic by default now)
 
 After upgrading to bionic flawlessly, I ran `kdesrc-build` again. This time I ran into trouble with `solid` and `kwin`. Both complained build error logs mentioned:
 
