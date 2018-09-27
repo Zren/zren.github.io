@@ -9,6 +9,8 @@ After installing all the dependencies to get `kdesrc-build plasma-workspace` to 
 
 I'd been meaning to try the [Neon update to bionic](https://community.kde.org/Neon/BionicUpgrades) so I figured why not upgrade it. `libnm0` [in bionic is](https://packages.ubuntu.com/bionic/libnm0) `v1.10` which should fix the dependency issue. (Update: Neon is now shipping bionic by default now)
 
+## libudev.so is missing
+
 After upgrading to bionic flawlessly, I ran `kdesrc-build` again. This time I ran into trouble with `solid` and `kwin`. Both build error logs mentioned:
 
 {% highlight log %}
@@ -62,6 +64,8 @@ sudo ln -s /lib/i386-linux-gnu/libudev.so.1 libudev.so
 {% endhighlight %}
 
 Running `kdesrc-build plasma-workspace` will now build everything without errors, huzzah!
+
+## plasma-desktop needs over 3Gb RAM to build
 
 Now I tried building a few more packages with `plasma-desktop`. I first noticed it tried to rebuid everything `plama-workspace` needed as well, before finally trying to build `plasma-desktop`. After checking `kdesrc-build --help`, I realized I'd need to run the following every time I wanted to build a single package.
 
