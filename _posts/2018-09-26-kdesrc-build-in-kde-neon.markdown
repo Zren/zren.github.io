@@ -9,7 +9,7 @@ After installing all the dependencies to get `kdesrc-build plasma-workspace` to 
 
 I'd been meaning to try the [Neon update to bionic](https://community.kde.org/Neon/BionicUpgrades) so I figured why not upgrade it. `libnm0` [in bionic is](https://packages.ubuntu.com/bionic/libnm0) `v1.10` which should fix the dependency issue. (Update: Neon is now shipping bionic by default now)
 
-After upgrading to bionic flawlessly, I ran `kdesrc-build` again. This time I ran into trouble with `solid` and `kwin`. Both complained build error logs mentioned:
+After upgrading to bionic flawlessly, I ran `kdesrc-build` again. This time I ran into trouble with `solid` and `kwin`. Both build error logs mentioned:
 
 {% highlight log %}
 make[2]: *** No rule to make target '/usr/lib/x86_64-linux-gnu/libudev.so', needed by 'bin/libKF5Solid.so.5.51.0'. Stop.
@@ -107,7 +107,6 @@ The next step from building from source is appearently [setting up a runtime env
 It mentions there's extra steps for Plasma, but I was interested in what would happened if I run plasmashell now? Well I tested it with the following:
 
 {% highlight bash %}
-# Don't do this yet!
 source ~/kde/.setup-env
 killall plasmashell; kstart5 plasmashell
 {% endhighlight %}
