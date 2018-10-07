@@ -287,6 +287,12 @@ qdbus org.kde.KWin /KWin reconfigure
   If it's not working, make sure your "Start Menu" widget has a global shortcut like `Alt+F1` set (you can't assign it directly to `Meta`, but it will open with `Meta` if another shortcut is assigned).
   Right Click the KDE Icon > Application Menu Settings
   Keyboard Shortcuts Tab > Shortcut: `Alt+F1`
+  * Latte Dock
+    If you're using Latte Dock, you will need to run the following commands [mentioned in it's Wiki](https://github.com/psifidotos/Latte-Dock/wiki/F.A.Q.#q-can-i-use-my-super-key-to-open-the-app-l).
+    {% highlight bash %}
+kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu"
+qdbus org.kde.KWin /KWin reconfigure
+    {% endhighlight %}
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Do not open the “Start Menu” with Windows/Meta key
