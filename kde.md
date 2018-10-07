@@ -282,6 +282,17 @@ qdbus org.kde.KWin /KWin reconfigure
   Click the Gear Icon > Change the Ctrl+F10 shortcut to Meta+Tab
 
 {% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Hide titlebars when maximized (like Ubuntu)
+  We need to set `BorderlessMaximizedWindows=true` under the group `[Windows]` in the file `~/config/kwinrc`, then reload kwin.
+  It's easier to use these commmands than doing it by hand.
+  {% highlight bash %}
+kwriteconfig5 --file ~/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true
+qdbus org.kde.KWin /KWin reconfigure
+  {% endhighlight %}
+
+### Windows/Meta Key
+
+{% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Open “Start Menu” with Windows/Meta key
   Feature has been added by default since Plasma 5.8.
   If it's not working, make sure your "Start Menu" widget has a global shortcut like `Alt+F1` set (you can't assign it directly to `Meta`, but it will open with `Meta` if another shortcut is assigned).
@@ -292,7 +303,12 @@ qdbus org.kde.KWin /KWin reconfigure
     {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu"
 qdbus org.kde.KWin /KWin reconfigure
-    {% endhighlight %}
+  {% endhighlight %}
+  If you wish to revert what the Meta key opens because you changed it to open KRunner or a Latte Dock widget, run the following:
+  {% highlight bash %}
+kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.plasmashell,/PlasmaShell,org.kde.PlasmaShell,activateLauncherMenu"
+qdbus org.kde.KWin /KWin reconfigure
+  {% endhighlight %}
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Do not open the “Start Menu” with Windows/Meta key
@@ -302,11 +318,6 @@ qdbus org.kde.KWin /KWin reconfigure
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta ""
 qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
-  If you wish to revert this change and have it open with the Meta key again, run:
-  {% highlight bash %}
-kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.plasmashell,/PlasmaShell,org.kde.PlasmaShell,activateLauncherMenu"
-qdbus org.kde.KWin /KWin reconfigure
-  {% endhighlight %}
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Open KRunner with Windows/Meta key
@@ -314,15 +325,6 @@ qdbus org.kde.KWin /KWin reconfigure
   It's easier to use these commmands than doing it by hand.
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/krunner,org.kde.kglobalaccel.Component,invokeShortcut,run command"
-qdbus org.kde.KWin /KWin reconfigure
-  {% endhighlight %}
-
-{% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} Hide titlebars when maximized (like Ubuntu)
-  We need to set `BorderlessMaximizedWindows=true` under the group `[Windows]` in the file `~/config/kwinrc`, then reload kwin.
-  It's easier to use these commmands than doing it by hand.
-  {% highlight bash %}
-kwriteconfig5 --file ~/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true
 qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
 
