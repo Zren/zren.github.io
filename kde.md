@@ -283,23 +283,31 @@ qdbus org.kde.KWin /KWin reconfigure
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Open “Start Menu” with Windows/Meta key
-  * Plasma 5.8.2
-    Feature has been added by default.
-    If it's not working, make sure your "Start Menu" has a global shortcut like Alt+F1 set (you can't assign it only to Meta, but it will open with Meta if another shortcut is assigned).
-    Right Click the KDE Icon > Application Menu Settings
-    Keyboard Shortcuts Tab > Shortcut: Alt+F1
-  * <= Plasma 5.7
-    `sudo apt install ksuperkey`
-  * <= Plasma 5.7 (Or just use Win+Space)
-    Right Click the KDE Icon > Application Menu Settings
-    Keyboard Shortcuts Tab > Shortcut: Meta+Space
+  Feature has been added by default since Plasma 5.8.
+  If it's not working, make sure your "Start Menu" widget has a global shortcut like `Alt+F1` set (you can't assign it directly to `Meta`, but it will open with `Meta` if another shortcut is assigned).
+  Right Click the KDE Icon > Application Menu Settings
+  Keyboard Shortcuts Tab > Shortcut: `Alt+F1`
 
 {% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} Do not open the “Start Menu” with Windows/Meta key (Plasma 5.8)
+* {:#cfg-{{ i }}} Do not open the “Start Menu” with Windows/Meta key
   We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/config/kwinrc`, then reload kwin.
   It's easier to use these commmands than doing it by hand.
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta ""
+qdbus org.kde.KWin /KWin reconfigure
+  {% endhighlight %}
+  If you wish to revert this change and have it open with the Meta key again, run:
+  {% highlight bash %}
+kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.plasmashell,/PlasmaShell,org.kde.PlasmaShell,activateLauncherMenu"
+qdbus org.kde.KWin /KWin reconfigure
+  {% endhighlight %}
+
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Open KRunner with Windows/Meta key
+  We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/config/kwinrc`, then reload kwin.
+  It's easier to use these commmands than doing it by hand.
+  {% highlight bash %}
+kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/krunner,org.kde.kglobalaccel.Component,invokeShortcut,run command"
 qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
 
