@@ -95,7 +95,7 @@ heroku login # Prompts for Credentials
 
 ## NodeJS
 # https://nodejs.org/en/download/package-manager/
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt install -y nodejs
 sudo apt install -y build-essential
 
