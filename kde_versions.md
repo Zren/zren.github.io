@@ -173,7 +173,10 @@ a:not([href]):hover {
   <tbody>
     <tr>
       <td><a href="https://www.kde.org/announcements/plasma-5.14.0.php">Plasma 5.14.0</a></td>
-      <td><a href="https://www.reddit.com/r/kde/comments/9mo5dg/plasma_514_released/">/r/kde</a></td>
+      <td>
+        <a href="https://www.reddit.com/r/kde/comments/9mo5dg/plasma_514_released/">/r/kde</a>
+        <a href="https://www.reddit.com/r/kde/comments/9mokun/just_released_kdes_plasma_514_desktop_comes_with/">/r/kde thread #2</a>
+      </td>
       <td>
         <a href="https://www.reddit.com/r/linux/comments/9mocl6/plasma_514_released/">/r/linux</a>
         <a href="https://www.reddit.com/r/openSUSE/comments/9morb7/kde_release_announcements_plasma_5140/">/r/openSUSE</a>
