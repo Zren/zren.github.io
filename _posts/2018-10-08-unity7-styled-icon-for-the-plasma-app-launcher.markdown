@@ -69,6 +69,6 @@ Hmmm. If we look at a screenshot of Unity7, we'll get the following dimensions.
 * `64px` wide panel
 * `1px` wide shadow / outline
 * `52px` wide icon boxes.
-* `(64 - 52) / 2 = 6px` wide icon padding
+* `(64 - 52) / 2 = 6px` panel padding
 * `46px` wide icons
-* `(52 - 46) / 2 = 3px` wide icon padding
+* `(52 - 46) / 2 = 3px` icon padding
