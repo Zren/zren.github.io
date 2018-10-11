@@ -385,6 +385,16 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
+		{% include kdeRepo.html
+			repoName='Display Configuration'
+			githubLink='https://github.com/KDE/kscreen/tree/master/plasmoid'
+			product='KScreen&component=Plasma%20Applet'
+			phabRepo='kscreen'
+			phabRepoName='KScreen'
+			phabDiffQuery='i2Ka89fDypU3'
+		%}
+	</tr>
+	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Fifteen Puzzle'
 			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/fifteenPuzzle'
