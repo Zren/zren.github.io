@@ -97,7 +97,7 @@ I first tried adding another gig of RAM to my VM, but even with 3Gb, it ran out.
 
 ![](https://i.imgur.com/rTk5fRJ.png)
 
-So I formatted the swap and turned it on. Maybe it requires less RAM if you only build with 1 cpu core.
+So I formatted the swap and turned it on. Maybe it requires more RAM than normal if you build with 2 cpu cores.
 
 ![](https://i.imgur.com/7DRoXDQ.png)
 ![](https://i.imgur.com/bI1n7vQ.png)
