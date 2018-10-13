@@ -1061,8 +1061,31 @@ redirect_from: /projects/kde/repos/
 
 </style>
 <script type="text/javascript">
+	// https://stackoverflow.com/questions/26336138/how-can-i-copy-to-clipboard-in-html5-without-using-flash
+	// https://stackoverflow.com/a/36610696/947742
+	function copyText(text){
+		function selectElementText(element) {
+			if (document.selection) {
+				var range = document.body.createTextRange()
+				range.moveToElementText(element)
+				range.select()
+			} else if (window.getSelection) {
+				var range = document.createRange()
+				range.selectNode(element)
+				window.getSelection().removeAllRanges()
+				window.getSelection().addRange(range)
+			}
+		}
+		var element = document.createElement('div')
+		element.textContent = text
+		document.body.appendChild(element)
+		selectElementText(element)
+		document.execCommand('copy')
+		element.remove()
+	}
+
 	function copyRowAsMarkdown(el) {
-		console.log('copyRowAsMarkdown', el)
+		// console.log('copyRowAsMarkdown', el)
 		var tr = el.parentNode.parentNode
 
 		var str = ''
@@ -1107,6 +1130,8 @@ redirect_from: /projects/kde/repos/
 		}
 		str += ' ]'
 		console.log(str)
+
+		copyText(str)
 	}
 	function genCopyButtons() {
 		for (var tr of document.querySelectorAll('.repolist tr')) {
