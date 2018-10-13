@@ -75,6 +75,24 @@ redirect_from: /projects/kde/repos/
 	text-decoration: none;
 }
 
+.repolist tr:not(:hover) td.copybutton {
+	visibility: hidden;
+}
+.repolist tr:hover td.copybutton {
+	border-color: transparent;
+}
+.repolist tr:hover td.copybutton:hover {
+	background: transparent;
+}
+.repolist tr:hover td.copybutton:hover a {
+	background: transparent;
+}
+.copybutton a {
+	display: block;
+	margin: 0 calc(-0.5em - 2px);
+	padding: 0 calc(0.5em + 2px);
+}
+
 </style>
 
 
@@ -1036,3 +1054,78 @@ redirect_from: /projects/kde/repos/
 	window.addEventListener('hashchange', updateSelectedRow)
 	updateSelectedRow()
 </script>
+
+
+
+<style type="text/css">
+
+</style>
+<script type="text/javascript">
+	function copyRowAsMarkdown(el) {
+		console.log('copyRowAsMarkdown', el)
+		var tr = el.parentNode.parentNode
+
+		var str = ''
+
+		for (var i = 0; i < tr.childElementCount; i++) {
+			var td = tr.children[i]
+			if (i == 0) {
+				var a = td.querySelector('a')
+				var linkifyName = a.classList.contains('repoanchorlink')
+
+				var name = td.textContent
+				if (name[0] == "¶") {
+					name = name.substr(1)
+				}
+
+				str += '**'
+				if (linkifyName) {
+					var link = a.href
+
+					str += '['
+					str += name
+					str += ']('
+					str += link
+					str += ')'
+				} else {
+					str += name
+				}
+				str += ':**'
+			} else if (!td.classList.contains('copybutton')) {
+				if (i == 1) {
+					str += ' [ '
+				} else {
+					str += ' | '
+				}
+				var a = td.querySelector('a')
+				str += '['
+				str += a.textContent
+				str += ']('
+				str += a.href
+				str += ')'
+			}
+		}
+		str += ' ]'
+		console.log(str)
+	}
+	function genCopyButtons() {
+		for (var tr of document.querySelectorAll('.repolist tr')) {
+			var td = document.createElement('td')
+			td.classList.add('copybutton')
+			var a = document.createElement('a')
+			a.setAttribute('href', 'javascript:void(0)')
+			a.setAttribute('onclick', 'copyRowAsMarkdown(this)')
+			a.textContent = 'md'
+			td.appendChild(a)
+			tr.appendChild(td)
+		}
+	}
+	genCopyButtons()
+</script>
+
+
+
+
+
+
+
