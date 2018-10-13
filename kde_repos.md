@@ -91,6 +91,22 @@ redirect_from: /projects/kde/repos/
 	display: block;
 	margin: 0 calc(-0.5em - 2px);
 	padding: 0 calc(0.5em + 2px);
+	font-weight: bold;
+	text-decoration: none;
+	position: relative;
+	white-space: nowrap;
+}
+.copybutton a:active:after {
+	content: "Copied as Markdown";
+	position: absolute;
+	bottom: calc(100% + 4px);
+	left: calc(50% - 50px);
+	width: 100px;
+	text-align: center;
+	white-space: normal;
+	border-radius: 4px;
+	background: #ccc;
+	color: #444;
 }
 
 </style>
