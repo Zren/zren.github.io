@@ -1132,7 +1132,8 @@ redirect_from: /projects/kde/repos/
 				str += ':**'
 			} else if (!td.classList.contains('copybutton')) {
 				if (i == 1) {
-					str += ' [ '
+					// str += ' [ '
+					str += ' '
 				} else {
 					str += ' | '
 				}
@@ -1144,7 +1145,7 @@ redirect_from: /projects/kde/repos/
 				str += ')'
 			}
 		}
-		str += ' ]'
+		// str += ' ]'
 		console.log(str)
 
 		copyText(str)
