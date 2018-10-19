@@ -264,10 +264,7 @@ redirect_from: /projects/kde/repos/
 		{% include kdeRepo.html
 			repoName='Active Window Control'
 			githubLink='https://github.com/kotelnik/plasma-applet-active-window-control'
-		%}
-		<td><a>All Bugs</a></td>
-		<td><a>New Bug</a></td>
-		{% include phabLinks.html
+			product='Active%20Window%20Control'
 			phabRepo='plasma-active-window-control'
 			phabRepoName='Active Window Control Applet for Plasma'
 			phabDiffQuery='sv1JhxTYnBq6'
