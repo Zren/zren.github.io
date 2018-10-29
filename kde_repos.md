@@ -865,6 +865,16 @@ redirect_from: /projects/kde/repos/
 <table class="repolist">
 	<tr>
 		{% include kdeRepo.html
+			repoName='cuttlefish'
+			githubLink='https://github.com/KDE/plasma-sdk/tree/master/cuttlefish'
+			product='Plasma%20SDK&component=cuttlefish'
+			phabRepo='plasma-sdk'
+			phabRepoName='Plasma SDK'
+			phabDiffQuery='40hfBk8vxVpb'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
 			repoName='plasmathemeexplorer'
 			githubLink='https://github.com/KDE/plasma-sdk/tree/master/themeexplorer'
 			product='Plasma%20SDK&component=plasmathemeexplorer'
