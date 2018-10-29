@@ -1,20 +1,27 @@
 ---
 layout: widepage
-title: KDE Bugs (plasmashell)
+title: KDE Bugs
 permalink: /kde/bugs/
 ---
 
 <style type="text/css">
+header,
+footer,
 #sidenav {
 	display: none;
 }
 .page-content .wrapper {
-	max-width: -webkit-calc(100vw - (30px * 2));
-	max-width: calc(100vw - (30px * 2));
+	width: calc(100vw - (30px * 2));
+	max-width: 1024px;
 }
 </style>
 
 <style type="text/css">
+#product,
+#search {
+	margin-bottom: 1em;
+}
+
 #search input {
 	width: 100%;
 	position: relative;
@@ -25,13 +32,38 @@ permalink: /kde/bugs/
 .hidden {
 	display: none;
 }
+#product .menu .item.indent {
+	padding-left: 3.5em;
+}
 </style>
 
-<div id="search">
-	<input type="search">
-</div>
+<div id="queryForm">
+	<div id="product" width="50%" class="searchDropdown" data-value="plasmashell">
+		<input type="search">
+		<div class="text defaultText">Select Product</div>
+		<div class="menu">
+			<div class="item" data-value="plasmashell"><i class="icon-plasmashell"></i>PlasmaShell</div>
+			<div class="item indent" data-value="plasmashell"><i class="icon-plasmashell"></i>PlasmaShell</div>
 
+			<div class="item" data-value="kdenlive"><i class="icon-kdenlive"></i>Kdenlive</div>
+		</div>
+	</div>
+
+	<div id="search">
+		<input type="search">
+	</div>
+</div>
+{% include searchDropdown.html %}
 <script type="text/javascript">
+	var productSearchDropdown = document.querySelector('#product')
+	productSearchDropdown.addEventListener('valueSelected', function(){
+		console.log('window.product', window.product, productSearchDropdown.getAttribute('data-value'))
+		window.product = productSearchDropdown.getAttribute('data-value')
+		var searchInput = document.querySelector('#search input')
+		searchInput.value = ""
+	})
+
+
 	var searchInput = document.querySelector('#search input')
 	var searchThrottleId = 0
 	function updateSearch() {
@@ -64,7 +96,7 @@ permalink: /kde/bugs/
 		console.log('updateSearch', query, visibleBugs)
 	}
 
-	function bindThrottledSearch(el, callback, interval) {
+	function bindThrottledEvent(el, eventType, callback, interval) {
 		var timerId = 0
 		function onTimeout() {
 			timerId = 0
@@ -76,7 +108,8 @@ permalink: /kde/bugs/
 			}
 			timerId = setTimeout(onTimeout, 100)
 		}
-		el.addEventListener('input', onInput)
+		el.addEventListener(eventType, onInput)
+		return onInput
 	}
 
 
@@ -85,8 +118,9 @@ permalink: /kde/bugs/
 	}
 
 
-	bindThrottledSearch(searchInput, updateSearch, 100)
-	bindThrottledSearch(searchInput, fetchQueriedBugs, 1000)
+	bindThrottledEvent(searchInput, 'input', updateSearch, 100)
+	var onInput = bindThrottledEvent(searchInput, 'input', fetchQueriedBugs, 1000)
+	productSearchDropdown.addEventListener('valueSelected', onInput)
 </script>
 
 <style type="text/css">
@@ -310,8 +344,10 @@ window.product = 'plasmashell'
 window.bugLimit = 25
 function fetchProductBugs(product, query) {
 	var url = 'https://bugs.kde.org/rest/bug'
-	url += '?product=' + encodeURIComponent(product)
-	url += '&limit=' + window.bugLimit
+	url += '?limit=' + window.bugLimit
+	if (product) {
+		url += '&product=' + encodeURIComponent(product)
+	}
 	url += '&order=bug_id%20DESC'
 	if (query) {
 		url += '&short_desc_type=allwordssubstr'
@@ -328,7 +364,29 @@ function fetchProductBugs(product, query) {
 	})
 }
 
-fetchProductBugs(window.product)
+function renderProductList(data) {
+	var productMenu = document.querySelector('#product .menu')
+	for (var product of data) {
+		productMenu.searchDropdown.addMenuItem(product.product, product.repoName)
+	}
+	window.setupAllSearchDropdowns()
+}
+
+function fetchProductList() {
+	return fetch('/js/kde-products.json').then(function(response){
+		return response.json()
+	}).then(function(data){
+		console.log(data)
+		renderProductList(data)
+	}).catch(function(error){
+		console.log(error)
+	})
+}
+
+fetchProductList().then(function(){
+	fetchProductBugs(window.product)
+})
+
 
 </script>
 <script type="text/javascript">
