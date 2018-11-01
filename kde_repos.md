@@ -621,6 +621,16 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
+		{% include kdeRepo.html
+			repoName='Search (Milou)'
+			githubLink='https://github.com/kde/milou'
+			product='plasmashell&component=Milou'
+			phabRepo='milou'
+			phabRepoName='Milou'
+			phabDiffQuery='KeQ1uFdgDzbJ'
+		%}
+	</tr>
+	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Show Desktop'
 			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/showdesktop'
