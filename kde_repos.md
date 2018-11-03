@@ -1068,17 +1068,11 @@ redirect_from: /projects/kde/repos/
 
 ## Other
 
-<table class="repolist">
-	<tr>
-		<td>Bugs</td>
-		<td><a href="https://bugs.kde.org/describecomponents.cgi">By Project</a></td>
-	</tr>
-	<tr>
-		<td>Pull Requests</td>
-		<td><a href="https://phabricator.kde.org/differential/query/all/">Latest</a></td>
-		<td><a href="https://phabricator.kde.org/differential/query/advanced/">Search</a></td>
-	</tr>
-</table>
+* **Bugs:**
+	* [Listed By Project](https://bugs.kde.org/describecomponents.cgi) - Including projects not listed here
+* **Pull Requests:**
+	* [Latest](https://phabricator.kde.org/differential/query/all/)
+	* [Search](https://phabricator.kde.org/differential/query/advanced/)
 
 
 <script type="text/javascript">
