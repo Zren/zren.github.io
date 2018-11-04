@@ -941,6 +941,16 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepo.html
+			repoName='Gwenview'
+			githubLink='https://github.com/KDE/gwenview'
+			product='gwenview'
+			phabRepo='gwenview'
+			phabRepoName='Gwenview'
+			phabDiffQuery='hRSwCAgRbJhD'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
 			repoName='Kdenlive'
 			githubLink='https://github.com/KDE/kdenlive'
 			product='kdenlive'
