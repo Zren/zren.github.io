@@ -449,6 +449,10 @@ qdbus org.kde.KWin /KWin reconfigure
   Right click the uBlock Origin icon > "Pin to Overflow Menu"
   Right click the "Save to Pocket" icon > "Remove from Address Bar"
 
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}}  Place close button next to tabs / don't use KDE's titlebar.
+  ☰ > Customize
+  Uncheck: "Title Bar"
 
 
 ### LibreOffice Calc
