@@ -280,6 +280,7 @@ qdbus org.kde.KWin /KWin reconfigure
   System Settings > Desktop Behavior
   Desktop Effects Tab > Check Present Windows
   Click the Gear Icon > Change the Ctrl+F10 shortcut to Meta+Tab
+  Layout mode: "Natural" => "Flexible Grid"
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Hide titlebars when maximized (like Ubuntu)
