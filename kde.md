@@ -411,6 +411,46 @@ qdbus org.kde.KWin /KWin reconfigure
   Go to `chrome://flags#enable-native-notifications`, search for "Enable native notifications", disable it and restart Chrome.
 
 
+### Firefox
+
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Install privacy addons
+  * [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+  * [Privacy Badger](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/)
+
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Open New Tab page on startup
+  Type `about:newtab` into the addressbar, do not press enter.
+  Select `about:newtab` and drag it onto the Home button.
+
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Leaner New Tab page
+  ☰ > Preferences > Home
+  Uncheck: "Web Search"
+  Uncheck: "Recommended by Pocket"
+  Uncheck: "Highlights"
+  Under "Top Sites" change to "4 rows"
+
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Show bookmarks toolbar only on New Tab page
+  ☰ > Customize
+  Toolbars > Check: Bookmarks Toolbar
+  Go to `~/.mozilla/firefox/` then open `ab1c2d.default` or whatever the folder name is.
+  Create `chrome/userChrome.css` if it does not exist.
+  Then paste [the following CSS](https://github.com/Timvde/UserChrome-Tweaks/blob/master/toolbars/show-bookmarks-only-on-newtab.css) into `userChrome.css`.
+  Restart firefox
+
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Leaner toolbar area
+  ☰ > Customize
+  Density > Compact
+  Drag the Home button from the toolbar into the main area.
+  Drag the rectangle spacers to remove them as well.
+  Right click the uBlock Origin icon > "Pin to Overflow Menu"
+  Right click the "Save to Pocket" icon > "Remove from Address Bar"
+
+
+
 ### LibreOffice Calc
 
 {% assign i = i | plus: 1 %}
