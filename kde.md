@@ -273,7 +273,7 @@ qdbus org.kde.KWin /KWin reconfigure
   KWin > Minimize Window: Win+Down
   KWin > Quick Tile Window to the Left: Win+Left
   KWin > Quick Tile Window to the Right: Win+Right
-  To open the “Start Menu” with the Windows key see the next item.
+  To open the “Start Menu” with the Windows key [see the section below](#windowsmeta-key).
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Present all windows with Win+Tab
