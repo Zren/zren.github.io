@@ -86,7 +86,7 @@ Create the `/usr/local/bin/yakuakehere` command.
 {% highlight bash %}
 sudo touch /usr/local/bin/yakuakehere
 sudo chmod +x /usr/local/bin/yakuakehere
-SUDO_EDITOR=kwrite sudoedit /usr/local/bin/yakuakehere
+SUDO_EDITOR=kate sudoedit /usr/local/bin/yakuakehere
 {% endhighlight %}
 
 with the contents:
