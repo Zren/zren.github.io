@@ -451,10 +451,14 @@ qdbus org.kde.KWin /KWin reconfigure
   Right click the "Save to Pocket" icon > "Remove from Address Bar"
 
 {% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}}  Place close button next to tabs / don't use KDE's titlebar.
+* {:#cfg-{{ i }}} Place close button next to tabs / don't use KDE's titlebar.
   ☰ > Customize
   Uncheck: "Title Bar"
 
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Disable Pocket
+  Go to `about:config`
+  Search for `extensions.pocket.enabled` and set it to `false`
 
 ### LibreOffice Calc
 
