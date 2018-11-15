@@ -455,6 +455,18 @@ qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
 
 {% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Remove left tabbar padding when not maximized
+  Go to `~/.mozilla/firefox/` then open `ab1c2d.default` or whatever the folder name is.
+  Create `chrome/userChrome.css` if it does not exist.
+  Then paste the following CSS into `userChrome.css`.
+  Restart firefox
+  {% highlight css %}
+.titlebar-placeholder[type="pre-tabs"] {
+  display: none;
+}
+  {% endhighlight %}
+
+{% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Leaner toolbar area
   ☰ > Customize
   Density > Compact
