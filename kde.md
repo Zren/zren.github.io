@@ -442,6 +442,18 @@ qdbus org.kde.KWin /KWin reconfigure
   Restart firefox
 
 {% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Remove 3px padding above tabs
+  Go to `~/.mozilla/firefox/` then open `ab1c2d.default` or whatever the folder name is.
+  Create `chrome/userChrome.css` if it does not exist.
+  Then paste the following CSS into `userChrome.css`.
+  Restart firefox
+  {% highlight css %}
+#TabsToolbar {
+  margin-top: -3px !important;
+}
+  {% endhighlight %}
+
+{% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Leaner toolbar area
   ☰ > Customize
   Density > Compact
