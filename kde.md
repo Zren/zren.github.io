@@ -450,7 +450,8 @@ qdbus org.kde.KWin /KWin reconfigure
   Restart firefox
   {% highlight css %}
 #titlebar-buttonbox {
-  margin-top: -3px;
+  margin-top: -2px;
+  margin-bottom: -1px;
 }
   {% endhighlight %}
 
