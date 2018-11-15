@@ -443,13 +443,14 @@ qdbus org.kde.KWin /KWin reconfigure
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Remove 3px padding above tabs
+  The Breeze close buttons are 32px tall, while "Compact" is a 29px tall area. So we need to crop 3px.
   Go to `~/.mozilla/firefox/` then open `ab1c2d.default` or whatever the folder name is.
   Create `chrome/userChrome.css` if it does not exist.
   Then paste the following CSS into `userChrome.css`.
   Restart firefox
   {% highlight css %}
-#TabsToolbar {
-  margin-top: -3px !important;
+#titlebar-buttonbox {
+  margin-top: -3px;
 }
   {% endhighlight %}
 
