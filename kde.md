@@ -460,6 +460,12 @@ qdbus org.kde.KWin /KWin reconfigure
   Go to `about:config`
   Search for `extensions.pocket.enabled` and set it to `false`
 
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Hide Search Dropdown Footer
+  Go to `about:config`
+  Search for `browser.urlbar.oneOffSearches` and set it to `false`
+
+
 ### LibreOffice Calc
 
 {% assign i = i | plus: 1 %}
