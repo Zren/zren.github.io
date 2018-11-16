@@ -506,6 +506,30 @@ qdbus org.kde.KWin /KWin reconfigure
   Note: Uppercase `%S` will not escape slashes so `r kde/new` works.
   Note: Use lowercase `%s` in searches like `https://duckduckgo.com/?q=%s`
 
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Cleanup right click menu (aka contextmenu)
+  Click on µBlock > Click Settings Icon to open the dashboard
+  Uncheck: Make use of context menu where appropriate
+  To hide the Firefox default menu items we need to edit the `userChrome.css` [as mentioned here](https://support.mozilla.org/en-US/questions/1177488).
+  Go to `~/.mozilla/firefox/` then open `ab1c2d.default` or whatever the folder name is.
+  Create `chrome/userChrome.css` if it does not exist.
+  Then paste the following CSS into `userChrome.css`.
+  Restart firefox
+  {% highlight css %}
+#contentAreaContextMenu #context-openlinkincurrent,
+#contentAreaContextMenu #context-openlinkinusercontext-menu,
+#contentAreaContextMenu #context-bookmarklink,
+#contentAreaContextMenu #context-selectall,
+#contentAreaContextMenu #context-sendlinktodevice,
+#contentAreaContextMenu #context-sendpagetodevice,
+#contentAreaContextMenu #context-sep-sendlinktodevice,
+#contentAreaContextMenu #context-sep-sendpagetodevice,
+#contentAreaContextMenu #context-viewpartialsource-selection {
+  display: none !important;
+}
+  {% endhighlight %}
+  If you're not a web developer, you can hide "Take a screenshot" by going to `about:config`
+  Search for `extensions.screenshots.disabled` and set it to `true`
 
 ### LibreOffice Calc
 
