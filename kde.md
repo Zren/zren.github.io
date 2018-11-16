@@ -497,6 +497,16 @@ qdbus org.kde.KWin /KWin reconfigure
   Right click the extension's icon in the toolbar > Pin it to the overflow menu.
   You can easily open a new tab in a specific container by clicking and holding the "Open a new tab" button.
 
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Quickly browse subreddits using custom search engines
+  Create a new Bookmark with:
+  Name: `/r/`
+  URL: `https://www.reddit.com/r/%S`
+  Keyword: `r`
+  Now you can type `r kde` to visit [/r/kde](https://www.reddit.com/r/kde)
+  Note: Uppercase `%S` will not escape slashes so `r kde/new` works.
+  Note: Use lowercase `%s` in searches like `https://duckduckgo.com/?q=%s`
+
 
 ### LibreOffice Calc
 
