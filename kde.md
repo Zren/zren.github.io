@@ -491,6 +491,12 @@ qdbus org.kde.KWin /KWin reconfigure
   Go to `about:config`
   Search for `browser.urlbar.oneOffSearches` and set it to `false`
 
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} Browse a website as 2nd User without logging out
+  Install Mozilla's [Multi-Account Containers extension](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/)
+  Right click the extension's icon in the toolbar > Pin it to the overflow menu.
+  You can easily open a new tab in a specific container by clicking and holding the "Open a new tab" button.
+
 
 ### LibreOffice Calc
 
