@@ -531,6 +531,13 @@ qdbus org.kde.KWin /KWin reconfigure
   If you're not a web developer, you can hide "Take a screenshot" by going to `about:config`
   Search for `extensions.screenshots.disabled` and set it to `true`
 
+{% assign i = i | plus: 1 %}
+* {:#cfg-{{ i }}} First click UrlBar selects all + double click selects word
+  going to `about:config`
+  Search for `browser.urlbar.clickSelectsAll` and set it to `true`
+  Search for `browser.urlbar.doubleClickSelectsAll` and set it to `false`
+
+
 ### LibreOffice Calc
 
 {% assign i = i | plus: 1 %}
