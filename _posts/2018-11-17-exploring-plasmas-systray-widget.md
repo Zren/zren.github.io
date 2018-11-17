@@ -5,7 +5,7 @@ layout: post
 
 A [user on reddit recently asked](https://www.reddit.com/r/kde/comments/9xcin7/configure_default_plasmoid_size/) how to resize a few widgets. With the "Notes" widget, it is pretty straight forward by changing the `Layout.preferredWidth` / `Layout.preferredHeight` as outlined in [KDE's Getting Started with Plasma Widgets](https://techbase.kde.org/Development/Tutorials/Plasma5/QML2/GettingStarted) article on the KDE wiki. However the user wanted to resize the System Tray and had no idea how to do so.
 
-I personally wouldn't recommend a new user modify the system tray, as it uses some fairly complicated code in order to embed other widgets inside itself (like the panel). However, this offers a learning opportunity for the reader on Plasma Widgets.
+I personally wouldn't recommend a new user modify the system tray, as it uses some fairly complicated code in order to embed other widgets inside itself (like the panel). However, this offers a learning opportunity for the reader on how a Plasma Widget is written, so lets jump down the rabbit hole.
 
 ## Compact / Full Representations
 
