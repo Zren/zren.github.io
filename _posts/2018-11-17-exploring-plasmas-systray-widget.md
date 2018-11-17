@@ -160,6 +160,8 @@ MouseArea {
         location: PlasmaCore.Types.RightEdge
 {% endhighlight %}
 
+<video src="https://i.imgur.com/UyextCM.mp4" width="100%" autoplay loop muted></video>
+
 ## This is just for fun!
 
 Reminder, that editing files in `/usr/share/plasma/plasmoids` not recommended. Whenever your system updates Plasma, the files will be overwritten with an updated version with bugfixes + new features, or just revert it back to the original file.
