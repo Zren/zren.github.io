@@ -145,7 +145,7 @@ This is because the [Dialog.visualParent](https://api.kde.org/frameworks/plasma-
 
 ![](https://i.imgur.com/ZRdC5zC.png)
 
-Now lets move the popup to the right side of the screen. We'll set the dialogs x coordinate to be the "width of the screen" minus "width of the dialog". Don't forget to add the import to the top of the file!
+Now lets move the popup to the right side of the screen. We'll set the dialogs x-coordinate to be the "width of the screen" minus "width of the dialog". Don't forget to add the import to the top of the file!
 
 {% highlight qml %}
 import QtQuick.Window 2.2
