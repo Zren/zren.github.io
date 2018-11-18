@@ -570,8 +570,6 @@ A simple engine to animate a sprite character. Character can move around and jum
 
 **Link:** <http://compsci.ca/v3/viewtopic.php?t=22799>
 
-![](image){:.pull-right}
-
 A simple particle engine using trig for movement. A bit mask is used for collision detection, and the particle is drawn to the bit mask on collision (to accumulate snow).
 
 
