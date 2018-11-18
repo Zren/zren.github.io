@@ -61,11 +61,25 @@ h3 + .tags {
 ## 2018
 
 
+### Plasma5 Widget - Bugzilla
+
+**Source:** <https://github.com/Zren/plasma-applet-bugzilla>
+
+I rewrote my GitHub widget to support the KDE's Bugzilla. Needing the ability to list multiple projects, I added the ability to put a "tag" in front of the bug title, which is rather difficult in QML since it does not have the concept of mixing "inline-blocks" with text that wraps.
+
+### Plasma5 Widget - GitHub Issues
+
+**Source:** <https://github.com/Zren/plasma-applet-githubissues>
+
+GitHub does not provide an RSS feed for a repository' issues, so I could not use an existing RSS widget to list bugs. I was forced to make a new widget that consumes GitHub's API. After writing the Bugzilla widget, I also rewrote the GitHub widget to display multiple repositories at once.
+
+
 ### Plasma5 Widget - System Monitor Dashboard
 
 **Source:** <https://github.com/Zren/plasma-applet-sysmonitordash>
 
 I refactored my "System Dash" widget to work for other computer by replacing all the hardcoded sensor names, labels, and colors with a configuration table.
+
 
 ### Plasma5 Widget - KDE Connect Device
 
