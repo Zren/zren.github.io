@@ -117,7 +117,7 @@ We can test with the following. Note that we do *not* use the private namespace.
 plasmawindowed org.kde.plasma.systemtray
 {% endhighlight %}
 
-![](https://i.imgur.com/tU90hd9.png)
+<video src="https://i.imgur.com/2oRUAGI.mp4" width="100%" autoplay loop muted></video>
 
 Cool. Now lets try to get the popup to slide in from the right!
 
