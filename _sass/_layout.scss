@@ -96,6 +96,9 @@ code {
 }
 pre > code {
   font-size: 15px;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
 }
 .header-link {
   position: absolute;
