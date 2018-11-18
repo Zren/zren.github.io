@@ -61,7 +61,7 @@
     </ul>
     <h3>Recent Articles</h3>
     <ul>
-      {% for page in site.posts %}
+      {% for page in site.posts limit:5 %}
         {% if page.title %}        
           <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
         {% endif %}
