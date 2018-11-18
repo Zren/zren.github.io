@@ -95,7 +95,7 @@ And there we go. `Layout.minimumWidth`/`Layout.minimumHeight` is what is control
 
 ## Changing the SysTray Popup Height
 
-Again, I do not recommend changing the system tray widget. It's actively being updated and bugfixed. However we can modify for learning puposes.
+Again, I do not recommend changing the system tray widget. It's actively being updated and bugfixed. However we can modify it for learning puposes.
 
 If we add `import QtQuick.Window 2.2` to the top of the `ExpandedRepresentation.qml` file, we can then use QML's [Screen](http://doc.qt.io/qt-5/qml-qtquick-window-screen.html) variables like `Screen.desktopAvailableHeight`. Normally we should probably using `plasmoid.screenGeography.height` however it appears that variable isn't "defined" in this widget as it's set to be a 0x0 rectangle.
 
