@@ -274,11 +274,6 @@ a:not([href]):hover {
       </td>
     </tr>
     <tr>
-      <td><a href="https://www.kde.org/announcements/plasma-5.11.5.php">Plasma 5.11.5</a></td>
-      <td><a href="https://www.reddit.com/r/kde/comments/7nqfbh/kde_plasma_5115_bugfix_release_for_january/">/r/kde</a></td>
-      <td><a>/r/linux</a></td>
-    </tr>
-    <tr>
       <td><a href="https://www.kde.org/announcements/plasma-5.11.95.php">Plasma 5.12.0 Beta</a></td>
       <td><a href="https://www.reddit.com/r/kde/comments/7qmc4u/plasma_512_lts_beta_makes_your_desktop_smoother/">/r/kde</a></td>
       <td>
