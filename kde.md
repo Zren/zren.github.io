@@ -335,6 +335,7 @@ qdbus org.kde.KWin /KWin reconfigure
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Don't show `~/Desktop` folder on every screen (Workaround)
+  Note: Icons should now only appear on 1 screen as of Plasma 5.12
   Create `~/Desktop2`, `~/Desktop3`... for each screen.
   Right click wallpaper on screen 2 > Configure Desktop
   Location > Check: Specify a folder > `~/Desktop2`
