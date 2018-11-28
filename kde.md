@@ -158,6 +158,7 @@ rm ~/.cache/icon-cache.kcache
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Show the (`~/Desktop`) files/links on the desktop.
+  Note: Icons on the desktop is the default as of Plasma 5.10
   Right Click the desktop wallpaper > Desktop Settings
   Wallpaper Tab > Layout: Folder View
   Icon Tab > Arrange In: Columns
