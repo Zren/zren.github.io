@@ -157,15 +157,6 @@ rm ~/.cache/icon-cache.kcache
 ### Desktop
 
 {% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} Show the (`~/Desktop`) files/links on the desktop.
-  Note: Icons on the desktop is the default as of Plasma 5.10
-  Right Click the desktop wallpaper > Desktop Settings
-  Wallpaper Tab > Layout: Folder View
-  Icon Tab > Arrange In: Columns
-  Icon Tab > Sorting: Unsorted
-  Icon Tab > Size: 4 (out of 6)
-
-{% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Hide the ☰ button in the top corner
   Right Click the desktop wallpaper > Desktop/Folder View Settings
   Tweaks Tab > Uncheck: Show the desktop toolbox
@@ -329,16 +320,6 @@ qdbus org.kde.KWin /KWin reconfigure
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/krunner,org.kde.kglobalaccel.Component,invokeShortcut,run command"
 qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
-
-
-### Multi Screen
-
-{% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} Don't show `~/Desktop` folder on every screen (Workaround)
-  Note: Icons should now only appear on 1 screen as of Plasma 5.12
-  Create `~/Desktop2`, `~/Desktop3`... for each screen.
-  Right click wallpaper on screen 2 > Configure Desktop
-  Location > Check: Specify a folder > `~/Desktop2`
 
 
 ### Login Screen (SDDM) / Lock Screen
