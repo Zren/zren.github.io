@@ -313,7 +313,7 @@ qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
 
 {% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} Do not open the “Start Menu” with Windows/Meta key
+* {:#cfg-{{ i }}} Do not open the "Start Menu" with Windows/Meta key
   We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/config/kwinrc`, then reload kwin.
   It's easier to use these commmands than doing it by hand.
   {% highlight bash %}
