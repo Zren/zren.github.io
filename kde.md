@@ -26,7 +26,7 @@ sudo apt install -y kcron # Task Scheduler in System Settings
 
 {% highlight bash %}
 sudo apt install -y clementine # Music Player (.mp3 SoundCloud)
-sudo apt install -y comix # Image Viewer (.cbr .zip .rar)
+sudo apt install -y mcomix # Image Viewer (.cbr .zip .rar)
 sudo apt install -y gimp # Image Editor (.jpg .png)
 sudo apt install -y htop # Command Line Task Manager
 sudo apt install -y inkscape # Vector Image Editor (.svg)
