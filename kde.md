@@ -399,7 +399,7 @@ qdbus org.kde.KWin /KWin reconfigure
 
 {% assign i = i | plus: 1 %}
 * {:#cfg-{{ i }}} Use the KDE File selector dialog
-  Make sure you have the xdg-desktop-portal-kde package installed.
+  Make sure you have the `xdg-desktop-portal-kde` package installed.
   Right click the Firefox launcher in the app launcher > Edit Application
   Application tab > Command `GTK_USE_PORTAL=1 /usr/lib/firefox/firefox %u`
 
