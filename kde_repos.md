@@ -1072,6 +1072,16 @@ redirect_from: /projects/kde/repos/
 			phabDiffQuery='bOaiSgfPQGoI'
 		%}
 	</tr>
+	<tr>
+		{% include kdeRepo.html
+			repoName='xdg-desktop-portal-kde'
+			githubLink='https://github.com/KDE/xdg-desktop-portal-kde'
+			product='xdg-desktop-portal-kde'
+			phabRepo='xdg-desktop-portal-kde'
+			phabRepoName='Flatpak Support: KDE Portal for XDG Desktop'
+			phabDiffQuery='gNr_6_SymR34'
+		%}
+	</tr>
 </table>
 
 
