@@ -1082,6 +1082,12 @@ redirect_from: /projects/kde/repos/
 			phabDiffQuery='gNr_6_SymR34'
 		%}
 	</tr>
+	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='xdg-desktop-portal'
+			githubLink='https://github.com/flatpak/xdg-desktop-portal'
+		%}
+	</tr>
 </table>
 
 
