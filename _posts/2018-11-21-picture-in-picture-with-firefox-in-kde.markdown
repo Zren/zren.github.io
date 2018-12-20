@@ -46,7 +46,7 @@ X-Plasma-MainScript=code/main.js
 X-KDE-PluginInfo-Author=
 X-KDE-PluginInfo-Email=
 X-KDE-PluginInfo-Name=FirefoxPictureInPicture
-X-KDE-PluginInfo-Version=1
+X-KDE-PluginInfo-Version=2
 
 X-KDE-PluginInfo-Depends=
 X-KDE-PluginInfo-License=GPL
