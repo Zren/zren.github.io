@@ -100,6 +100,9 @@ var applyCheck = function(client) {
 		client.onAllDesktops = false
 		client.skipTaskbar = false
 		client.skipPager = false
+
+		// focus the window so it remains on top
+		workspace.activeClient = client
 	}
 
 }
