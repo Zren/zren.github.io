@@ -1028,7 +1028,7 @@ redirect_from: /projects/kde/repos/
 <table class="repolist">
 	<tr>
 		{% include kdeRepo.html
-			repoName='Baloo'
+			repoName='Baloo [File Indexer]'
 			githubLink='https://github.com/KDE/baloo'
 			product='frameworks-baloo'
 			phabRepo='baloo'
