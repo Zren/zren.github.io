@@ -603,7 +603,7 @@ qdbus org.kde.KWin /KWin reconfigure
 ### Gtk Apps (Gimp/Hexchat/etc)
 
 {% assign i = i | plus: 1 %}
-* {:#cfg-{{ i }}} Fix white text on white bg tooltips
+* {:#cfg-{{ i }}} Fix white text on white background tooltips
   System Settings > Colors
   Uncheck: Apply colors to non-Qt applications
 
