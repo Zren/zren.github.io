@@ -166,4 +166,4 @@ MouseArea {
 
 Reminder that editing files in `/usr/share/plasma/plasmoids` not recommended. Whenever your system updates Plasma, the files will be overwritten with an updated version with bugfixes + new features, or just revert it back to the original file.
 
-While we could copy the system tray's code to the home directory, I would not recommend it for the system tray, as it has a lot of C++ code that works with the QML view code, and using and older version of QML code you modified with new C++ code after a Plasma update could possibly cause PlasmaShell to crash. So while a system tray that opens from the right side of the screen is neat, a kde plasma tweaker should probably keep it as is.
+While we could copy the system tray's code to the home directory, I would not recommend doing this for the system tray, as it has a lot of C++ code that works with the QML view code, and using and older version of QML code you modified with new C++ code after a Plasma update could possibly cause PlasmaShell to crash. So while a system tray that opens from the right side of the screen is neat, a KDE Plasma tweaker should probably keep it as is.
