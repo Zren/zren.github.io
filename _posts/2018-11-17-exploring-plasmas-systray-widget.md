@@ -61,7 +61,7 @@ Item {
 
 ## The System Tray Widget
 
-The System Tray widget is a specical beast. In order for it to work, it needs to embed other widgets inside itself (like the panel). It embeds the Volume widget, the Network widget, the Notification widget, etc. Normal widget's (aka applets) cannot do this. It needs to be a special [ContainmentInterface](https://github.com/KDE/plasma-framework/blob/master/src/scriptengines/qml/plasmoid/containmentinterface.h#L51) instead of the standard [AppletInterface](https://github.com/KDE/plasma-framework/blob/master/src/scriptengines/qml/plasmoid/appletinterface.h) that a widget uses.
+The System Tray widget is a specical beast. In order for it to work, it needs to embed other widgets inside itself (like the panel). It embeds the Volume widget, the Network widget, the Notification widget, etc. Normal widgets (aka applets) cannot do this. It needs to be a special [ContainmentInterface](https://github.com/KDE/plasma-framework/blob/master/src/scriptengines/qml/plasmoid/containmentinterface.h#L51) instead of the standard [AppletInterface](https://github.com/KDE/plasma-framework/blob/master/src/scriptengines/qml/plasmoid/appletinterface.h) that a widget uses.
 
 To get around this, the System Tray widget has a public "container" widget under the namespace `org.kde.plasma.systray`, which has some C++ magic to load a single private widget `org.kde.plasma.private.sytray`.
 
@@ -87,7 +87,7 @@ I'm not quite sure where it defines full/compact representations. However this p
 
 > Note: The dialog for a normal widget is defined in `plasma-desktop` repo under [desktoppackage/contents/applet](https://github.com/KDE/plasma-desktop/tree/master/desktoppackage/contents/applet) if you're interested in comparing them.
 
-Back to the system tray widget. Now with the [PlasmaCore.Dialog](https://github.com/KDE/plasma-framework/blob/master/src/plasmaquick/dialog.h), the size of the dialog is the same size as the `Dialog.mainItem`, so if [we look at it](https://github.com/KDE/plasma-workspace/blob/master/applets/systemtray/package/contents/ui/main.qml#L375) we see that the `mainItem` is passed a `ExpandedRepresentation {}`. If we look in the `contents/ui/` folder, we see that there is a `ExpandedRepresentation.qml` file. So lets open that up as there does not seem to be any width/height definitions in the `main.qml` file for the dialog.
+Back to the system tray widget. Now with the [PlasmaCore.Dialog](https://github.com/KDE/plasma-framework/blob/master/src/plasmaquick/dialog.h), the size of the dialog is the same size as the `Dialog.mainItem`, so if [we look at it](https://github.com/KDE/plasma-workspace/blob/master/applets/systemtray/package/contents/ui/main.qml#L375) we see that the `mainItem` is passed an `ExpandedRepresentation {}`. If we look in the `contents/ui/` folder, we see that there is an `ExpandedRepresentation.qml` file. So lets open that up as there does not seem to be any width/height definitions in the `main.qml` file for the dialog.
 
 And there we go. `Layout.minimumWidth`/`Layout.minimumHeight` is what is controlling the size of the system tray width/height.
 
@@ -145,7 +145,7 @@ This is because the [Dialog.visualParent](https://api.kde.org/frameworks/plasma-
 
 ![](https://i.imgur.com/ZRdC5zC.png)
 
-Now lets move the popup to the right side of the screen. We'll set the dialogs x-coordinate to be the "width of the screen" minus "width of the dialog". Don't forget to add the import to the top of the file!
+Now lets move the popup to the right side of the screen. We'll set the dialog's x-coordinate to be the "width of the screen" minus "width of the dialog". Don't forget to add the import to the top of the file!
 
 {% highlight qml %}
 import QtQuick.Window 2.2
