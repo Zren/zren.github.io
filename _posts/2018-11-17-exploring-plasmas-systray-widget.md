@@ -137,7 +137,7 @@ PlasmaCore.Dialog {
 
 <video src="https://i.imgur.com/FUqR5aD.mp4" width="100%" autoplay loop muted></video>
 
-As you can see, while it does animate the slide in from the right, it's no longer positioned above the system tray. Next, lets try to position it to the right of the screen. The reason why it's on the left side of the screen is because it's trying to position itself to the "left" of my bottom panel, just like we saw with the `plasmawindowed` window up above.
+In the above example, I restarted Plasma to test in my panel. As you can see, while it does animate the slide in from the right, it's no longer positioned above the system tray. The reason why it's on the left side of the screen is because it's trying to position itself to the "left" of my bottom panel, just like we saw with the `plasmawindowed` window up above.
 
 ![](https://i.imgur.com/tU90hd9.png)
 
