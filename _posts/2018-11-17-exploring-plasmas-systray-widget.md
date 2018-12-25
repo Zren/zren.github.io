@@ -17,11 +17,11 @@ A widget has 2 different "views". The compact area that's shown when there's not
 Item {
 	id: main
 
-	Plasmoid.compactRepresentation: {
+	Plasmoid.compactRepresentation: Item {
 		id: panelView
 	}
 
-	Plasmoid.fullRepresentation: {
+	Plasmoid.fullRepresentation: Item {
 		id: popupView
 	}
 }
@@ -33,7 +33,7 @@ When we do not define the full view, the main Item is treated as the full repres
 Item {
 	id: main // also the popupView
 
-	Plasmoid.compactRepresentation: {
+	Plasmoid.compactRepresentation: Item {
 		id: panelView
 	}
 }
