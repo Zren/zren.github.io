@@ -16,7 +16,7 @@ git clone git://anongit.kde.org/plasma-desktop
 cd plasma-desktop
 {% endhighlight %}
 
-Then we'll open up `applets/taskmanager/CMakeLists.txt` and some of the stuff from the missing info which is mostly taken from the `CMakeLists.txt`.
+Then we'll open up `applets/taskmanager/CMakeLists.txt` and some of the stuff from the missing info which is mostly taken from the `CMakeLists.txt` in plasma-desktop's root directory.
 
 {% highlight cmake %}
 cmake_minimum_required(VERSION 3.0)
@@ -56,7 +56,9 @@ find_package(KF5 REQUIRED COMPONENTS
 )
 {% endhighlight %}
 
-Then we can try compiling just the `applets/taskmanager` folder.
+Next we can try compiling just the `applets/taskmanager` folder. We create a new "build" directory and enter it. Then we run cmake using the source code from the parent directory (`applets/taskmanager`) using `..`. `cmake` will check if all the dependencies mentioned in `CMakeLists.txt` are installed.
+
+Then we run `make` which actually compiles your code. If you missed mentioning a dependency using `find_package()` in the `CMakeLists.txt`, `make` might throw an error. Further down in `CMakeLists.txt` will be a `target_link_libraries()` function you can use as a reference for populating `find_package()`.
 
 {% highlight bash %}
 cd applets/taskmanager
