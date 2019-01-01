@@ -613,11 +613,6 @@ qdbus org.kde.KWin /KWin reconfigure
 # Known Bugs
 
 {% assign i = i | plus: 1 %}
-* {:#bug-{{ i }}} Slideshow wallpaper memory leak / heavy cpu usage (Fixed)
-  <https://bugs.kde.org/show_bug.cgi?id=368838>
-  Sadly, the workaround is to just not use the slideshow.
-
-{% assign i = i | plus: 1 %}
 * Open Bugs in Plasma (the taskbar/panel)
   [bugs.kde.org search](https://bugs.kde.org/buglist.cgi?list_id=1536784&order=bug_id%20DESC&product=plasmashell&product=kdeplasma-addons&product=plasma-nm&product=plasma-pa&product=Plasma%20Vault&product=frameworks-plasma&product=plasma-browser-integration&product=plasma-integration&query_format=advanced)
 
