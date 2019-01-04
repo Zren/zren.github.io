@@ -7,7 +7,9 @@ permalink: /kde/versions/
 This page lists the versions for various kde software and it's dependencies for distro releases. This might be out of date for rolling releases, but should be handy for bugfix only distros like Ubuntu.
 
 <style type="text/css">
+.table thead th,
 .table tbody td {
+  text-align: left;
   vertical-align: top;
 }
 .table tbody td:first-of-type {
@@ -56,10 +58,6 @@ a:not([href]):hover {
 
 
 <style type="text/css">
-.table.versiontable thead th,
-.table.versiontable tbody td {
-  text-align: left;
-}
 .table.versiontable td:nth-of-type(2) a,
 .table.versiontable td:nth-of-type(3) a {
   display: block;
