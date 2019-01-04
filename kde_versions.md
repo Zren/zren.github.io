@@ -31,119 +31,26 @@ a:not([href]):hover {
 <table class="table">
   <thead>
     <tr>
-      <th>Distro Release</th>
-      <th>Qt</th>
-      <th>KDE Frameworks</th>
-      <th>KDE Plasma</th>
-      <th>KDE Apps</th>
+      <th>Package</th>
+      <th>Repology Link (Lists package versions for every Distro)</th>
     </tr>
   </thead>
   <tbody>
-
     <tr>
-      <td><a href="https://antergos.com/">Antergos</a> 17.7</td>
-      <td title="qt">5.7.1</td>
-      <td title="frameworks">5.31</td>
-      <td title="plasma">5.9.2</td>
-      <td title="apps">17.04.2</td>
+      <td>plasma-desktop</td>
+      <td><a href="https://repology.org/metapackage/plasma-desktop/versions">https://repology.org/metapackage/plasma-desktop/versions</a></td>
     </tr>
     <tr>
-      <td><a href="https://chakralinux.org/">Chakra</a> 2017.03</td>
-      <td title="qt">5.7.1</td>
-      <td title="frameworks">5.31</td>
-      <td title="plasma">5.9.2</td>
-      <td title="apps">16.12.2</td>
+      <td>plasma-framework</td>
+      <td><a href="https://repology.org/metapackage/plasma-framework/versions">https://repology.org/metapackage/plasma-framework/versions</a></td>
     </tr>
     <tr>
-      <td><a href="https://chakralinux.org/">Chakra</a></td>
-      <td title="qt">?</td>
-      <td title="frameworks">?</td>
-      <td title="plasma">?</td>
-      <td title="apps">?</td>
+      <td>dolphin (KDE Apps)</td>
+      <td><a href="https://repology.org/metapackage/dolphin/versions">https://repology.org/metapackage/dolphin/versions</a></td>
     </tr>
     <tr>
-      <td><a href="https://neon.kde.org/">KDE Neon</a> User</td>
-      <td title="qt">5.11.1</td>
-      <td title="frameworks">5.50</td>
-      <td title="plasma">5.40.0</td>
-      <td title="apps">18.08.1</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.kubuntu.org/">Kubuntu</a> 16.04</td>
-      <td title="qt">5.5.1</td>
-      <td title="frameworks">5.18</td>
-      <td title="plasma">5.5.5</td>
-      <td title="apps">15.12.3</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.kubuntu.org/">Kubuntu</a> 16.10</td>
-      <td title="qt">5.6.1</td>
-      <td title="frameworks">5.26</td>
-      <td title="plasma">5.7.5</td>
-      <td title="apps">16.04.3</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.kubuntu.org/">Kubuntu</a> 17.04</td>
-      <td title="qt">5.7.1</td>
-      <td title="frameworks">5.31</td>
-      <td title="plasma">5.9.4</td>
-      <td title="apps">16.12.3</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.kubuntu.org/">Kubuntu</a> 17.10</td>
-      <td title="qt">?</td>
-      <td title="frameworks">5.38</td>
-      <td title="plasma">5.10.5</td>
-      <td title="apps">17.04.3</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.kubuntu.org/">Kubuntu</a> 18.04</td>
-      <td title="qt">?</td>
-      <td title="frameworks">?</td>
-      <td title="plasma">5.12</td>
-      <td title="apps">?</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.kubuntu.org/">Kubuntu</a> 18.10</td>
-      <td title="qt">?</td>
-      <td title="frameworks">?</td>
-      <td title="plasma">?</td>
-      <td title="apps">?</td>
-    </tr>
-    <tr>
-      <td><a href="https://mauilinux.org/">Maui Linux</a> 17.06</td>
-      <td title="qt">5.7.1</td>
-      <td title="frameworks">5.35</td>
-      <td title="plasma">5.10.2</td>
-      <td title="apps">?</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.netrunner.com/">Netrunner</a> 2017.06</td>
-      <td title="qt">5.7.1</td>
-      <td title="frameworks">5.34</td>
-      <td title="plasma">5.10.?</td>
-      <td title="apps">17.04.?</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.netrunner.com/">Netrunner</a> 2017.07</td>
-      <td title="qt">5.9.0</td>
-      <td title="frameworks">5.35</td>
-      <td title="plasma">5.10.3</td>
-      <td title="apps">17.04.2</td>
-    </tr>
-    <tr>
-      <td><a href="https://nurunner.org/">Nurunner</a> 17.06</td>
-      <td title="qt">5.9.0</td>
-      <td title="frameworks">5.35</td>
-      <td title="plasma">5.10.3</td>
-      <td title="apps">17.04.2</td>
-    </tr>
-    <tr>
-      <td><a href="http://www.pclinuxos.com/">PCLinuxOS</a> 2017.07</td>
-      <td title="qt">5.9.1</td>
-      <td title="frameworks">5.35</td>
-      <td title="plasma">5.10.3</td>
-      <td title="apps">17.04.2</td>
+      <td>qt5</td>
+      <td><a href="https://repology.org/metapackage/qt5/versions">https://repology.org/metapackage/qt5/versions</a></td>
     </tr>
   </tbody>
 </table>
