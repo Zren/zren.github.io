@@ -8,7 +8,6 @@ This page lists the versions for various kde software and it's dependencies for 
 
 <style type="text/css">
 .table tbody td {
-  text-align: center;
   vertical-align: top;
 }
 .table tbody td:first-of-type {
