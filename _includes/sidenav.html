@@ -7,6 +7,7 @@
     line-height: 1.2;
     display: inline-block;
     width: 100%;
+    box-sizing: border-box;
   }
   #sidenav .nav-contents a:hover {
     color: #666;
@@ -98,6 +99,13 @@
     .nav-menu-toggle:not(.opened) + .nav-contents {
       height: 0px;
       opacity: 0;
+    }
+    #sidenav {
+      text-align: center;
+    }
+    #sidenav .nav-contents a,
+    #sidenav h3 {
+      text-align: left;
     }
     #sidenav .nav-contents a {
       font-size: 2em;
