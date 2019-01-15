@@ -227,6 +227,7 @@ console.log(menu)
 
 
 function setActiveSection(id) {
+	// console.log('setActiveSection', id)
 	var li = menuIdMap[id]
 	var isMenuItem = li.matches('#sidemenu > ul > li')
 	var isSubMenuItem = li.matches('#sidemenu > ul > li > ul > li')
@@ -259,23 +260,35 @@ function setActiveSection(id) {
 	li.scrollIntoView()
 }
 function updateMenu() {
-	console.log('updateMenu')
+	// console.log('updateMenu')
 	var viewTop = window.scrollY
 	var sectionList = document.querySelectorAll('.documentation > section')
 	// Binary Search maybe (since elements are in order)?
 	for (var i = 0; i < sectionList.length; i++) {
 		var section = sectionList[i];
 		var offset = getOffsetSum(section)
-		if (offset.top > viewTop) {
-			console.log(i, viewTop, offset.top, section)
+		var offsetDiff = viewTop - offset.top
+		if (offsetDiff < 0) {
+			// console.log(i, viewTop, offset.top, section)
 			if (i <= 1) {
+				// console.log('selectTop')
 				// We're at the top, so select the first item.
 				setActiveSection(section.id)
 			} else {
-				// Previous item is still being read.
-				var prevMenuItem = sectionList[i - 1];
-				var sectionId = prevMenuItem.id
-				setActiveSection(prevMenuItem.id)
+				var prevMenuItem = sectionList[i - 1]
+				var prevOffset = getOffsetSum(prevMenuItem)
+				var prevOffsetDiff = viewTop - prevOffset.top
+				var sectionReadRatio = (prevOffsetDiff)/prevMenuItem.offsetHeight
+				if (sectionReadRatio >= 0.7) {
+					// console.log('selectCurrent', sectionReadRatio)
+					// Current item is being read.
+					var curMenuItem = sectionList[i]
+					setActiveSection(curMenuItem.id)
+				} else {
+					// console.log('selectPrev', sectionReadRatio)
+					// Previous item is still being read.
+					setActiveSection(prevMenuItem.id)
+				}
 			}
 			break
 		} else if (i == sectionList.length - 1) {
@@ -286,7 +299,7 @@ function updateMenu() {
 
 var updating = false;
 function queueUpdateMenu() {
-	console.log('queueUpdateMenu', updating)
+	// console.log('queueUpdateMenu', updating)
 	if (!updating) {
 		updating = true
 		requestAnimationFrame(function() {
