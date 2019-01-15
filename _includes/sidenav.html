@@ -7,9 +7,6 @@
     line-height: 1.2;
     display: inline-block;
     width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   #sidenav .nav-contents a:hover {
     color: #666;
@@ -22,6 +19,71 @@
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     list-style: none;
   }
+
+  /* Nav menu button */
+  /* Based on https://codepen.io/samikeijonen/pen/jqvxdL */
+  .nav-menu-toggle {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    right: 30px;
+    top: -106px; /* 92 - (92-60)/2 + 30px */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 13px;
+    transition: all 0.25s ease-in-out;
+    color: #444;
+    background-color: #fff;
+  }
+  .nav-menu-toggle:hover {
+    background-color: #eee;
+    border-color: #ddd;
+  }
+  .nav-menu-toggle:active {
+    background-color: #ddd;
+    border-color: #ccc;
+    color: #333;
+  }
+  .nav-menu-toggle:focus {
+    outline: none;
+  }
+  .icon-menu-toggle.icon {
+    display: inline-block;
+    fill: currentColor;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    position: relative;
+  }
+  .icon-menu-toggle .line {
+    opacity: 1;
+    transform: rotate(0) translateY(0) translateX(0);
+    transform-origin: 50% 50%;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  .icon-menu-toggle .line-1 {
+    transform-origin: 50% 20%;
+  }
+  .icon-menu-toggle .line-3 {
+    transform-origin: 50% 80%;
+  }
+  .nav-menu-toggle.opened .icon-menu-toggle .line-1 {
+    transform: rotate(45deg) translateX(21%) translateY(21%);
+  }
+  .nav-menu-toggle.opened .icon-menu-toggle .line-2 {
+    opacity: 0;
+  }
+  .nav-menu-toggle.opened .icon-menu-toggle .line-3 {
+    transform: rotate(-45deg) translateX(21%) translateY(-21%);
+  }
+
+  /* Mobile / 50% Screen on Desktop */
   @media (max-width: 1440px) {
     #sidenav {
       margin-bottom: 52px;
@@ -29,9 +91,42 @@
     .nav-contents {
       display: inline-block;
       vertical-align: top;
+      transition: 400ms;
+      transform-origin: 50% 0%;
+      overflow: hidden;
+    }
+    .nav-menu-toggle:not(.opened) + .nav-contents {
+      height: 0px;
+      opacity: 0;
+    }
+    #sidenav .nav-contents a {
+      font-size: 2em;
+      padding: 0 0.25em;
+      line-height: 1.5;
+      background-color: rgba(0, 0, 0, 0.08);
+    }
+    #sidenav .nav-contents li + li a {
+      margin-top: 0.25em;
+    }
+    #sidenav .nav-contents a:hover {
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.04);
     }
   }
+  /* 100% widescreen on Desktop */
   @media screen and (min-width: 1440px) {
+    .nav-menu-toggle {
+      display: none;
+    }
+    .nav-contents .homepage-link {
+      position: absolute;
+      top: -75px; /* 13 + 30 + 32 */
+      right: calc(30px + 100%);
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: -1px;
+      text-align: right;
+    }
     .nav-contents {
       position: absolute;
       width: calc((100vw - 772px)/2 - 30px);
@@ -43,6 +138,11 @@
     .nav-contents.nav-right {
       right: calc((100vw - 772px)/2 * -1);
     }
+    #sidenav .nav-contents a {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
   .nav-contents > h3 {
     font-variant: small-caps;
@@ -50,9 +150,18 @@
   }
 </style>
 <nav id="sidenav">
+  <button class="nav-menu-toggle" id="menu-toggle" aria-expanded="false">
+    <!-- Based on https://codepen.io/samikeijonen/pen/jqvxdL -->
+    <svg class="icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+      <path class="line line-1" d="M5 13h90v14H5z"/>
+      <path class="line line-2" d="M5 43h90v14H5z"/>
+      <path class="line line-3" d="M5 73h90v14H5z"/>
+    </svg>
+  </button>
   <div class="nav-contents nav-right">
     <h3>Menu</h3>
     <ul>
+      <li><a class="homepage-link" href="{{ site.baseurl }}">Home</a></li>
       {% assign sorted_pages = site.pages | sort:"title" %}
       {% for page in sorted_pages %}
         {% if page.title %}        
@@ -70,3 +179,10 @@
     </ul>
   </div>
 </nav>
+<script type="text/javascript">
+var navMenuToggle = document.querySelector('.nav-menu-toggle')
+navMenuToggle.addEventListener('click', function(e){
+  this.classList.toggle('opened')
+  this.setAttribute('aria-expanded', this.classList.contains('opened'))
+})
+</script>
