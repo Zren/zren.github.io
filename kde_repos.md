@@ -1,18 +1,12 @@
 ---
-layout: widepage
+layout: fullwidthpage
 title: KDE Repositories
 permalink: /kde/repos/
 redirect_from: /projects/kde/repos/
 ---
 
 <style type="text/css">
-#sidenav {
-	display: none;
-}
-.page-content .wrapper {
-	max-width: -webkit-calc(100vw - (30px * 2));
-	max-width: calc(100vw - (30px * 2));
-}
+/* Repo list tables */
 .repolist td {
 	padding: 0 0.5em;
 	border-width: 0.1em 0;
