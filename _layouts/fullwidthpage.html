@@ -1,0 +1,61 @@
+---
+layout: page
+---
+<style type="text/css">
+/* Super wide page + hide sidebar */
+.page-content .wrapper {
+	max-width: -webkit-calc(100vw - (30px * 2));
+	max-width: calc(100vw - (30px * 2));
+}
+
+@media screen and (min-width: 1440px) {
+	#sidenav {
+		margin-bottom: 52px;
+	}
+	.nav-contents {
+		display: inline-block;
+		vertical-align: top;
+		transition: 400ms;
+		transform-origin: 50% 0%;
+		overflow: hidden;
+	}
+	.nav-menu-toggle:not(.opened) + .nav-contents {
+		height: 0px;
+		opacity: 0;
+	}
+	#sidenav {
+		text-align: center;
+	}
+	#sidenav .nav-contents a,
+	#sidenav h3 {
+		text-align: left;
+	}
+	#sidenav .nav-contents a {
+		font-size: 2em;
+		padding: 0 0.25em;
+		line-height: 1.5;
+		background-color: rgba(0, 0, 0, 0.08);
+	}
+	#sidenav .nav-contents li + li a {
+		margin-top: 0.25em;
+	}
+	#sidenav .nav-contents a:hover {
+		text-decoration: none;
+		background-color: rgba(0, 0, 0, 0.04);
+	}
+
+	/* Extra rules to override sidebar view */
+	.nav-menu-toggle {
+		display: inline-block;
+	}
+	.nav-contents {
+		position: static !important;
+		width: inherit !important;
+	}
+	.homepage-link {
+		position: static !important;
+	}
+}
+</style>
+
+{{ content }}
