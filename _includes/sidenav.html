@@ -169,7 +169,7 @@
   <div class="nav-contents nav-right">
     <h3>Menu</h3>
     <ul>
-      <li><a class="homepage-link" href="{{ site.baseurl }}">Home</a></li>
+      <li><a class="homepage-link" href="{{ '/' | prepend site.baseurl }}">Home</a></li>
       {% assign sorted_pages = site.pages | sort:"title" %}
       {% for page in sorted_pages %}
         {% if page.title %}        
