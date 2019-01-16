@@ -157,16 +157,16 @@
     margin-bottom: 0.2em;
   }
 </style>
-<nav id="sidenav">
-  <button class="nav-menu-toggle" id="menu-toggle" aria-expanded="false">
+<nav id="sidenav"><!--
+--><button class="nav-menu-toggle" id="menu-toggle" aria-expanded="false">
     <!-- Based on https://codepen.io/samikeijonen/pen/jqvxdL -->
     <svg class="icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
       <path class="line line-1" d="M5 13h90v14H5z"/>
       <path class="line line-2" d="M5 43h90v14H5z"/>
       <path class="line line-3" d="M5 73h90v14H5z"/>
     </svg>
-  </button>
-  <div class="nav-contents nav-right">
+  </button><!--
+--><div class="nav-contents nav-right">
     <h3>Menu</h3>
     <ul>
       <li><a class="homepage-link" href="{{ site.baseurl }}/">Home</a></li>
@@ -185,8 +185,8 @@
         {% endif %}
       {% endfor %}
     </ul>
-  </div>
-</nav>
+  </div><!--
+--></nav>
 <script type="text/javascript">
 var navMenuToggle = document.querySelector('.nav-menu-toggle')
 navMenuToggle.addEventListener('click', function(e){
