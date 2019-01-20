@@ -1217,5 +1217,3 @@ Item {
 {% endcapture %}{% capture sectionRight %}
 ...
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
-
-<script type="text/javascript" src="/js/livereload.js"></script>
