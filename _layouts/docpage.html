@@ -21,56 +21,70 @@ layout: fullwidthpage
 	overflow-y: auto;
 }
 
-#sidemenu a {
-	display: inline-block;
-	color: #eee;
-	font-family: 'Open Sans',Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
-	font-size: 12px;
-	width: 100%;
-	padding: 8px 30px;
-	box-sizing: border-box;
-	letter-spacing: initial;
-}
-#sidemenu > ul > li > a {
-	padding-left: 27px;
-}
-#sidemenu > ul > li > a:before {
-	font-family: FontAwesome;
-	content: "\f054";
-	margin-right: 10px;
-	display: inline-block;
-	text-align: center;
-	width: 12px;
-}
-#sidemenu > ul > li > a:hover {
-	text-decoration: none;
-	color: #0392c9;
-}
-#sidemenu > ul > li.active > a:before {
-	content: "\f078";
-}
-#sidemenu > ul > li:not(.active) > ul {
-	display: none;
-}
-#sidemenu li.active > a {
-	font-weight: bold;
-}
-#sidemenu ul ul li a {
-	border-left: 3px solid transparent;
-}
-#sidemenu ul ul li.active a {
-	border-left-color: #0392c9;
-	background-color: #0e2735;
-}
-#sidemenu ul ul a:hover {
-	text-decoration: none;
-	background-color: #0e2735;
-}
+/* Reset list defaults */
 #sidemenu li {
 	list-style-type: none;
 }
 #sidemenu ul {
 	margin-left: 0;
+}
+
+/* All Menu Buttons */
+#sidemenu a {
+	display: block;
+	color: #eee;
+	font-family: 'Open Sans',Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	width: 100%;
+	padding: 6px 30px;
+	box-sizing: border-box;
+	letter-spacing: initial;
+}
+/* Menu Items */
+#sidemenu > ul > li > a {
+	padding-left: 6px;
+	font-weight: bold;
+}
+#sidemenu > ul > li > a:before {
+	font-family: FontAwesome;
+	content: "\f054";
+	margin-right: 6px;
+	display: inline-block;
+	text-align: center;
+	width: 12px;
+	color: #456a7e;
+}
+#sidemenu > ul > li > a:hover {
+	text-decoration: none;
+	color: #0392c9;
+}
+/* Inactive SubMenu Items */
+#sidemenu > ul > li:not(.active) > ul {
+	display: none;
+}
+/* Active Menu */
+#sidemenu > ul > li.active > a {
+	background-color: #fff;
+	border-right: #f0f0f0 1px solid;
+	color: #404040;
+}
+#sidemenu > ul > li.active > a:before {
+	content: "\f078";
+}
+/* Active SubMenu Items */
+#sidemenu > ul > li.active > ul > li > a {
+	background-color: #e3e3e3;
+	border-right: #c9c9c9 1px solid;
+	color: #606060;
+}
+#sidemenu > ul > li.active > ul > li > a:hover {
+	text-decoration: none;
+	background-color: #d6d6d6;
+}
+/* Selected SubMenu Item */
+#sidemenu > ul > li.active > ul > li.active > a {
+	background-color: #c9c9c9;
+	color: #404040;
 }
 
 
