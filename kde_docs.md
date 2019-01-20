@@ -34,11 +34,11 @@ section .right li:last-child:before {
 
 First create a folder for your new widget. Inside it create another folder called `package`. Everything inside the `package` folder will be what we eventually zip and share online, so we can keep text editor project files in the `helloworld` folder.
 
-Inside the package folder will be `metadata.desktop` file which is basically an Linux INI file. This file will describe the name of the widget, the category it's in, and various other plasma specific keys like the main qml file.
+Inside the package folder will be `metadata.desktop` file which is basically an Linux `.ini` file. This file will describe the name of the widget, the category it's in, and various other plasma specific keys like the main QML file.
 
 Inside `contents`, we will create the `ui` and `config` folders. `ui` is the folder which should contain your layout files like the `main.qml` and the `configGeneral.qml`. The latter is the layout for the widget's configuration window.
 
-Inside `config` we have the `main.xml` which contains the schema of all our serialized configuration keys+values. The `config.qml` is used to define the tabs in the configuration window, and which QML layout file in the tab will open (like `ui/configGeneral.qml`).
+Inside the `config` folder we have the `main.xml` which contains the schema of all our serialized configuration keys+values. The `config.qml` is used to define the tabs in the configuration window, and which QML layout file in the tab will open (like `ui/configGeneral.qml`).
 
 Note that you don't *need* the 3 config files. You can get away with just the `main.qml` and `metadata.desktop` for a barebones widget.
 
@@ -65,7 +65,7 @@ Inside the `metadata.desktop` file we need to set the `Name` of the widget. The 
 
 `Icon` is the icon name associated with the widget. You can search for icon names in the `/usr/share/icon` folder. You can also look for an icon name by right clicking your app launcher widget then editing the icon in it's settings. It uses a searchable interface and lists them by category. Plasma's SDK also has the Cuttlefish app ([screenshot](https://www.kde.org/images/screenshots/cuttlefish.png)) which you can install with `sudo apt install plasma-sdk`.
 
-`X-KDE-PluginInfo-Name` needs to be a unique name, since it's used for the folder name it's installed into. You could use `com.github.zren.helloworld` if you're on github, or use `org.kde.plasma.helloworld` if you're planning on contributing the widget to kde.  
+`X-KDE-PluginInfo-Name` needs to be a unique name, since it's used for the folder name it's installed into. You could use `com.github.zren.helloworld` if you're on github, or use `org.kde.plasma.helloworld` if you're planning on contributing the widget to KDE.  
 
 Widget's installed by the user (without root) like when you "Install New Widgets" will be installed to `~/.local/share/plasma/plasmoids/` (which may not yet exist). The default widgets shipped with KDE are installed to `/usr/share/plasma/plasmoids/`.
 
@@ -104,13 +104,18 @@ X-KDE-PluginInfo-Category=System Information
 {% capture label %}contents/ui/main.qml{% endcapture %}
 {% capture sectionLeft %}
 
-This is the entry point. Various properties are available to set. You should know that widgets have several ways of being represented. You can have a widget in the panel, which is just an icon that will show a popup window when clicked. You can also have it on the desktop as a desktop widget which can be resized by the user. As a desktop widget it can switch between the "icon view", which opens a popup, and directly showing the popup on the desktop when there's enough room. You can also have the widget inside another widget (a containment) like the system tray or the panel itself. The widget can also be run like an application in it's own window.
+This is the entry point. Various properties are available to be set. You should know that widgets have several ways of being represented. 
+
+* You can have a widget in the panel, which is just an icon that will show a popup window when clicked.
+* You can also have it on the desktop as a desktop widget which can be resized by the user. As a desktop widget it can switch between the "icon view", which opens a popup, and directly showing the popup on the desktop when there's enough room.
+* You can also have the widget inside another widget (a containment) like the system tray or the panel itself.
+* The widget can also be run like an application in it's own window.
 
 `plasmoid.location` and `plasmoid.formFactor` can tell you how the widget is placed. `plasmoid` is a global variable which is defined when you `import org.kde.plasma.plasmoid 2.0`. Read more below.
 
-`Plasmoid.compactRepresentation` (with a capital) and `Plasmoid.fullRepresentation` are used to define layout of the small "icon" view and the full "popup" view. These are both properties of the main Item. If neither are set, by default the main item is the full representation.
+`Plasmoid.compactRepresentation` (with a capital) and `Plasmoid.fullRepresentation` are used to define the layout of the small "icon" view and the full "popup" view. These are both properties of the main `Item`. If neither are set, by default the main `Item` is the full representation.
 
-`Layout.preferredWidth` can be used to define the default width of a desktop/panel widget, or the size of the popup window (unless it is in the system tray). The system tray has a fixed hardcoded size for it's popups. It can also define the width of the compact "icon" view in the horizontal panel. Note that the preferredWidth/preferredHeight of the compactRepresentation will automatically scale to the thickness of the panel depending on if it's a vertical or horizontal panel.
+`Layout.preferredWidth` can be used to define the default width of a desktop/panel widget, or the size of the popup window (unless it is in the system tray). The system tray has a fixed hardcoded size for it's popups. It can also define the width of the compact "icon" view in the horizontal panel. Note that the `Layout.preferredWidth`/`Layout.preferredHeight` of the `Plasmoid.compactRepresentation` will automatically scale to the thickness of the panel depending on if it's a vertical or horizontal panel.
 
 `Layout.minimumWidth` can be used to define the minimum size for a desktop widget / popup.
 
@@ -142,7 +147,7 @@ PlasmaComponents.Label {
 
 {% capture label %}plasmoidviewer{% endcapture %}
 {% capture sectionLeft %}
-We now have enough to test our widget. If you haven't yet, install the `plasma-sdk` with `sudo apt install plasma-sdk`.
+We now have enough to test our widget. If you haven't yet, install the `plasma-sdk` package with `sudo apt install plasma-sdk`.
 {% endcapture %}{% capture sectionRight %}
 
 {% highlight bash %}
@@ -193,26 +198,26 @@ plasmoidviewer -a package # floating is the default.
 
 {% capture label %}Test as Horizontal Panel Widget{% endcapture %}
 {% capture sectionLeft %}
-plasmoidviewer isn't really a good testing setup for panel widgets, but you assign `plasmoid.formFactor` and `plasmoid.location` while still having size of a desktop widget.
+If we set `plasmoidviewer`'s `plasmoid.formFactor` to be `horizontal` and `plasmoid.location` to the `topedge` or `bottomedge`, we can test a widget focusing in the panel.
 {% endcapture %}{% capture sectionRight %}
 
 {% highlight bash %}
-plasmoidviewer -a package -l bottomedge -f horizontal
+plasmoidviewer -a package -l topedge -f horizontal
 {% endhighlight %}
 
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
-{% capture label %}Testing High DPI{% endcapture %}
+{% capture label %}Testing DPI Scaling{% endcapture %}
 {% capture sectionLeft %}
-By setting the `QT_SCALE_FACTOR=2` we can set the DPI to 192 just for the plasmoidviewer window. This is great for testing if your code will support a HiDPI monitor.
+By setting the `QT_SCALE_FACTOR=2` we can double the DPI value to `192` just for the `plasmoidviewer` window. This is great for testing if your code will support a HiDPI screen.
 
-If you're testing a much higher DPI, you'll probably find the default plasmoidviewer window is too small to show the widget, so we'll set the size and position of the window. Note that the window will go maximized if you set a size larger than you desktop has available.
+If you're testing a very high DPI, you'll probably find the default `plasmoidviewer` window is too small to show the widget, so we'll set the size and position of the window. Note that the window will go maximized if you set a size larger than you screen has available.
 {% endcapture %}{% capture sectionRight %}
 
 {% highlight bash %}
 QT_SCALE_FACTOR=2 plasmoidviewer -a package
-QT_SCALE_FACTOR=2 plasmoidviewer -a package -l floating -f horizontal -x 0 -y 0 -s 1920x1080
+QT_SCALE_FACTOR=2 plasmoidviewer -a package -l topedge -f horizontal -x 0 -y 0 -s 1920x1080
 {% endhighlight %}
 
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
@@ -248,7 +253,7 @@ qml.debug=true
 {% capture label %}Quick Intro{% endcapture %}
 {% capture sectionLeft %}
 
-This is a quick intro to QML. If you're comforatble with it, skip to the next section.
+This is a quick intro to QML. If you're comfortable with it, skip to the next section.
 
 The official QML tutorial can be found in the [QML Documentation](http://doc.qt.io/qt-5/qtqml-syntax-basics.html).
 
@@ -562,7 +567,7 @@ KDE Frameworks ships with a number of useful extensions to Qt's QML. The [API do
 {% capture label %}PlasmaComponents.Label{% endcapture %}
 {% capture sectionLeft %}
 
-QML ships with a [Text]() type, but Plasma extends by asigning a number of defaults. One thing is defaulting to using the color scheme's text color. For the specifics, you can read in the [`Label.qml` source code](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/Label.qml).
+QML ships with a [Text](http://doc.qt.io/qt-5/qml-qtquick-text.html) type, but Plasma extends with a `Label.qml` which asigns a number of defaults. One thing that is defaulted is it uses the color scheme's text color. For the specifics, you can read the [`Label.qml` source code](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/Label.qml).
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
@@ -1217,3 +1222,5 @@ Item {
 {% endcapture %}{% capture sectionRight %}
 ...
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
+<script type="text/javascript" src="/js/livereload.js"></script>
