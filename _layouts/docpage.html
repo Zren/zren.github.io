@@ -99,7 +99,7 @@ layout: fullwidthpage
 }
 
 .documentation {
-	overflow-x: scroll;
+	overflow: auto;
 }
 .documentation p,
 .documentation li {
@@ -151,17 +151,19 @@ layout: fullwidthpage
 }
 @media (min-width: 1281px) {
 	.documentation > section {
-		display: table;
+		display: flex;
 		width: 100%;
 	}
 	.documentation > section > .left {
 		width: 50%;
-		display: table-cell;
+		max-width: 50%;
+		flex: 1;
 		border-right: 1px solid #bfcdd8;
 	}
 	.documentation > section > .right {
 		width: 50%;
-		display: table-cell;
+		max-width: 50%;
+		flex: 1;
 	}
 }
 
