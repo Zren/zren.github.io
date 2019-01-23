@@ -867,7 +867,7 @@ First thing we need to do in our `merge.sh` script, is list all files we wish to
 
 `DIR` is the directory (absolute path to `package/translate/`) since we may run the merge script from another directory.
 
-We use `kreadconfig5` to grab the widget's namespace (`com.github.zren.helloworld`) and store it in `plasmoidName`. We then remove the beginning of the namespace so were left with `helloworld` and store that in `widgetName`. We also grab the website which a link to the GitHub repo for use as the `bugAddress`.
+We use `kreadconfig5` to grab the widget's namespace (`com.github.zren.helloworld`) and store it in `plasmoidName`. We then remove the beginning of the namespace so we are left with `helloworld` and store that in `widgetName`. We also grab the website which a link to the GitHub repo for use as the `bugAddress`.
 
 After validating that `plasmoidName` is not an empty string with bash's `[ -z "$plasmoidName" ]` operator, we then list all `.qml` and `.js` files using `find` and store the results of the command in a temporary `infiles.list` file.
 
