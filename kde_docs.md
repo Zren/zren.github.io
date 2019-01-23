@@ -801,7 +801,7 @@ i18np("One image in album %2", "%1 images in album %2", numImages, albumName)
 i18np("One image in album %2", "More images in album %2", numImages, albumName)
 {% endhighlight %}
 
-Using `i18np(...)` can inprove our previous example. When `unreadEmailCount` was `1`, the tooltip would have read `"1 unread emails"`.
+Using `i18np(...)` can improve our previous example. When `unreadEmailCount` was `1`, the tooltip would have read `"1 unread emails"`.
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
