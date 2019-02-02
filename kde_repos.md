@@ -1005,6 +1005,16 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepo.html
+			repoName='Spectacle [Screenshots]'
+			githubLink='https://github.com/KDE/spectacle'
+			product='spectacle'
+			phabRepo='spectacle'
+			phabRepoName='Spectacle'
+			phabDiffQuery='d0ahfxoZg5xe'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
 			repoName='Yakuake'
 			githubLink='https://github.com/KDE/yakuake'
 			product='yakuake'
