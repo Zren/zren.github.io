@@ -144,7 +144,8 @@ rm ~/.cache/icon-cache.kcache
 .post-content li.tip > a {
   color: #606c71;
 }
-.post-content li.tip > a {
+.post-content li.tip > a,
+.post-content li.tip li:first-line {
   font-weight: bold;
 }
 .tip-section > a:hover,
