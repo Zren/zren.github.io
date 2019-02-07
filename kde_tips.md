@@ -292,19 +292,6 @@ qdbus org.kde.KWin /KWin reconfigure
   Restart firefox
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
-{% capture label %}Remove 3px padding above tabs with Compact density{% endcapture %}{% capture contents %}
-  Manjaro's Breath GTK theme has close buttons that are 32px tall, while "Compact" is a 29px tall area. So we need to crop 3px.
-  Go to `~/.mozilla/firefox/` then open `ab1c2d.default` or whatever the folder name is.
-  Create `chrome/userChrome.css` if it does not exist.
-  Then paste the following CSS into `userChrome.css`.
-  Restart firefox
-  {% highlight css %}
-#titlebar-buttonbox {
-  margin-top: -3px;
-}
-  {% endhighlight %}
-{% endcapture%}{% include tip.html label=label contents=contents %}
-
 {% capture label %}Remove left tabbar padding when not maximized{% endcapture %}{% capture contents %}
   Go to `~/.mozilla/firefox/` then open `ab1c2d.default` or whatever the folder name is.
   Create `chrome/userChrome.css` if it does not exist.
