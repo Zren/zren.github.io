@@ -100,32 +100,6 @@ pre > code {
   -o-tab-size: 4;
   tab-size: 4;
 }
-.header-link {
-  position: absolute;
-  margin-left: -1em;
-  font-weight: bold;
-  opacity: 0;
-  user-select: none;
-
-  &,
-  &:hover,
-  &:visited {
-    color: #888;
-    text-decoration: none;
-  }
-}
-li[id] > .header-link {
-  margin-left: -2em;
-}
-h1:hover .header-link,
-h2:hover .header-link,
-h3:hover .header-link,
-h4:hover .header-link,
-h5:hover .header-link,
-h6:hover .header-link,
-li[id]:hover > .header-link {
-  opacity: 1;
-}
 
 // Images
 @media screen and (min-width: 64em) {

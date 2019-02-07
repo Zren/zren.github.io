@@ -1,0 +1,6 @@
+{% assign i = i | plus: 1 %}
+<li id="{{ include.label | slugify }}" class="tip">
+	<!-- <a class="header-link" href="#cfg-{{ i }}">¶</a> -->
+	<a href="#{{ include.label | slugify }}">{{ include.label }}</a>
+	{{ include.contents | markdownify }}
+</li>
