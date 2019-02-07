@@ -200,7 +200,7 @@ with open(tipsFilename, "r") as fin:
 #------------
 footer = """-----
 
-Note that this list is manually kept in sync with https://zren.github.io/kde/#configuration using a script. — [https://phabricator.kde.org/p/Zren/ Zren]
+Note that this list is manually kept in sync with https://zren.github.io/kde/#configuration using [https://github.com/Zren/zren.github.io/blob/master/kde_tips_convert.py this script]. — [https://phabricator.kde.org/p/Zren/ Zren]
 
 """
 formattedText += footer
