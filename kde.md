@@ -140,26 +140,26 @@ rm ~/.cache/icon-cache.kcache
 {% assign i = 0 %}
 
 <style>
-.tip-section a,
-.post-content li.tip a {
+.tip-section > a,
+.post-content li.tip > a {
   color: #606c71;
 }
-.post-content li.tip a {
+.post-content li.tip > a {
   font-weight: bold;
 }
-.tip-section a:hover,
-.post-content li.tip a:hover {
+.tip-section > a:hover,
+.post-content li.tip > a:hover {
   text-decoration: none;
   color: #727E83;
 }
-.tip-section a:active,
-.post-content li.tip a:active {
+.tip-section > a:active,
+.post-content li.tip > a:active {
   color: #828E93;
 }
 
 
-.tip-section a::before,
-.tip a::before {
+.tip-section > a::before,
+.tip > a::before {
   content: "¶";
   font-family: monospace;
   position: absolute;
@@ -169,21 +169,21 @@ rm ~/.cache/icon-cache.kcache
   opacity: 0;
   user-select: none;
 }
-.tip a::before,
-.tip a:hover::before,
-.tip a:visited::before {
+.tip > a::before,
+.tip > a:hover::before,
+.tip > a:visited::before {
   color: #888;
   text-decoration: none;
 }
-.tip-section a::before {
+.tip-section > a::before {
   margin-top: -0.1em;
 }
-.tip a::before {
+.tip > a::before {
   margin-left: -2em;
   min-width: 2em;
 }
-.tip-section a:hover::before,
-.tip a:hover::before {
+.tip-section > a:hover::before,
+.tip > a:hover::before {
   opacity: 1;
 }
 </style>
