@@ -255,8 +255,8 @@ rm ~/.cache/icon-cache.kcache
 {% capture label %}Bind Ctrl+Alt+Left/Right to Switch Desktop{% endcapture %}{% capture contents %}
   System Settings > Desktop Behaviour
   Virtual Desktops Tab > Switching > Shortcuts
-  Switch One Desktop Left: Ctrl+Alt+Left
-  Switch One Desktop Right: Ctrl+Alt+Right
+  Switch One Desktop Left: `Ctrl+Alt+Left`
+  Switch One Desktop Right: `Ctrl+Alt+Right`
   Switch To Desktop 1, 2, …: None
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
@@ -305,18 +305,18 @@ qdbus org.kde.KWin /KWin reconfigure
 
 {% capture label %}Windows Keybindings for moving windows{% endcapture %}{% capture contents %}
   System Settings > Shortcuts > Global Keyboard Shortcuts Tab
-  KWin > Show Desktop: Win+M
-  KWin > Maximize Window: Win+Up
-  KWin > Minimize Window: Win+Down
-  KWin > Quick Tile Window to the Left: Win+Left
-  KWin > Quick Tile Window to the Right: Win+Right
+  KWin > Show Desktop: `Win+M`
+  KWin > Maximize Window: `Win+Up`
+  KWin > Minimize Window: `Win+Down`
+  KWin > Quick Tile Window to the Left: `Win+Left`
+  KWin > Quick Tile Window to the Right: `Win+Right`
   To open the “Start Menu” with the Windows key [see the section below](#windowsmeta-key).
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Present all windows with Win+Tab{% endcapture %}{% capture contents %}
   System Settings > Desktop Behavior
   Desktop Effects Tab > Check Present Windows
-  Click the Gear Icon > Change the Ctrl+F10 shortcut to Meta+Tab
+  Click the Gear Icon > Change the `Ctrl+F10` shortcut to `Meta+Tab`
   Layout mode: "Natural" => "Flexible Grid"
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
