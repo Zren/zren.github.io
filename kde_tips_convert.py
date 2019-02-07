@@ -1,5 +1,12 @@
 #!/bin/python3
 
+# This file will convert the kde_tips.md file into mediawiki syntax
+# for the KDE Userbase Wiki page
+# https://userbase.kde.org/Plasma/Tips
+# 
+# Paste the contents of kde_tips.mediawiki into:
+# https://userbase.kde.org/index.php?title=Plasma/Tips&action=edit
+
 import re
 
 ignoringLines = False
