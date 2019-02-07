@@ -580,7 +580,7 @@ qdbus org.kde.KWin /KWin reconfigure
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}First click UrlBar selects all + double click selects word{% endcapture %}{% capture contents %}
-  going to `about:config`
+  Go to `about:config`
   Search for `browser.urlbar.clickSelectsAll` and set it to `true`
   Search for `browser.urlbar.doubleClickSelectsAll` and set it to `false`
 {% endcapture%}{% include tip.html label=label contents=contents %}
