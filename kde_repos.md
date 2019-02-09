@@ -1068,6 +1068,16 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepo.html
+			repoName='polkit-kde-agent-1 (Password Prompt)'
+			githubLink='https://github.com/KDE/polkit-kde-agent-1'
+			product='policykit-kde-agent-1'
+			phabRepo='polkit-kde-agent-1'
+			phabRepoName='Policykit (Polkit) KDE Agent'
+			phabDiffQuery='hRFIy.6nV9HA'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
 			repoName='Powerdevil'
 			githubLink='https://github.com/KDE/powerdevil'
 			product='Powerdevil'
