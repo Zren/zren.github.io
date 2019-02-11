@@ -14,7 +14,7 @@ Use this after you run a full `kdesrc-build` and build all the dependencies.
 # sudoedit /usr/local/bin/ksrcbuild
 # sudo chmod +x /usr/local/bin/ksrcbuild
 
-moduleId="$!"
+moduleId="$1"
 shift
 extraArgs="$@"
 
