@@ -16,13 +16,13 @@ project(plasma-ion-envcan)
 
 set(QT_MIN_VERSION "5.5.0")
 set(KF5_MIN_VERSION "5.18.0")
-{% endhilight %}
+{% endhighlight %}
 
 Standard cmake stuff to begin with. The project name doesn't really matter.
 
 {% highlight cmake %}
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
-{% endhilight %}
+{% endhighlight %}
 
 This is almost standard. This imports the extra cmake files from `${CMAKE_CURRENT_SOURCE_DIR}/cmake`, `templates/ion-dataengine/` contains the `cmake/FindPlasmaWeatherIon.cmake` file which is used for importing the Plasma Weather Ion headers/library. So we need to copy the `cmake/` with the `cmake/FindPlasmaWeatherIon.cmake` into the `envcan/` folder.
 
@@ -40,7 +40,7 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED
         I18n
         UnitConversion
 )
-{% endhilight %}
+{% endhighlight %}
 
 Next up we `find_package()` for various `Qt5` and `KF5` modules. The template is missing the `KF5::KIO` and `KF5::I18n` components though.
 
@@ -59,13 +59,13 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(ECMQtDeclareLoggingCategory)
-{% endhilight %}
+{% endhighlight %}
 
 More standard KDE cmake stuff, though the `ECMQtDeclareLoggingCategory` was not included in the template.
 
 {% highlight cmake %}
 add_definitions(-DTRANSLATION_DOMAIN=\"plasma_engine_weather\")
-{% endhilight %}
+{% endhighlight %}
 
 We took this from `dataengines/weather/CMakeLists.txt` ([link](
 https://github.com/KDE/plasma-workspace/blob/master/dataengines/weather/CMakeLists.txt#L1)) in order to reuse the existing KDE translations. If we we're making a new weather ion, we'd create a new translation domain like in the template.
@@ -85,7 +85,7 @@ target_link_libraries (ion_envcan
     KF5::UnitConversion
     KF5::I18n
 )
-{% endhilight %}
+{% endhighlight %}
 
 Then open up `envcan/ion_envcan.h` and remove the `#include "../ion.h"` line and add `#include <plasma/weather/ion.h>` in it's place. This imports from the `PlasmaWeatherIon` library instead of trying to import the `ion.h` 1 directory up which we're pretending doesn't exist so we can compile just this folder.
 
