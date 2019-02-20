@@ -60,7 +60,7 @@ find_package(KF5 ${PLASMA_MIN_VERSION} REQUIRED COMPONENTS
 )
 {% endhighlight %}
 
-Finally, we need to remove a [recently added Wayland workaround](https://phabricator.kde.org/D10816) part of the code to get this folder to build.
+Finally, we need to remove a [recently added KWorkspace detectPlatform](https://phabricator.kde.org/D10816) function call to get this folder to build.
 
 We need to remove `PW::KWorkspace` from `target_link_libraries(systemmonitor` below. Then we need to remove the `kworkspace.h` import and function call in `main.cpp`.
 
