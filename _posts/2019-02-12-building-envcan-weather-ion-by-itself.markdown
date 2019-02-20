@@ -210,7 +210,6 @@ index 9ac8a1cc..a4479ba8 100644
 
 ### Compiling
 
-
 You might be interested in my `kmake` script [here](https://gist.github.com/Zren/3f859c267ac1148aaedcf54a9bacb00f). If not, just run the following:
 
 {% highlight bash %}
