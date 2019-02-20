@@ -9,7 +9,7 @@ The System Monitor does not come bundled with the CPU/RAM/Swap usage tab, or the
 
 Unfortunately, you'll need to compile the entire plasma-workspace repo just to edit it, so lets try editing the `plasma-workspace/systemmonitor/CMakeList.txt` to only build the `systemmonitor` binary.
 
-First add the minimum cmake, qt, and KDE Frameworks version definitions, wjich I've mentioned in other "build ___ by itself" blog posts.
+First add the minimum cmake, qt, and KDE Frameworks version definitions, which I've mentioned in other "build ___ by itself" blog posts.
 
 {% highlight cmake %}
 cmake_minimum_required(VERSION 3.0)
