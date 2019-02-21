@@ -13,6 +13,11 @@
           {% endif %}
         </ul>
       </div>
+      <div class="footer-col">
+        {% if site.github_username %}
+        <p>To suggest a change, <a href="https://github.com/{{site.github_username}}/{{site.github_username | downcase}}.github.io/issues">create a new issue on GitHub</a>.</p>
+        {% endif %}
+      </div>
     </div>
 
   </div>
