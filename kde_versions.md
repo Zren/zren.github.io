@@ -98,29 +98,29 @@ a:not([href]):hover {
     </tr>
     <tr>
       <td><a href="https://www.kde.org/announcements/plasma-5.14.5.php">Plasma 5.14.5</a></td>
-      <td><a href="https://www.reddit.com/r/kde/comments/adtwij/first_plasma_bugfix_release_of_the_year_makes/">/r/kde</a></a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/adtwij/first_plasma_bugfix_release_of_the_year_makes/">/r/kde</a></td>
       <td><a>/r/linux</a></td>
     </tr>
     <tr>
       <td><a href="https://www.kde.org/announcements/plasma-5.14.4.php">Plasma 5.14.4</a></td>
-      <td><a href="https://www.reddit.com/r/kde/comments/a0x24n/kde_plasma_5144_bugfix_release_for_november/">/r/kde</a></a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/a0x24n/kde_plasma_5144_bugfix_release_for_november/">/r/kde</a></td>
       <td><a>/r/linux</a></td>
     </tr>
     <tr>
       <td><a href="https://www.kde.org/announcements/plasma-5.14.3.php">Plasma 5.14.3</a></td>
-      <td><a href="https://www.reddit.com/r/kde/comments/9upzby/kde_plasma_5143_bugfix_release_for_november/">/r/kde</a></a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/9upzby/kde_plasma_5143_bugfix_release_for_november/">/r/kde</a></td>
       <td>
         <a href="https://www.reddit.com/r/linux/comments/9vaq3x/kde_plasma_5143_bugfix_release_for_november_with/">/r/linux</a>
       </td>
     </tr>
     <tr>
       <td><a href="https://www.kde.org/announcements/plasma-5.14.2.php">Plasma 5.14.2</a></td>
-      <td><a href="https://www.reddit.com/r/kde/comments/9qxxo7/kde_plasma_5142_bugfix_release_for_october/">/r/kde</a></a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/9qxxo7/kde_plasma_5142_bugfix_release_for_october/">/r/kde</a></td>
       <td><a>/r/linux</a></td>
     </tr>
     <tr>
       <td><a href="https://www.kde.org/announcements/plasma-5.14.1.php">Plasma 5.14.1</a></td>
-      <td><a href="https://www.reddit.com/r/kde/comments/9op5qe/kde_plasma_5141_bugfix_release_for_october/">/r/kde</a></a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/9op5qe/kde_plasma_5141_bugfix_release_for_october/">/r/kde</a></td>
       <td>
         <a>/r/linux</a>
         <a href="https://www.reddit.com/r/openSUSE/comments/9ozg9h/kde_plasma_5141_bugfix_release_for_october/">/r/openSUSE</a>
