@@ -4,7 +4,7 @@ title: KDE Distro Versions
 permalink: /kde/versions/
 ---
 
-This page lists the versions for various kde software and it's dependencies for distro releases. This might be out of date for rolling releases, but should be handy for bugfix only distros like Ubuntu.
+This page lists the versions for various kde software, and the reddit discussion about the releases.
 
 <style type="text/css">
 .table thead th,
