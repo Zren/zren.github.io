@@ -76,14 +76,25 @@ a:not([href]):hover {
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://www.kde.org/announcements/plasma-5.15.0.php">Plasma 5.15.0</a></td>
-      <td><a>/r/kde</a></a></td>
+      <td><a href="https://www.kde.org/announcements/plasma-5.15.1.php">Plasma 5.15.1</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/asbnr8/kde_plasma_5151_bugfix_release_for_february/">/r/kde</a></td>
       <td><a>/r/linux</a></td>
     </tr>
     <tr>
-      <td><a href="https://www.kde.org/announcements/plasma-5.14.95.php">Plasma 5.15.0 Beta</a></td>
-      <td><a>/r/kde</a></a></td>
-      <td><a>/r/linux</a></td>
+      <td><a href="https://www.kde.org/announcements/plasma-5.15.0.php">Plasma 5.15.0</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/apsu3d/release_kde_plasma_515_lightweight_usable_and/">/r/kde</a></td>
+      <td>
+        <a href="https://www.reddit.com/r/linux/comments/apsuft/release_kde_plasma_515_lightweight_usable_and/">/r/linux</a>
+        <a href="https://www.reddit.com/r/opensource/comments/aq48vi/kde_plasma_515_released/">/r/opensource</a>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="https://www.kde.org/announcements/plasma-5.14.90.php">Plasma 5.15.0 Beta</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/agxxnb/looking_forward_to_plasmas_next_stable_release/">/r/kde</a></td>
+      <td>
+        <a>/r/linux</a>
+        <a href="https://www.reddit.com/r/kde/comments/ah3ado/help_test_kde_plasma_515_beta/">/r/kde Neon Help Test</a> 
+      </td>
     </tr>
     <tr>
       <td><a href="https://www.kde.org/announcements/plasma-5.14.5.php">Plasma 5.14.5</a></td>
