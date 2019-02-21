@@ -90,11 +90,11 @@ a:not([href]):hover {
     </tr>
     <tr>
       <td><a href="https://www.kde.org/announcements/plasma-5.14.90.php">Plasma 5.15.0 Beta</a></td>
-      <td><a href="https://www.reddit.com/r/kde/comments/agxxnb/looking_forward_to_plasmas_next_stable_release/">/r/kde</a></td>
       <td>
-        <a>/r/linux</a>
+        <a href="https://www.reddit.com/r/kde/comments/agxxnb/looking_forward_to_plasmas_next_stable_release/">/r/kde</a>
         <a href="https://www.reddit.com/r/kde/comments/ah3ado/help_test_kde_plasma_515_beta/">/r/kde Neon Help Test</a> 
       </td>
+      <td><a>/r/linux</a></td>
     </tr>
     <tr>
       <td><a href="https://www.kde.org/announcements/plasma-5.14.5.php">Plasma 5.14.5</a></td>
