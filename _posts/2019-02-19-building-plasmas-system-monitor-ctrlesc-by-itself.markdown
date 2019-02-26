@@ -3,7 +3,7 @@ title: Building Plasma's System Monitor (Ctrl+Esc) By Itself
 layout: post
 ---
 
-Unlike KSysGuard, the "System Monitor" that ships with the `plasma-workspace` package is fairly useful, and defaults to a useful shortcut. I usally have System Monitor sorted by "Relative Sort Time" so that I can quickly see the newest processes and if they're the cause of what's slowing down my PC.
+The "System Monitor" that ships with the `plasma-workspace` package is fairly useful, and is similar to KSysGuard. The System Monitor has a default shortcut (`Ctrl+Esc`) so you can quickly access it on any KDE Plasma installation. I usally have System Monitor sorted by "Relative Sort Time" so that I can quickly see the newest processes and if they're the cause of what's slowing down my PC.
 
 The System Monitor does not come bundled with the CPU/RAM/Swap usage tab, or the ability to monitor other sensors, it's just the process list.
 
