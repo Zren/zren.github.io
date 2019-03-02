@@ -381,6 +381,17 @@ qdbus org.kde.KWin /KWin reconfigure
 {% endcapture%}{% include tip.html label=label contents=contents %}
 </ul>
 
+### LibreOffice Writer
+
+<ul>
+{% capture label %}Save as .docx by default{% endcapture %}{% capture contents %}
+  Tools > Options
+  Load/Save > General
+  Always save as: "Word 2007-2019 (*.docx)"
+  > [LibreOffice wiki](https://help.libreoffice.org/Common/Using_Microsoft_Office_and#Saving_Documents_by_Default_in_Microsoft_Office_Formats)
+{% endcapture%}{% include tip.html label=label contents=contents %}
+</ul>
+
 ### LibreOffice Calc
 
 <ul>
