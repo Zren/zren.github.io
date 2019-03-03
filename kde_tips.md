@@ -470,3 +470,18 @@ qdbus org.kde.KWin /KWin reconfigure
   Uncheck: Apply colors to non-Qt applications
 {% endcapture%}{% include tip.html label=label contents=contents %}
 </ul>
+
+### VirtualBox
+
+<ul>
+{% capture label %}Prevent Windows/Meta Key from opening the host App Menu{% endcapture %}{% capture contents %}
+  Run the Virtual Machine.
+  Press the host key (Right `Ctrl`)
+  Press `Alt+F3` > More Actions > Special Application Settings
+  Window Matching Tab > Window class: [`Exact Match`] `virtualbox machine`
+  Appearances & Fixes Tab > Check "Ignore Global Shortcuts"
+  Change "Do Not Affect" to "Force", then select "Yes".
+  > Note that this also disables Spectable's screenshot global shortcuts while the VM window is focused.
+{% endcapture%}{% include tip.html label=label contents=contents %}
+</ul>
+
