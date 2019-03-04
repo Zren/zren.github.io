@@ -3,9 +3,7 @@ title: Activate any widget with Meta key
 layout: post
 ---
 
-A user on reddit recently asked how to trigger any widget using the Meta key.
-
-https://www.reddit.com/r/kde/comments/awja8m/windows_key_not_opening_dashboard_in_latte_dock/ehrz8dt/?context=3
+[A user on reddit recently asked](https://www.reddit.com/r/kde/comments/awja8m/windows_key_not_opening_dashboard_in_latte_dock/ehrz8dt/?context=3) how to trigger any widget using the Meta key.
 
 The Meta key "shortcut" works by KWin detecting the keypress and sending a DBus signal to another process (`plasmashell` or `latte-dock`). I believe this is necessary since the [Qt keyboard shortcut "Actions"](https://doc.qt.io/qt-5/qaction.html) do not support modifier only shortcuts, and the only way to add support for it would be to patch Qt upstream or fork Qt and rewrite every KDE app using that fork of Qt (like KDE4 did?).
 
