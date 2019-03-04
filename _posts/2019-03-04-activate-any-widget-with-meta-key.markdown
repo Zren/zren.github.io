@@ -57,5 +57,5 @@ kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "
 qdbus org.kde.KWin /KWin reconfigure
 {% endhighlight %}
 
-Since the `,` is the separator, we didn't need to wrap `activate widget 56` in quotes as spaces ` ` are no longer the separator.
+Since the `,` is the separator, we didn't need to wrap `activate widget 56` in quotes as spaces are no longer the separator.
 
