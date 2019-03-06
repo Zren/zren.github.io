@@ -43,3 +43,7 @@ If it ran okay you can copy the binary to /usr/local/bin.
 {% highlight bash %}
 sudo cp ./src/dolphin /usr/local/bin/dolphin
 {% endhighlight %}
+
+Update: I made a video walkthrough for compiling dolphin.
+
+{% include video.html youtubeId="hRz1r_db7hw" %}
