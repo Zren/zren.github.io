@@ -13,6 +13,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://zren.github.io" # the base hostname & protocol for your site
 twitter_username: zrenfire
 github_username:  Zren
+youtube_channelname: Zren
+youtube_channelid: UClg-q4a1Igqx7wIMDvfNc8A
 
 # Post schema
 permalink: /:year/:month/:day/:title

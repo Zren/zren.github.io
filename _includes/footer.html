@@ -11,6 +11,11 @@
             {% include icon-github.html username=site.github_username %}
           </li>
           {% endif %}
+          {% if site.youtube_channelid %}
+          <li>
+            {% include icon-youtube-play.html channelid=site.youtube_channelid channelname="YouTube" %}
+          </li>
+          {% endif %}
         </ul>
       </div>
       <div class="footer-col">

@@ -18,7 +18,10 @@
     <div class="site-author">
       <img class="avatar-image" src="{{ "/img/avatar.jpg" | prepend: site.baseurl }}">
       <div><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></div>
-      <div><a class="site-github" href="https://github.com/{{ site.github_username }}"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="username">{{ site.github_username }}</span></a></div>
+      <div>
+        {% if site.github_username %}{% include icon-github.html username=site.github_username %}{% endif %}
+        {% if site.youtube_channelid %}{% include icon-youtube-play.html channelid=site.youtube_channelid channelname="YouTube" %}{% endif %}
+      </div>
     </div>
     
 
