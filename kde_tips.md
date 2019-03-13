@@ -438,6 +438,15 @@ qdbus org.kde.KWin /KWin reconfigure
   Steam > Settings > Interface Tab
   Uncheck: Notify me about additions to my games and other releases
 {% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Close Steam to Tray / Startup in Tray{% endcapture %}{% capture contents %}
+  Find Steam in the App Launcher widget
+  Right Click Steam > Edit Application
+  Application Tab > Command: `STEAM_FRAME_FORCE_CLOSE=1 /usr/bin/steam -silent %U`
+  If you added Steam to the autostarted apps, you will need to edit the command there as well.
+  Use `steam -silent` to startup in tray ([Source](https://github.com/ValveSoftware/steam-for-linux/issues/1025#issuecomment-12860675)).
+  Use `STEAM_FRAME_FORCE_CLOSE=1 steam` to close to tray ([Source](https://github.com/ValveSoftware/steam-for-linux/issues/5806)).
+{% endcapture%}{% include tip.html label=label contents=contents %}
 </ul>
 
 ### Clementine
