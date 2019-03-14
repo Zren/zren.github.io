@@ -439,13 +439,18 @@ qdbus org.kde.KWin /KWin reconfigure
   Uncheck: Notify me about additions to my games and other releases
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
-{% capture label %}Close Steam to Tray / Startup in Tray{% endcapture %}{% capture contents %}
+{% capture label %}Startup in Tray{% endcapture %}{% capture contents %}
   Find Steam in the App Launcher widget
   Right Click Steam > Edit Application
-  Application Tab > Command: `STEAM_FRAME_FORCE_CLOSE=1 /usr/bin/steam -silent %U`
+  Application Tab > Command: `/usr/bin/steam -silent %U`
   If you added Steam to the autostarted apps, you will need to edit the command there as well.
-  Use `steam -silent` to startup in tray ([Source](https://github.com/ValveSoftware/steam-for-linux/issues/1025#issuecomment-12860675)).
-  Use `STEAM_FRAME_FORCE_CLOSE=1 steam` to close to tray ([Source](https://github.com/ValveSoftware/steam-for-linux/issues/5806)).
+  Relevant [bug report](https://github.com/ValveSoftware/steam-for-linux/issues/5806).
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Close Steam to Tray{% endcapture %}{% capture contents %}
+  We need to launch steam using `STEAM_FRAME_FORCE_CLOSE=1 steam` as mentioned in [this bug report](https://github.com/ValveSoftware/steam-for-linux/issues/5806), but editing every single game shortcut that Steam generates is a hassel. So we'll set a [session environment variable](https://userbase.kde.org/Session_Environment_Variables/en) by adding `export STEAM_FRAME_FORCE_CLOSE=1` to `~/.config/plasma-workspace/env/path.sh`. It's easier to run this commands:
+  {% highlight bash %}echo 'export STEAM_FRAME_FORCE_CLOSE=1' >> ~/.config/plasma-workspace/env/path.sh{% endhighlight %}
+  Then logout and back in so that your "panel" is launched with the session variable so that it can pass it to Steam when Steam is launched from the app launcher or desktop shortcut.
 {% endcapture%}{% include tip.html label=label contents=contents %}
 </ul>
 
