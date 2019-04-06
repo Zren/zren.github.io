@@ -25,6 +25,7 @@ I needed to rewrite the rendering of the MonthView significantly, but it turned 
 
 I'm also rewriting a large chunk of the calendar plugins in a python3 library. I now have a google calendar implementation (read only so far). I'm still not sure if I'll merge that into EventCalendar, but it's sort of necessary to solve several things:
 
+* Moving the google acess/refresh token + cached calendarList data out of the plasma config.
 * Move the HTTP stuff out of the QML JavaScript as I can't use the HTTP PATCH method due to a Qt bug. This means I need to keep a reference to the raw calendar event object, and use HTTP PUT instead when I want to modify an event.
 * I need to somehow cache events so we can see them when offline. QML does have a SQLite LocalStorage feature which I used for my GitHub Issues widget, but I want to experiment with a python3 solution and see which is best.
 * This is less of a worry after Plasma 5.13, but I figured parsing the events in a seperate process would keep memory down in the `plasmashell` process. This has yet to be proven though, and it could actually use up more memory.
