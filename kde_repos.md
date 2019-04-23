@@ -399,6 +399,13 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='[Add Panel] Layout Templates'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/layout-templates'
+			product='plasmashell&component=Panel'
+		%}
+	</tr>
+	<tr class="indent">
 		{% include kdeRepo.html
 			repoName='Wallpaper Plugins'
 		%}
