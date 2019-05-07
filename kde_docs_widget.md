@@ -202,6 +202,42 @@ PlasmaComponents.Label {
 {% include docHeader.html label="Testing" %}
 
 
+{% capture label %}plasmawindowed{% endcapture %}
+{% capture sectionLeft %}
+There are 3 ways to test a widget.
+
+1. `plasmawindowed` can be used if the widget is installed to:  
+  `~/.local/share/plasma/plasmoids`  
+  It will remember any changes you make to the config as this is the same command used for "Windowed widgets" like the "Calculator" app. It has limited features for displaying the widget, but the command should be preinstalled.
+2. `plasmoidviewer`, explained further down, can display a widget as a desktop widget, or a panel widget. You can also test a widget that is not yet installed. You will need to first install the `plasma-sdk` package to use it.
+3. Install the widget and add it to your panel. Restarting plasma every time using:  
+  `plasmashell --replace`  
+  I only recommend this testing method for a final test as it takes a few seconds for the panel to load.
+
+
+{% endcapture %}{% capture sectionRight %}
+
+{% highlight bash %}
+plasmawindowed --help
+{% endhighlight %}
+{% highlight log %}
+Usage: plasmawindowed [options] applet [args...]
+Plasma Windowed
+
+Options:
+  --statusnotifier  Makes the plasmoid stay alive in the Notification Area,
+                    even when the window is closed.
+  -v, --version     Displays version information.
+  -h, --help        Displays this help.
+
+Arguments:
+  applet            The applet to open.
+  args              Arguments to pass to the plasmoid.
+{% endhighlight %}
+
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
+
 {% capture label %}plasmoidviewer{% endcapture %}
 {% capture sectionLeft %}
 We now have enough to test our widget. If you haven't yet, install the `plasma-sdk` package with `sudo apt install plasma-sdk`.
@@ -211,7 +247,6 @@ We now have enough to test our widget. If you haven't yet, install the `plasma-s
 plasmoidviewer --help
 {% endhighlight %}
 {% highlight log %}
-QML debugging is enabled. Only use this in a safe environment.
 Usage: plasmoidviewer [options]
 Run Plasma widgets in their own window
 
