@@ -826,10 +826,17 @@ Item {
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
-{% capture label %}CheckBox{% endcapture %}
+{% capture label %}CheckBox - Boolean{% endcapture %}
 {% capture sectionLeft %}
 
-[CheckBox](http://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html)es are usually used for boolean on/off types. See the [Visual Design Group's tips](https://community.kde.org/KDE_Visual_Design_Group/HIG/CheckBox) on using CheckBoxes.
+A [CheckBox](http://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html) is used for boolean on/off values. See the [Visual Design Group's tips](https://community.kde.org/KDE_Visual_Design_Group/HIG/CheckBox) on using CheckBoxes.
+
+{% highlight xml %}
+<!-- config/main.xml -->
+<entry name="variableName" type="Bool">
+    <default>true</default>
+</entry>
+{% endhighlight %}
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
@@ -844,6 +851,41 @@ Item {
 
     CheckBox {
         id: variableName
+    }
+}
+{% endhighlight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
+
+{% capture label %}SpinBox - Integer/Real{% endcapture %}
+{% capture sectionLeft %}
+
+A [SpinBox](https://doc.qt.io/qt-5/qml-qtquick-controls-spinbox.html) is used for numbers. You can change the `SpinBox.decimals` from an Integer `decimals: 0` to 2 or 3 to represent a Real number (the `Double` data type).
+
+{% highlight xml %}
+<!-- config/main.xml -->
+<entry name="integerExample" type="Int">
+    <default>6</default>
+</entry>
+<entry name="floatingPointExample" type="Double">
+    <default>3.1459</default>
+</entry>
+{% endhighlight %}
+
+{% endcapture %}{% capture sectionRight %}
+{% highlight qml %}
+// configGeneral.qml
+import QtQuick 2.0
+import QtQuick.Layouts 1.0
+import QtQuick.Controls 1.4
+
+Item {
+    id: page
+    property alias cfg_variableName: variableName.value
+
+    SpinBox {
+        id: variableName
+        decimals: 2
     }
 }
 {% endhighlight %}
