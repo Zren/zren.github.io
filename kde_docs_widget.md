@@ -850,7 +850,7 @@ Item {
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
-{% capture label %}Assigning to plasmoid.configuration.variableName{% endcapture %}
+{% capture label %}Assigning to plasmoid.configuration.varName{% endcapture %}
 {% capture sectionLeft %}
 
 You can also assign directly to `plasmoid.configuration.variableName` if necessary in the configruation window or anywhere else in your widget. If you do this in the configuration page, you will skip the "apply" process and the property will be applied right away. I leave this up to the reader wither this is a pro or con.
