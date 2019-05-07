@@ -715,7 +715,7 @@ Every widget by default has a configure action when you right click the widget c
 {% capture sectionLeft %}
 `main.xml` is where you define the properties that will be serialized into `~/.config/plasma-org.kde.plasma.desktop-appletsrc`. All properties will be accesible with `plasmoid.configuration.variableName` reguardless of was group it's in.
 
-KConfig has a variety of data types:
+[KConfig](https://api.kde.org/frameworks/kconfig/html/annotated.html) has a variety of data types:
 
 * `Int` for an Integer number
 * `Double` for a double precision floating point number (Real)
@@ -880,13 +880,21 @@ Item {
 
 I have written a few files that apply the above pattern of skipping "Apply" and updating right after you change the value.
 
-{% endcapture %}{% capture sectionRight %}
-{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+* [ConfigCheckBox.qml](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/contents/ui/lib/ConfigCheckBox.qml) for on/off booleans values.
+* [ConfigSpinBox.qml](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/contents/ui/lib/ConfigSpinBox.qml) for Integer or Real numbers.
+* [ConfigString.qml](https://github.com/Zren/plasma-applet-eventcalendar/blob/master/package/contents/ui/lib/ConfigString.qml) for a single line of text.
+* [ConfigColor.qml](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/contents/ui/lib/ConfigColor.qml) for use with a `String` or `Color` config data type. If you use use a `String` data type, you can treat an empty string as a certain color theme color. Eg: {% highlight qml %}ConfigColor {
+  configKey: 'labelColor'
+  defaultColor: theme.textColor
+}{% endhighlight %}
+* [ConfigIcon.qml](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/contents/ui/lib/ConfigIcon.qml) based on the Application Launcher icon selector.
+* [ConfigStringList.qml](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/contents/ui/lib/ConfigStringList.qml) Instead of a [TextField](https://doc.qt.io/qt-5/qml-qtquick-controls-textfield.html), it uses a [TextArea](https://doc.qt.io/qt-5/qml-qtquick-controls-textarea.html) using a new line as the seperator.
+* [ConfigComboBox.qml](https://github.com/Zren/plasma-applet-simpleweather/blob/master/package/contents/ui/lib/ConfigComboBox.qml) is useful for creating enums using the `String` config data type. KConfig comes with a enum datatype as well, but you have to use hardcoded integers (with comments) in your QML code, rather than using strings.
+    * [ConfigFontFamily.qml](https://github.com/Zren/plasma-applet-simpleweather/blob/master/package/contents/ui/lib/ConfigFontFamily.qml) inherits `ConfigComboBox.qml` and is populated with all available fonts.
+* [ConfigRadioButtonGroup.qml](https://github.com/Zren/plasma-applet-githubissues/blob/master/package/contents/ui/lib/ConfigRadioButtonGroup.qml) uses a similar model as `ConfigComboBox.qml` but displays the enum values differently.
+* [ConfigTextAlign.qml](https://github.com/Zren/plasma-applet-simpleweather/blob/master/package/contents/ui/lib/ConfigTextAlign.qml) for use with an `Int` config data type. It has your typical 4 buttons for left/center/right/justify alignment. It serializes the `Text.AlignHCenter` enum, which is an Integer.
+    * [ConfigTextFormat.qml](https://github.com/Zren/plasma-applet-simpleweather/blob/master/package/contents/ui/lib/ConfigTextFormat.qml) is used to config bold, italic, underline, and embeds the text alignment. For use with 3 `Bool` config keys and 1 `Int` config key (used for the embeded `ConfigTextAlign.qml`).
 
-
-{% capture label %}ConfigCheckBox{% endcapture %}
-{% capture sectionLeft %}
-...
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
 // ConfigCheckBox.qml
