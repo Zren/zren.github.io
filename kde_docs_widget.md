@@ -359,6 +359,11 @@ Rectangle {
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
+
+{% include docScreenshot.html src="https://i.imgur.com/p9TDRyQ.png" %}
+
+
+
 {% capture label %}Items are 0px wide by default{% endcapture %}
 {% capture sectionLeft %}
 
@@ -382,7 +387,9 @@ Rectangle { // Unlike everything else, the widget's main item will have a defaul
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
-{% include docScreenshot.html src="https://i.imgur.com/p9TDRyQ.png" %}
+
+{% include docScreenshot.html src="https://i.imgur.com/pIXg8vr.png" %}
+
 
 
 {% capture label %}anchors.fill{% endcapture %}
