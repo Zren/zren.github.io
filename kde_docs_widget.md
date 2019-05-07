@@ -829,7 +829,7 @@ Item {
 {% capture label %}CheckBox{% endcapture %}
 {% capture sectionLeft %}
 
-[CheckBox](http://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html)es are usually used for boolean on/off types. See the [Visual Design Group's tips](https://community.kde.org/KDE_Visual_Design_Group/HIG/CheckBox) on usuing CheckBoxes.
+[CheckBox](http://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html)es are usually used for boolean on/off types. See the [Visual Design Group's tips](https://community.kde.org/KDE_Visual_Design_Group/HIG/CheckBox) on using CheckBoxes.
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
