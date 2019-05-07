@@ -24,6 +24,24 @@ section .right li:before {
 section .right li:last-child:before {
     content: "└";
 }
+/* Bootstrap Alerts */
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+.alert-secondary {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+}
 </style>
 
 <!-- ------- -->
@@ -823,6 +841,11 @@ We'll place the `template.pot` file under a `translate` folder inside the bundle
 We'll also create a `merge.sh` script which will extract the messages from our code into a `template.pot`, then update the translated `fr.po` file with any changes.
 
 Lastly, we'll make a `build.sh` script to convert the `fr.po` text files into the binary `.mo` files which are needed for KDE to recognize the translations.
+
+The latest copy of my `merge.sh` and `build.sh` can be found in any of my widgets:
+
+* [`translate/merge.sh`](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/translate/merge)
+* [`translate/build.sh`](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/translate/build)
 {% endcapture %}{% capture sectionRight %}
 
 * `helloworld/`
@@ -864,6 +887,9 @@ sudo apt install gettext
 {% capture label %}Generating template.pot{% endcapture %}
 {% capture sectionLeft %}
 First thing we need to do in our `merge.sh` script, is list all files we wish to get translated in our widgets code.
+
+> The latest copy of my complete `merge.sh` script [can be found here](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/translate/merge).
+{:.alert.alert-secondary}
 
 `DIR` is the directory (absolute path to `package/translate/`) since we may run the merge script from another directory.
 
@@ -1058,6 +1084,9 @@ echo "[merge] Done merging messages"
 {% capture label %}Building .mo{% endcapture %}
 {% capture sectionLeft %}
 Once our `fr.po` has been filled out, we can then convert it to a binary `.mo` file. So lets get started on our `build.sh` script.
+
+> The latest copy of my complete `build.sh` script [can be found here](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/translate/build).
+{:.alert.alert-secondary}
 
 We start with the same code that we used in our `merge.sh` script to parse our `metadata.desktop` file and get the widget's namespace. We also reuse the same code to iterate the `.po` files.
 
