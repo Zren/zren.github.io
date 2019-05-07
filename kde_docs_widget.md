@@ -4,7 +4,7 @@ title: Plasma Widget Tutorial
 permalink: /kde/docs/widget/
 ---
 
-The KDE wiki has a [Getting Started](https://techbase.kde.org/Development/Tutorials/Plasma5) tutorial which you can read as well.
+The KDE wiki has a [Getting Started and Hello World](https://techbase.kde.org/Development/Tutorials/Plasma5) tutorial which you can read as well.
 
 <style>
 /* Assume all ul in the right side are file trees */
