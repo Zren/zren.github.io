@@ -714,8 +714,68 @@ Every widget by default has a configure action when you right click the widget c
 {% capture label %}contents/config/main.xml{% endcapture %}
 {% capture sectionLeft %}
 `main.xml` is where you define the properties that will be serialized into `~/.config/plasma-org.kde.plasma.desktop-appletsrc`. All properties will be accesible with `plasmoid.configuration.variableName` reguardless of was group it's in.
+
+KConfig has a variety of data types:
+
+* `Int` for an Integer number
+* `Double` for a double precision floating point number (Real)
+* `String` for a string of characters to represent text
+* `Color` for a hexidecimal color. The color defaults to `#000000` (black) if the default is left empty.
+* `Path` is a string that is specially treated as a file-path. In particular paths in the home directory are prefixed with `$HOME` when being stored in the configuration file.
+* `StringList` for a comma seperated list of Strings
+
+I've listed the more common usecases. More can be found on the wiki:  
+<https://techbase.kde.org/Development/Tutorials/Using_KConfig_XT>
+
+-----
+
+I personally don't recommend using `Color` if you want the default color from the color scheme (eg: `theme.textColor`). I would instead suggest using a `String` that defaults to empty. You can then use the following in the QML:
+
+{% highlight xml %}
+<entry name="labelColor" type="String">
+    <default></default>
+</entry>
+{% endhighlight %}
+
+{% highlight qml %}
+PlasmaComponents.Label {
+    color: plasmoid.configruation.labelColor || theme.textColor
+}
+{% endhighlight %}
+
 {% endcapture %}{% capture sectionRight %}
-...
+{% highlight xml %}
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0 http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+    <kcfgfile name=""/>
+
+    <group name="General">
+        <entry name="variableName" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="integerExample" type="Int">
+            <default>6</default>
+        </entry>
+        <entry name="floatingPointExample" type="Double">
+            <default>3.1459</default>
+        </entry>
+        <entry name="textExample" type="String">
+            <default>Hello World</default>
+        </entry>
+        <entry name="listExample" type="StringList">
+            <default>First Item,Second Item,Third Item</default>
+        </entry>
+        <entry name="colorExample" type="Color">
+            <default>#336699</default>
+        </entry>
+    </group>
+    <group name="AnotherGroup">
+        <entry name="secondGroupExample" type="Bool">
+            <default>false</default>
+        </entry>
+    </group>
+</kcfg>
+{% endhighlight %}
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
