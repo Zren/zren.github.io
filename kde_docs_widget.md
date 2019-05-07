@@ -362,9 +362,9 @@ Rectangle {
 {% capture label %}Items are 0px wide by default{% endcapture %}
 {% capture sectionLeft %}
 
-By default, an [Item](http://doc.qt.io/qt-5/qml-qtquick-item.html) will not expand to fit it's contents. Nor will it expand to fit the width of it's parent (like a `<div>` in HTML). So we need to scale.
+By default, an [Item](http://doc.qt.io/qt-5/qml-qtquick-item.html) will not expand to fit it's contents. Nor will it expand to fit the width of it's parent (like a `<div>` in HTML).
 
-In the this example, only the Teal Rectangle will be visible, since the Green Rectangle has the default width of 0px and height of 0px.
+In the this example, only the Teal Rectangle will be visible, since the Green Rectangle has the default width of 0px and height of 0px. The Teal Rectangle is only visible since the root item in a widget's `main.qml` has a default size which will be explained later.
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
@@ -375,17 +375,22 @@ Rectangle { // Unlike everything else, the widget's main item will have a defaul
     color: "#0ff" // Teal
     
     Rectangle { // For everything else, we need to set the size.
-        color: "#00f" // Green
+        color: "#0f0" // Green
     }
 }
 {% endhighlight %}
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
-{% capture label %}anchors.fit{% endcapture %}
+{% include docScreenshot.html src="https://i.imgur.com/p9TDRyQ.png" %}
+
+
+{% capture label %}anchors.fill{% endcapture %}
 {% capture sectionLeft %}
 
 In this second example, we make the Green Rectangle resize to the parent item, the Teal Rectangle. This will completely cover the Teal Rectangle so only the Green Rectangle will be visible.
+
+![](https://i.imgur.com/q5dfoJL.png)
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
@@ -396,8 +401,8 @@ Rectangle { // Unlike everything else, the widget's main item will have a defaul
     color: "#0ff" // Teal
     
     Rectangle { // For everything else, we need to set the size.
-        color: "#00f" // Green
-        anchors.fit: parent // Make sure we're the same size as the parent.
+        color: "#0f0" // Green
+        anchors.fill: parent // Make sure we're the same size as the parent.
     }
 }
 {% endhighlight %}
@@ -409,6 +414,8 @@ Rectangle { // Unlike everything else, the widget's main item will have a defaul
 
 In this third example, we anchor the Green Rectangle to the bottom right, and make it half the width & height of the Teal rectangle. So we end up with a rectangle which is 3/4 teal and 1/4 green.
 
+![](https://i.imgur.com/2ut7PnS.png)
+
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
 // main.qml
@@ -418,7 +425,7 @@ Rectangle {
     color: "#0ff" // Teal
     
     Rectangle {
-        color: "#00f" // Green
+        color: "#0f0" // Green
         anchors.right: parent.right
         anchors.bottom: parent.bottom
         width: parent.width / 2
@@ -437,6 +444,8 @@ If you want to stack a number of items on top of each other, you should use a [C
 Labels (which are just fancy Text items which follow Plasma's colors) have a default font size, which means they have their own default height. So they will be stacked on top of each other.
 
 Note that if the ColumnLayout is taller than it's contents, the children will have padding between them.
+
+![](https://i.imgur.com/5S9vVef.png)
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
@@ -495,6 +504,7 @@ ColumnLayout {
         height: 40
         anchors.left: parent.left
         anchors.right: parent.right
+        // anchors in a ColumnLayout throws a "undefined behavior" warning.
     }
 }
 {% endhighlight %}
