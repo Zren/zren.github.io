@@ -317,20 +317,24 @@ QT_SCALE_FACTOR=2 plasmoidviewer -a package -l topedge -f horizontal -x 0 -y 0 -
 
 {% capture label %}Enable logging{% endcapture %}
 {% capture sectionLeft %}
-By default in Qt 5.9, `console.log()`, which used to write a string to stdout (the Terminal output), is hidden by default. In order to reenable it, we need to run `kwriteconfig5 --file ~/.config/QtProject/qtlogging.ini --group "Rules" --key "qml.debug" "true"` to configure it to do so.
+By default in Qt 5.9, `console.log()`, which used to write a string to stdout (the Terminal output), is hidden by default. In order to reenable it, we need to set `[Rules] qml.debug=true` in `~/.config/QtProject/qtlogging.ini`. You can easily set it by running this `kwriteconfig5` command:  
+
+{% highlight bash %}
+kwriteconfig5 --file ~/.config/QtProject/qtlogging.ini --group "Rules" --key "qml.debug" "true"
+{% endhighlight %}
+
 {% endcapture %}{% capture sectionRight %}
 
 {% highlight qml %}
+// main.qml
 Item {
     Component.onCompleted: {
         console.log("Hello World")
     }
 }
 {% endhighlight %}
-{% highlight bash %}
-kwriteconfig5 --file ~/.config/QtProject/qtlogging.ini --group "Rules" --key "qml.debug" "true"
-{% endhighlight %}
 {% highlight ini %}
+# ~/.config/QtProject/qtlogging.ini
 [Rules]
 qml.debug=true
 {% endhighlight %}
