@@ -1,7 +1,7 @@
 ---
 layout: docpage
-title: Plasma (Unofficial) API Docs
-permalink: /kde/docs/
+title: Plasma Widget Tutorial
+permalink: /kde/docs/widget/
 ---
 
 <style>
