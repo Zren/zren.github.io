@@ -345,7 +345,7 @@ Item {
 {% capture label %}Rectangle{% endcapture %}
 {% capture sectionLeft %}
 
-If we want to draw a colored rectangle, we can easily do so with. For other properties of the [Rectangle](http://doc.qt.io/qt-5/qml-qtquick-rectangle.html), like border color and width, read it's [page in the QML Documentation](http://doc.qt.io/qt-5/qml-qtquick-rectangle.html).
+If we want to draw a colored rectangle, we can easily do so with [Rectangle](http://doc.qt.io/qt-5/qml-qtquick-rectangle.html). For other properties of the Rectangle, like border color and width, read it's [page in the QML Documentation](http://doc.qt.io/qt-5/qml-qtquick-rectangle.html).
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
