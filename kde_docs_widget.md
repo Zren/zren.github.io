@@ -910,6 +910,7 @@ Item {
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
+
 {% capture label %}SpinBox - Integer{% endcapture %}
 {% capture sectionLeft %}
 
@@ -919,7 +920,7 @@ If you want decimal places, a [`QtQuick.Controls 1.0` SpinBox](https://doc.qt.io
 
 {% highlight xml %}
 <!-- config/main.xml -->
-<entry name="integerExample" type="Int">
+<entry name="variableName" type="Int">
     <default>6</default>
 </entry>
 {% endhighlight %}
@@ -951,7 +952,7 @@ If you want decimal places, a [`QtQuick.Controls 1.0` SpinBox](https://doc.qt.io
 
 {% highlight xml %}
 <!-- config/main.xml -->
-<entry name="floatingPointExample" type="Double">
+<entry name="variableName" type="Double">
     <default>3.1459</default>
 </entry>
 {% endhighlight %}
@@ -971,6 +972,70 @@ Item {
     QtControls1.SpinBox {
         id: variableName
         decimals: 2
+    }
+}
+{% endhighlight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
+
+
+{% capture label %}TextField - String/Text{% endcapture %}
+{% capture sectionLeft %}
+
+A [TextField](https://doc.qt.io/qt-5/qml-qtquick-controls2-textfield.html) is used for a single line of text. It can be used as a base for many other data types as well. You will also want to look at the base [TextInput](https://doc.qt.io/qt-5/qml-qtquick-textinput.html) for more properties.
+
+{% highlight xml %}
+<!-- config/main.xml -->
+<entry name="variableName" type="String">
+    <default>Hello World</default>
+</entry>
+{% endhighlight %}
+
+{% endcapture %}{% capture sectionRight %}
+{% highlight qml %}
+// configGeneral.qml
+import QtQuick 2.0
+import QtQuick.Controls 2.5
+import QtQuick.Layouts 1.0
+
+Item {
+    id: page
+    property alias cfg_variableName: variableName.text
+
+    TextField {
+        id: variableName
+    }
+}
+{% endhighlight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
+
+
+{% capture label %}TextArea - Multi-Line String/Text{% endcapture %}
+{% capture sectionLeft %}
+
+A [TextArea](https://doc.qt.io/qt-5/qml-qtquick-controls2-textarea.html) is used for paragraphs of text. You will also want to look at the base [TextEdit](https://doc.qt.io/qt-5/qml-qtquick-textedit-members.html) for more properties.
+
+{% highlight xml %}
+<!-- config/main.xml -->
+<entry name="variableName" type="String">
+    <default>Hello World</default>
+</entry>
+{% endhighlight %}
+
+{% endcapture %}{% capture sectionRight %}
+{% highlight qml %}
+// configGeneral.qml
+import QtQuick 2.0
+import QtQuick.Controls 2.5
+import QtQuick.Layouts 1.0
+
+Item {
+    id: page
+    property alias cfg_variableName: variableName.value
+
+    TextArea {
+        id: variableName
     }
 }
 {% endhighlight %}
