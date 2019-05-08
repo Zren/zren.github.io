@@ -73,9 +73,9 @@ cp -r /usr/share/plasma/plasmoids/org.kde.plasma.analogclock/ ~/.local/share/pla
 cd ~/.local/share/plasma/plasmoids/
 mv ./org.kde.plasma.analogclock ./com.github.zren.myanalogclock
 cd ./com.github.zren.myanalogclock
-rm ./metadata.json
 kwriteconfig5 --file="$PWD/metadata.desktop" --group="Desktop Entry" --key="X-KDE-PluginInfo-Name" "com.github.zren.myanalogclock"
 kwriteconfig5 --file="$PWD/metadata.desktop" --group="Desktop Entry" --key="Name" "My Analog Clock"
+rm ./metadata.json
 plasmawindowed com.github.zren.myanalogclock
 {% endhighlight %}
 
