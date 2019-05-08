@@ -33,6 +33,10 @@ def formatCodeTags(line):
 			continue
 	return line
 
+def formatShortcutCodeTags(line):
+	line = re.sub(r'(<code>)(((Ctrl|Alt|Shift|Meta|Win) ?\+ ?)*([A-Z9-9]|F\d+|Left|Right|Up|Down))(</code>)', r'<keycap>\2</keycap>', line)
+	return line
+
 def formatSyntaxStartTag(line):
 	global insideCodeTag
 	if '{% highlight ' in line:
@@ -94,6 +98,7 @@ with open(tipsFilename, "r") as fin:
 
 		# Convert `code tags`
 		line = formatCodeTags(line)
+		line = formatShortcutCodeTags(line)
 		line = formatSyntaxStartTag(line)
 
 		# Convert [Label](http://domain.tld)
