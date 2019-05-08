@@ -92,7 +92,7 @@
 
 {% capture label %}Show Alt+Tab popup as fast as possible{% endcapture %}{% capture contents %}
   Normally it will wait 90 milliseconds before trying to show the popup. This makes quick switches faster since it doesn't need to draw anything.
-  We need to set `DelayTime=0` under the group `[TabBox]` in the file `~/config/kwinrc`, then reload kwin.
+  We need to set `DelayTime=0` under the group `[TabBox]` in the file `~/.config/kwinrc`, then reload kwin.
   It's easier to use these commmands than doing it by hand.
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group TabBox --key DelayTime 0
@@ -129,7 +129,7 @@ qdbus org.kde.KWin /KWin reconfigure
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Hide titlebars when maximized (like Ubuntu){% endcapture %}{% capture contents %}
-  We need to set `BorderlessMaximizedWindows=true` under the group `[Windows]` in the file `~/config/kwinrc`, then reload kwin.
+  We need to set `BorderlessMaximizedWindows=true` under the group `[Windows]` in the file `~/.config/kwinrc`, then reload kwin.
   It's easier to use these commmands than doing it by hand.
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true
@@ -160,7 +160,7 @@ qdbus org.kde.KWin /KWin reconfigure
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Do not open the "Start Menu" with Windows/Meta key{% endcapture %}{% capture contents %}
-  We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/config/kwinrc`, then reload kwin.
+  We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/.config/kwinrc`, then reload kwin.
   It's easier to use these commmands than doing it by hand.
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta ""
@@ -169,7 +169,7 @@ qdbus org.kde.KWin /KWin reconfigure
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Open KRunner with Windows/Meta key{% endcapture %}{% capture contents %}
-  We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/config/kwinrc`, then reload kwin.
+  We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/.config/kwinrc`, then reload kwin.
   It's easier to use these commmands than doing it by hand.
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/krunner,org.kde.kglobalaccel.Component,invokeShortcut,run command"
