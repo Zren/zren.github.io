@@ -704,10 +704,8 @@ PlasmaComponents.Label {
 
 Every widget by default has a configure action when you right click the widget called `MyWidget Settings...`. By default it will contain a form to set a global shortcut to activate your widget.
 
-![](https://i.imgur.com/gle3dAy.png)
-
 {% endcapture %}{% capture sectionRight %}
-...
+![](https://i.imgur.com/gle3dAy.png)
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
@@ -782,30 +780,85 @@ PlasmaComponents.Label {
 {% capture label %}contents/config/config.qml{% endcapture %}
 {% capture sectionLeft %}
 `config.qml` is where we define the tabs in the configuration window.
+
+We import the `ConfigModel` and `ConfigCategory`, and define the tab name, icon, and qml file that will be loaded.
 {% endcapture %}{% capture sectionRight %}
-...
+{% highlight qml %}
+import QtQuick 2.0
+import org.kde.plasma.configuration 2.0
+
+ConfigModel {
+    ConfigCategory {
+        name: i18n("General")
+        icon: "configure"
+        source: "configGeneral.qml"
+    }
+    ConfigCategory {
+        name: i18n("Another Tab")
+        icon: "color-management"
+        source: "configAnotherTab.qml"
+    }
+}
+{% endhighlight %}
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
 
 {% capture label %}contents/ui/configGeneral.qml{% endcapture %}
 {% capture sectionLeft %}
 `configGeneral.qml` is where we can place all the checkboxes and textboxes.
 
-By default, all values are copied to cfg_variableName. This is so the user can hit discard or apply at leisure.
+Please note that your should not use `PlasmaComponents.*` controls in the config window, as those are styled and colored for the panel. The normal `QtQuick.Controls` are styled using your application window style + colors.
 
+`Kirigami.FormLayout` is used to layout the controls in the center of the page. The `Kirigami.FormData.label` attached property is used to place labels in front of the controls. CheckBoxes have their own labels, so you don't need to set a Kirigami label. You can use it for CheckBoxes as a section seperator though. You do not need to set a Kirigami label.
+
+![](https://i.imgur.com/yILc5Aj.png)
 
 {% endcapture %}{% capture sectionRight %}
-import QtQuick.Controls 1.4
+{% highlight qml %}
+import QtQuick 2.0
+import QtQuick.Controls 2.5
+import QtQuick.Layouts 1.12
+import org.kde.kirigami 2.4 as Kirigami
+
+Item {
+    id: page
+    width: childrenRect.width
+    height: childrenRect.height
+
+    property alias cfg_showLabel: showLabel.checked
+    property alias cfg_showIcon: showIcon.checked
+    property alias cfg_labelText: labelText.text
+
+    Kirigami.FormLayout {
+        anchors.left: parent.left
+        anchors.right: parent.right
+
+        CheckBox {
+            id: showLabel
+            Kirigami.FormData.label: i18n ("Section:")
+            text: i18n("Show label")
+        }
+        CheckBox {
+            id: showIcon
+            text: i18n("Show icon")
+        }
+        TextField {
+            id: labelText
+            Kirigami.FormData.label: i18n ("Label:")
+            placeholderText: i18n("Placeholder")
+        }
+    }
+}
+{% endhighlight %}
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
 {% capture label %}configPage.cfg_variableName{% endcapture %}
 {% capture sectionLeft %}
 
-By default, all values are copied to the top level Item of the file prefixed with `cfg_` like `cfg_variableName`. This is so the user can hit discard or apply the changes. You will need to define each `cfg_` so you can assign to it with a QML control.
+By default, all values are copied to the top level `Item` of the file prefixed with `cfg_` like `page.cfg_variableName`. This is so the user can hit discard or apply the changes. You will need to define each `cfg_` property so you can bind the value with a QML control.
 
 Note that you can use a property [alias](http://doc.qt.io/qt-5/qtqml-syntax-objectattributes.html#property-aliases) to a control's property like `checkBox.checked` or `textField.text`.
-
-> TODO: Confirm if configuration keys from other groups are copied to the current page's `cfg_` variables.
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
