@@ -48,6 +48,12 @@ def formatSyntaxEndTag(line):
 		insideCodeTag = False
 	return line
 
+def formatArrows(line):
+	if not insideCodeTag and not line.startswith("> ") and not line.startswith("  > "):
+		line = line.replace(' > ', ' → ')
+		line = line.replace(' => ', ' → ')
+	return line
+
 def formatLinks(line):
 	line = re.sub(r'\[([^\]]+?)\]\(#([^\)]+?)\)', r'[[#\2|\1]]', line) # [Text](#anchor-id)
 	line = re.sub(r'\[([^\]]+?)\]\(([^\)]+?)\)', r'[\2 \1]', line) # [Text](https://google.com)
@@ -94,6 +100,9 @@ with open(tipsFilename, "r") as fin:
 		# Convert <http://domain.tld>
 		if not insideCodeTag:
 			line = formatLinks(line)
+
+		# Convert Arrows
+		line = formatArrows(line)
 
 		# Headings
 		if line.startswith("# ") and not insideCodeTag:
