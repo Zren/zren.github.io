@@ -16,6 +16,7 @@ Note that you don't *need* the 3 config files. You can get away with just the `m
 
 {% endcapture %}{% capture sectionRight %}
 
+{:.directory-tree}
 * `helloworld/`
     * `package/`
         * `contents/`

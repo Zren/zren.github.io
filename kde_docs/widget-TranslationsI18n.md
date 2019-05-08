@@ -80,6 +80,7 @@ The latest copy of my `merge.sh` and `build.sh` can be found in any of my widget
 * [`translate/build.sh`](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/translate/build)
 {% endcapture %}{% capture sectionRight %}
 
+{:.directory-tree}
 * `helloworld/`
     * `package/`
         * `contents/`
@@ -92,6 +93,7 @@ The latest copy of my `merge.sh` and `build.sh` can be found in any of my widget
 
 After running `build.sh` we should end up with:
 
+{:.directory-tree}
 * `helloworld/`
     * `package/`
         * `contents/`

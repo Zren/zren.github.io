@@ -7,23 +7,24 @@ permalink: /kde/docs/widget/
 The KDE wiki has a [Getting Started and Hello World](https://techbase.kde.org/Development/Tutorials/Plasma5) tutorial which you can read as well.
 
 <style>
-/* Assume all ul in the right side are file trees */
-section .right ul {
+/* Directory List */
+ul.directory-tree,
+ul.directory-tree ul {
     border-left: 2px solid #bfcdd8;
     margin-left: 16px;
 }
-section .right li {
+ul.directory-tree li {
     position: relative;
     list-style-type: none;
     padding-left: 8px;
 }
-section .right li:before {
+ul.directory-tree li:before {
     position: absolute;
     left: -8px;
     content: "├";
     margin-right: 0;
 }
-section .right li:last-child:before {
+ul.directory-tree li:last-child:before {
     content: "└";
 }
 /* Bootstrap Alerts */
