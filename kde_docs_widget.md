@@ -512,7 +512,7 @@ ColumnLayout {
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
-{% capture label %}Layout.fitWidth: true{% endcapture %}
+{% capture label %}Layout.fillWidth: true{% endcapture %}
 {% capture sectionLeft %}
 
 If you want an item to scale to the parent's width, you have the option of setting it to be the same width as the parent (which doesn't work in a Layout). You can also try anchoring to the left and right (which does work).
@@ -560,7 +560,7 @@ ColumnLayout {
 {% capture label %}Layout.fillHeight: true{% endcapture %}
 {% capture sectionLeft %}
 
-If you want one item (or several) in a Layout to expand to take up the unused space, you can use `Layout.fitHeight : true`.
+If you want one item (or several) in a Layout to expand to take up the unused space, you can use `Layout.fillHeight: true`.
 
 ![](https://i.imgur.com/xo0LyfQ.png)
 
