@@ -1163,7 +1163,7 @@ Item {
 
 {% capture label %}Plural in i18n(){% endcapture %}
 {% capture sectionLeft %}
-In English, a translated sentence will is different when there's just 1 item and when there is 2 or more items. `i18np(...)` can be used in such a situation.
+In English, a translated sentence is different when there's just 1 item from when there is 2 or more items. `i18np(...)` can be used in such a situation.
 
 An example from the [Ki18n docs](https://api.kde.org/frameworks/ki18n/html/prg_guide.html#write_i18n) is:
 
