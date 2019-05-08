@@ -864,8 +864,8 @@ Note that you can use a property [alias](http://doc.qt.io/qt-5/qtqml-syntax-obje
 {% highlight qml %}
 // configGeneral.qml
 import QtQuick 2.0
+import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.0
-import QtQuick.Controls 1.4
 
 Item {
     id: page
@@ -882,7 +882,7 @@ Item {
 {% capture label %}CheckBox - Boolean{% endcapture %}
 {% capture sectionLeft %}
 
-A [CheckBox](http://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html) is used for boolean on/off values. See the [Visual Design Group's tips](https://community.kde.org/KDE_Visual_Design_Group/HIG/CheckBox) on using CheckBoxes.
+A [CheckBox](https://doc.qt.io/qt-5/qml-qtquick-controls2-checkbox.html) is used for boolean on/off values. See the [Visual Design Group's tips](https://community.kde.org/KDE_Visual_Design_Group/HIG/CheckBox) on using CheckBoxes.
 
 {% highlight xml %}
 <!-- config/main.xml -->
@@ -895,8 +895,8 @@ A [CheckBox](http://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html) is used f
 {% highlight qml %}
 // configGeneral.qml
 import QtQuick 2.0
+import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.0
-import QtQuick.Controls 1.4
 
 Item {
     id: page
@@ -910,16 +910,47 @@ Item {
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
-{% capture label %}SpinBox - Integer/Real{% endcapture %}
+{% capture label %}SpinBox - Integer{% endcapture %}
 {% capture sectionLeft %}
 
-A [SpinBox](https://doc.qt.io/qt-5/qml-qtquick-controls-spinbox.html) is used for numbers. You can change the `SpinBox.decimals` from an Integer `decimals: 0` to 2 or 3 to represent a Real number (the `Double` data type).
+A [SpinBox](https://doc.qt.io/qt-5/qml-qtquick-controls2-spinbox.html) is used for numbers.
+
+If you want decimal places, a [`QtQuick.Controls 1.0` SpinBox](https://doc.qt.io/qt-5/qml-qtquick-controls-spinbox.html) is a little easier to use than the `QtQuick.Controls 2.0` version. `QtQuickControls1` has a `SpinBox.decimals` to easily switch from an Integer `decimals: 0` to `decimals: 3` to represent a Real number (the `Double` data type).
 
 {% highlight xml %}
 <!-- config/main.xml -->
 <entry name="integerExample" type="Int">
     <default>6</default>
 </entry>
+{% endhighlight %}
+
+{% endcapture %}{% capture sectionRight %}
+{% highlight qml %}
+// configGeneral.qml
+import QtQuick 2.0
+import QtQuick.Controls 2.5
+import QtQuick.Layouts 1.0
+
+Item {
+    id: page
+    property alias cfg_variableName: variableName.value
+
+    SpinBox {
+        id: variableName
+    }
+}
+{% endhighlight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
+
+
+{% capture label %}SpinBox - Double/Real{% endcapture %}
+{% capture sectionLeft %}
+
+If you want decimal places, a [`QtQuick.Controls 1.0` SpinBox](https://doc.qt.io/qt-5/qml-qtquick-controls-spinbox.html) is a little easier to use than the `QtQuick.Controls 2.0` version. `QtControls1` has a `SpinBox.decimals` property to easily switch from an Integer `decimals: 0` to `decimals: 3` to represent a Real number (the `Double` config data type).
+
+{% highlight xml %}
+<!-- config/main.xml -->
 <entry name="floatingPointExample" type="Double">
     <default>3.1459</default>
 </entry>
@@ -929,20 +960,22 @@ A [SpinBox](https://doc.qt.io/qt-5/qml-qtquick-controls-spinbox.html) is used fo
 {% highlight qml %}
 // configGeneral.qml
 import QtQuick 2.0
+import QtQuick.Controls 2.5
+import QtQuick.Controls 1.0 as QtControls1
 import QtQuick.Layouts 1.0
-import QtQuick.Controls 1.4
 
 Item {
     id: page
     property alias cfg_variableName: variableName.value
 
-    SpinBox {
+    QtControls1.SpinBox {
         id: variableName
         decimals: 2
     }
 }
 {% endhighlight %}
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
 
 
 {% capture label %}Assigning to plasmoid.configuration.varName{% endcapture %}
@@ -954,8 +987,8 @@ You can also assign directly to `plasmoid.configuration.variableName` if necessa
 {% highlight qml %}
 // configGeneral.qml
 import QtQuick 2.0
+import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.0
-import QtQuick.Controls 1.4
 
 Item {
     id: page
@@ -973,7 +1006,7 @@ Item {
 {% capture label %}No-Apply Control Library{% endcapture %}
 {% capture sectionLeft %}
 
-I have written a few files that apply the above pattern of skipping "Apply" and updating right after you change the value.
+I have written a few files that apply the above pattern of skipping "Apply" and updating right after you change the value. It still uses the `QtQuick.Controls 1.0` controls at the moment however.
 
 * [ConfigCheckBox.qml](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/contents/ui/lib/ConfigCheckBox.qml) for on/off booleans values.
 * [ConfigSpinBox.qml](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/contents/ui/lib/ConfigSpinBox.qml) for Integer or Real numbers.
@@ -994,10 +1027,10 @@ I have written a few files that apply the above pattern of skipping "Apply" and 
 {% highlight qml %}
 // ConfigCheckBox.qml
 import QtQuick 2.0
-import QtQuick.Controls 1.0
+import QtQuick.Controls 1.0 as QtControls1
 import QtQuick.Layouts 1.0
 
-CheckBox {
+QtControls1.CheckBox {
     id: configCheckBox
 
     property string configKey: ''
@@ -1009,8 +1042,8 @@ CheckBox {
 {% highlight qml %}
 // configGeneral.qml
 import QtQuick 2.0
+import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.0
-import QtQuick.Controls 1.4
 
 Item {
     id: page
