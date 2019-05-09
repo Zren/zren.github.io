@@ -177,6 +177,11 @@ with open(tipsFilename, "r") as fin:
 			ignoringLines = False
 			continue
 
+		# BlockQuotes
+		elif line.startswith('  > ') and not insideCodeTag:
+			text = line[4:]
+			out = ':<blockquote>' + text + '</blockquote>'
+
 		# Style the list item heading
 		elif line.startswith("* {:#"): # * {:#cfg-{{ i }}}
 			i += 1
