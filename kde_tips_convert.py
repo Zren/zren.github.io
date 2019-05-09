@@ -37,6 +37,18 @@ def formatShortcutCodeTags(line):
 	line = re.sub(r'(<code>)(((Ctrl|Alt|Shift|Meta|Win) ?\+ ?)*([A-Z9-9]|F\d+|Left|Right|Up|Down))(</code>)', r'<keycap>\2</keycap>', line)
 	return line
 
+def formatPathCodeTags(line):
+	def pathrepl(match):
+		text = match.group(2)
+		if text == '/r/': # Firefox bookmark search engine
+			return match.group(0)
+		elif '%U' in text: # Steam launch commnad
+			return match.group(0)
+		else:
+			return '{{Path|' + text + '}}'
+	line = re.sub(r'(<code>)((/|~/)[^<]*?)(</code>)', pathrepl, line)
+	return line
+
 def formatSyntaxStartTag(line):
 	global insideCodeTag
 	if '{% highlight ' in line:
@@ -99,6 +111,7 @@ with open(tipsFilename, "r") as fin:
 		# Convert `code tags`
 		line = formatCodeTags(line)
 		line = formatShortcutCodeTags(line)
+		line = formatPathCodeTags(line)
 		line = formatSyntaxStartTag(line)
 
 		# Convert [Label](http://domain.tld)
