@@ -112,7 +112,7 @@ with open(tipsFilename, "r") as fin:
 		# Convert `code tags`
 		line = formatCodeTags(line)
 		line = formatShortcutCodeTags(line)
-		line = formatPathCodeTags(line)
+		# line = formatPathCodeTags(line) # KDE Wiki doesn't style <tt> better than <code> tags
 		line = formatSyntaxStartTag(line)
 
 		# Convert [Label](http://domain.tld)
