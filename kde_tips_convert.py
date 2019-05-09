@@ -34,7 +34,8 @@ def formatCodeTags(line):
 	return line
 
 def formatShortcutCodeTags(line):
-	line = re.sub(r'(<code>)(((Ctrl|Alt|Shift|Meta|Win) ?\+ ?)*([A-Z9-9]|F\d+|Left|Right|Up|Down))(</code>)', r'<keycap>\2</keycap>', line)
+	line = re.sub(r'(<code>)(((Ctrl|Alt|Shift|Meta|Win) ?\+ ?)*([A-Z9-9]|F\d+|Left|Right|Up|Down|Tab))(</code>)', r'<keycap>\2</keycap>', line)
+	line = re.sub(r'(<code>)(Ctrl|Alt|Shift|Meta|Win)(</code>)', r'<keycap>\2</keycap>', line)
 	return line
 
 def formatPathCodeTags(line):
