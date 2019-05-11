@@ -91,12 +91,26 @@ layout: fullwidthpage
 
 .wrapper {
 	box-sizing: border-box;
-	margin-left: 250px;
 	padding: 0;
 }
 
 .site-footer .wrapper {
 	margin-left: 280px;
+}
+
+#sidemenu {
+	display: none;
+}
+@media (min-width: 768px) {
+	#sidemenu {
+		display: block;
+	}
+	.wrapper {
+		margin-left: 250px;
+	}
+	.site-footer .wrapper {
+		margin-left: 280px;
+	}
 }
 
 .documentation {
