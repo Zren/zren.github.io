@@ -190,7 +190,7 @@ rm ~/.cache/icon-cache.kcache
 </style>
 
 
-{% include_relative kde_tips.md %}
+{% include_relative kde_tips/tips.md %}
 
 
 -----
