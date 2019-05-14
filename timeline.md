@@ -58,6 +58,20 @@ h3 + .tags {
 }
 </style>
 
+## 2019
+
+
+### Plasma5 Widget - SideCalendar
+
+**Source:** <https://github.com/Zren/plasma-applet-sidecalendar>
+
+Starting in the new year, I focused on a complete rewrite of my Event Calendar widget, with the backend code being in python. The GUI was based on a Gnome Calendar mockup.
+
+Read more: <https://zren.github.io/2019/04/06/side-calendar-work-in-progress>
+
+
+
+
 ## 2018
 
 
