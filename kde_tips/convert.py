@@ -100,7 +100,7 @@ header = """This page aims to list common tweaks a user might make to setup a ni
 formattedText += header
 
 #------------
-tipsFilename = './kde_tips.md'
+tipsFilename = './tips.md'
 
 tripleDashCounter = 0
 
@@ -239,6 +239,6 @@ Note that this list is manually kept in sync with https://zren.github.io/kde/#co
 formattedText += footer
 
 #------------
-with open("kde_tips.mediawiki", "w") as fout:
+with open("tips.mediawiki", "w") as fout:
 	fout.write(formattedText)
 
