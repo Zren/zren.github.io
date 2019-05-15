@@ -83,6 +83,13 @@
   Window Behaviour Tab > Focus Stealing Prevention: None
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
+{% capture label %}Fix Alt+Click in certain games/software{% endcapture %}{% capture contents %}
+  `Alt+Click+Drag` is a standard keybinding for moving a window in Linux. It tends to conflict with software designed for Windows like Games. To fix, we'll change it to `Meta+Click+Drag`.
+  System Settings > Window Management
+  Window Actions Tab > Inner Window, Titlebar, Frame > Modifier Key: `Meta`
+  **OR** set Left button: "Nothing" to disable it completely.
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
 {% capture label %}“Normal” Alt+Tab popup{% endcapture %}{% capture contents %}
   System Settings > Window Management
   Task Switcher Tab > Click the "star icon"
