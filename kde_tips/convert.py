@@ -77,6 +77,10 @@ def formatLinks(line):
 	line = re.sub(r'<(http[^\>]+?)>', r'\1', line) # <https://google.com>
 	return line
 
+def formatBoldText(line):
+	# **bold text** => '''bold text'''
+	line = re.sub(r'\*\*(.+?)\*\*', r"'''\1'''", line)
+	return line
 
 def anchorLink(linkId, linkText):
 	return '<span id="{}">[[#{}|{}]]</span>'.format(linkId, linkId, linkText)
@@ -119,6 +123,10 @@ with open(tipsFilename, "r") as fin:
 		# Convert <http://domain.tld>
 		if not insideCodeTag:
 			line = formatLinks(line)
+
+		# Convert **bold text**
+		if not insideCodeTag:
+			line = formatBoldText(line)
 
 		# Convert Arrows
 		line = formatArrows(line)
