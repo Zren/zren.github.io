@@ -10,7 +10,7 @@ You can learn by example by reading the default widgets located at:
 You can fork an existing widget by copying the widget to where the downloaded widgets are installed to:  
 `~/.local/share/plasma/plasmoids/`
 
-To properly fork the widget, rename the new folder, then edit the `X-KDE-PluginInfo-Name` in the `metadata.desktop` file to match the new folder name. You will also want to edit the `Name=` in the `metadata.desktop` file as well so you can tell it apart from the widget you forked it from. If might be easier to delete all the translated `Name[fr]=` lines if you don't know your locale code. Finally, delete the `metadata.json` if it exists (or edit it as well).
+To properly fork the widget, rename the new folder, then edit the `X-KDE-PluginInfo-Name` in the `metadata.desktop` file to match the new folder name. You will also want to edit the `Name=` in the `metadata.desktop` file as well so you can tell it apart from the widget you forked it from. If might be easier to delete all the translated `Name[fr]=` lines if you don't know your locale code. Delete the `metadata.json` if it exists (or edit it as well).
 
 Finally, run `plasmawindowed` to quickly test the newly forked widget.
 
