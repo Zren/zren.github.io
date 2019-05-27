@@ -1,3 +1,4 @@
+<!-- ------- -->
 ### Autostarted Apps
 
 <ul>
