@@ -86,9 +86,6 @@
 
   /* Mobile / 50% Screen on Desktop */
   @media (max-width: 1440px) {
-    #sidenav {
-      margin-bottom: 52px;
-    }
     .nav-contents {
       display: inline-block;
       vertical-align: top;
@@ -99,6 +96,9 @@
     .nav-menu-toggle:not(.opened) + .nav-contents {
       height: 0px;
       opacity: 0;
+    }
+    .nav-menu-toggle.opened + .nav-contents {
+      margin-bottom: 52px;
     }
     #sidenav {
       text-align: center;
