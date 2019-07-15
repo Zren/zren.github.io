@@ -1049,6 +1049,16 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepo.html
+			repoName='KGlobalAccel (Global Shortcuts)'
+			githubLink='https://github.com/KDE/kglobalaccel'
+			product='frameworks-kglobalaccel'
+			phabRepo='kglobalaccel'
+			phabRepoName='KGlobalAccel'
+			phabDiffQuery='YtlirHsPPMpy'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
 			repoName='KSMServer (Session Manager)'
 			githubLink='https://github.com/KDE/plasma-workspace/tree/master/ksmserver'
 			product='ksmserver'
