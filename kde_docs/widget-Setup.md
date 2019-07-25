@@ -8,9 +8,9 @@ First create a folder for your new widget. Inside it create another folder calle
 
 Inside the package folder will be `metadata.desktop` file which is basically an Linux `.ini` file. This file will describe the name of the widget, the category it's in, and various other plasma specific keys like the main QML file.
 
-Inside `contents`, we will create the `ui` and `config` folders. `ui` is the folder which should contain your layout files like the `main.qml` and the `configGeneral.qml`. The latter is the layout for the widget's configuration window.
+Inside `contents`, we will create the `ui` and `config` folders. `ui` is the folder which should contain your layout files like the `main.qml` and the `configGeneral.qml`. `configGeneral.qml` is the layout of the first tab in the widget's configuration window.
 
-Inside the `config` folder we have the `main.xml` which contains the schema of all our serialized configuration keys+values. The `config.qml` is used to define the tabs in the configuration window, and which QML layout file in the tab will open (like `ui/configGeneral.qml`).
+Inside the `config` folder we have the `main.xml` which contains the schema of all our serialized configuration keys+values. The `config.qml` is used to define the tabs in the configuration window. Each tab will open a QML layout file (like `ui/configGeneral.qml`).
 
 Note that you don't *need* the 3 config files. You can get away with just the `main.qml` and `metadata.desktop` for a barebones widget.
 
