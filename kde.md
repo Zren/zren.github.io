@@ -78,6 +78,7 @@ sudo apt install -y virtualbox-qt # Virtual Machine
 {% highlight bash %}
 sudo apt install -y cmake
 sudo apt install -y curl
+sudo apt install -y dolphin-plugins # Git Integration for Dolphin File Manager
 sudo apt install -y pgadmin3 # DB Editor (PostgreSQL)
 sudo apt install -y postgresql postgresql-contrib
 sudo apt install -y python-pip python3-pip
@@ -208,6 +209,17 @@ rm ~/.cache/icon-cache.kcache
 # Known Bugs
 
 <ul>
+{% capture label %}Workaround volume glitch after Hibernation{% endcapture %}{% capture contents %}
+  System Settings > Power Management > Advanced
+  Uncheck "Pause media players when suspending"
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Workaround hiding a system tray icon causing it to freeze{% endcapture %}{% capture contents %}
+  Hiding a specific system tray icon will cause the entire system tray to freeze. You will need to restart plasma (logout + login) to fix it.
+  This bug was fixed in Plasma 5.15.1. Users running Kubuntu 18.04 will continue to experience this bug since it still uses Plasma 5.12.8.
+  <https://bugs.kde.org/show_bug.cgi?id=393630>
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
 {% capture label %}Open Bugs in Plasma (the taskbar/panel){% endcapture %}{% capture contents %}
   [bugs.kde.org search](https://bugs.kde.org/buglist.cgi?list_id=1536784&order=bug_id%20DESC&product=plasmashell&product=kdeplasma-addons&product=plasma-nm&product=plasma-pa&product=Plasma%20Vault&product=frameworks-plasma&product=plasma-browser-integration&product=plasma-integration&query_format=advanced)
 {% endcapture%}{% include tip.html label=label contents=contents %}
