@@ -124,7 +124,12 @@ sudo apt-get install sublime-text
 
 {% highlight bash %}
 sudo apt install -y steam # Prompts with License Agreement
-sudo apt install -y playonlinux
+
+## Lutris (Launches Windows Games)
+# https://lutris.net/downloads/
+sudo add-apt-repository ppa:lutris-team/lutris
+sudo apt update
+sudo apt install -y lutris
 {% endhighlight %}
 
 
