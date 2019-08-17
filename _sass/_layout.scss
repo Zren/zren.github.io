@@ -74,12 +74,19 @@ h1 {
     letter-spacing: -1px;
     font-weight: bold;
 }
+.site-github,
+.site-youtube {
+  line-height: 1;
+}
 .site-github .icon > svg path,
 .site-youtube .icon > svg path {
   fill: $headerTextColor;
 }
 .site-youtube .icon > svg {
   width: 18px;
+}
+.icon {
+  vertical-align: middle;
 }
 .icon + .username {
   margin-left: 4px;
