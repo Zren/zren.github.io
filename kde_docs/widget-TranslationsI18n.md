@@ -278,7 +278,7 @@ msgstr "Montrer les notifications"
 
 {% capture label %}Merging updates into fr.po{% endcapture %}
 {% capture sectionLeft %}
-Our `merge.sh` currently only extracts messages into `template.pot`. We should next merge the any new messages for translation into our `fr.po` file.
+Our `merge.sh` currently only extracts messages into `template.pot`. We should next merge any new messages extracted for translation into our `fr.po` file.
 
 We'll first filter the translate directory for `.po` files.
 
