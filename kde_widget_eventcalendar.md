@@ -6,14 +6,14 @@ permalink: /kde/widget/eventcalendar/
 
 An extended calendar with daily weather forecasts and events from Google Calendar. Also includes a timer and 24 hour forecast graph.
 
+* <https://store.kde.org/p/998901/>
+* **Git Repo:** <https://github.com/Zren/plasma-applet-eventcalendar>
+* **Submit Bugs** [here](https://github.com/Zren/plasma-applet-eventcalendar/issues>)
+
 Based on the [Event Flow Calendar](https://play.google.com/store/apps/details?id=com.syncedsynapse.eventflowwidget) for android. Combines code from [weather-widget](https://store.kde.org/p/998917/), volume control from the [Media Controller Compact](https://store.kde.org/p/998887/) widget, and the default calendar + timer widgets.
 
-* <https://store.kde.org/p/998901/>
-* Git Repo: <https://github.com/Zren/plasma-applet-eventcalendar>
-* Submit Bugs [here](https://github.com/Zren/plasma-applet-eventcalendar/issues>)
 
-
-### Install (All KDE Distros)
+## Install (All KDE Distros)
 
 1. Right click your panel > Panel Options > Add Widgets
 2. Get New Widgets > Download New Plasma Widgets
@@ -21,13 +21,13 @@ Based on the [Event Flow Calendar](https://play.google.com/store/apps/details?id
 4. Right click the clock in your panel > Show Alternatives
 5. Select "Event Calendar"
 
-### Install (Arch Linux)
+## Install (Arch Linux)
 
 {% highlight bash %}
 pacman -S plasma5-applets-eventcalendar
 {% endhighlight %}
 
-### Features
+## Features
 
 <style type="text/css">
 .card-grid {
