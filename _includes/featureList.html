@@ -1,0 +1,62 @@
+
+<style type="text/css">
+.card-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+h5.card-title {
+  font-family: sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+p.card-text {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.feature-grid > .feature  {
+  width: 30%;
+  margin-bottom: 20px;
+}
+</style>
+<div class="card-grid feature-grid">
+  {% for feature in include.features %}
+  <div class="feature">
+    <div class="card">
+      <img class="card-img-top" src="{{ feature.img }}">
+      <div class="card-body">
+        <h5 class="card-title">{{ feature.title }}</h5>
+        <p class="card-text">{{ feature.text }}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

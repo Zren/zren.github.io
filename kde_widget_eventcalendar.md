@@ -2,6 +2,35 @@
 layout: page
 title: Widget - Event Calendar
 permalink: /kde/widget/eventcalendar/
+
+features:
+  - title: Weather
+    text: Daily forecast in the agenda, and hourly forecast in the meteogram.
+    img: /pic/2019-09-17___19-56-43.png
+  - title: Agenda
+    text: View a quick list of upcoming events from your Google Calendar or your regional Holidays.
+    img: /pic/2019-09-17___19-18-11.png
+  - title: Timer
+    text: A quick to access timer.
+    img: /pic/2019-09-17___19-59-36.png
+  - title: Google Calendar Integration
+    text: Double click an event in the Calendar to create a new event in the web browser.
+    img: /pic/.png
+  - title: Google Calendar Integration
+    text: Clicking a day in the agenda opens a quick form for creating an event.
+    img: /pic/2019-09-17___20-08-18.png
+  - title: Google Calendar Integration
+    text: Clicking an event in the agenda opens the event in the browser.
+    img: /pic/.png
+  - title: Mouse Wheel Volume Control
+    text: Scrolling over the clock controls the volume.
+    img: /pic/.png
+  - title: Hide Meteogram/Timer
+    text: You can turn off various features.
+    img: /pic/2019-09-17___20-00-43.png
+  - title: Single Column Layout
+    text: ''
+    img: /pic/.png
 ---
 
 An extended calendar with daily weather forecasts and events from Google Calendar. Also includes a timer and 24 hour forecast graph.
@@ -78,89 +107,7 @@ p.card-text {
 }
 </style>
 
-<div class="card-grid feature-grid">
-  <div class="feature">
-    <div class="card">
-      <img class="card-img-top" src="/pic/2019-09-17___19-56-43.png">
-      <div class="card-body">
-        <h5 class="card-title">Weather</h5>
-        <p class="card-text">Daily forecast in the agenda, and hourly forecast in the meteogram.</p>
-      </div>
-    </div>
-  </div>
-  <div class="feature">
-    <div class="card">
-      <img class="card-img-top" src="/pic/2019-09-17___19-18-11.png">
-      <div class="card-body">
-        <h5 class="card-title">Agenda</h5>
-        <p class="card-text">View a quick list of upcoming events from your Google Calendar or your regional Holidays.</p>
-      </div>
-    </div>
-  </div>
-  <div class="feature">
-    <div class="card">
-      <img class="card-img-top" src="/pic/2019-09-17___19-59-36.png">
-      <div class="card-body">
-        <h5 class="card-title">Timer</h5>
-        <p class="card-text">A quick to access timer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="feature">
-    <div class="card">
-      <img class="card-img-top" src="/pic/.png">
-      <div class="card-body">
-        <h5 class="card-title">Google Calendar Integration</h5>
-        <p class="card-text">Double click an event in the Calendar to create a new event in the web browser.</p>
-      </div>
-    </div>
-  </div>
-  <div class="feature">
-    <div class="card">
-      <img class="card-img-top" src="/pic/2019-09-17___20-08-18.png">
-      <div class="card-body">
-        <h5 class="card-title">Google Calendar Integration</h5>
-        <p class="card-text">Clicking a day in the agenda opens a quick form for creating an event.</p>
-      </div>
-    </div>
-  </div>
-  <div class="feature">
-    <div class="card">
-      <img class="card-img-top" src="/pic/.png">
-      <div class="card-body">
-        <h5 class="card-title">Google Calendar Integration</h5>
-        <p class="card-text">Clicking an event in the agenda opens the event in the browser.</p>
-      </div>
-    </div>
-  </div>
-  <div class="feature">
-    <div class="card">
-      <img class="card-img-top" src="/pic/.png">
-      <div class="card-body">
-        <h5 class="card-title">Mouse Wheel Volume Control</h5>
-        <p class="card-text">Scrolling over the clock controls the volume.</p>
-      </div>
-    </div>
-  </div>
-  <div class="feature">
-    <div class="card">
-      <img class="card-img-top" src="/pic/2019-09-17___20-00-43.png">
-      <div class="card-body">
-        <h5 class="card-title">Hide Meteogram/Timer</h5>
-        <p class="card-text">You can turn off various features.</p>
-      </div>
-    </div>
-  </div>
-  <div class="feature">
-    <div class="card">
-      <img class="card-img-top" src="/pic/.png">
-      <div class="card-body">
-        <h5 class="card-title">Single Column Layout</h5>
-        <p class="card-text"></p>
-      </div>
-    </div>
-  </div>
-</div>
+{% include featureList.html features=page.features %}
 
 
 
