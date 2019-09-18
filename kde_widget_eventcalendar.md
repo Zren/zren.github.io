@@ -62,17 +62,19 @@ pacman -S plasma5-applets-eventcalendar
   flex: 1 1 auto;
   padding: 1.25rem;
 }
-.card-body {
-  font-family: sans-serif;
-}
 h5.card-title {
-  font-size: 20px;
-  margin-bottom: .75rem;
+  font-family: sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+p.card-text {
+  font-family: sans-serif;
+  font-size: 14px;
 }
 
 .feature-grid > .feature  {
   width: 30%;
-  margin-bottom: .75rem;
+  margin-bottom: 20px;
 }
 </style>
 
