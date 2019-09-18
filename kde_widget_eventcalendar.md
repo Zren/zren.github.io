@@ -65,7 +65,7 @@ pacman -S plasma5-applets-eventcalendar
 h5.card-title {
   font-family: sans-serif;
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 p.card-text {
   font-family: sans-serif;
