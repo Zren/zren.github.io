@@ -51,7 +51,9 @@ p.card-text {
   {% for feature in include.features %}
   <div class="feature">
     <div class="card">
-      <img class="card-img-top" src="{{ feature.img }}">
+      <a href="{{ feature.img }}" target="_blank">
+        <img class="card-img-top" src="{{ feature.img }}">
+      </a>
       <div class="card-body">
         <h5 class="card-title">{{ feature.title }}</h5>
         <p class="card-text">{{ feature.text }}</p>
