@@ -14,23 +14,23 @@ features:
     text: A quick to access timer.
     img: /pic/2019-09-17___19-59-36.png
   - title: Google Calendar Integration
-    text: Double click an event in the Calendar to create a new event in the web browser.
-    img: /pic/.png
+    text: Double click a day in the Calendar to create a new event in the web browser.
+    img: /pic/2019-09-18___20-21-01.png
   - title: Google Calendar Integration
     text: Clicking a day in the agenda opens a quick form for creating an event.
     img: /pic/2019-09-17___20-08-18.png
   - title: Google Calendar Integration
     text: Clicking an event in the agenda opens the event in the browser.
-    img: /pic/.png
+    img: /pic/2019-09-18___20-16-58.png
   - title: Mouse Wheel Volume Control
     text: Scrolling over the clock controls the volume.
-    img: /pic/.png
+    img: /pic/2019-09-18___20-27-03.png
   - title: Hide Meteogram/Timer
     text: You can turn off various features.
     img: /pic/2019-09-17___20-00-43.png
   - title: Single Column Layout
-    text: ''
-    img: /pic/.png
+    text: Configure the agenda to appear above the calendar.
+    img: /pic/2019-09-18___20-24-04.png
 ---
 
 An extended calendar with daily weather forecasts and events from Google Calendar. Also includes a timer and 24 hour forecast graph.
@@ -57,55 +57,6 @@ pacman -S plasma5-applets-eventcalendar
 {% endhighlight %}
 
 ## Features
-
-<style type="text/css">
-.card-grid {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.card {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
-}
-.card-img-top {
-  width: 100%;
-  border-top-left-radius: calc(.25rem - 1px);
-  border-top-right-radius: calc(.25rem - 1px);
-}
-.card-body {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 1.25rem;
-}
-h5.card-title {
-  font-family: sans-serif;
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-p.card-text {
-  font-family: sans-serif;
-  font-size: 14px;
-}
-
-.feature-grid > .feature  {
-  width: 30%;
-  margin-bottom: 20px;
-}
-</style>
 
 {% include featureList.html features=page.features %}
 
