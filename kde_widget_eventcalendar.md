@@ -35,6 +35,8 @@ features:
 
 An extended calendar with daily weather forecasts and events from Google Calendar. Also includes a timer and 24 hour forecast graph.
 
+![](/pic/2019-09-18___20-33-22.png)
+
 * <https://store.kde.org/p/998901/>
 * **Git Repo:** <https://github.com/Zren/plasma-applet-eventcalendar>
 * **Submit Bugs** [here](https://github.com/Zren/plasma-applet-eventcalendar/issues>)
