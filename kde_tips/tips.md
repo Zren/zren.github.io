@@ -281,8 +281,9 @@ qdbus org.kde.KWin /KWin reconfigure
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Open New Tab page on startup{% endcapture %}{% capture contents %}
-  Type `about:newtab` into the addressbar, do not press enter.
-  Select `about:newtab` and drag it onto the Home button.
+  ☰ > Preferences > Home
+  Homepage and new windows: `Firefox Home`
+  OR `Custom Url` with `about:newtab`
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Leaner New Tab page{% endcapture %}{% capture contents %}
