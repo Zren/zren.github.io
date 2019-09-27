@@ -268,9 +268,11 @@ qdbus org.kde.KWin /KWin reconfigure
 
 <ul>
 {% capture label %}Use the KDE File selector dialog{% endcapture %}{% capture contents %}
-  Make sure you have the `xdg-desktop-portal-kde` package installed.
+  Make sure you have the `xdg-desktop-portal` and `xdg-desktop-portal-kde` package installed.
   Right click the Firefox launcher in the app launcher > Edit Application
   Application tab > Command `GTK_USE_PORTAL=1 /usr/lib/firefox/firefox %u`
+  Press `Ctrl+Esc` and search to make sure the `xdg-desktop-portal-gtk` process is not running. If it is, end all `xdg-` processes.
+  Restart Firefox
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Install privacy addons{% endcapture %}{% capture contents %}
