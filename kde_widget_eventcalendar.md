@@ -39,7 +39,7 @@ An extended calendar with daily weather forecasts and events from Google Calenda
 
 * <https://store.kde.org/p/998901/>
 * **Git Repo:** <https://github.com/Zren/plasma-applet-eventcalendar>
-* **Submit Bugs** [here](https://github.com/Zren/plasma-applet-eventcalendar/issues>)
+* **Submit Bugs** [here](https://github.com/Zren/plasma-applet-eventcalendar/issues)
 
 Based on the [Event Flow Calendar](https://play.google.com/store/apps/details?id=com.syncedsynapse.eventflowwidget) for android. Combines code from [weather-widget](https://store.kde.org/p/998917/), volume control from the [Media Controller Compact](https://store.kde.org/p/998887/) widget, and the default calendar + timer widgets.
 
