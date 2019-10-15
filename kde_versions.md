@@ -64,7 +64,7 @@ a:not([href]):hover {
 }
 </style>
 
-<h2>Plasma</h2>
+## Plasma
 
 <https://community.kde.org/Schedules/Plasma_5>
 
@@ -488,3 +488,31 @@ a:not([href]):hover {
 
   </tbody>
 </table>
+
+## KDE Frameworks
+
+* <https://community.kde.org/Schedules/Frameworks>
+* <https://www.reddit.com/r/kde/search?restrict_sr=on&q=frameworks+5.63>
+
+<table class="table versiontable">
+  <thead>
+    <tr>
+      <th>Version</th>
+      <th>/r/kde Thread</th>
+      <th>Other Threads</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://www.kde.org/announcements/kde-frameworks-5.63.0.php">KDE Frameworks 5.63.0</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/dh7k2f/release_of_kde_frameworks_5630/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://www.kde.org/announcements/kde-frameworks-5.62.0.php">KDE Frameworks 5.62.0</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/d44nfa/release_of_kde_frameworks_5620/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+  </tbody>
+</table>
+
