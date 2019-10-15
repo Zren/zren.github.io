@@ -66,6 +66,8 @@ a:not([href]):hover {
 
 <h2>Plasma</h2>
 
+<https://community.kde.org/Schedules/Plasma_5>
+
 <table class="table versiontable">
   <thead>
     <tr>
@@ -76,28 +78,73 @@ a:not([href]):hover {
   </thead>
   <tbody>
     <tr>
-      <td><a>Plasma 5.16.5</a></td>
+      <td><a href="https://kde.org/announcements/plasma-5.18.0.php">Plasma 5.18.0</a></td>
       <td><a>/r/kde</a></td>
       <td><a>/r/linux</a></td>
     </tr>
     <tr>
-      <td><a>Plasma 5.16.4</a></td>
+      <td><a href="https://kde.org/announcements/plasma-5.17.90.php">Plasma 5.18.0 Beta</a></td>
       <td><a>/r/kde</a></td>
       <td><a>/r/linux</a></td>
     </tr>
     <tr>
-      <td><a>Plasma 5.16.3</a></td>
+      <td><a href="https://kde.org/announcements/plasma-5.17.5.php">Plasma 5.17.5</a></td>
       <td><a>/r/kde</a></td>
       <td><a>/r/linux</a></td>
     </tr>
     <tr>
-      <td><a>Plasma 5.16.2</a></td>
+      <td><a href="https://kde.org/announcements/plasma-5.17.4.php">Plasma 5.17.4</a></td>
       <td><a>/r/kde</a></td>
       <td><a>/r/linux</a></td>
     </tr>
     <tr>
-      <td><a>Plasma 5.16.1</a></td>
+      <td><a href="https://kde.org/announcements/plasma-5.17.3.php">Plasma 5.17.3</a></td>
       <td><a>/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.17.2.php">Plasma 5.17.2</a></td>
+      <td><a>/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.17.1.php">Plasma 5.17.1</a></td>
+      <td><a>/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.17.0.php">Plasma 5.17.0</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/di6yhz/kde_plasma_517_released/">/r/kde</a></td>
+      <td><a href="https://www.reddit.com/r/linux/comments/di74lh/kdes_plasma_517_desktop_is_out_and_comes_with_a/">/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.16.90.php">Plasma 5.17.0 Beta</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/d6flsp/kde_plasma_517_beta_thunderbolt_x11_night_color/">/r/kde</a></td>
+      <td><a href="https://www.reddit.com/r/linux/comments/d6frgf/kde_plasma_517_beta_thunderbolt_x11_night_color/">/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.16.5.php">Plasma 5.16.5</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/cz662m/kde_plasma_5165_bugfix_release_for_september/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.16.4.php">Plasma 5.16.4</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/cjr53g/kde_plasma_5164_bugfix_release_for_june/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.16.3.php">Plasma 5.16.3</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/cb46ck/kde_plasma_5163_bugfix_release_for_june/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.16.2.php">Plasma 5.16.2</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/c58tjt/kde_plasma_5162_2nd_bugfix_release_for_june/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.16.1.php">Plasma 5.16.1</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/c21pfu/kde_plasma_5161_bugfix_release_for_june/">/r/kde</a></td>
       <td><a>/r/linux</a></td>
     </tr>
     <tr>
