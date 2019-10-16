@@ -1033,6 +1033,21 @@ redirect_from: /projects/kde/repos/
 </table>
 
 
+## System Settings
+
+<table class="repolist">
+	<tr>
+		{% include kdeRepo.html
+			repoName='System Settings'
+			githubLink='https://github.com/KDE/systemsettings'
+			product='systemsettings'
+			phabRepo='systemsettings'
+			phabRepoName='System Settings'
+			phabDiffQuery='PlE.UXMKpvQe'
+		%}
+	</tr>
+</table>
+
 
 ## KDE Services
 
