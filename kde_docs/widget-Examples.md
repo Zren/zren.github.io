@@ -59,6 +59,77 @@ Item {
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
+{% capture label %}Avoid widget resize on text change{% endcapture %}
+{% capture sectionLeft %}
+We use [`TextMetrics`](https://doc.qt.io/qt-5/qml-qtquick-textmetrics.html) to calculate the size of the [Text](https://doc.qt.io/qt-5/qml-qtquick-text.html) label when it is the widest/maximum value of `100%`.
+{% endcapture %}{% capture sectionRight %}
+{% highlight qml %}
+import QtQuick 2.4
+import QtQuick.Layouts 1.0
+import org.kde.plasma.components 2.0 as PlasmaComponents
+import org.kde.plasma.plasmoid 2.0
+
+Item {
+    id: widget
+    property int value: 0
+    property int maxValue: 100
+    function formatText(n) {
+        return "" + n + "%"
+    }
+
+    Plasmoid.preferredRepresentation: Plasmoid.compactRepresentation
+
+    Plasmoid.compactRepresentation: PlasmaComponents.Label {
+        id: label
+        Layout.minimumWidth: textMetrics.width
+        Layout.minimumHeight: textMetrics.height
+
+        text: widget.formatText(value)
+
+        font.pointSize: 40
+        horizontalAlignment: Text.AlignHCenter
+
+        TextMetrics {
+            id: textMetrics
+            font.family: label.font.family
+            font.pointSize: label.font.pointSize
+            text: widget.formatText(100)
+        }
+
+        // Since we overrode the default compactRepresentation,
+        // we need to setup the click to toggle the popup.
+        MouseArea {
+            anchors.fill: parent
+            onClicked: plasmoid.expanded = !plasmoid.expanded
+        }
+    }
+
+    Plasmoid.fullRepresentation: Item {
+        Layout.preferredWidth: 640 * units.devicePixelRatio
+        Layout.preferredHeight: 480 * units.devicePixelRatio
+
+        Rectangle {
+            id: popup
+            anchors.left: parent.left
+            anchors.top: parent.top
+            anchors.bottom: parent.bottom
+            width: parent.width * (widget.value / 100)
+            color: theme.highlightColor
+        }
+    }
+
+    Timer {
+        interval: 100
+        running: true
+        repeat: true
+        onTriggered: widget.value = (widget.value + 1) % (widget.maxValue+1)
+    }
+}
+{% endhighlight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
+
+
 {% capture label %}...{% endcapture %}
 {% capture sectionLeft %}
 ...
