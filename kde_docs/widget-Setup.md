@@ -88,6 +88,8 @@ This is the entry point. Various properties are available to be set. You should 
 
 `Plasmoid.compactRepresentation` (with a capital) and `Plasmoid.fullRepresentation` are used to define the layout of the small "icon" view and the full "popup" view. These are both properties of the main `Item`. If neither are set, by default the main `Item` is the full representation.
 
+If you change the compact representation, you will need to use a [`MouseArea`](https://doc.qt.io/qt-5/qml-qtquick-mousearea.html) to toggle the `plasmoid.expanded` property. See the [`DefaultCompactRepresentation.qml`](https://github.com/KDE/plasma-desktop/blob/master/desktoppackage/contents/applet/DefaultCompactRepresentation.qml) for an example.
+
 `Layout.preferredWidth` can be used to define the default width of a panel widget, or the size of the popup window (unless it is in the system tray). The system tray has a fixed hardcoded size for it's popups. `Layout.preferredWidth` can also define the width of the compact "icon" view in the horizontal panel, not just the full "popup" width. Note that the `Layout.preferredWidth`/`Layout.preferredHeight` of the `Plasmoid.compactRepresentation` will automatically scale to the thickness of the panel depending on if it's a vertical or horizontal panel.
 
 `Layout.minimumWidth` can be used to define the minimum size for a desktop widget / popup.
@@ -112,5 +114,52 @@ PlasmaComponents.Label {
     text: "Hello World!"
 }
 {% endhighlight %}
+
+To show the text in the panel rather than in a popup:
+
+{% highlight qml %}
+import QtQuick 2.0
+import org.kde.plasma.components 2.0 as PlasmaComponents
+import org.kde.plasma.plasmoid 2.0
+
+PlasmaComponents.Label {
+    text: "Hello World!"
+
+    // Always display the full view. Never show the compact icon view
+    // like it does by default when shown in the panel.
+    Plasmoid.preferredRepresentation: Plasmoid.fullRepresentation
+}
+{% endhighlight %}
+
+To set the popup size:
+
+{% highlight qml %}
+import QtQuick 2.0
+import QtQuick.Layouts 1.0
+import org.kde.plasma.components 2.0 as PlasmaComponents
+import org.kde.plasma.plasmoid 2.0
+
+Item {
+    // Always display the compact view.
+    // Never show the full popup view even if there is space for it.
+    Plasmoid.preferredRepresentation: Plasmoid.compactRepresentation
+
+    Plasmoid.fullRepresentation: Item {
+        Layout.minimumWidth: label.implicitWidth
+        Layout.minimumHeight: label.implicitHeight
+        Layout.preferredWidth: 640 * units.devicePixelRatio
+        Layout.preferredHeight: 480 * units.devicePixelRatio
+        
+        PlasmaComponents.Label {
+            id: label
+            anchors.fill: parent
+            text: "Hello World!"
+            horizontalAlignment: Text.AlignHCenter
+        }
+    }
+}
+{% endhighlight %}
+
+
 
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
