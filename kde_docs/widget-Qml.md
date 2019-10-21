@@ -118,7 +118,7 @@ In this third example, we anchor the Green Rectangle to the bottom right, and ma
 
 ![](https://i.imgur.com/2ut7PnS.png)
 
-Other ways to use `anchors` Layout related properties can be read in the QML Documentation page on [Positioning with Anchors](https://doc.qt.io/qt-5/qtquick-positioning-anchors.html) and the [`Item.achors` property group](https://doc.qt.io/qt-5/qml-qtquick-item.html#anchors-prop).
+Other ways to use `anchors` properties can be read in the QML Documentation page on [Positioning with Anchors](https://doc.qt.io/qt-5/qtquick-positioning-anchors.html) and the [`Item.achors` property group](https://doc.qt.io/qt-5/qml-qtquick-item.html#anchors-prop).
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
@@ -143,11 +143,11 @@ Rectangle {
 {% capture label %}ColumnLayout{% endcapture %}
 {% capture sectionLeft %}
 
-If you want to stack a number of items on top of each other, you should use a [ColumnLayout](http://doc.qt.io/qt-5/qml-qtquick-layouts-columnlayout.html).
+If you want to stack a number of items on top of each other, you should use a [`ColumnLayout`](http://doc.qt.io/qt-5/qml-qtquick-layouts-columnlayout.html).
 
 Labels (which are just fancy Text items which follow Plasma's colors) have a default font size, which means they have their own default height. So they will be stacked on top of each other.
 
-Note that if the ColumnLayout is taller than it's contents, the children will have padding between them.
+Note that if the `ColumnLayout` is taller than it's contents, the children will have spacing between them.
 
 ![](https://i.imgur.com/5S9vVef.png)
 
