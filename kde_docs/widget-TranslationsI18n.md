@@ -402,7 +402,7 @@ LC_ALL=
 
 {% capture label %}Reusing other translations{% endcapture %}
 {% capture sectionLeft %}
-While it's bad practice to link to private code, if you know another widget a translated string, you can use `i18nd(domain, string, ...)` to use translations from that domain. Note that a widget's domain starts with `plasma_applet_`, and ends with the widget's `X-KDE-PluginInfo-Name`.
+While it is bad practice to link to private code, if you know another widget has translated a string, you can use `i18nd(domain, string, ...)` to use translations from that domain. Note that a widget's domain starts with `plasma_applet_`, and ends with the widget's `X-KDE-PluginInfo-Name`.
 
 Eg: `plasma_applet_com.github.zren.helloworld`
 
@@ -410,10 +410,14 @@ An example can be found in `org.kde.image`'s [main.qml](https://github.com/KDE/p
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
-Item {
-    Button {
-        text: i18nd("plasma_applet_org.kde.image", "Open Wallpaper Image")
-    }
+CheckBox {
+    text: i18nd("plasma_applet_org.kde.plasma.digitalclock", "Show date")
+}
+CheckBox {
+    text: i18nd("plasma_applet_org.kde.plasma.digitalclock", "Show seconds")
+}
+Button {
+    text: i18nd("plasma_wallpaper_org.kde.image", "Open Wallpaper Image")
 }
 {% endhighlight %}
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
