@@ -352,7 +352,8 @@ qdbus org.kde.KWin /KWin reconfigure
 
 ### Firefox (`userChrome.css`)
 
-A firefox user can change the look of the browser by editing a css file. 
+A firefox user can change the look of the browser by editing a css file.
+Checkout [/r/FirefoxCSS/](https://www.reddit.com/r/FirefoxCSS/) for help.
 
 1. In FireFox v69 and later, we need to go to `about:config` and change `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
 2. Then navigate to `~/.mozilla/firefox/`, inside will be a randomly generated folder similar to `abcdef12.default` which you should enter.
