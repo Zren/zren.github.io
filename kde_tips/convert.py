@@ -174,6 +174,10 @@ with open(tipsFilename, "r") as fin:
 				ignoringLines = False
 				continue
 
+		# Strip out the top comment to force jekyll to ignore the file.
+		elif line.startswith("<!-- ------- -->"):
+			continue
+
 		# Strip out the styling
 		elif line.startswith("<style>"):
 			ignoringLines = True
