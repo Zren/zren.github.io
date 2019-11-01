@@ -237,6 +237,124 @@ qdbus org.kde.KWin /KWin reconfigure
 {% endcapture%}{% include tip.html label=label contents=contents %}
 </ul>
 
+### LibreOffice Writer
+
+<ul>
+{% capture label %}Save as .docx by default{% endcapture %}{% capture contents %}
+  Tools > Options
+  Load/Save > General
+  Always save as: "Word 2007-2019 (*.docx)"
+  > [LibreOffice wiki](https://help.libreoffice.org/Common/Using_Microsoft_Office_and#Saving_Documents_by_Default_in_Microsoft_Office_Formats)
+{% endcapture%}{% include tip.html label=label contents=contents %}
+</ul>
+
+### LibreOffice Calc
+
+<ul>
+{% capture label %}Set Default Font Size/Family/CellPadding{% endcapture %}{% capture contents %}
+  Styles > Manage Styles
+  Right click Default > Modify
+  Font > Family: Noto Sans (Office uses Carlito/Calibri)
+  Font > Size: 12 (Office uses 11)
+  Borders > Padding: 1.00mm
+  Ok
+  File > Templates > Save As Template
+  Name: Default
+  Category: My Templates
+  Check "Set as default template"
+{% endcapture%}{% include tip.html label=label contents=contents %}
+</ul>
+
+### Steam
+
+<ul>
+{% capture label %}Hide “Big Picture”, etc in the System Tray Context Menu{% endcapture %}{% capture contents %}
+  Steam > Settings > Interface Tab
+  Set Taskbar Preferences > Only Check: Library, Friends, Exit Steam
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Cleanup Friends List{% endcapture %}{% capture contents %}
+  Steam > Friends > View Friends List
+  Click on the Cog / Settings Icon
+  Ignore 'Away' status when sorting friends: On
+  Compact Favorites Area: On
+  Compact Friends List: On
+  Append nickname to friend's name: On
+  Hide offline friends in custom categories: On
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Hide “Friend is playing ____” Notifications{% endcapture %}{% capture contents %}
+  Steam > Friends > View Friends List
+  Click on the Cog / Settings Icon
+  Notifications > Uncheck: When friend joins a game
+  Notifications > Uncheck: When comes online
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Never Show Advertisement Popups{% endcapture %}{% capture contents %}
+  Steam > Settings > Interface Tab
+  Uncheck: Notify me about additions to my games and other releases
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Startup in Tray{% endcapture %}{% capture contents %}
+  Find Steam in the App Launcher widget
+  Right Click Steam > Edit Application
+  Application Tab > Command: `/usr/bin/steam -silent %U`
+  If you added Steam to the autostarted apps, you will need to edit the command there as well.
+  Relevant [bug report](https://github.com/ValveSoftware/steam-for-linux/issues/5806).
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Close Steam to Tray{% endcapture %}{% capture contents %}
+  We need to launch steam using `STEAM_FRAME_FORCE_CLOSE=1 steam` as mentioned in [this bug report](https://github.com/ValveSoftware/steam-for-linux/issues/5806), but editing every single game shortcut that Steam generates is a hassel. So we'll set a [session environment variable](https://userbase.kde.org/Session_Environment_Variables/en) by adding `export STEAM_FRAME_FORCE_CLOSE=1` to `~/.config/plasma-workspace/env/path.sh`. It's easier to run this commands:
+  {% highlight bash %}echo 'export STEAM_FRAME_FORCE_CLOSE=1' >> ~/.config/plasma-workspace/env/path.sh{% endhighlight %}
+  Then logout and back in so that your "panel" is launched with the session variable so that it can pass it to Steam when Steam is launched from the app launcher or desktop shortcut.
+{% endcapture%}{% include tip.html label=label contents=contents %}
+</ul>
+
+### Clementine
+
+<ul>
+{% capture label %}Clean up UI{% endcapture %}{% capture contents %}
+  Tools > Preferences
+  Playback Tab > Uncheck: Show a glowing animation on the current track
+  Search Tab > Uncheck: DigitallyImported, DropBox, Google Drive, Jazz
+  Last.fm Tab > Uncheck: Show the “love” amd “ban” buttons
+  Last.fm Tab > Uncheck: Show the scrobble button
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Don’t fade between songs{% endcapture %}{% capture contents %}
+  Playback Tab > Uncheck: Fade out when stopping a track
+  Playback Tab > Uncheck: Cross-fade when changing tracks manually
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Double Click song should play song now{% endcapture %}{% capture contents %}
+  Behaviour > Using the menu to add a song will: Always start playing
+  Behaviour > Double clicking a song will: Replace the playlist + Always start playing
+{% endcapture%}{% include tip.html label=label contents=contents %}
+</ul>
+
+### Gtk Apps (Gimp/Hexchat/etc)
+
+<ul>
+{% capture label %}Fix white text on white background tooltips{% endcapture %}{% capture contents %}
+  System Settings > Colors
+  Uncheck: Apply colors to non-Qt applications
+{% endcapture%}{% include tip.html label=label contents=contents %}
+</ul>
+
+### VirtualBox
+
+<ul>
+{% capture label %}Prevent Windows/Meta Key from opening the host App Menu{% endcapture %}{% capture contents %}
+  Run the Virtual Machine.
+  Press the host key (Right `Ctrl`)
+  Press `Alt+F3` > More Actions > Special Application Settings
+  Window Matching Tab > Window class: [`Exact Match`] `virtualbox machine`
+  Appearances & Fixes Tab > Check "Ignore Global Shortcuts"
+  Change "Do Not Affect" to "Force", then select "Yes".
+  > Note that this also disables Spectable's screenshot global shortcuts while the VM window is focused.
+{% endcapture%}{% include tip.html label=label contents=contents %}
+</ul>
+
 
 ### Chrome
 
@@ -402,121 +520,4 @@ Checkout [/r/FirefoxCSS/](https://www.reddit.com/r/FirefoxCSS/) for help.
 
 </ul>
 
-### LibreOffice Writer
-
-<ul>
-{% capture label %}Save as .docx by default{% endcapture %}{% capture contents %}
-  Tools > Options
-  Load/Save > General
-  Always save as: "Word 2007-2019 (*.docx)"
-  > [LibreOffice wiki](https://help.libreoffice.org/Common/Using_Microsoft_Office_and#Saving_Documents_by_Default_in_Microsoft_Office_Formats)
-{% endcapture%}{% include tip.html label=label contents=contents %}
-</ul>
-
-### LibreOffice Calc
-
-<ul>
-{% capture label %}Set Default Font Size/Family/CellPadding{% endcapture %}{% capture contents %}
-  Styles > Manage Styles
-  Right click Default > Modify
-  Font > Family: Noto Sans (Office uses Carlito/Calibri)
-  Font > Size: 12 (Office uses 11)
-  Borders > Padding: 1.00mm
-  Ok
-  File > Templates > Save As Template
-  Name: Default
-  Category: My Templates
-  Check "Set as default template"
-{% endcapture%}{% include tip.html label=label contents=contents %}
-</ul>
-
-### Steam
-
-<ul>
-{% capture label %}Hide “Big Picture”, etc in the System Tray Context Menu{% endcapture %}{% capture contents %}
-  Steam > Settings > Interface Tab
-  Set Taskbar Preferences > Only Check: Library, Friends, Exit Steam
-{% endcapture%}{% include tip.html label=label contents=contents %}
-
-{% capture label %}Cleanup Friends List{% endcapture %}{% capture contents %}
-  Steam > Friends > View Friends List
-  Click on the Cog / Settings Icon
-  Ignore 'Away' status when sorting friends: On
-  Compact Favorites Area: On
-  Compact Friends List: On
-  Append nickname to friend's name: On
-  Hide offline friends in custom categories: On
-{% endcapture%}{% include tip.html label=label contents=contents %}
-
-{% capture label %}Hide “Friend is playing ____” Notifications{% endcapture %}{% capture contents %}
-  Steam > Friends > View Friends List
-  Click on the Cog / Settings Icon
-  Notifications > Uncheck: When friend joins a game
-  Notifications > Uncheck: When comes online
-{% endcapture%}{% include tip.html label=label contents=contents %}
-
-{% capture label %}Never Show Advertisement Popups{% endcapture %}{% capture contents %}
-  Steam > Settings > Interface Tab
-  Uncheck: Notify me about additions to my games and other releases
-{% endcapture%}{% include tip.html label=label contents=contents %}
-
-{% capture label %}Startup in Tray{% endcapture %}{% capture contents %}
-  Find Steam in the App Launcher widget
-  Right Click Steam > Edit Application
-  Application Tab > Command: `/usr/bin/steam -silent %U`
-  If you added Steam to the autostarted apps, you will need to edit the command there as well.
-  Relevant [bug report](https://github.com/ValveSoftware/steam-for-linux/issues/5806).
-{% endcapture%}{% include tip.html label=label contents=contents %}
-
-{% capture label %}Close Steam to Tray{% endcapture %}{% capture contents %}
-  We need to launch steam using `STEAM_FRAME_FORCE_CLOSE=1 steam` as mentioned in [this bug report](https://github.com/ValveSoftware/steam-for-linux/issues/5806), but editing every single game shortcut that Steam generates is a hassel. So we'll set a [session environment variable](https://userbase.kde.org/Session_Environment_Variables/en) by adding `export STEAM_FRAME_FORCE_CLOSE=1` to `~/.config/plasma-workspace/env/path.sh`. It's easier to run this commands:
-  {% highlight bash %}echo 'export STEAM_FRAME_FORCE_CLOSE=1' >> ~/.config/plasma-workspace/env/path.sh{% endhighlight %}
-  Then logout and back in so that your "panel" is launched with the session variable so that it can pass it to Steam when Steam is launched from the app launcher or desktop shortcut.
-{% endcapture%}{% include tip.html label=label contents=contents %}
-</ul>
-
-### Clementine
-
-<ul>
-{% capture label %}Clean up UI{% endcapture %}{% capture contents %}
-  Tools > Preferences
-  Playback Tab > Uncheck: Show a glowing animation on the current track
-  Search Tab > Uncheck: DigitallyImported, DropBox, Google Drive, Jazz
-  Last.fm Tab > Uncheck: Show the “love” amd “ban” buttons
-  Last.fm Tab > Uncheck: Show the scrobble button
-{% endcapture%}{% include tip.html label=label contents=contents %}
-
-{% capture label %}Don’t fade between songs{% endcapture %}{% capture contents %}
-  Playback Tab > Uncheck: Fade out when stopping a track
-  Playback Tab > Uncheck: Cross-fade when changing tracks manually
-{% endcapture%}{% include tip.html label=label contents=contents %}
-
-{% capture label %}Double Click song should play song now{% endcapture %}{% capture contents %}
-  Behaviour > Using the menu to add a song will: Always start playing
-  Behaviour > Double clicking a song will: Replace the playlist + Always start playing
-{% endcapture%}{% include tip.html label=label contents=contents %}
-</ul>
-
-### Gtk Apps (Gimp/Hexchat/etc)
-
-<ul>
-{% capture label %}Fix white text on white background tooltips{% endcapture %}{% capture contents %}
-  System Settings > Colors
-  Uncheck: Apply colors to non-Qt applications
-{% endcapture%}{% include tip.html label=label contents=contents %}
-</ul>
-
-### VirtualBox
-
-<ul>
-{% capture label %}Prevent Windows/Meta Key from opening the host App Menu{% endcapture %}{% capture contents %}
-  Run the Virtual Machine.
-  Press the host key (Right `Ctrl`)
-  Press `Alt+F3` > More Actions > Special Application Settings
-  Window Matching Tab > Window class: [`Exact Match`] `virtualbox machine`
-  Appearances & Fixes Tab > Check "Ignore Global Shortcuts"
-  Change "Do Not Affect" to "Force", then select "Yes".
-  > Note that this also disables Spectable's screenshot global shortcuts while the VM window is focused.
-{% endcapture%}{% include tip.html label=label contents=contents %}
-</ul>
 
