@@ -83,6 +83,8 @@ def formatBoldText(line):
 	return line
 
 def anchorLink(linkId, linkText):
+	linkId = linkId.replace('<code>', '')
+	linkId = linkId.replace('</code>', '')
 	return '<span id="{}">[[#{}|{}]]</span>'.format(linkId, linkId, linkText)
 
 def heading(nth, text):
