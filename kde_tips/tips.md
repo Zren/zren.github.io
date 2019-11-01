@@ -473,10 +473,12 @@ qdbus org.kde.KWin /KWin reconfigure
 A firefox user can change the look of the browser by editing a css file.
 Checkout [/r/FirefoxCSS/](https://www.reddit.com/r/FirefoxCSS/) for help.
 
-1. In FireFox v69 and later, we need to go to `about:config` and change `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
-2. Then navigate to `~/.mozilla/firefox/`, inside will be a randomly generated folder similar to `abcdef12.default` which you should enter.
-3. Inside the "default" folder, create a new folder called `chrome`, then create a file called `userChrome.css`.
-4. You can now edit `~/.mozilla/firefox/abcdef12.default/chrome/userChrome.css`, and changes will be applied upon restarting Firefox.
+<ol>
+<li>In FireFox v69 and later, we need to go to `about:config` and change `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.</li>
+<li>Then navigate to `~/.mozilla/firefox/`, inside will be a randomly generated folder similar to `abcdef12.default` which you should enter.</li>
+<li>Inside the "default" folder, create a new folder called `chrome`, then create a file called `userChrome.css`.</li>
+<li>You can now edit `~/.mozilla/firefox/abcdef12.default/chrome/userChrome.css`, and changes will be applied upon restarting Firefox.</li>
+</ol>
 
 <ul>
 
