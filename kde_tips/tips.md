@@ -267,6 +267,7 @@ qdbus org.kde.KWin /KWin reconfigure
 ### Firefox
 
 <ul>
+
 {% capture label %}Use the KDE File selector dialog{% endcapture %}{% capture contents %}
   Make sure you have the `xdg-desktop-portal` and `xdg-desktop-portal-kde` package installed.
   Right click the Firefox launcher in the app launcher > Edit Application
@@ -292,27 +293,6 @@ qdbus org.kde.KWin /KWin reconfigure
   Uncheck: "Recommended by Pocket"
   Uncheck: "Highlights"
   Under "Top Sites" change to "4 rows"
-{% endcapture%}{% include tip.html label=label contents=contents %}
-
-{% capture label %}Show bookmarks toolbar only on New Tab page{% endcapture %}{% capture contents %}
-  ☰ > Customize
-  Toolbars > Check: Bookmarks Toolbar
-  Go to `~/.mozilla/firefox/` then open `ab1c2d.default` or whatever the folder name is.
-  Create `chrome/userChrome.css` if it does not exist.
-  Then paste [the following CSS](https://github.com/Timvde/UserChrome-Tweaks/blob/master/toolbars/show-bookmarks-only-on-newtab.css) into `userChrome.css`.
-  Restart firefox
-{% endcapture%}{% include tip.html label=label contents=contents %}
-
-{% capture label %}Remove left tabbar padding when not maximized{% endcapture %}{% capture contents %}
-  Go to `~/.mozilla/firefox/` then open `ab1c2d.default` or whatever the folder name is.
-  Create `chrome/userChrome.css` if it does not exist.
-  Then paste the following CSS into `userChrome.css`.
-  Restart firefox
-  {% highlight css %}
-.titlebar-placeholder[type="pre-tabs"] {
-  display: none;
-}
-  {% endhighlight %}
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Leaner toolbar area{% endcapture %}{% capture contents %}
@@ -360,14 +340,48 @@ qdbus org.kde.KWin /KWin reconfigure
   Note: Use lowercase `%s` in searches like `https://duckduckgo.com/?q=%s`
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
+{% capture label %}First click UrlBar selects all + double click selects word{% endcapture %}{% capture contents %}
+  Go to `about:config`
+  Search for `browser.urlbar.clickSelectsAll` and set it to `true`
+  Search for `browser.urlbar.doubleClickSelectsAll` and set it to `false`
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
+</ul>
+
+
+
+### Firefox (`userChrome.css`)
+
+A firefox user can change the look of the browser by editing a css file. 
+
+1. In FireFox v69 and later, we need to go to `about:config` and change `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
+2. Then navigate to `~/.mozilla/firefox/`, inside will be a randomly generated folder similar to `abcdef12.default` which you should enter.
+3. Inside the "default" folder, create a new folder called `chrome`, then create a file called `userChrome.css`.
+4. You can now edit `~/.mozilla/firefox/abcdef12.default/chrome/userChrome.css`, and changes will be applied upon restarting Firefox.
+
+<ul>
+
+{% capture label %}Show bookmarks toolbar only on New Tab page{% endcapture %}{% capture contents %}
+  ☰ > Customize
+  Toolbars > Check: Bookmarks Toolbar
+  Then paste [the following CSS](https://github.com/Timvde/UserChrome-Tweaks/blob/master/toolbars/show-bookmarks-only-on-newtab.css) into `userChrome.css` ([instructions](#firefox-userchromecss)).
+  Restart firefox
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Remove left tabbar padding when not maximized{% endcapture %}{% capture contents %}
+  Then paste the following CSS into `userChrome.css` ([instructions](#firefox-userchromecss)) and restart firefox.
+  {% highlight css %}
+.titlebar-placeholder[type="pre-tabs"] {
+  display: none;
+}
+  {% endhighlight %}
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
 {% capture label %}Cleanup right click menu (aka contextmenu){% endcapture %}{% capture contents %}
   Click on µBlock > Click Settings Icon to open the dashboard
   Uncheck: Make use of context menu where appropriate
   To hide the Firefox default menu items we need to edit the `userChrome.css` [as mentioned here](https://support.mozilla.org/en-US/questions/1177488).
-  Go to `~/.mozilla/firefox/` then open `ab1c2d.default` or whatever the folder name is.
-  Create `chrome/userChrome.css` if it does not exist.
-  Then paste the following CSS into `userChrome.css`.
-  Restart firefox
+  Then paste the following CSS into `userChrome.css` ([instructions](#firefox-userchromecss)) and restart firefox.
   {% highlight css %}
 #contentAreaContextMenu #context-openlinkincurrent,
 #contentAreaContextMenu #context-openlinkinusercontext-menu,
@@ -385,11 +399,6 @@ qdbus org.kde.KWin /KWin reconfigure
   Search for `extensions.screenshots.disabled` and set it to `true`
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
-{% capture label %}First click UrlBar selects all + double click selects word{% endcapture %}{% capture contents %}
-  Go to `about:config`
-  Search for `browser.urlbar.clickSelectsAll` and set it to `true`
-  Search for `browser.urlbar.doubleClickSelectsAll` and set it to `false`
-{% endcapture%}{% include tip.html label=label contents=contents %}
 </ul>
 
 ### LibreOffice Writer
