@@ -492,9 +492,8 @@ Checkout [/r/FirefoxCSS/](https://www.reddit.com/r/FirefoxCSS/) for help.
 {% capture label %}Remove left tabbar padding when not maximized{% endcapture %}{% capture contents %}
   Then paste the following CSS into `userChrome.css` ([instructions](#firefox-userchromecss)) and restart firefox.
   {% highlight css %}
-.titlebar-placeholder[type="pre-tabs"] {
-  display: none;
-}
+.titlebar-placeholder[type="pre-tabs"] { display: none; } /* Firefox 64 */
+.titlebar-spacer[type="pre-tabs"] { width: 0 !important; } /* Firefox 65+ */
   {% endhighlight %}
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
