@@ -124,6 +124,9 @@ with open(tipsFilename, "r") as fin:
 		# Convert [Label](http://domain.tld)
 		# Convert <http://domain.tld>
 		if not insideCodeTag:
+			# Update various anchor links to work in mediawiki
+			line = line.replace('([instructions](#firefox-userchromecss))', '([instructions](#Firefox_.28userChrome.css.29))')
+			# Format
 			line = formatLinks(line)
 
 		# Convert **bold text**
