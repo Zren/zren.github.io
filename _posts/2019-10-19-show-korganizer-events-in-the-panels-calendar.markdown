@@ -1,6 +1,7 @@
 ---
 title: Show KOrganizer Events in the Panel's Calendar
 layout: post
+excerpt_separator: <!--more-->
 ---
 
 {% include video.html youtubeId="sTDdXjHIXBA" %}
@@ -19,3 +20,4 @@ If you only want to connect KOrganizer with the panel, you probably only need:
 sudo apt install kdepim-addons
 {% endhighlight %}
 
+<!--more-->
