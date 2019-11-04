@@ -500,8 +500,7 @@ Checkout [/r/FirefoxCSS/](https://www.reddit.com/r/FirefoxCSS/) for help.
 {% capture label %}Cleanup right click menu (aka contextmenu){% endcapture %}{% capture contents %}
   Click on µBlock > Click Settings Icon to open the dashboard
   Uncheck: Make use of context menu where appropriate
-  To hide the Firefox default menu items we need to edit the `userChrome.css` [as mentioned here](https://support.mozilla.org/en-US/questions/1177488).
-  Then paste the following CSS into `userChrome.css` ([instructions](#firefox-userchromecss)) and restart firefox.
+  To hide Firefox's default menu items, this [mozilla forum thread](https://support.mozilla.org/en-US/questions/1177488) mentions we need to edit `userChrome.css`. So paste the following CSS into `userChrome.css` ([instructions](#firefox-userchromecss)) and restart firefox.
   {% highlight css %}
 #contentAreaContextMenu #context-openlinkincurrent,
 #contentAreaContextMenu #context-openlinkinusercontext-menu,
