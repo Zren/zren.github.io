@@ -110,8 +110,8 @@ redirect_from: /projects/kde/repos/
 
 <style type="text/css">
 #search {
-    max-width: 800px;
-    display: flex;
+	max-width: 800px;
+	display: flex;
 }
 #search input {
 	width: 100%;
@@ -119,39 +119,39 @@ redirect_from: /projects/kde/repos/
 	position: relative;
 	padding: .5em;
 	border: 1px solid #ccc;
-    border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
 }
 .hidden {
 	display: none;
 }
 
 .button-group label {
-    display: flex;
-    background: #eee;
-    padding: 4px;
-    width: 32px;
-    box-sizing: border-box;
-    line-height: 22px;
-    font-size: 22px;
+	display: flex;
+	background: #eee;
+	padding: 4px;
+	width: 32px;
+	box-sizing: border-box;
+	line-height: 22px;
+	font-size: 22px;
 	border: 1px solid #ddd;
-    box-sizing: border-box;
-    border-radius: 4px 0 0 4px;
+	box-sizing: border-box;
+	border-radius: 4px 0 0 4px;
 }
 
 .button-group input {
-    display: flex;
-    flex:  1;
+	display: flex;
+	flex:  1;
 }
 
 .icon-search {
-    width: 100%;
-    text-align: center;
-    font-style: normal;
-    font-weight: bold;
-    transform: rotate(45deg);
+	width: 100%;
+	text-align: center;
+	font-style: normal;
+	font-weight: bold;
+	transform: rotate(45deg);
 }
 .icon-search:before {
-    content: "⚲";
+	content: "⚲";
 }
 </style>
 
