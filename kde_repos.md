@@ -1046,6 +1046,111 @@ redirect_from: /projects/kde/repos/
 			phabDiffQuery='PlE.UXMKpvQe'
 		%}
 	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Accessibility'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/access'
+			product='systemsettings&component=kcm_accessibility'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Activities'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/activities'
+			product='kwin&component=activities'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Autostart'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/autostart'
+			product='systemsettings&component=kcm_autostart'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Colors'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/colors'
+			product='systemsettings&component=kcm_colors'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Cursors'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/cursortheme'
+			product='systemsettings&component=kcm_cursortheme'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Date & Time'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/dateandtime'
+			product='systemsettings&component=kcm_clock'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Default Applications'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/componentchooser'
+			product='systemsettings&component=kcm_componentchooser'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Emoticons'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/emoticons'
+			product='systemsettings&component=kcm_emoticons'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='File Search'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/baloo'
+			product='systemsettings&component=kcm_baloo'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Fonts'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/fonts'
+			product='systemsettings&component=kcm_fonts'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Formats'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/formats'
+			product='systemsettings&component=kcm_formats'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Game Controller'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/hardware/joystick'
+			product='systemsettings&component=kcm_joystick'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Icons'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/icons'
+			product='systemsettings&component=kcm_icons'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Locations'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/desktoppaths'
+			product='systemsettings&component=kcm_desktoppath'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Plasma Style'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/desktoptheme'
+			product='systemsettings&component=kcm_desktoptheme'
+		%}
+	</tr>
 </table>
 
 
