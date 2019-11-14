@@ -1069,6 +1069,13 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
+			repoName='Background Services'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/kded'
+			product='systemsettings&component=kcm_kded'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
 			repoName='Colors'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/colors'
 			product='systemsettings&component=kcm_colors'
@@ -1097,6 +1104,20 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
+			repoName='Desktop Session'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/ksmserver'
+			product='systemsettings&component=kcm_ksmserver'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Device Actions'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/solid_actions'
+			product='systemsettings&component=kcm_solid-actions'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
 			repoName='Emoticons'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/emoticons'
 			product='systemsettings&component=kcm_emoticons'
@@ -1118,6 +1139,13 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
+			repoName='Font Management'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/kfontinst/kcmfontinst'
+			product='systemsettings&component=kcm_fontinst'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
 			repoName='Formats'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/formats'
 			product='systemsettings&component=kcm_formats'
@@ -1132,9 +1160,44 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
+			repoName='Global Shortcuts'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/keys'
+			product='systemsettings&component=kcm_keys'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Global Theme'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/lookandfeel'
+			product='systemsettings&component=kcm_lookandfeel'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
 			repoName='Icons'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/icons'
 			product='systemsettings&component=kcm_icons'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Keyboard'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/keyboard'
+			product='systemsettings&component=kcm_keyboard'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='KRunner'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/runners'
+			product='krunner'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Launch Feedback'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/launch'
+			product='systemsettings&component=kcm_launch'
 		%}
 	</tr>
 	<tr class="indent">
@@ -1146,9 +1209,37 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
+			repoName='Mouse'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/mouse'
+			product='systemsettings&component=kcm_mouse'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Night Color'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/nightcolor'
+			product='systemsettings&component=kcm_nightcolor'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Notifications'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/notifications'
+			product='systemsettings&component=kcm_notify'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
 			repoName='Plasma Style'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/desktoptheme'
 			product='systemsettings&component=kcm_desktoptheme'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Splash Screen'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/ksplash'
+			product='systemsettings&component=kcm_splashscreen'
 		%}
 	</tr>
 </table>
