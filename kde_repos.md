@@ -1062,6 +1062,13 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
+			repoName='[Qt] Application Style'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/style'
+			product='systemsettings&component=kcm_style'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
 			repoName='Autostart'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/autostart'
 			product='systemsettings&component=kcm_autostart'
@@ -1160,6 +1167,23 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
+			repoName='General Behavior'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/workspaceoptions'
+			product='systemsettings&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='GNOME/GTK Application Style'
+			githubLink='https://github.com/KDE/kde-gtk-config'
+			product='kde-gtk-config'
+			phabRepo='kde-gtk-config'
+			phabRepoName='KDE Gtk Configuration Tool'
+			phabDiffQuery='j8derDIaiCMm'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
 			repoName='Global Shortcuts'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/keys'
 			product='systemsettings&component=kcm_keys'
@@ -1240,6 +1264,27 @@ redirect_from: /projects/kde/repos/
 			repoName='Splash Screen'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/ksplash'
 			product='systemsettings&component=kcm_splashscreen'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Spell Check'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/spellchecking'
+			product='systemsettings&component=kcm_language'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Standard Shortcuts'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/standard_actions'
+			product='systemsettings&component=kcm_standard_actions'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Touchpad'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/touchpad/src/kcm'
+			product='Touchpad-KCM'
 		%}
 	</tr>
 </table>
