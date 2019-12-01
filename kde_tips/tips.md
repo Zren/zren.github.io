@@ -474,10 +474,10 @@ A firefox user can change the look of the browser by editing a css file.
 Checkout [/r/FirefoxCSS/](https://www.reddit.com/r/FirefoxCSS/) for help.
 
 <ol>
-<li>In FireFox v69 and later, we need to go to `about:config` and change `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.</li>
-<li>Then navigate to `~/.mozilla/firefox/`, inside will be a randomly generated folder similar to `abcdef12.default` which you should enter.</li>
-<li>Inside the "default" folder, create a new folder called `chrome`, then create a file called `userChrome.css`.</li>
-<li>You can now edit `~/.mozilla/firefox/abcdef12.default/chrome/userChrome.css`, and changes will be applied upon restarting Firefox.</li>
+<li>In FireFox v69 and later, we need to go to <code>about:config</code> and change <code>toolkit.legacyUserProfileCustomizations.stylesheets</code> to <code>true</code>.</li>
+<li>Then navigate to <code>~/.mozilla/firefox/</code>, inside will be a randomly generated folder similar to <code>abcdef12.default</code> which you should enter.</li>
+<li>Inside the "default" folder, create a new folder called <code>chrome</code>, then create a file called <code>userChrome.css</code>.</li>
+<li>You can now edit <code>~/.mozilla/firefox/abcdef12.default/chrome/userChrome.css</code>, and changes will be applied upon restarting Firefox.</li>
 </ol>
 
 <ul>
