@@ -126,6 +126,7 @@ with open(tipsFilename, "r") as fin:
 		if not insideCodeTag:
 			# Update various anchor links to work in mediawiki
 			line = line.replace('([instructions](#firefox-userchromecss))', '([instructions](#Firefox_.28userChrome.css.29))')
+			line = line.replace('[see the section below](#windowsmeta-key)', '[see the section below](#Windows.2FMeta_Key)')
 			# Format
 			line = formatLinks(line)
 
