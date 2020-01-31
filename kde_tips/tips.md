@@ -483,6 +483,7 @@ Checkout [/r/FirefoxCSS/](https://www.reddit.com/r/FirefoxCSS/) for help.
 <ul>
 
 {% capture label %}Show bookmarks toolbar only on New Tab page{% endcapture %}{% capture contents %}
+  Note: **This no longer works in Firefox v72+**
   ☰ > Customize
   Toolbars > Check: Bookmarks Toolbar
   Then paste [the following CSS](https://github.com/Timvde/UserChrome-Tweaks/blob/master/toolbars/show-bookmarks-only-on-newtab.css) into `userChrome.css` ([instructions](#firefox-userchromecss)).
