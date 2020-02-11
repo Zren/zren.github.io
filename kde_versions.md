@@ -79,37 +79,37 @@ a:not([href]):hover {
   <tbody>
     <tr>
       <td><a href="https://kde.org/announcements/plasma-5.18.0.php">Plasma 5.18.0</a></td>
-      <td><a>/r/kde</a></td>
-      <td><a>/r/linux</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/f27ibv/plasma_518_is_out_easier_system_settings/">/r/kde</a></td>
+      <td><a href="https://www.reddit.com/r/linux/comments/f27iit/kdes_plasma_518_is_out_easier_system_settings/">/r/linux</a></td>
     </tr>
     <tr>
       <td><a href="https://kde.org/announcements/plasma-5.17.90.php">Plasma 5.18.0 Beta</a></td>
-      <td><a>/r/kde</a></td>
-      <td><a>/r/linux</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/epkjlo/plasma_518_lts_beta_more_convenient_and_with_long/">/r/kde</a></td>
+      <td><a href="https://www.reddit.com/r/linux/comments/epl67c/plasma_518_lts_beta_more_convenient_and_with_long/">/r/linux</a></td>
     </tr>
     <tr>
       <td><a href="https://kde.org/announcements/plasma-5.17.5.php">Plasma 5.17.5</a></td>
-      <td><a>/r/kde</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/elft9y/kde_plasma_5175_bugfix_release_for_january/">/r/kde</a></td>
       <td><a>/r/linux</a></td>
     </tr>
     <tr>
       <td><a href="https://kde.org/announcements/plasma-5.17.4.php">Plasma 5.17.4</a></td>
-      <td><a>/r/kde</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/e5jf92/kde_plasma_5174_bugfix_release_for_december/">/r/kde</a></td>
       <td><a>/r/linux</a></td>
     </tr>
     <tr>
       <td><a href="https://kde.org/announcements/plasma-5.17.3.php">Plasma 5.17.3</a></td>
-      <td><a>/r/kde</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/dvbf9d/kde_plasma_5173_bugfix_release_for_november/">/r/kde</a></td>
       <td><a>/r/linux</a></td>
     </tr>
     <tr>
       <td><a href="https://kde.org/announcements/plasma-5.17.2.php">Plasma 5.17.2</a></td>
-      <td><a>/r/kde</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/dp2pis/kde_plasma_5172_bugfix_release_for_october/">/r/kde</a></td>
       <td><a>/r/linux</a></td>
     </tr>
     <tr>
       <td><a href="https://kde.org/announcements/plasma-5.17.1.php">Plasma 5.17.1</a></td>
-      <td><a>/r/kde</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/dll52d/kde_plasma_5171_bugfix_release_for_october/">/r/kde</a></td>
       <td><a>/r/linux</a></td>
     </tr>
     <tr>
