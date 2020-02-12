@@ -931,6 +931,13 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
+		{% include kdeRepoDesktop.html
+			repoName='Emoji Picker'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/kimpanel/backend/ibus/emojier'
+			product='plasmashell&component=general'
+		%}
+	</tr>
+	<tr>
 		{% include kdeRepo.html
 			repoName='Falkon'
 			githubLink='https://github.com/KDE/falkon'
