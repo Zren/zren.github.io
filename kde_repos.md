@@ -567,6 +567,13 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
+			repoName='Night Color Control'
+			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/nightcolor'
+			product='kdeplasma-addons&component=Night%20Color%20Control'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepoAddons.html
 			repoName='Notes'
 			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/notes'
 			product='kdeplasma-addons&component=notes'
