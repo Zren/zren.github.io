@@ -482,12 +482,25 @@ Checkout [/r/FirefoxCSS/](https://www.reddit.com/r/FirefoxCSS/) for help.
 
 <ul>
 
-{% capture label %}Show bookmarks toolbar only on New Tab page{% endcapture %}{% capture contents %}
-  **Note: This no longer works in Firefox v72+**
+{% capture label %}Show bookmarks toolbar only on hover{% endcapture %}{% capture contents %}
   ☰ > Customize
   Toolbars > Check: Bookmarks Toolbar
-  Then paste [the following CSS](https://github.com/Timvde/UserChrome-Tweaks/blob/master/toolbars/show-bookmarks-only-on-newtab.css) into `userChrome.css` ([instructions](#firefox-userchromecss)).
-  Restart firefox
+  Then paste the following CSS into `userChrome.css` ([instructions](#firefox-userchromecss)) and restart firefox.
+  {% highlight css %}
+#PersonalToolbar {
+  visibility: collapse !important;
+  display: block;
+  position: absolute !important;
+  z-index: 1;
+  width: 100%;
+}
+#nav-bar:focus-within + #PersonalToolbar,
+#PersonalToolbar:focus-within,
+#PersonalToolbar[customizing="true"],
+#navigator-toolbox:hover #PersonalToolbar {
+  visibility: visible !important;
+}
+  {% endhighlight %}
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Remove left tabbar padding when not maximized{% endcapture %}{% capture contents %}
