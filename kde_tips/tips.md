@@ -399,6 +399,11 @@ qdbus org.kde.KWin /KWin reconfigure
   * [Privacy Badger](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/)
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
+{% capture label %}Enable Middle Click AutoScroll{% endcapture %}{% capture contents %}
+  ☰ > Preferences > General
+  Browsing > Check: Use autoscrolling
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
 {% capture label %}Open New Tab page on startup{% endcapture %}{% capture contents %}
   ☰ > Preferences > Home
   Homepage and new windows: `Firefox Home`
