@@ -3,6 +3,8 @@ title: Quickly Modify Octopi To Use Breeze Icons
 layout: post
 ---
 
+![](https://i.imgur.com/THRnpJE.png)
+
 We'll be using inkscape to convert the SVG icons to PNG, so install it first if you haven't already.
 
 {% highlight bash %}
