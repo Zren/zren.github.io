@@ -498,6 +498,7 @@ Checkout [/r/FirefoxCSS/](https://www.reddit.com/r/FirefoxCSS/) for help.
   position: absolute !important;
   z-index: 1;
   width: 100%;
+  box-shadow: 0 6px 6px -6px #000;
 }
 #nav-bar:focus-within + #PersonalToolbar,
 #PersonalToolbar:focus-within,
