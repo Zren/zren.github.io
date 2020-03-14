@@ -986,6 +986,16 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepo.html
+			repoName='Konsole'
+			githubLink='https://github.com/KDE/konsole'
+			product='konsole'
+			phabRepo='konsole'
+			phabRepoName='Konsole'
+			phabDiffQuery='K5WA0r5foHBY'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
 			repoName='Konversation'
 			githubLink='https://github.com/KDE/konversation'
 			product='konversation'
