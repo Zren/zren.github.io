@@ -19,7 +19,7 @@ Note that you don't *need* the 3 config files. You can get away with just the `m
 {% endcapture %}{% capture sectionRight %}
 
 {:.directory-tree}
-* `plasmawidget-helloworld/`
+* `~/Code/plasmawidget-helloworld/`
     * `package/`
         * `contents/`
             * `config/`
