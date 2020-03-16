@@ -4,7 +4,7 @@
 {% capture label %}Folder Structure{% endcapture %}
 {% capture sectionLeft %}
 
-To start from scratch, first create a folder for your new widget somewhere in you coding directory (eg: `~/Code/plasmawidget-helloworld`).
+To start a new widget from scratch, first create a folder for your new widget somewhere in you coding directory (eg: `~/Code/plasmoid-helloworld`).
 
 Inside it create another folder called `package`. Everything inside the `package` folder will be what we eventually install to `~/.local/share/plasma/plasmoids/com.github.zren.helloworld/`. Eventually we will zip the contents of `package` and share them online. We can keep text editor files, build scripts, screenshots, etc outside the `package` directory.
 
@@ -19,7 +19,7 @@ Note that you don't *need* the 3 config files. You can get away with just the `m
 {% endcapture %}{% capture sectionRight %}
 
 {:.directory-tree}
-* `~/Code/plasmawidget-helloworld/`
+* `~/Code/plasmoid-helloworld/`
     * `package/`
         * `contents/`
             * `config/`
