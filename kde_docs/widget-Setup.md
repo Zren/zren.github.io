@@ -4,9 +4,11 @@
 {% capture label %}Folder Structure{% endcapture %}
 {% capture sectionLeft %}
 
-First create a folder for your new widget. Inside it create another folder called `package`. Everything inside the `package` folder will be what we eventually zip and share online, so we can keep text editor project files in the `helloworld` folder.
+To start from scratch, first create a folder for your new widget somewhere in you coding directory (eg: `~/Code/plasmawidget-helloworld`).
 
-Inside the package folder will be `metadata.desktop` file which is basically an Linux `.ini` file. This file will describe the name of the widget, the category it's in, and various other plasma specific keys like the main QML file.
+Inside it create another folder called `package`. Everything inside the `package` folder will be what we eventually install to `~/.local/share/plasma/plasmoids/com.github.zren.helloworld/`. Eventually we will zip the contents of `package` and share them online. We can keep text editor files, build scripts, screenshots, etc outside the `package` directory.
+
+Inside the package folder will be a `metadata.desktop` file which is basically a Linux `.ini` file. This file will describe the name of the widget, the category it's in, and various other plasma specific keys like the main QML file.
 
 Inside `contents`, we will create the `ui` and `config` folders. `ui` is the folder which should contain your layout files like the `main.qml` and the `configGeneral.qml`. `configGeneral.qml` is the layout of the first tab in the widget's configuration window.
 
@@ -17,7 +19,7 @@ Note that you don't *need* the 3 config files. You can get away with just the `m
 {% endcapture %}{% capture sectionRight %}
 
 {:.directory-tree}
-* `helloworld/`
+* `plasmawidget-helloworld/`
     * `package/`
         * `contents/`
             * `config/`
