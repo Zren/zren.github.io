@@ -233,6 +233,16 @@ redirect_from: /projects/kde/repos/
 			product='plasmashell&component=Application%20Launcher%20%28Kickoff%29'
 		%}
 	</tr>
+	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='Avatar/FaceIcon (KUser)'
+			githubLink='https://github.com/KDE/kcoreaddons/blob/master/src/lib/util/kuser_unix.cpp#L184'
+			product='frameworks-kcoreaddons'
+			phabRepo='kcoreaddons'
+			phabRepoName='KCoreAddons'
+			phabDiffQuery='iqSqxSUsh7VC'
+		%}
+	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Application Menu (Kicker)'
