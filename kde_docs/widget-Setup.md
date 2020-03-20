@@ -84,7 +84,7 @@ This is the entry point. Various properties are available to be set. You should 
 * You can have a widget in the panel, which is just an icon that will show a popup window when clicked.
 * You can also have it on the desktop as a desktop widget which can be resized by the user. As a desktop widget it can switch between the "icon view" when smaller (which opens a popup), and directly showing the contents of the popup on the desktop when there's enough room.
 * You can also have the widget inside another widget (a containment) like the system tray or the panel itself.
-* The widget can also be run like an application in it's own window.
+* The widget can also be run like an application in it's own window (Calculator).
 
 `plasmoid.location` and `plasmoid.formFactor` can tell you how the widget is placed. `plasmoid` is a global variable which is defined when you `import org.kde.plasma.plasmoid 2.0`. Read more below.
 
