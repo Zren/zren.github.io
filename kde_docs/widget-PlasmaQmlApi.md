@@ -15,7 +15,7 @@ KDE Frameworks ships with a number of useful extensions to Qt's QML. The [API do
 {% capture label %}PlasmaComponents.Label{% endcapture %}
 {% capture sectionLeft %}
 
-QML ships with a [Text](http://doc.qt.io/qt-5/qml-qtquick-text.html) type, but Plasma extends with a `Label.qml` which asigns a number of defaults. One thing that is defaulted is it uses the color scheme's text color. For the specifics, you can read the [`Label.qml` source code](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/Label.qml).
+QML ships with a [Text](http://doc.qt.io/qt-5/qml-qtquick-text.html) type, but Plasma extends it with `Label.qml` which asigns a number of defaults. One thing is it sets the text color to follow the panel's color scheme. For the specifics, you can read the [`Label.qml` source code](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/Label.qml).
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
