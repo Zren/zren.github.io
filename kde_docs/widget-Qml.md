@@ -118,7 +118,7 @@ In this third example, we anchor the Green Rectangle to the bottom right, and ma
 
 ![](https://i.imgur.com/2ut7PnS.png)
 
-Other ways to use `anchors` properties can be read in the QML Documentation page on [Positioning with Anchors](https://doc.qt.io/qt-5/qtquick-positioning-anchors.html) and the [`Item.achors` property group](https://doc.qt.io/qt-5/qml-qtquick-item.html#anchors-prop).
+Other ways to use `anchors` properties can be read in the QML Documentation page on [Positioning with Anchors](https://doc.qt.io/qt-5/qtquick-positioning-anchors.html) and the [`Item.anchors` property group](https://doc.qt.io/qt-5/qml-qtquick-item.html#anchors-prop).
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
