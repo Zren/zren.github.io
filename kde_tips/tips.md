@@ -106,11 +106,9 @@
 kwriteconfig5 --file ~/.config/kwinrc --group TabBox --key DelayTime 0
 qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
-  You can also disable the highlight window effect with:
-  {% highlight bash %}
-kwriteconfig5 --file ~/.config/kwinrc --group TabBox --key HighlightWindows false
-qdbus org.kde.KWin /KWin reconfigure
-  {% endhighlight %}
+  You can also disable the highlight window effect by going to:
+  System Settings > Window Management > Task Switcher Tab
+  Uncheck: Show selected window
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Disable Lock Screen{% endcapture %}{% capture contents %}
