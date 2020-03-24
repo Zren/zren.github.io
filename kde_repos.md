@@ -264,6 +264,13 @@ redirect_from: /projects/kde/repos/
 			product='kwin&component=input'
 		%}
 	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Kicker Plugin (RootModel)'
+			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/kicker/plugin'
+			product='plasmashell&component=Application%20Menu%20%28Kicker%29'
+		%}
+	</tr>
 	<tr>
 		{% include kdeRepo.html
 			repoName='Active Window Control'
