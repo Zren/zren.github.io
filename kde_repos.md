@@ -843,7 +843,7 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr class="indent depth2">
-		{% include kdeRepo.html
+		{% include kdeRepoKwin.html
 			repoName='Aurorae Decorations'
 			githubLink='https://github.com/KDE/kwin/tree/master/plugins/kdecorations/aurorae'
 			product='kwin&component=aurorae'
@@ -1354,10 +1354,24 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr class="indent">
+		{% include kdeRepoKwin.html
+			repoName='Task Switcher'
+			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwintabbox'
+			product='kwin&component=tabbox'
+		%}
+	</tr>
+	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Touchpad'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/touchpad/src/kcm'
 			product='Touchpad-KCM'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoKwin.html
+			repoName='Window Decorations'
+			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwindecoration'
+			product='systemsettings&component=kcm_kwindecoration'
 		%}
 	</tr>
 </table>
