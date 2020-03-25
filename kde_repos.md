@@ -830,7 +830,6 @@ redirect_from: /projects/kde/repos/
 			phabRepoName='Window Decoration Library'
 			phabDiffQuery='TX1cIo28VdCS'
 		%}
-		{% include phabLinks.html %}
 	</tr>
 	<tr class="indent depth2">
 		{% include kdeRepo.html
@@ -848,7 +847,6 @@ redirect_from: /projects/kde/repos/
 			githubLink='https://github.com/KDE/kwin/tree/master/plugins/kdecorations/aurorae'
 			product='kwin&component=aurorae'
 		%}
-		{% include phabLinks.html %}
 	</tr>
 	<tr class="indent depth2">
 		{% include kdeRepo.html
@@ -859,7 +857,6 @@ redirect_from: /projects/kde/repos/
 			phabRepoName='Smaragd'
 			phabDiffQuery='txJJQqwJiZVM'
 		%}
-		{% include phabLinks.html %}
 	</tr>
 </table>
 
