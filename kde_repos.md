@@ -1163,6 +1163,13 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
+			repoName='Compositor'
+			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwincompositing'
+			product='systemsettings&component=compositing'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
 			repoName='Cursors'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/cursortheme'
 			product='systemsettings&component=kcm_cursortheme'
@@ -1180,6 +1187,13 @@ redirect_from: /projects/kde/repos/
 			repoName='Default Applications'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/componentchooser'
 			product='systemsettings&component=kcm_componentchooser'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoKwin.html
+			repoName='Desktop Effects'
+			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwineffects'
+			product='systemsettings&component=kcm_kwin_effects'
 		%}
 	</tr>
 	<tr class="indent">
@@ -1291,6 +1305,13 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr class="indent">
+		{% include kdeRepoKwin.html
+			repoName='KWin Scripts'
+			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwinscripts'
+			product='kwin&component=scripting'
+		%}
+	</tr>
+	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Launch Feedback'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/launch'
@@ -1333,6 +1354,13 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr class="indent">
+		{% include kdeRepoKwin.html
+			repoName='Screen Edges'
+			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwinscreenedges'
+			product='systemsettings&component=kcm_kwinscreenedges'
+		%}
+	</tr>
+	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Splash Screen'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/ksplash'
@@ -1365,6 +1393,34 @@ redirect_from: /projects/kde/repos/
 			repoName='Touchpad'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/touchpad/src/kcm'
 			product='Touchpad-KCM'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoKwin.html
+			repoName='Touch Screen'
+			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwinscreenedges'
+			product='systemsettings&component=kcm_kwintouchscreen'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoKwin.html
+			repoName='Virtual Desktops'
+			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwindesktop'
+			product='systemsettings&component=kcm_kwin_virtualdesktops'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoKwin.html
+			repoName='Window Behavior'
+			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwinoptions'
+			product='kwin&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoKwin.html
+			repoName='Window Rules'
+			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwinrules'
+			product='kwin&component=rules'
 		%}
 	</tr>
 	<tr class="indent">
