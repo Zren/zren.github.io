@@ -816,16 +816,48 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepo.html
 			repoName='Window Decorations'
-			githubLink='https://github.com/KDE/kwin/tree/master/kdecorations'
+			githubLink='https://github.com/KDE/kwin/tree/master/decorations'
 			product='kwin&component=decorations'
 		%}
 		{% include phabLinks.html %}
 	</tr>
 	<tr class="indent depth2">
 		{% include kdeRepo.html
+			repoName='KDecoration2'
+			githubLink='https://github.com/KDE/kdecoration'
+			product='kwin&component=decorations'
+			phabRepo='kdecoration'
+			phabRepoName='Window Decoration Library'
+			phabDiffQuery='TX1cIo28VdCS'
+		%}
+		{% include phabLinks.html %}
+	</tr>
+	<tr class="indent depth2">
+		{% include kdeRepo.html
+			repoName='Breeze Decorations'
+			githubLink='https://github.com/KDE/breeze/tree/master/kdecoration'
+			product='Breeze&component=window%20decoration'
+			phabRepo='breeze'
+			phabRepoName='Breeze'
+			phabDiffQuery='5_HzpnwoEZjH'
+		%}
+	</tr>
+	<tr class="indent depth2">
+		{% include kdeRepo.html
 			repoName='Aurorae Decorations'
 			githubLink='https://github.com/KDE/kwin/tree/master/plugins/kdecorations/aurorae'
 			product='kwin&component=aurorae'
+		%}
+		{% include phabLinks.html %}
+	</tr>
+	<tr class="indent depth2">
+		{% include kdeRepo.html
+			repoName='Emerald Decorations (Smaragd)'
+			githubLink='https://github.com/KDE/smaragd'
+			product='smaragd'
+			phabRepo='smaragd'
+			phabRepoName='Smaragd'
+			phabDiffQuery='txJJQqwJiZVM'
 		%}
 		{% include phabLinks.html %}
 	</tr>
