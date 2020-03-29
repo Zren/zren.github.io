@@ -559,10 +559,10 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
-		{% include kdeRepoAddons.html
+		{% include kdeRepoDesktop.html
 			repoName='Minimize All'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/minimizeall'
-			product='kdeplasma-addons&component=General'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/minimizeall'
+			product='plasmashell&component=Show%20Desktop%2FMinimize%20All'
 		%}
 	</tr>
 	<tr>
@@ -656,10 +656,10 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
-		{% include kdeRepoAddons.html
+		{% include kdeRepoDesktop.html
 			repoName='Show Desktop'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/showdesktop'
-			product='kdeplasma-addons&component=General'
+			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/showdesktop'
+			product='plasmashell&component=Show%20Desktop%2FMinimize%20All'
 		%}
 	</tr>
 	<tr>
