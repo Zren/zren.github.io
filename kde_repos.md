@@ -1208,6 +1208,16 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='[Kubuntu] Driver Manager'
+			githubLink='https://github.com/KDE/kubuntu-driver-kcm'
+			product='KDE%20Config%20Driver%20Manager'
+			phabRepo='kubuntu-driver-kcm'
+			phabRepoName='Kubuntu Proprietary Driver Manager'
+			phabDiffQuery='8WNeIi9_K_p3'
+		%}
+	</tr>
+	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Emoticons'
 			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/emoticons'
