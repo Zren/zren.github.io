@@ -15,7 +15,7 @@ KDE Frameworks ships with a number of useful extensions to Qt's QML. The [API do
 {% capture label %}PlasmaComponents.Label{% endcapture %}
 {% capture sectionLeft %}
 
-QML ships with a [Text](http://doc.qt.io/qt-5/qml-qtquick-text.html) type, but Plasma extends it with `Label.qml` which asigns a number of defaults. One thing is it sets the text color to follow the panel's color scheme. For the specifics, you can read the [`Label.qml` source code](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/Label.qml).
+QML ships with a [Text](http://doc.qt.io/qt-5/qml-qtquick-text.html) type, but Plasma extends it with `Label.qml` which assigns a number of defaults. One thing is it sets the text color to follow the panel's color scheme. For the specifics, you can read the [`Label.qml` source code](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/Label.qml).
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
@@ -24,7 +24,149 @@ import QtQuick 2.0
 import org.kde.plasma.components 2.0 as PlasmaComponents
 
 PlasmaComponents.Label {
-    text: "Hello World"
+    text: i18n("Hello World")
 }
 {% endhighlight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
+
+
+{% capture label %}PlasmaComponents Controls{% endcapture %}
+{% capture sectionLeft %}
+QML ships with various controls, like [CheckBox](https://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html), [RadioButton](https://doc.qt.io/qt-5/qml-qtquick-controls-radiobutton.html), [ComboBox](https://doc.qt.io/qt-5/qml-qtquick-controls-combobox.html) (DropDown Menu), [Slider](https://doc.qt.io/qt-5/qml-qtquick-controls-slider.html), [TextField](https://doc.qt.io/qt-5/qml-qtquick-controls-textfield.html), [TextArea](https://doc.qt.io/qt-5/qml-qtquick-controls-textarea.html), [Button](https://doc.qt.io/qt-5/qml-qtquick-controls-button.html), [ToolButton](https://doc.qt.io/qt-5/qml-qtquick-controls-toolbutton.html). Plasma extends these controls to style theme using the SVGs from the [Plasma Theme](https://techbase.kde.org/Development/Tutorials/Plasma5/ThemeDetails), and assigns a number of default like the text color to follow the panel's color scheme. For the specifics, you can read the QML source code for each:
+
+* [`CheckBox.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/CheckBox.qml)
+* [`RadioButton.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/RadioButton.qml)
+* [`ComboBox.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/ComboBox.qml)
+* [`Slider.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/Slider.qml)
+* [`TextField.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/TextField.qml)
+* [`TextArea.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/TextArea.qml)
+* [`Button.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/Button.qml)
+* [`ToolButton.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/ToolButton.qml)
+
+{% endcapture %}{% capture sectionRight %}
+{% highlight qml %}
+// main.qml
+import QtQuick 2.0
+import org.kde.plasma.components 2.0 as PlasmaComponents
+
+PlasmaComponents.CheckBox {
+    text: i18n("Hello World")
+    checked: true
+}
+{% endhighlight %}
+
+---
+
+{% highlight qml %}
+// main.qml
+import QtQuick 2.0
+import QtQuick.Layouts 1.0
+import org.kde.plasma.components 2.0 as PlasmaComponents
+
+ColumnLayout {
+    ExclusiveGroup { id: tabPositionGroup }
+    PlasmaComponents.RadioButton {
+        text: i18n("Top")
+        checked: true
+        exclusiveGroup: tabPositionGroup
+    }
+    PlasmaComponents.RadioButton {
+        text: i18n("Bottom")
+        exclusiveGroup: tabPositionGroup
+    }
+}
+{% endhighlight %}
+
+---
+
+{% highlight qml %}
+// main.qml
+import QtQuick 2.0
+import org.kde.plasma.components 2.0 as PlasmaComponents
+
+PlasmaComponents.ComboBox {
+    textRole: "text"
+    model: [
+        { value: "a", text: i18n("A") },
+        { value: "b", text: i18n("B") },
+        { value: "c", text: i18n("C") },
+    ]
+}
+{% endhighlight %}
+
+---
+
+{% highlight qml %}
+// main.qml
+import QtQuick 2.4
+import org.kde.plasma.components 2.0 as PlasmaComponents
+
+RowLayout {
+    PlasmaComponents.Slider {
+        id: slider
+        minimumValue: 0.0
+        maximumValue: 1.0
+        value: 0.25
+        stepSize: 0.01
+    }
+    PlasmaComponents.Label {
+        text: i18n("%1%", Math.round(slider.value * 100))
+        // See TextMetrics example to avoid width changes
+    }
+}
+}
+{% endhighlight %}
+
+---
+
+{% highlight qml %}
+// main.qml
+import QtQuick 2.0
+import org.kde.plasma.components 2.0 as PlasmaComponents
+
+PlasmaComponents.TextField {
+    placeholderText: i18n("Name")
+}
+{% endhighlight %}
+
+---
+
+{% highlight qml %}
+// main.qml
+import QtQuick 2.0
+import org.kde.plasma.components 2.0 as PlasmaComponents
+
+PlasmaComponents.TextArea {
+    text: "Lorem ipsum\ndolor sit amet,\nconsectetur adipisicing elit"
+}
+{% endhighlight %}
+
+---
+
+{% highlight qml %}
+// main.qml
+import QtQuick 2.0
+import org.kde.plasma.components 2.0 as PlasmaComponents
+
+PlasmaComponents.Button {
+    iconSource: "view-refresh"
+    text: i18n("Refresh")
+}
+{% endhighlight %}
+
+---
+
+{% highlight qml %}
+// main.qml
+import QtQuick 2.0
+import org.kde.plasma.components 2.0 as PlasmaComponents
+
+PlasmaComponents.ToolButton {
+    iconSource: "view-refresh-symbolic"
+    text: i18n("Refresh")
+}
+{% endhighlight %}
+
+
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
