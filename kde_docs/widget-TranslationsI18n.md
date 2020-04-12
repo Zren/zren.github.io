@@ -78,6 +78,11 @@ The latest copy of my `merge.sh` and `build.sh` can be found in any of my widget
 
 * [`translate/merge.sh`](https://github.com/Zren/plasma-applet-lib/blob/master/package/translate/merge)
 * [`translate/build.sh`](https://github.com/Zren/plasma-applet-lib/blob/master/package/translate/build)
+
+A working example can be seen in my TiledMenu widget:
+
+* [Zren/plasma-applet-tiledmenu/.../translate/](https://github.com/Zren/plasma-applet-tiledmenu/tree/master/package/translate)
+
 {% endcapture %}{% capture sectionRight %}
 
 {:.directory-tree}
