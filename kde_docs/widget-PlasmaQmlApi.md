@@ -32,7 +32,7 @@ PlasmaComponents.Label {
 
 {% capture label %}PlasmaComponents Controls{% endcapture %}
 {% capture sectionLeft %}
-QML ships with various controls, like [CheckBox](https://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html), [RadioButton](https://doc.qt.io/qt-5/qml-qtquick-controls-radiobutton.html), [ComboBox](https://doc.qt.io/qt-5/qml-qtquick-controls-combobox.html) (DropDown Menu), [SpinBox](https://doc.qt.io/qt-5/qml-qtquick-controls-spinbox.html), [Slider](https://doc.qt.io/qt-5/qml-qtquick-controls-slider.html), [TextField](https://doc.qt.io/qt-5/qml-qtquick-controls-textfield.html), [TextArea](https://doc.qt.io/qt-5/qml-qtquick-controls-textarea.html), [Button](https://doc.qt.io/qt-5/qml-qtquick-controls-button.html), [ToolButton](https://doc.qt.io/qt-5/qml-qtquick-controls-toolbutton.html). Plasma extends these controls to style them using the SVGs from the [Plasma Theme](https://techbase.kde.org/Development/Tutorials/Plasma5/ThemeDetails). It also assigns a number of default settings like setting the text color to follow the panel's color scheme. For the specifics, you can read the QML source code for each:
+QML ships with various controls, like [CheckBox](https://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html), [RadioButton](https://doc.qt.io/qt-5/qml-qtquick-controls-radiobutton.html), [ComboBox](https://doc.qt.io/qt-5/qml-qtquick-controls-combobox.html) (DropDown Menu), [SpinBox](https://doc.qt.io/qt-5/qml-qtquick-controls-spinbox.html), [Slider](https://doc.qt.io/qt-5/qml-qtquick-controls-slider.html), [TextField](https://doc.qt.io/qt-5/qml-qtquick-controls-textfield.html), [TextArea](https://doc.qt.io/qt-5/qml-qtquick-controls-textarea.html), [Button](https://doc.qt.io/qt-5/qml-qtquick-controls-button.html), [ToolButton](https://doc.qt.io/qt-5/qml-qtquick-controls-toolbutton.html). Plasma extends these controls to style them using the SVGs from the [Plasma Theme](https://techbase.kde.org/Development/Tutorials/Plasma5/ThemeDetails). It also assigns a number of default settings like setting the text color to follow the panel's color scheme. For Plasma's specific changes, you can read the QML source code for each control in:
 
 [`plasma-framework`/src/declarativeimports/plasmacomponents/qml/](https://github.com/KDE/plasma-framework/tree/master/src/declarativeimports/plasmacomponents/qml)
 {% endcapture %}{% capture sectionRight %}
@@ -42,7 +42,7 @@ QML ships with various controls, like [CheckBox](https://doc.qt.io/qt-5/qml-qtqu
 
 {% capture label %}CheckBox, RadioButton, ComboBox - Multiple Choice{% endcapture %}
 {% capture sectionLeft %}
-For mutiple choices, QML ships with [CheckBox](https://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html), [RadioButton](https://doc.qt.io/qt-5/qml-qtquick-controls-radiobutton.html), [ComboBox](https://doc.qt.io/qt-5/qml-qtquick-controls-combobox.html) (DropDown Menu). For the specifics, you can read the QML source code for each:
+For mutiple choices, QML ships with [CheckBox](https://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html), [RadioButton](https://doc.qt.io/qt-5/qml-qtquick-controls-radiobutton.html), [ComboBox](https://doc.qt.io/qt-5/qml-qtquick-controls-combobox.html) (DropDown Menu). For Plasma's specific changes, you can read the QML source code for each:
 
 * [`CheckBox.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/CheckBox.qml)
 * [`RadioButton.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/RadioButton.qml)
@@ -104,7 +104,7 @@ PlasmaComponents.ComboBox {
 
 {% capture label %}SpinBox, Slider - Numbers{% endcapture %}
 {% capture sectionLeft %}
-To control Integer or Real numbers, QML ships with [SpinBox](https://doc.qt.io/qt-5/qml-qtquick-controls-spinbox.html) and [Slider](https://doc.qt.io/qt-5/qml-qtquick-controls-slider.html). For the specifics, you can read the QML source code for each:
+To control Integer or Real numbers, QML ships with [SpinBox](https://doc.qt.io/qt-5/qml-qtquick-controls-spinbox.html) and [Slider](https://doc.qt.io/qt-5/qml-qtquick-controls-slider.html). For Plasma's specific changes, you can read the QML source code for each:
 
 * [`SpinBox.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents3/SpinBox.qml) (PlasmaComponents3 only)
 * [`Slider.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/Slider.qml)
@@ -157,7 +157,7 @@ RowLayout {
 
 {% capture label %}TextField, TextArea - Input{% endcapture %}
 {% capture sectionLeft %}
-To enter text, QML ships with [TextField](https://doc.qt.io/qt-5/qml-qtquick-controls-textfield.html) and [TextArea](https://doc.qt.io/qt-5/qml-qtquick-controls-textarea.html). For the specifics, you can read the QML source code for each:
+To enter text, QML ships with [TextField](https://doc.qt.io/qt-5/qml-qtquick-controls-textfield.html) and [TextArea](https://doc.qt.io/qt-5/qml-qtquick-controls-textarea.html). For Plasma's specific changes, you can read the QML source code for each:
 
 * [`TextField.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/TextField.qml)
 * [`TextArea.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/TextArea.qml)
@@ -190,7 +190,7 @@ PlasmaComponents.TextArea {
 
 {% capture label %}Button, ToolButton{% endcapture %}
 {% capture sectionLeft %}
-For buttons, QML ships with [Button](https://doc.qt.io/qt-5/qml-qtquick-controls-button.html) and the flat [ToolButton](https://doc.qt.io/qt-5/qml-qtquick-controls-toolbutton.html) version. For the specifics, you can read the QML source code for each:
+For buttons, QML ships with [Button](https://doc.qt.io/qt-5/qml-qtquick-controls-button.html) and the flat [ToolButton](https://doc.qt.io/qt-5/qml-qtquick-controls-toolbutton.html) version. For Plasma's specific changes, you can read the QML source code for each:
 
 * [`Button.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/Button.qml)
 * [`ToolButton.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/ToolButton.qml)
