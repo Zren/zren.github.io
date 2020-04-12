@@ -65,6 +65,7 @@ PlasmaComponents.CheckBox {
 {% highlight qml %}
 // main.qml
 import QtQuick 2.0
+import QtQuick.Controls 1.0
 import QtQuick.Layouts 1.0
 import org.kde.plasma.components 2.0 as PlasmaComponents
 
@@ -113,6 +114,7 @@ To control Integer or Real numbers, QML ships with [SpinBox](https://doc.qt.io/q
 {% highlight qml %}
 // main.qml
 import QtQuick 2.0
+import QtQuick.Layouts 1.0
 import org.kde.plasma.components 2.0 as PlasmaComponents
 import org.kde.plasma.components 3.0 as PlasmaComponents3
 
