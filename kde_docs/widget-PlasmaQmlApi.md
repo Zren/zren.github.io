@@ -30,6 +30,44 @@ PlasmaComponents.Label {
 
 
 
+{% capture label %}Heading, Paragraph{% endcapture %}
+{% capture sectionLeft %}
+To be consistent with elsewhere in Plasma, Plasma ships with a couple different Label/Text types with preset default sizes. You will need to import `PlasmaExtras` to use them.
+
+* [`Heading.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmaextracomponents/qml/Heading.qml)  
+  Various Font Size levels, Wraps with `Layout.fillWidth: true`
+* [`Paragraph.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmaextracomponents/qml/Paragraph.qml)  
+  Justified Alignment, Wraps with `Layout.fillWidth: true`
+
+{% endcapture %}{% capture sectionRight %}
+{% highlight qml %}
+// main.qml
+import QtQuick 2.0
+import QtQuick.Layouts 1.0
+import org.kde.plasma.extras 2.0 as PlasmaExtras
+
+ColumnLayout {
+    spacing: 0
+
+    Repeater {
+        model: 5
+        PlasmaExtras.Heading {
+            Layout.fillWidth: true
+            level: index + 1
+            text: i18n("Header level %1", level)
+        }
+    }
+
+    PlasmaExtras.Paragraph {
+        Layout.fillWidth: true
+        text: i18n("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet turpis eros, in luctus lectus. Curabitur pulvinar ligula at leo pellentesque non faucibus mauris elementum. Pellentesque convallis porttitor sodales. Maecenas risus erat, viverra blandit vestibulum eu, suscipit in est. Praesent quis mattis eros. Sed ante ante, adipiscing non gravida sed, ultrices ultrices urna. Etiam congue mattis convallis. Maecenas sollicitudin mauris at lorem aliquam in venenatis erat convallis. Fusce eleifend scelerisque porttitor. Praesent metus sapien, hendrerit ac congue eget, feugiat id enim. Morbi venenatis gravida felis, vitae varius nunc dictum a. Etiam accumsan, velit ac tempor convallis, leo nibh consequat purus, sit amet fringilla nisi mi et libero.")
+    }
+}
+{% endhighlight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
+
+
 {% capture label %}PlasmaComponents Controls{% endcapture %}
 {% capture sectionLeft %}
 QML ships with various controls, like [CheckBox](https://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html), [RadioButton](https://doc.qt.io/qt-5/qml-qtquick-controls-radiobutton.html), [ComboBox](https://doc.qt.io/qt-5/qml-qtquick-controls-combobox.html) (DropDown Menu), [SpinBox](https://doc.qt.io/qt-5/qml-qtquick-controls-spinbox.html), [Slider](https://doc.qt.io/qt-5/qml-qtquick-controls-slider.html), [TextField](https://doc.qt.io/qt-5/qml-qtquick-controls-textfield.html), [TextArea](https://doc.qt.io/qt-5/qml-qtquick-controls-textarea.html), [Button](https://doc.qt.io/qt-5/qml-qtquick-controls-button.html), [ToolButton](https://doc.qt.io/qt-5/qml-qtquick-controls-toolbutton.html). Plasma extends these controls to style them using the SVGs from the [Plasma Theme](https://techbase.kde.org/Development/Tutorials/Plasma5/ThemeDetails). It also assigns a number of default settings like setting the text color to follow the panel's color scheme. For Plasma's specific changes, you can read the QML source code for each control in:
@@ -58,6 +96,7 @@ PlasmaComponents.CheckBox {
 }
 {% endhighlight %}
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
+
 
 
 {% capture label %}RadioButton, ComboBox - Multiple Choice{% endcapture %}
@@ -249,5 +288,40 @@ PlasmaComponents.ToolButton {
 {% endhighlight %}
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
+
+
+{% capture label %}PlasmaExtras.ScrollArea{% endcapture %}
+{% capture sectionLeft %}
+To add a scrollbar to manage overflow, QML ships with [ScrollView](https://doc.qt.io/qt-5/qml-qtquick-controls-scrollview.html). For Plasma's specific changes, you can read the QML source code at:
+
+* [`ScrollArea.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmaextracomponents/qml/ScrollArea.qml)
+
+I recommend you set the ScrollArea's `contentItem.width` to `viewport.width`.
+
+{% endcapture %}{% capture sectionRight %}
+{% highlight qml %}
+// main.qml
+import QtQuick 2.0
+import QtQuick.Layouts 1.0
+import org.kde.plasma.components 2.0 as PlasmaComponents
+import org.kde.plasma.extras 2.0 as PlasmaExtras
+
+PlasmaExtras.ScrollArea {
+    id: scrollArea
+    readonly property int viewportWidth: viewport ? viewport.width : width
+
+    ColumnLayout {
+        width: scrollArea.viewportWidth
+
+        Repeater {
+            model: 100
+            PlasmaComponents.CheckBox {
+                text: i18n("CheckBox #%1", index+1)
+            }
+        }
+    }
+}
+{% endhighlight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
