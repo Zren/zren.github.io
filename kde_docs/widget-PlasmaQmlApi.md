@@ -40,13 +40,11 @@ QML ships with various controls, like [CheckBox](https://doc.qt.io/qt-5/qml-qtqu
 
 
 
-{% capture label %}CheckBox, RadioButton, ComboBox - Multiple Choice{% endcapture %}
+{% capture label %}CheckBox - Toggle{% endcapture %}
 {% capture sectionLeft %}
-For mutiple choices, QML ships with [CheckBox](https://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html), [RadioButton](https://doc.qt.io/qt-5/qml-qtquick-controls-radiobutton.html), [ComboBox](https://doc.qt.io/qt-5/qml-qtquick-controls-combobox.html) (DropDown Menu). For Plasma's specific changes, you can read the QML source code for each:
+For a simple toggle, QML ships with [CheckBox](https://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html). For Plasma's specific changes, you can read the QML source code at:
 
 * [`CheckBox.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/CheckBox.qml)
-* [`RadioButton.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/RadioButton.qml)
-* [`ComboBox.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/ComboBox.qml)
 
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
@@ -59,9 +57,17 @@ PlasmaComponents.CheckBox {
     checked: true
 }
 {% endhighlight %}
+{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
----
 
+{% capture label %}RadioButton, ComboBox - Multiple Choice{% endcapture %}
+{% capture sectionLeft %}
+For mutiple choices, QML ships with [RadioButton](https://doc.qt.io/qt-5/qml-qtquick-controls-radiobutton.html) and [ComboBox](https://doc.qt.io/qt-5/qml-qtquick-controls-combobox.html) (DropDown Menu). For Plasma's specific changes, you can read the QML source code for each:
+
+* [`RadioButton.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/RadioButton.qml)
+* [`ComboBox.qml`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/plasmacomponents/qml/ComboBox.qml)
+
+{% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
 // main.qml
 import QtQuick 2.0
