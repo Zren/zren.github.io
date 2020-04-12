@@ -114,7 +114,29 @@ To control Integer or Real numbers, QML ships with [SpinBox](https://doc.qt.io/q
 {% endcapture %}{% capture sectionRight %}
 {% highlight qml %}
 // main.qml
-import QtQuick 2.4
+import QtQuick 2.0
+import org.kde.plasma.components 2.0 as PlasmaComponents
+import org.kde.plasma.components 3.0 as PlasmaComponents3
+
+RowLayout {
+    PlasmaComponents.Label {
+        text: i18n("Label:")
+    }
+    PlasmaComponents3.SpinBox {
+        id: slider
+        from: 0
+        to: 100
+        value: 25
+        stepSize: 1
+    }
+}
+{% endhighlight %}
+
+---
+
+{% highlight qml %}
+// main.qml
+import QtQuick 2.0
 import org.kde.plasma.components 2.0 as PlasmaComponents
 
 RowLayout {
