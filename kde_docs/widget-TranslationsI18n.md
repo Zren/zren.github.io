@@ -76,8 +76,8 @@ Lastly, we'll make a `build.sh` script to convert the `fr.po` text files into th
 
 The latest copy of my `merge.sh` and `build.sh` can be found in any of my widgets:
 
-* [`translate/merge.sh`](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/translate/merge)
-* [`translate/build.sh`](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/translate/build)
+* [`translate/merge.sh`](https://github.com/Zren/plasma-applet-lib/blob/master/package/translate/merge)
+* [`translate/build.sh`](https://github.com/Zren/plasma-applet-lib/blob/master/package/translate/build)
 {% endcapture %}{% capture sectionRight %}
 
 {:.directory-tree}
@@ -122,7 +122,7 @@ sudo apt install gettext
 {% capture sectionLeft %}
 First thing we need to do in our `merge.sh` script, is list all files we wish to get translated in our widgets code.
 
-> The latest copy of my complete `merge.sh` script [can be found here](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/translate/merge).
+> The latest copy of my complete `merge.sh` script [can be found here](https://github.com/Zren/plasma-applet-lib/blob/master/package/translate/merge).
 {:.alert.alert-secondary}
 
 `DIR` is the directory (absolute path to `package/translate/`) since we may run the merge script from another directory.
@@ -319,7 +319,7 @@ echo "[merge] Done merging messages"
 {% capture sectionLeft %}
 Once our `fr.po` has been filled out, we can then convert it to a binary `.mo` file. So lets get started on our `build.sh` script.
 
-> The latest copy of my complete `build.sh` script [can be found here](https://github.com/Zren/plasma-applet-tiledmenu/blob/master/package/translate/build).
+> The latest copy of my complete `build.sh` script [can be found here](https://github.com/Zren/plasma-applet-lib/blob/master/package/translate/build).
 {:.alert.alert-secondary}
 
 We start with the same code that we used in our `merge.sh` script to parse our `metadata.desktop` file and get the widget's namespace. We also reuse the same code to iterate the `.po` files.
