@@ -117,6 +117,8 @@ PlasmaComponents.Label {
 }
 {% endhighlight %}
 
+---
+
 To show the text in the panel rather than in a popup:
 
 {% highlight qml %}
@@ -132,6 +134,8 @@ PlasmaComponents.Label {
     Plasmoid.preferredRepresentation: Plasmoid.fullRepresentation
 }
 {% endhighlight %}
+
+---
 
 To set the popup size:
 
