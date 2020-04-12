@@ -34,7 +34,7 @@ PlasmaComponents.Label {
 {% capture sectionLeft %}
 QML ships with various controls, like [CheckBox](https://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html), [RadioButton](https://doc.qt.io/qt-5/qml-qtquick-controls-radiobutton.html), [ComboBox](https://doc.qt.io/qt-5/qml-qtquick-controls-combobox.html) (DropDown Menu), [SpinBox](https://doc.qt.io/qt-5/qml-qtquick-controls-spinbox.html), [Slider](https://doc.qt.io/qt-5/qml-qtquick-controls-slider.html), [TextField](https://doc.qt.io/qt-5/qml-qtquick-controls-textfield.html), [TextArea](https://doc.qt.io/qt-5/qml-qtquick-controls-textarea.html), [Button](https://doc.qt.io/qt-5/qml-qtquick-controls-button.html), [ToolButton](https://doc.qt.io/qt-5/qml-qtquick-controls-toolbutton.html). Plasma extends these controls to style theme using the SVGs from the [Plasma Theme](https://techbase.kde.org/Development/Tutorials/Plasma5/ThemeDetails), and assigns a number of default like the text color to follow the panel's color scheme. For the specifics, you can read the QML source code for each:
 
-<https://github.com/KDE/plasma-framework/tree/master/src/declarativeimports/plasmacomponents>
+[`plasma-framework`/src/declarativeimports/plasmacomponents/qml/](https://github.com/KDE/plasma-framework/tree/master/src/declarativeimports/plasmacomponents/qml)
 {% endcapture %}{% capture sectionRight %}
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
