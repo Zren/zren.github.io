@@ -8,7 +8,6 @@ KDE Frameworks ships with a number of useful extensions to Qt's QML. The [API do
 
 
 {% endcapture %}{% capture sectionRight %}
-...
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
@@ -37,7 +36,6 @@ QML ships with various controls, like [CheckBox](https://doc.qt.io/qt-5/qml-qtqu
 
 <https://github.com/KDE/plasma-framework/tree/master/src/declarativeimports/plasmacomponents>
 {% endcapture %}{% capture sectionRight %}
-...
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
 
