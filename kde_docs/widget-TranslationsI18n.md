@@ -81,7 +81,7 @@ The latest copy of my `merge.sh` and `build.sh` can be found in any of my widget
 {% endcapture %}{% capture sectionRight %}
 
 {:.directory-tree}
-* `helloworld/`
+* `~/Code/plasmoid-helloworld/`
     * `package/`
         * `contents/`
             * `...`
@@ -94,7 +94,7 @@ The latest copy of my `merge.sh` and `build.sh` can be found in any of my widget
 After running `build.sh` we should end up with:
 
 {:.directory-tree}
-* `helloworld/`
+* `~/Code/plasmoid-helloworld/`
     * `package/`
         * `contents/`
             * `locale/`
