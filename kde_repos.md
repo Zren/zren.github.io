@@ -404,7 +404,7 @@ redirect_from: /projects/kde/repos/
 			githubLink='https://github.com/KDE/kholidays/tree/master/holidays/plan2'
 			product='frameworks-kholidays'
 			phabRepo='kholidays'
-			phabRepoName='PIM: KHolidays'
+			phabRepoName='KHolidays'
 			phabDiffQuery='cy_NT_ZbMsFQ'
 		%}
 	</tr>
