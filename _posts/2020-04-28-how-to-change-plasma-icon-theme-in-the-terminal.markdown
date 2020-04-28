@@ -11,6 +11,8 @@ If we dive into [the code for the System Settings KCM](https://github.com/KDE/pl
 
 Run `locate plasma-changeicons` to find the filepath. For me in Manjaro with Plasma 5.18, it's `/usr/lib/plasma-changeicons`.
 
+![](https://i.imgur.com/p9VdGZX.png)
+
 Now that we know the filepath, we can use the folder names found at `/usr/share/icons/` and `~/.local/share/icons/` as arguments for the command.
 
 {% highlight bash %}
