@@ -1,5 +1,5 @@
 ---
-title: How to change plasma icon theme in the terminal
+title: How To Change Plasma Icon Theme in the Terminal
 layout: post
 ---
 
