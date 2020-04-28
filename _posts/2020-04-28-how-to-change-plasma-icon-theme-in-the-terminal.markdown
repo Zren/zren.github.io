@@ -19,6 +19,8 @@ Now that we know the filepath, we can use the folder names found at `/usr/share/
 /usr/lib/plasma-changeicons breath # Manjaro
 {% endhighlight %}
 
+![](https://i.imgur.com/9UoyxuO.png)
+
 -----
 
 Breaking down the code, `CMakeLists.txt` compiles `changeicons.cpp`, which in turn will call a function in `iconssettings.cpp`.
