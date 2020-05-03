@@ -983,6 +983,36 @@ redirect_from: /projects/kde/repos/
 			phabDiffQuery='Q.uZMhKXjose'
 		%}
 	</tr>
+	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='dolphin-plugins'
+			githubLink='https://github.com/KDE/dolphin-plugins'
+			product='dolphin&component=plugins%3A bazaar&component=plugins%3A dropbox&component=plugins%3A git&component=plugins%3A mercurial&component=plugins%3A svn'
+			phabRepo='dolphin-plugins'
+			phabRepoName='Plugins for Dolphin'
+			phabDiffQuery='Va5Sq8plksJF'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='KIO'
+			githubLink='https://github.com/KDE/kio'
+			product='kio'
+			phabRepo='kio'
+			phabRepoName='KIO'
+			phabDiffQuery='38lmUxypxGRG'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='KIO Extras'
+			githubLink='https://github.com/KDE/kio-extras'
+			product='kio-extras'
+			phabRepo='kio-extras'
+			phabRepoName='KIO Extras'
+			phabDiffQuery='U_e72SrCJaT1'
+		%}
+	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Emoji Picker'
