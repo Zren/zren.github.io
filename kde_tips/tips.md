@@ -56,6 +56,17 @@
   General Tab > Uncheck: Mark applications that play audio
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
+{% capture label %}Disable Middle-Click Paste Notes Widget{% endcapture %}{% capture contents %}
+  * Plasma 5.17 and below
+    Right Click Panel > Lock Widgets
+  * Plasma 5.18 and above
+    While you can disable Middle-Click paste on the desktop in Desktop Settings, you cannot easily disable it for the panel. The easiest way prevent Middle-Click paste is running the following command to toggle locking widgets.
+    {% highlight bash %}
+    qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(!locked)"
+    {% endhighlight %}
+    If you want an easier way to toggle locking widgets, install [Win7ShowDesktop widget](https://store.kde.org/p/1100895/) which has a "Lock Widgets" toggle in it's right click menu.
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
 {% capture label %}Disable Top Left “Hot Corner”{% endcapture %}{% capture contents %}
   System Settings > Desktop Behaviour
   Screen Edges Tab > Top Left: No Action
