@@ -3,7 +3,7 @@ title: NightColor.py for Setting Temp From Terminal
 layout: post
 ---
 
-I recently looked into the [nightcolor widget](https://github.com/KDE/kdeplasma-addons/tree/master/applets/nightcolor) hoping to add a mousewheel control to temporarily force a specific color like the [Redshift Control widget](https://github.com/kde/plasma-redshift-control) does. Unfortunately  I realized the existing API in the NightColor QML plugin doesn't have the function to do so. So I dived into the NightColor DBus API (Using `qdbusviewer`) hoping to run a `qdbus` command.
+I recently looked into the [nightcolor widget](https://github.com/KDE/kdeplasma-addons/tree/master/applets/nightcolor) hoping to add a mousewheel control to temporarily force a specific color like the [Redshift Control widget](https://github.com/kde/plasma-redshift-control) does. Unfortunately  I realized the existing API in the NightColor QML plugin doesn't have the function to do so. So I dived into the NightColor DBus API using `qdbusviewer`, as I was hoping to run a `qdbus` command. The Night Color effect is done by KWin, and is codenamed "ColorCorrect" in it's code.
 
 {% highlight bash %}
 $ qdbus org.kde.KWin /ColorCorrect
@@ -34,7 +34,7 @@ method void org.freedesktop.DBus.Peer.Ping()
 {% endhighlight %}
 
 
-It looks like the `setNightColorConfig(QVariantMap)` function will work. I accepts a dictionary of config keys and values.
+It looks like the `setNightColorConfig(QVariantMap)` function will work. It accepts a dictionary of config keys and values.
 
 * <https://github.com/KDE/kwin/blob/master/colorcorrection/colorcorrectdbusinterface.cpp#L268>
 * <https://github.com/KDE/kwin/blob/master/colorcorrection/manager.cpp#L724>
