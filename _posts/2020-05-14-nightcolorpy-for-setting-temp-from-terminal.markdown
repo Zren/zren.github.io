@@ -3,7 +3,7 @@ title: NightColor.py for Setting Temp From Terminal
 layout: post
 ---
 
-I recently looked into the [nightcolor widget](https://github.com/KDE/kdeplasma-addons/tree/master/applets/nightcolor) hoping to add a mousewheel control to temporarily force a specific color like the [Redshift Control widget](https://github.com/kde/plasma-redshift-control) does. Unfortunately  Irealized the existing API in the NightColor QML plugin doesn't have the function to do so. So I dived into the NightColor DBus API (Using `qdbusviewer`) hoping to run a `qdbus` command.
+I recently looked into the [nightcolor widget](https://github.com/KDE/kdeplasma-addons/tree/master/applets/nightcolor) hoping to add a mousewheel control to temporarily force a specific color like the [Redshift Control widget](https://github.com/kde/plasma-redshift-control) does. Unfortunately  I realized the existing API in the NightColor QML plugin doesn't have the function to do so. So I dived into the NightColor DBus API (Using `qdbusviewer`) hoping to run a `qdbus` command.
 
 {% highlight bash %}
 $ qdbus org.kde.KWin /ColorCorrect
