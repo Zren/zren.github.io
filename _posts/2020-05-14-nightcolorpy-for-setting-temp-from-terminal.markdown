@@ -39,7 +39,7 @@ It looks like the `setNightColorConfig(QVariantMap)` function will work. It acce
 * <https://github.com/KDE/kwin/blob/master/colorcorrection/colorcorrectdbusinterface.cpp#L268>
 * <https://github.com/KDE/kwin/blob/master/colorcorrection/manager.cpp#L724>
 
-Unfortunately neither `qdbus` or `dbus-send` support passing a VariantMap (`a{sv}`) as an argument. So I took realized I needed to write a python script that uses the [dbus module](https://dbus.freedesktop.org/doc/dbus-python/tutorial.html) to call:
+Unfortunately neither `qdbus` or `dbus-send` support passing a VariantMap (`a{sv}`) as an argument. So I realized I needed to write a python script that uses the [dbus module](https://dbus.freedesktop.org/doc/dbus-python/tutorial.html) to call:
 
 {% highlight python %}
 setNightColorConfig({'NightTemperature': 4200})
