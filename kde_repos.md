@@ -45,6 +45,7 @@ redirect_from: /projects/kde/repos/
 	text-decoration: none;
 }
 
+/* Anchor Link  */
 .repolist {
 	position: relative;
 }
@@ -69,6 +70,8 @@ redirect_from: /projects/kde/repos/
 	text-decoration: none;
 }
 
+
+/* Copy Markdown Button  */
 .repolist tr:not(:hover) td.copybutton {
 	visibility: hidden;
 }
@@ -103,12 +106,7 @@ redirect_from: /projects/kde/repos/
 	color: #444;
 }
 
-</style>
-
-
-> **Note:** All GitHub links are source mirrors only. Do not submit issues to those repos. KDE uses <https://bugs.kde.org> for issues, and <https://phabricator.kde.org> for pull requests. The official source browser is at <https://cgit.kde.org/> but GitHub is much easier to navigate.
-
-<style type="text/css">
+/* Search */
 #search {
 	max-width: 800px;
 	display: flex;
@@ -154,6 +152,9 @@ redirect_from: /projects/kde/repos/
 	content: "⚲";
 }
 </style>
+
+
+> **Note:** All GitHub links are source mirrors only. Do not submit issues to those repos. KDE uses <https://bugs.kde.org> for issues, and <https://phabricator.kde.org> for pull requests. The official source browser is at <https://cgit.kde.org/> but GitHub is much easier to navigate.
 
 <div id="search" class="button-group">
 	<label for="search-input">
