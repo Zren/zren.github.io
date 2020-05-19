@@ -154,7 +154,7 @@ redirect_from: /projects/kde/repos/
 </style>
 
 
-> **Note:** All GitHub links are source mirrors only. Do not submit issues to those repos. KDE uses <https://bugs.kde.org> for issues, and <https://phabricator.kde.org> for pull requests. The official source browser is at <https://cgit.kde.org/> but GitHub is much easier to navigate.
+> **Note:** KDE now uses GitLab (<https://invent.kde.org>). KDE still uses Bugzilla (<https://bugs.kde.org>). KDE is currently migrating off <https://phabricator.kde.org> for pull requests. There is a readonly code mirror at <https://github.com/KDE/> and <https://cgit.kde.org/>.
 
 <div id="search" class="button-group">
 	<label for="search-input">
@@ -1622,7 +1622,10 @@ redirect_from: /projects/kde/repos/
 
 * **Bugs:**
 	* [Listed By Project](https://bugs.kde.org/describecomponents.cgi) - Including projects not listed here
-* **Pull Requests:**
+* **GitLab:**
+	* [Projects](https://invent.kde.org/explore/projects)
+	* [Recent Activity](https://invent.kde.org/dashboard/activity) - Must be logged in
+* **Phabricator Pull Requests:**
 	* [Latest](https://phabricator.kde.org/differential/query/all/)
 	* [Search](https://phabricator.kde.org/differential/query/advanced/)
 
@@ -1646,10 +1649,6 @@ redirect_from: /projects/kde/repos/
 </script>
 
 
-
-<style type="text/css">
-
-</style>
 <script type="text/javascript">
 	// https://stackoverflow.com/questions/26336138/how-can-i-copy-to-clipboard-in-html5-without-using-flash
 	// https://stackoverflow.com/a/36610696/947742
