@@ -1,8 +1,34 @@
 <td>{% if include.repoName %}<a class="repoanchorlink" name="{{include.repoName | slugify}}" href="#{{include.repoName | slugify}}">¶</a>{{include.repoName}}{% endif %}</td>
-{% if include.githubLink %}<td><a href="{{include.githubLink}}">GitHub</a></td>{% endif %}
-{% if include.product %}{% include kdeBugs.html product=include.product %}{% endif %}
-{% if include.phabRepo %}{% include phabLinks.html
+<td>
+	{% if include.gitUrl %}
+		<a href="{{include.gitUrl}}">
+			{% if include.gitUrl contains 'https://github.com' %}
+				GitHub
+			{% elsif include.gitUrl contains 'https://websvn.kde.org' %}
+				SVN Repo
+			{% else %}
+				Git Repo
+			{% endif %}
+		</a>
+	{% else %}
+		{% if include.gitRepo %}<a href="https://invent.kde.org/{% if include.gitlabGroup %}{{include.gitlabGroup}}/{% endif %}{{include.gitRepo}}{% if include.gitPath %}/-/tree/master/{{include.gitPath}}{% endif %}">GitLab</a>{% else %}<a>GitLab</a>{% endif %}
+	{% endif %}
+</td>
+
+{% if include.githubLink %}<td><a href="{{include.githubLink}}" title="GitHub Mirror">GH</a></td>{% endif %}
+
+{% if include.product %}
+	{% include kdeBugs.html product=include.product %}
+{% elsif include.phabWorkboard %}
+	<td><a href="{{ include.phabWorkboard }}">All Tasks</a></td>
+	<td><a href="{{ include.phabWorkboard }}">(▼ Create Task)</a></td>
+{% else %}
+	<td><a>All Bugs</a></td>
+	<td><a>New Bug</a></td>
+{% endif %}
+
+{% include phabLinks.html
 	phabRepo=include.phabRepo
 	phabRepoName=include.phabRepoName
 	phabDiffQuery=include.phabDiffQuery
-%}{% endif %}
+%}

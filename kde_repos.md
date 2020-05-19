@@ -215,28 +215,30 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Activity Bar'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/activitybar'
+			gitPath='applets/activitybar'
 			product='plasmashell&component=Activity%20Switcher'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='[Show] Activities [Switcher]'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/showActivityManager'
+			gitPath='applets/showActivityManager'
 			product='plasmashell&component=Activity%20Switcher'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Application Launcher (Kickoff)'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/kickoff'
+			gitPath='applets/kickoff'
 			product='plasmashell&component=Application%20Launcher%20%28Kickoff%29'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepo.html
 			repoName='Avatar/FaceIcon (KUser)'
-			githubLink='https://github.com/KDE/kcoreaddons/blob/master/src/lib/util/kuser_unix.cpp#L184'
+			gitlabGroup='frameworks'
+			gitRepo='kcoreaddons'
+			gitPath='src/lib/util/kuser_unix.cpp#L184'
 			product='frameworks-kcoreaddons'
 			phabRepo='kcoreaddons'
 			phabRepoName='KCoreAddons'
@@ -246,35 +248,35 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Application Menu (Kicker)'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/kicker'
+			gitPath='applets/kicker'
 			product='plasmashell&component=Application%20Menu%20%28Kicker%29'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Application Dashboard (KickerDash)'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/kicker'
+			gitPath='applets/kicker'
 			product='kdeplasma-addons&component=Application%20Dashboard'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Meta Key (KWin: Input)'
-			githubLink='https://github.com/KDE/kwin'
 			product='kwin&component=input'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoWorkspace.html
 			repoName='Kicker Plugin (RootModel)'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/kicker/plugin'
+			gitPath='applets/kicker/plugin'
 			product='plasmashell&component=Application%20Menu%20%28Kicker%29'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepo.html
 			repoName='Active Window Control'
-			githubLink='https://github.com/KDE/plasma-active-window-control'
+			gitlabGroup='plasma'
+			gitRepo='plasma-active-window-control'
 			product='Active%20Window%20Control'
 			phabRepo='plasma-active-window-control'
 			phabRepoName='Active Window Control Applet for Plasma'
@@ -284,18 +286,14 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepo.html
 			repoName='(Old Repo)'
-			githubLink='https://github.com/kotelnik/plasma-applet-active-window-control'
+			gitUrl='https://github.com/kotelnik/plasma-applet-active-window-control'
 		%}
-		<td>All Bugs</td>
-		<td>New Bug</td>
-		<td>Phabricator</td>
-		<td>Pull Requests</td>
-		<td>New PR</td>
 	</tr>
 	<tr>
 		{% include kdeRepo.html
 			repoName='Audio Volume (plasma-pa)'
-			githubLink='https://github.com/KDE/plasma-pa'
+			gitlabGroup='plasma'
+			gitRepo='plasma-pa'
 			product='plasma-pa'
 			phabRepo='plasma-pa'
 			phabRepoName='Plasma Audio Volume Applet'
@@ -305,21 +303,22 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Battery and Brightness'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/batterymonitor'
+			gitPath='applets/batterymonitor'
 			product='plasmashell&component=Battery%20Monitor'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Binary Clock'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/binary-clock'
+			gitPath='applets/binary-clock'
 			product='kdeplasma-addons&component=General'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepo.html
 			repoName='Browser Integration'
-			githubLink='https://github.com/KDE/plasma-browser-integration'
+			gitlabGroup='plasma'
+			gitRepo='plasma-browser-integration'
 			product='plasma-browser-integration'
 			phabRepo='plasma-browser-integration'
 			phabRepoName='Plasma Browser Integration'
@@ -329,79 +328,78 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Calculator'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/calculator'
+			gitPath='applets/calculator'
 			product='kdeplasma-addons&component=calculator'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Calendar'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/calendar'
+			gitPath='applets/calendar'
 			product='plasmashell&component=Calendar'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Clipboard (Klipper)'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/clipboard'
+			gitPath='applets/clipboard'
 			product='klipper&component=plasma-widget'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Color Picker'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/colorpicker'
+			gitPath='applets/colorpicker'
 			product='kdeplasma-addons&component=Color%20Picker'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Comic Applet'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/comic'
+			gitPath='applets/comic'
 			product='kdeplasma-addons&component=Comic%20Applet'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='CPU Load Monitor'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/systemmonitor'
+			gitPath='applets/systemmonitor'
 			product='plasmashell&component=System%20Monitor'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Dictionary'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/dict'
+			gitPath='applets/dict'
 			product='kdeplasma-addons&component=dictionary'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Digital Clock'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/digital-clock'
+			gitPath='applets/digital-clock'
 			product='plasmashell&component=Digital%20Clock'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoFramework.html
 			repoName='MonthView'
-			githubLink='https://github.com/KDE/plasma-framework/tree/master/src/declarativeimports/calendar'
+			gitPath='src/declarativeimports/calendar'
 			product='frameworks-kdeclarative'
 		%}
 	</tr>
 	<tr class="indent">
-		{% include kdeRepo.html
+		{% include kdeRepoWorkspace.html
 			repoName='Events: Holidays Plugin'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/plasmacalendarintegration'
+			gitPath='plasmacalendarintegration'
 		%}
-		<td><a>All Bugs</a></td>
-		<td><a>New Bug</a></td>
-		{% include phabLinksWorkspace.html %}
 	</tr>
 	<tr class="indent depth2">
 		{% include kdeRepo.html
 			repoName='KHolidays'
-			githubLink='https://github.com/KDE/kholidays/tree/master/holidays/plan2'
+			gitlabGroup='frameworks'
+			gitRepo='kholidays'
+			gitPath='holidays/plan2'
 			product='frameworks-kholidays'
 			phabRepo='kholidays'
 			phabRepoName='KHolidays'
@@ -411,36 +409,44 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='[Desktop] Folder View'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/containments/desktop'
+			gitPath='containments/desktop'
 			product='plasmashell&component=Folder'
 		%}
 	</tr>
 	<tr class="indent">
-		{% include kdeRepo.html
+		{% include kdeRepoWorkspace.html
 			repoName='Wallpaper Plugins'
+			gitPath='wallpapers'
+			product='Plasma%20Workspace%20Wallpapers&component=general'
 		%}
-		<td><a>GitHub</a></td>
-		{% include kdeBugs.html product='Plasma%20Workspace%20Wallpapers&component=general' %}
-		{% include phabLinksWorkspace.html %}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Image/Slideshow Wallpaper'
+			gitPath='wallpapers/image'
+			product='plasmashell&component=Image%20Wallpaper'
+		%}
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Device Notifier'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/devicenotifier'
+			gitPath='applets/devicenotifier'
 			product='plasmashell&component=Device%20Notifier'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Disk Quota'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/diskquota'
+			gitPath='applets/diskquota'
 			product='kdeplasma-addons&component=Disk%20Quota'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepo.html
 			repoName='Display Configuration'
-			githubLink='https://github.com/KDE/kscreen/tree/master/plasmoid'
+			gitlabGroup='plasma'
+			gitRepo='kscreen'
+			gitPath='plasmoid'
 			product='KScreen&component=Plasma%20Applet'
 			phabRepo='kscreen'
 			phabRepoName='KScreen'
@@ -450,56 +456,58 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Fifteen Puzzle'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/fifteenPuzzle'
+			gitPath='applets/fifteenPuzzle'
 			product='kdeplasma-addons&component=General'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Fuzzy Clock'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/fuzzy-clock'
+			gitPath='applets/fuzzy-clock'
 			product='kdeplasma-addons&component=fuzzy-clock'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Global Menu (AppMenu)'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/appmenu'
+			gitPath='applets/appmenu'
 			product='plasmashell&component=Global%20Menu'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Grouping'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/grouping'
+			gitPath='applets/grouping'
 			product='kdeplasma-addons&component=General'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Hard Disk I/O Monitor'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/systemmonitor'
+			gitPath='applets/systemmonitor'
 			product='plasmashell&component=System%20Monitor'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Hard Disk Space Usage'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/systemmonitor'
+			gitPath='applets/systemmonitor'
 			product='plasmashell&component=System%20Monitor'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Icon'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/icon'
+			gitPath='applets/icon'
 			product='plasmashell&component=Icon%20Applet'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepo.html
 			repoName='KDE Connect'
-			githubLink='https://github.com/KDE/kdeconnect-kde/tree/master/plasmoid'
+			gitlabGroup='network'
+			gitRepo='kdeconnect-kde'
+			gitPath='plasmoid'
 			product='kdeconnect'
 			phabRepo='kdeconnect-kde'
 			phabRepoName='KDE Connect'
@@ -509,7 +517,8 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepo.html
 			repoName='Android App'
-			githubLink='https://github.com/KDE/kdeconnect-android'
+			gitlabGroup='network'
+			gitRepo='kdeconnect-android'
 			product='kdeconnect&component=android-application'
 			phabRepo='kdeconnect-android'
 			phabRepoName='KDE Connect - Android Application'
@@ -519,56 +528,57 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Keyboard Indicator'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/keyboardindicator'
+			gitPath='applets/keyboardindicator'
 			product='kdeplasma-addons&component=General'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Konsole Profiles'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/konsoleprofiles'
+			gitPath='applets/konsoleprofiles'
 			product='kdeplasma-addons&component=konsoleprofiles'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Lock/Logout'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/lock_logout'
+			gitPath='applets/lock_logout'
 			product='plasmashell&component=general'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Media Frame'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/mediaframe'
+			gitPath='applets/mediaframe'
 			product='kdeplasma-addons&component=General'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Media Player [Controller]'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/mediacontroller'
+			gitPath='applets/mediacontroller'
 			product='plasmashell&component=Media%20Player'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Memory Status'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/systemmonitor'
+			gitPath='applets/systemmonitor'
 			product='plasmashell&component=System%20Monitor'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Minimize All'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/minimizeall'
+			gitPath='applets/minimizeall'
 			product='plasmashell&component=Show%20Desktop%2FMinimize%20All'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepo.html
 			repoName='Network Manager'
-			githubLink='https://github.com/KDE/plasma-nm'
+			gitlabGroup='plasma'
+			gitRepo='plasma-nm'
 			product='plasma-nm'
 			phabRepo='plasma-nm'
 			phabRepoName='Plasma Network Management Applet'
@@ -578,77 +588,78 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Network Monitor'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/systemmonitor'
+			gitPath='applets/systemmonitor'
 			product='plasmashell&component=System%20Monitor'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Night Color Control'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/nightcolor'
+			gitPath='applets/nightcolor'
 			product='kdeplasma-addons&component=Night%20Color%20Control'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Notes'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/notes'
+			gitPath='applets/notes'
 			product='kdeplasma-addons&component=notes'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Notifications'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/notifications'
+			gitPath='applets/notifications'
 			product='plasmashell&component=Notifications'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Pager'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/pager'
+			gitPath='applets/pager'
 			product='plasmashell&component=Pager'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Panel'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/desktoppackage'
+			gitPath='desktoppackage'
 			product='plasmashell&component=Panel'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='[Add Panel] Layout Templates'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/layout-templates'
+			gitPath='layout-templates'
 			product='plasmashell&component=Panel'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='Panel Spacer'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/panelspacer'
+			gitPath='applets/panelspacer'
 			product='plasmashell&component=Panel'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Quicklaunch'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/quicklaunch'
+			gitPath='applets/quicklaunch'
 			product='kdeplasma-addons&component=Quicklaunch'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Quick Share'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/quickshare'
+			gitPath='applets/quickshare'
 			product='kdeplasma-addons&component=QuickShare'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepo.html
 			repoName='Search (Milou)'
-			githubLink='https://github.com/kde/milou'
+			gitlabGroup='plasma'
+			gitRepo='milou'
 			product='plasmashell&component=Milou'
 			phabRepo='milou'
 			phabRepoName='Milou'
@@ -658,56 +669,58 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Show Desktop'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/showdesktop'
+			gitPath='applets/showdesktop'
 			product='plasmashell&component=Show%20Desktop%2FMinimize%20All'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='System Load Viewer'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/systemloadviewer'
+			gitPath='applets/systemloadviewer'
 			product='kdeplasma-addons&component=systemloadviewer'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoWorkspace.html
 			repoName='System Tray'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/applets/systemtray'
+			gitPath='applets/systemtray'
 			product='plasmashell&component=System%20Tray'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Task Manager'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/taskmanager'
+			gitPath='applets/taskmanager'
 			product='plasmashell&component=Task%20Manager'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Icon Tasks'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/taskmanager'
+			gitPath='applets/taskmanager'
 			product='plasmashell&component=Icons-only%20Task%20Manager'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Timer'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/timer'
+			gitPath='applets/timer'
 			product='kdeplasma-addons&component=timer'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Trash'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/trash'
+			gitPath='applets/trash'
 			product='plasmashell&component=general'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepo.html
 			repoName='Updates (Discover)'
-			githubLink='https://github.com/KDE/discover/tree/master/notifier'
+			gitlabGroup='plasma'
+			gitRepo='discover'
+			gitPath='notifier'
 			product='Discover&component=Updater'
 			phabRepo='discover'
 			phabRepoName='Discover Software Store'
@@ -717,14 +730,16 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='User Switcher'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/userswitcher'
+			gitPath='applets/userswitcher'
 			product='kdeplasma-addons&component=User%20Switcher'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepo.html
 			repoName='Vault'
-			githubLink='https://github.com/KDE/plasma-vault/tree/master/plasma'
+			gitlabGroup='plasma'
+			gitRepo='plasma-vault'
+			gitPath='plasma'
 			product='Plasma%20Vault'
 			phabRepo='plasma-vault'
 			phabRepoName='Plasma Vault'
@@ -734,28 +749,28 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Weather Forecast'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/weather'
+			gitPath='applets/weather'
 			product='kdeplasma-addons&component=weather'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoWorkspace.html
 			repoName='Weather Sources'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/dataengines/weather/ions'
+			gitPath='dataengines/weather/ions'
 			product='plasmashell&component=Weather'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Web browser'
-			githubLink='https://github.com/KDE/kdeplasma-addons/tree/master/applets/webbrowser'
+			gitPath='applets/webbrowser'
 			product='kdeplasma-addons&component=webbrowser'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Window list'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/window-list'
+			gitPath='applets/window-list'
 			product='plasmashell&component=Window%20List'
 		%}
 	</tr>
@@ -768,7 +783,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='Breeze Icons'
-			githubLink='https://github.com/KDE/breeze-icons'
+			gitlabGroup='frameworks'
+			gitRepo='breeze-icons'
 			product='Breeze&component=icons'
 			phabRepo='breeze-icons'
 			phabRepoName='Breeze Icons'
@@ -778,14 +794,15 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoFramework.html
 			repoName='Breeze DesktopTheme'
-			githubLink='https://github.com/KDE/plasma-framework/tree/master/src/desktoptheme/breeze'
+			gitPath='src/desktoptheme/breeze'
 			product='frameworks-plasma'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepo.html
 			repoName='Breeze Gtk'
-			githubLink='https://github.com/KDE/breeze-gtk'
+			gitlabGroup='plasma'
+			gitRepo='breeze-gtk'
 			product='Breeze&component=gtk%20theme'
 			phabRepo='breeze-gtk'
 			phabRepoName='Breeze for Gtk'
@@ -801,30 +818,28 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoKwin.html
 			repoName='KWin'
-			githubLink='https://github.com/KDE/kwin'
 			product='kwin'
 		%}
 	</tr>
 	<tr class="indent">
-		{% include kdeRepo.html
+		{% include kdeRepoKwin.html
 			repoName='Alt+Tab (TabBox)'
-			githubLink='https://github.com/KDE/kwin/tree/master/tabbox'
+			gitPath='tabbox'
 			product='kwin&component=tabbox'
 		%}
-		{% include phabLinks.html %}
 	</tr>
 	<tr class="indent">
-		{% include kdeRepo.html
+		{% include kdeRepoKwin.html
 			repoName='Window Decorations'
-			githubLink='https://github.com/KDE/kwin/tree/master/decorations'
+			gitPath='decorations'
 			product='kwin&component=decorations'
 		%}
-		{% include phabLinks.html %}
 	</tr>
 	<tr class="indent depth2">
 		{% include kdeRepo.html
 			repoName='KDecoration2'
-			githubLink='https://github.com/KDE/kdecoration'
+			gitlabGroup='plasma'
+			gitRepo='kdecoration'
 			product='kwin&component=decorations'
 			phabRepo='kdecoration'
 			phabRepoName='Window Decoration Library'
@@ -834,7 +849,9 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent depth2">
 		{% include kdeRepo.html
 			repoName='Breeze Decorations'
-			githubLink='https://github.com/KDE/breeze/tree/master/kdecoration'
+			gitlabGroup='plasma'
+			gitRepo='breeze'
+			gitPath='kdecoration'
 			product='Breeze&component=window%20decoration'
 			phabRepo='breeze'
 			phabRepoName='Breeze'
@@ -844,14 +861,15 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent depth2">
 		{% include kdeRepoKwin.html
 			repoName='Aurorae Decorations'
-			githubLink='https://github.com/KDE/kwin/tree/master/plugins/kdecorations/aurorae'
+			gitPath='plugins/kdecorations/aurorae'
 			product='kwin&component=aurorae'
 		%}
 	</tr>
 	<tr class="indent depth2">
 		{% include kdeRepo.html
 			repoName='Emerald Decorations (Smaragd)'
-			githubLink='https://github.com/KDE/smaragd'
+			gitlabGroup='plasma'
+			gitRepo='smaragd'
 			product='smaragd'
 			phabRepo='smaragd'
 			phabRepoName='Smaragd'
@@ -861,16 +879,20 @@ redirect_from: /projects/kde/repos/
 </table>
 
 
-## KDE Homepage
+## KDE Website
 
 <table class="repolist">
 	<tr>
 		{% include kdeRepo.html
 			repoName='www.kde.org'
+			gitUrl='https://websvn.kde.org/trunk/www/sites/www/'
 		%}
-		<td><a href="https://cgit.kde.org/scratch/kvermette/www-aether.git/tree/">Git Repo</a></td>
-		{% include kdeBugs.html product='www.kde.org&component=general' %}
-		{% include phabLinks.html
+	</tr>
+	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='Aether Wordpress Theme'
+			gitlabGroup='websites'
+			gitRepo='aether-wordpress'
 			phabRepo='websites-aether-wordpress'
 			phabRepoName='Aether theme for Wordpress'
 			phabDiffQuery='y_clwL62C9dN'
@@ -879,14 +901,19 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='docs.kde.org'
-		%}
-		<td><a>Git Repo</a></td>
-		<td><a>All Bugs</a></td>
-		<td><a>New Bug</a></td>
-		{% include phabLinks.html
+			gitlabGroup='websites'
+			gitRepo='docs-kde-org'
 			phabRepo='websites-docs-kde-org'
 			phabRepoName='Documentation Website (docs.kde.org)'
 			phabDiffQuery='Pnz57PMZTbuM'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
+			repoName='wiki.kde.org'
+			gitlabGroup='websites'
+			gitRepo='aether-mediawiki'
+			product='KDE%20MediaWiki'
 		%}
 	</tr>
 </table>
@@ -898,27 +925,29 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='ocs-webserver'
-			githubLink='https://github.com/KDE/ocs-webserver/tree/master/application/modules/default/controllers'
-		%}
-		<td><a href="https://phabricator.kde.org/tag/kde_store/">All Tasks</a></td>
-		<td><a href="https://phabricator.kde.org/tag/kde_store/">(▼ Create Task)</a></td>
-		{% include phabLinks.html
+			gitlabGroup='webapps'
+			gitRepo='ocs-webserver'
+			gitPath='application/modules/default/controllers'
+			phabWorkboard='https://phabricator.kde.org/project/board/146/'
 			phabRepo='ocs-webserver'
 			phabRepoName='OCS Webserver'
 			phabDiffQuery='6v0DIohqTbc6'
 		%}
 	</tr>
-
 	<tr class="indent">
 		{% include kdeRepo.html
 			repoName='Product Page'
-			githubLink='https://github.com/KDE/ocs-webserver/blob/master/application/modules/default/controllers/ProductController.php'
+			gitlabGroup='webapps'
+			gitRepo='ocs-webserver'
+			gitPath='application/modules/default/controllers/ProductController.php'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepo.html
 			repoName='Product Comments'
-			githubLink='https://github.com/KDE/ocs-webserver/blob/master/application/modules/default/controllers/ProductcommentController.php'
+			gitlabGroup='webapps'
+			gitRepo='ocs-webserver'
+			gitPath='application/modules/default/controllers/ProductcommentController.php'
 		%}
 	</tr>
 </table>
@@ -930,7 +959,9 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='cuttlefish'
-			githubLink='https://github.com/KDE/plasma-sdk/tree/master/cuttlefish'
+			gitlabGroup='plasma'
+			gitRepo='plasma-sdk'
+			gitPath='cuttlefish'
 			product='Plasma%20SDK&component=cuttlefish'
 			phabRepo='plasma-sdk'
 			phabRepoName='Plasma SDK'
@@ -940,7 +971,9 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='plasmathemeexplorer'
-			githubLink='https://github.com/KDE/plasma-sdk/tree/master/themeexplorer'
+			gitlabGroup='plasma'
+			gitRepo='plasma-sdk'
+			gitPath='themeexplorer'
 			product='Plasma%20SDK&component=plasmathemeexplorer'
 			phabRepo='plasma-sdk'
 			phabRepoName='Plasma SDK'
@@ -950,7 +983,9 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='plasmoidviewer'
-			githubLink='https://github.com/KDE/plasma-sdk/tree/master/plasmoidviewer'
+			gitlabGroup='plasma'
+			gitRepo='plasma-sdk'
+			gitPath='plasmoidviewer'
 			product='Plasma%20SDK&component=plasmoidviewer'
 			phabRepo='plasma-sdk'
 			phabRepoName='Plasma SDK'
@@ -966,7 +1001,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='Discover'
-			githubLink='https://github.com/KDE/discover'
+			gitlabGroup='plasma'
+			gitRepo='discover'
 			product='Discover'
 			phabRepo='discover'
 			phabRepoName='Discover Software Store'
@@ -976,7 +1012,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='Dolphin'
-			githubLink='https://github.com/KDE/dolphin'
+			gitlabGroup='system'
+			gitRepo='dolphin'
 			product='dolphin'
 			phabRepo='dolphin'
 			phabRepoName='Dolphin'
@@ -986,7 +1023,8 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepo.html
 			repoName='dolphin-plugins'
-			githubLink='https://github.com/KDE/dolphin-plugins'
+			gitlabGroup='sdk'
+			gitRepo='dolphin-plugins'
 			product='dolphin&component=plugins%3A bazaar&component=plugins%3A dropbox&component=plugins%3A git&component=plugins%3A mercurial&component=plugins%3A svn'
 			phabRepo='dolphin-plugins'
 			phabRepoName='Plugins for Dolphin'
@@ -996,7 +1034,8 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepo.html
 			repoName='KIO'
-			githubLink='https://github.com/KDE/kio'
+			gitlabGroup='frameworks'
+			gitRepo='kio'
 			product='kio'
 			phabRepo='kio'
 			phabRepoName='KIO'
@@ -1006,7 +1045,8 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepo.html
 			repoName='KIO Extras'
-			githubLink='https://github.com/KDE/kio-extras'
+			gitlabGroup='network'
+			gitRepo='kio-extras'
 			product='kio-extras'
 			phabRepo='kio-extras'
 			phabRepoName='KIO Extras'
@@ -1016,14 +1056,15 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Emoji Picker'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/applets/kimpanel/backend/ibus/emojier'
+			gitPath='applets/kimpanel/backend/ibus/emojier'
 			product='plasmashell&component=general'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepo.html
 			repoName='Falkon'
-			githubLink='https://github.com/KDE/falkon'
+			gitlabGroup='network'
+			gitRepo='falkon'
 			product='Falkon'
 			phabRepo='falkon'
 			phabRepoName='Falkon'
@@ -1033,7 +1074,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='Gwenview'
-			githubLink='https://github.com/KDE/gwenview'
+			gitlabGroup='graphics'
+			gitRepo='gwenview'
 			product='gwenview'
 			phabRepo='gwenview'
 			phabRepoName='Gwenview'
@@ -1043,7 +1085,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='Kdenlive'
-			githubLink='https://github.com/KDE/kdenlive'
+			gitlabGroup='multimedia'
+			gitRepo='kdenlive'
 			product='kdenlive'
 			phabRepo='kdenlive'
 			phabRepoName='Kdenlive'
@@ -1053,7 +1096,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='KDialog'
-			githubLink='https://github.com/KDE/kdialog'
+			gitlabGroup='utilities'
+			gitRepo='kdialog'
 			product='kdialog'
 			phabRepo='kdialog'
 			phabRepoName='KDialog'
@@ -1063,7 +1107,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='Konsole'
-			githubLink='https://github.com/KDE/konsole'
+			gitlabGroup='utilities'
+			gitRepo='konsole'
 			product='konsole'
 			phabRepo='konsole'
 			phabRepoName='Konsole'
@@ -1073,7 +1118,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='Konversation'
-			githubLink='https://github.com/KDE/konversation'
+			gitlabGroup='network'
+			gitRepo='konversation'
 			product='konversation'
 			phabRepo='konversation'
 			phabRepoName='Konversation'
@@ -1083,7 +1129,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='Krita'
-			githubLink='https://github.com/KDE/krita'
+			gitlabGroup='graphics'
+			gitRepo='krita'
 			product='krita'
 			phabRepo='krita'
 			phabRepoName='Krita'
@@ -1093,7 +1140,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='KRunner'
-			githubLink='https://github.com/KDE/krunner'
+			gitlabGroup='frameworks'
+			gitRepo='krunner'
 			product='krunner'
 			phabRepo='krunner'
 			phabRepoName='KRunner'
@@ -1103,7 +1151,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='KSysGuard'
-			githubLink='https://github.com/KDE/ksysguard'
+			gitlabGroup='plasma'
+			gitRepo='ksysguard'
 			product='ksysguard'
 			phabRepo='ksysguard'
 			phabRepoName='KSysguard'
@@ -1113,7 +1162,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='Spectacle [Screenshots]'
-			githubLink='https://github.com/KDE/spectacle'
+			gitlabGroup='graphics'
+			gitRepo='spectacle'
 			product='spectacle'
 			phabRepo='spectacle'
 			phabRepoName='Spectacle'
@@ -1123,7 +1173,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='Yakuake'
-			githubLink='https://github.com/KDE/yakuake'
+			gitlabGroup='utilities'
+			gitRepo='yakuake'
 			product='yakuake'
 			phabRepo='yakuake'
 			phabRepoName='Yakuake'
@@ -1139,7 +1190,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='System Settings'
-			githubLink='https://github.com/KDE/systemsettings'
+			gitlabGroup='plasma'
+			gitRepo='systemsettings'
 			product='systemsettings'
 			phabRepo='systemsettings'
 			phabRepoName='System Settings'
@@ -1149,98 +1201,99 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Accessibility'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/access'
+			gitPath='kcms/access'
 			product='systemsettings&component=kcm_accessibility'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Activities'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/activities'
+			gitPath='kcms/activities'
 			product='kwin&component=activities'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='[Qt] Application Style'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/style'
+			gitPath='kcms/style'
 			product='systemsettings&component=kcm_style'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Autostart'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/autostart'
+			gitPath='kcms/autostart'
 			product='systemsettings&component=kcm_autostart'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Background Services'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/kded'
+			gitPath='kcms/kded'
 			product='systemsettings&component=kcm_kded'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Colors'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/colors'
+			gitPath='kcms/colors'
 			product='systemsettings&component=kcm_colors'
 		%}
 	</tr>
 	<tr class="indent">
-		{% include kdeRepoDesktop.html
+		{% include kdeRepoKwin.html
 			repoName='Compositor'
-			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwincompositing'
+			gitPath='kcmkwin/kwincompositing'
 			product='systemsettings&component=compositing'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Cursors'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/cursortheme'
+			gitPath='kcms/cursortheme'
 			product='systemsettings&component=kcm_cursortheme'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Date & Time'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/dateandtime'
+			gitPath='kcms/dateandtime'
 			product='systemsettings&component=kcm_clock'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Default Applications'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/componentchooser'
+			gitPath='kcms/componentchooser'
 			product='systemsettings&component=kcm_componentchooser'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Desktop Effects'
-			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwineffects'
+			gitPath='kcmkwin/kwineffects'
 			product='systemsettings&component=kcm_kwin_effects'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Desktop Session'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/ksmserver'
+			gitPath='kcms/ksmserver'
 			product='systemsettings&component=kcm_ksmserver'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Device Actions'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/solid_actions'
+			gitPath='kcms/solid_actions'
 			product='systemsettings&component=kcm_solid-actions'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepo.html
 			repoName='[Kubuntu] Driver Manager'
-			githubLink='https://github.com/KDE/kubuntu-driver-kcm'
+			gitlabGroup='system'
+			gitRepo='kubuntu-driver-kcm'
 			product='KDE%20Config%20Driver%20Manager'
 			phabRepo='kubuntu-driver-kcm'
 			phabRepoName='Kubuntu Proprietary Driver Manager'
@@ -1250,56 +1303,57 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Emoticons'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/emoticons'
+			gitPath='kcms/emoticons'
 			product='systemsettings&component=kcm_emoticons'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='File Search'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/baloo'
+			gitPath='kcms/baloo'
 			product='systemsettings&component=kcm_baloo'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Fonts'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/fonts'
+			gitPath='kcms/fonts'
 			product='systemsettings&component=kcm_fonts'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Font Management'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/kfontinst/kcmfontinst'
+			gitPath='kcms/kfontinst/kcmfontinst'
 			product='systemsettings&component=kcm_fontinst'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Formats'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/formats'
+			gitPath='kcms/formats'
 			product='systemsettings&component=kcm_formats'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Game Controller'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/hardware/joystick'
+			gitPath='kcms/hardware/joystick'
 			product='systemsettings&component=kcm_joystick'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='General Behavior'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/workspaceoptions'
+			gitPath='kcms/workspaceoptions'
 			product='systemsettings&component=general'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepo.html
 			repoName='GNOME/GTK Application Style'
-			githubLink='https://github.com/KDE/kde-gtk-config'
+			gitlabGroup='plasma'
+			gitRepo='kde-gtk-config'
 			product='kde-gtk-config'
 			phabRepo='kde-gtk-config'
 			phabRepoName='KDE Gtk Configuration Tool'
@@ -1309,161 +1363,161 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Global Shortcuts'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/keys'
+			gitPath='kcms/keys'
 			product='systemsettings&component=kcm_keys'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Global Theme'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/lookandfeel'
+			gitPath='kcms/lookandfeel'
 			product='systemsettings&component=kcm_lookandfeel'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Icons'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/icons'
+			gitPath='kcms/icons'
 			product='systemsettings&component=kcm_icons'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Keyboard'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/keyboard'
+			gitPath='kcms/keyboard'
 			product='systemsettings&component=kcm_keyboard'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='KRunner'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/runners'
+			gitPath='kcms/runners'
 			product='krunner'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='KWin Scripts'
-			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwinscripts'
+			gitPath='kcmkwin/kwinscripts'
 			product='kwin&component=scripting'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Launch Feedback'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/launch'
+			gitPath='kcms/launch'
 			product='systemsettings&component=kcm_launch'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Locations'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/desktoppaths'
+			gitPath='kcms/desktoppaths'
 			product='systemsettings&component=kcm_desktoppath'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Mouse'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/mouse'
+			gitPath='kcms/mouse'
 			product='systemsettings&component=kcm_mouse'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Night Color'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/nightcolor'
+			gitPath='kcms/nightcolor'
 			product='systemsettings&component=kcm_nightcolor'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Notifications'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/notifications'
+			gitPath='kcms/notifications'
 			product='systemsettings&component=kcm_notify'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Plasma Style'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/desktoptheme'
+			gitPath='kcms/desktoptheme'
 			product='systemsettings&component=kcm_desktoptheme'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Screen Edges'
-			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwinscreenedges'
+			gitPath='kcmkwin/kwinscreenedges'
 			product='systemsettings&component=kcm_kwinscreenedges'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Splash Screen'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/ksplash'
+			gitPath='kcms/ksplash'
 			product='systemsettings&component=kcm_splashscreen'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Spell Check'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/spellchecking'
+			gitPath='kcms/spellchecking'
 			product='systemsettings&component=kcm_language'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Standard Shortcuts'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/standard_actions'
+			gitPath='kcms/standard_actions'
 			product='systemsettings&component=kcm_standard_actions'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Task Switcher'
-			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwintabbox'
+			gitPath='kcmkwin/kwintabbox'
 			product='kwin&component=tabbox'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Touchpad'
-			githubLink='https://github.com/KDE/plasma-desktop/tree/master/kcms/touchpad/src/kcm'
+			gitPath='kcms/touchpad/src/kcm'
 			product='Touchpad-KCM'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Touch Screen'
-			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwinscreenedges'
+			gitPath='kcmkwin/kwinscreenedges'
 			product='systemsettings&component=kcm_kwintouchscreen'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Virtual Desktops'
-			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwindesktop'
+			gitPath='kcmkwin/kwindesktop'
 			product='systemsettings&component=kcm_kwin_virtualdesktops'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Window Behavior'
-			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwinoptions'
+			gitPath='kcmkwin/kwinoptions'
 			product='kwin&component=general'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Window Rules'
-			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwinrules'
+			gitPath='kcmkwin/kwinrules'
 			product='kwin&component=rules'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Window Decorations'
-			githubLink='https://github.com/KDE/kwin/tree/master/kcmkwin/kwindecoration'
+			gitPath='kcmkwin/kwindecoration'
 			product='systemsettings&component=kcm_kwindecoration'
 		%}
 	</tr>
@@ -1476,7 +1530,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='Baloo [File Indexer]'
-			githubLink='https://github.com/KDE/baloo'
+			gitlabGroup='frameworks'
+			gitRepo='baloo'
 			product='frameworks-baloo'
 			phabRepo='baloo'
 			phabRepoName='Baloo'
@@ -1486,7 +1541,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='KGlobalAccel (Global Shortcuts)'
-			githubLink='https://github.com/KDE/kglobalaccel'
+			gitlabGroup='frameworks'
+			gitRepo='kglobalaccel'
 			product='frameworks-kglobalaccel'
 			phabRepo='kglobalaccel'
 			phabRepoName='KGlobalAccel'
@@ -1494,25 +1550,24 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
-		{% include kdeRepo.html
+		{% include kdeRepoWorkspace.html
 			repoName='KSMServer (Session Manager)'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/ksmserver'
+			gitPath='ksmserver'
 			product='ksmserver'
 		%}
-		{% include phabLinksWorkspace.html %}
 	</tr>
 	<tr class="indent">
-		{% include kdeRepo.html
+		{% include kdeRepoWorkspace.html
 			repoName='Logout Theme'
-			githubLink='https://github.com/KDE/plasma-workspace/tree/master/lookandfeel/contents/logout'
+			gitPath='lookandfeel/contents/logout'
 			product='ksmserver&component=ui'
 		%}
-		{% include phabLinksWorkspace.html %}
 	</tr>
 	<tr>
 		{% include kdeRepo.html
 			repoName='KScreenLocker'
-			githubLink='https://github.com/KDE/kscreenlocker'
+			gitlabGroup='plasma'
+			gitRepo='kscreenlocker'
 			product='kscreenlocker'
 			phabRepo='kscreenlocker'
 			phabRepoName='KScreenLocker'
@@ -1522,7 +1577,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='polkit-kde-agent-1 (Password Prompt)'
-			githubLink='https://github.com/KDE/polkit-kde-agent-1'
+			gitlabGroup='plasma'
+			gitRepo='polkit-kde-agent-1'
 			product='policykit-kde-agent-1'
 			phabRepo='polkit-kde-agent-1'
 			phabRepoName='Policykit (Polkit) KDE Agent'
@@ -1532,7 +1588,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='Powerdevil'
-			githubLink='https://github.com/KDE/powerdevil'
+			gitlabGroup='plasma'
+			gitRepo='powerdevil'
 			product='Powerdevil'
 			phabRepo='powerdevil'
 			phabRepoName='Powerdevil'
@@ -1542,7 +1599,8 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='xdg-desktop-portal-kde'
-			githubLink='https://github.com/KDE/xdg-desktop-portal-kde'
+			gitlabGroup='plasma'
+			gitRepo='xdg-desktop-portal-kde'
 			product='xdg-desktop-portal-kde'
 			phabRepo='xdg-desktop-portal-kde'
 			phabRepoName='Flatpak Support: KDE Portal for XDG Desktop'
@@ -1552,7 +1610,7 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepo.html
 			repoName='xdg-desktop-portal'
-			githubLink='https://github.com/flatpak/xdg-desktop-portal'
+			gitUrl='https://github.com/flatpak/xdg-desktop-portal'
 		%}
 	</tr>
 </table>
@@ -1681,7 +1739,7 @@ redirect_from: /projects/kde/repos/
 </script>
 
 
-
+<script type="text/javascript" src="/js/livereload.js"></script>
 
 
 
