@@ -7,7 +7,7 @@ layout: post
 
 /u/Da_Viper on Reddit [recently asked](https://www.reddit.com/r/kde/comments/g986ql/reload_icons_and_themes_without_restarting_kde/) how to change the plasma icon theme from bash. He'd figured out that `[Icons] Theme=breeze` in `~/.config/kdeglobals` changes when you select an icon theme. However modifying that file doesn't update running applications until you restart.
 
-If we dive into [the code for the System Settings KCM](https://github.com/KDE/plasma-desktop/tree/master/kcms/icons) on the GitHub mirror, we can see that a new file, `changeicons.cpp`, was recently [added 6 months ago](https://github.com/KDE/plasma-desktop/commit/38ba450787ae39f2e50ff0410da2296bb0b2ddd7). Looking at the `CMakeLists.txt`, that file is used for a new command line called `plasma-changeicons`. It's not in `$PATH` however, so we'll need to call the full filepath.
+If we dive into [the code for the System Settings KCM](https://github.com/KDE/plasma-desktop/tree/master/kcms/icons) on the GitHub mirror, we can see that a new file, `changeicons.cpp`, was recently [added 6 months ago](https://github.com/KDE/plasma-desktop/commit/38ba450787ae39f2e50ff0410da2296bb0b2ddd7). Looking at the `CMakeLists.txt`, that file is used for a new terminal command called `plasma-changeicons`. It's not in `$PATH` however, so we'll need to call the full filepath.
 
 Run `locate plasma-changeicons` to find the filepath. For me in Manjaro with Plasma 5.18, it's `/usr/lib/plasma-changeicons`.
 
