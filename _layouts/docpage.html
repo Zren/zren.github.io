@@ -148,20 +148,32 @@ layout: fullwidthpage
 	height: 1px;
 	background-color: #bfcdd8;
 }
-.documentation > section.folder > h2 {
-	color: #0392c9;
+.documentation > section.folder {
+	display: flex;
+}
+.documentation > section.folder > h2,
+.documentation > section.folder > a.section-edit {
 	font-size: 16px;
 	font-weight: 700;
 	box-sizing: border-box;
 	padding: 30px;
 	margin-bottom: 0;
-	width: 100%;
 }
-.documentation > section.folder > h2 > a.section-edit {
-	float: right;
+.documentation > section.folder > h2 {
+	color: #0392c9;
+	flex: 1;
 }
-.documentation > section.folder > h2 > a.section-edit:hover {
+.documentation > section.folder > a.section-edit {
+	display: none;
+	user-select: none;
+}
+.documentation > section.folder > a.section-edit:hover {
 	text-decoration: none;
+}
+@media (min-width: 768px) {
+	.documentation > section.folder > a.section-edit {
+		display: inline-block;
+	}
 }
 .documentation > section > .left > img {
 	display: block;
