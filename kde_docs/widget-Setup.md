@@ -1,5 +1,8 @@
 <!-- ------- -->
-{% include docHeader.html label="Setup" %}
+{% include docHeader.html
+    label="Setup"
+    editUrl="https://github.com/Zren/zren.github.io/blob/master/kde_docs/widget-Setup.md"
+%}
 
 {% capture label %}Folder Structure{% endcapture %}
 {% capture sectionLeft %}

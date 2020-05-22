@@ -1,5 +1,8 @@
 <!-- ------- -->
-{% include docHeader.html label="Configuration" %}
+{% include docHeader.html
+    label="Configuration"
+    editUrl="https://github.com/Zren/zren.github.io/blob/master/kde_docs/widget-Configuration.md"
+%}
 
 
 {% capture label %}Configuration Intro{% endcapture %}

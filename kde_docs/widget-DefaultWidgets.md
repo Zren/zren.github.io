@@ -1,5 +1,8 @@
 <!-- ------- -->
-{% include docHeader.html label="Default Widgets" %}
+{% include docHeader.html
+    label="Default Widgets"
+    editUrl="https://github.com/Zren/zren.github.io/blob/master/kde_docs/widget-DefaultWidgets.md"
+%}
 
 {% capture label %}Learn By Example{% endcapture %}
 {% capture sectionLeft %}

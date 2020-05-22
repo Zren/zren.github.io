@@ -1,6 +1,8 @@
 <!-- ------- -->
-{% include docHeader.html label="Examples" %}
-
+{% include docHeader.html
+    label="Examples"
+    editUrl="https://github.com/Zren/zren.github.io/blob/master/kde_docs/widget-Examples.md"
+%}
 
 {% capture label %}Time DataSource{% endcapture %}
 {% capture sectionLeft %}

@@ -1,6 +1,8 @@
 <!-- ------- -->
-{% include docHeader.html label="Testing" %}
-
+{% include docHeader.html
+    label="Testing"
+    editUrl="https://github.com/Zren/zren.github.io/blob/master/kde_docs/widget-Testing.md"
+%}
 
 {% capture label %}plasmawindowed{% endcapture %}
 {% capture sectionLeft %}

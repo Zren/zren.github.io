@@ -1,6 +1,8 @@
 <!-- ------- -->
-{% include docHeader.html label="Translations/i18n" %}
-
+{% include docHeader.html
+    label="Translations/i18n"
+    editUrl="https://github.com/Zren/zren.github.io/blob/master/kde_docs/widget-TranslationsI18n.md"
+%}
 
 {% capture label %}ki18n{% endcapture %}
 {% capture sectionLeft %}

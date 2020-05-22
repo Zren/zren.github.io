@@ -1,6 +1,8 @@
 <!-- ------- -->
-{% include docHeader.html label="Plasma's QML API" %}
-
+{% include docHeader.html
+    label="Plasma's QML API"
+    editUrl="https://github.com/Zren/zren.github.io/blob/master/kde_docs/widget-PlasmaQmlApi.md"
+%}
 
 {% capture label %}Intro{% endcapture %}
 {% capture sectionLeft %}

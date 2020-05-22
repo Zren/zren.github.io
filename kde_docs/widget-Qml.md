@@ -1,6 +1,8 @@
 <!-- ------- -->
-{% include docHeader.html label="Qml" %}
-
+{% include docHeader.html
+    label="Qml"
+    editUrl="https://github.com/Zren/zren.github.io/blob/master/kde_docs/widget-Qml.md"
+%}
 
 {% capture label %}Quick Intro{% endcapture %}
 {% capture sectionLeft %}
