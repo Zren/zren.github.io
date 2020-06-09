@@ -64,7 +64,7 @@
     {% highlight bash %}
     qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(!locked)"
     {% endhighlight %}
-    If you want an easier way to toggle locking widgets, install [Win7ShowDesktop widget](https://store.kde.org/p/1100895/) which has a "Lock Widgets" toggle in it's right click menu.
+  If you want an easier way to toggle locking widgets in Plasma 5.18, install [Win7ShowDesktop widget](https://store.kde.org/p/1100895/) which has a "Lock Widgets" toggle in it's right click menu.
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Disable Top Left “Hot Corner”{% endcapture %}{% capture contents %}
