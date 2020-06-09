@@ -78,6 +78,41 @@ a:not([href]):hover {
   </thead>
   <tbody>
     <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.19.0">Plasma 5.19.0</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/gzli5g/kde_plasma_519_is_out_and_it_is_sleeker_and_more/">/r/kde</a></td>
+      <td><a href="https://www.reddit.com/r/linux/comments/gzlj42/kde_plasma_519_is_out_and_comes_with_photographic/">/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.18.90">Plasma 5.19.0 Beta</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/gjner3/plasma_519_beta_consistency_control_and_usability/">/r/kde</a></td>
+      <td><a href="https://www.reddit.com/r/linux/comments/gjns42/plasma_519_beta_consistency_control_and_usability/">/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.18.5">Plasma 5.18.5</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/ge69jt/kde_plasma_5185_bugfix_release_for_may/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.18.4">Plasma 5.18.4</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/fsho5d/kde_plasma_5184_bugfix_release_for_march/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.18.3">Plasma 5.18.3</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/fggckj/kde_plasma_5183_bugfix_release_for_march/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.18.2">Plasma 5.18.2</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/f9gg4v/kde_plasma_5182_bugfix_release_for_february/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.18.1">Plasma 5.18.1</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/f608f1/kde_releases_plasma_5181_update/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
       <td><a href="https://kde.org/announcements/plasma-5.18.0.php">Plasma 5.18.0</a></td>
       <td><a href="https://www.reddit.com/r/kde/comments/f27ibv/plasma_518_is_out_easier_system_settings/">/r/kde</a></td>
       <td><a href="https://www.reddit.com/r/linux/comments/f27iit/kdes_plasma_518_is_out_easier_system_settings/">/r/linux</a></td>
