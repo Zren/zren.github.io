@@ -813,6 +813,24 @@ redirect_from: /projects/kde/repos/
 </table>
 
 
+## Breath Theme (Manjaro)
+
+<table class="repolist">
+	<tr>
+		{% include kdeRepo.html
+			repoName='Breath'
+			gitUrl='https://gitlab.manjaro.org/artwork/themes/breath'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
+			repoName='Breath2'
+			gitUrl='https://gitlab.manjaro.org/artwork/themes/breath2'
+		%}
+	</tr>
+</table>
+
+
 ## KWin (The Window Manager)
 
 <table class="repolist">
