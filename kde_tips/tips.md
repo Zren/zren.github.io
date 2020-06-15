@@ -193,6 +193,12 @@ qdbus org.kde.KWin /KWin reconfigure
 {% capture label %}Open KRunner with Windows/Meta key{% endcapture %}{% capture contents %}
   We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/.config/kwinrc`, then reload kwin.
   It's easier to use these commmands than doing it by hand.
+  **Plasma 5.18 and above:**
+  {% highlight bash %}
+kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/krunner_desktop,org.kde.kglobalaccel.Component,invokeShortcut,_launch"
+qdbus org.kde.KWin /KWin reconfigure
+  {% endhighlight %}
+  **Plasma 5.17 and below:**
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/krunner,org.kde.kglobalaccel.Component,invokeShortcut,run command"
 qdbus org.kde.KWin /KWin reconfigure
