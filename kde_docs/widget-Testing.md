@@ -42,7 +42,7 @@ Arguments:
 
 {% capture label %}plasmoidviewer{% endcapture %}
 {% capture sectionLeft %}
-We now have enough to test our widget. If you haven't yet, install the `plasma-sdk` package with `sudo apt install plasma-sdk`.
+With `metadata.desktop` and `main.qml`, we now have enough to test our widget. If you haven't yet, install the `plasma-sdk` package with `sudo apt install plasma-sdk`.
 {% endcapture %}{% capture sectionRight %}
 
 {% highlight bash %}
