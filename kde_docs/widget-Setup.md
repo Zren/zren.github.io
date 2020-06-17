@@ -72,7 +72,7 @@ X-KDE-PluginInfo-Author=My Name
 X-KDE-PluginInfo-Email=myemail@gmail.com
 X-KDE-PluginInfo-Name=com.github.zren.helloworld
 X-KDE-PluginInfo-Version=1
-X-KDE-PluginInfo-Website=https://github.com/Zren/plasma-applet-helloworld
+X-KDE-PluginInfo-Website=https://github.com/Zren/plasmoid-helloworld
 X-KDE-PluginInfo-Category=System Information
 {% endhighlight %}
 
