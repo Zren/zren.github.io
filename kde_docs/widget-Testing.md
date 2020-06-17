@@ -82,9 +82,9 @@ Note that `--location=desktop` is used for the desktop wallpaper, not desktop wi
 {% endcapture %}{% capture sectionRight %}
 
 {% highlight bash %}
-plasmoidviewer -a package --location=floating
-plasmoidviewer -a package -l=floating
-plasmoidviewer -a package # floating is the default.
+plasmoidviewer -a package --location=floating --formfactor=planar
+plasmoidviewer -a package -l=floating -f=planar
+plasmoidviewer -a package # floating+planar is the default.
 {% endhighlight %}
 
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
