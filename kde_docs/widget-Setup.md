@@ -112,6 +112,7 @@ You can set the tooltip contents and various other things in the `main.qml`.
 {% endcapture %}{% capture sectionRight %}
 
 {% highlight qml %}
+// main.qml
 import QtQuick 2.0
 import org.kde.plasma.components 2.0 as PlasmaComponents
 
@@ -125,6 +126,7 @@ PlasmaComponents.Label {
 To show the text in the panel rather than in a popup:
 
 {% highlight qml %}
+// main.qml
 import QtQuick 2.0
 import org.kde.plasma.components 2.0 as PlasmaComponents
 import org.kde.plasma.plasmoid 2.0
@@ -143,6 +145,7 @@ PlasmaComponents.Label {
 To set the popup size:
 
 {% highlight qml %}
+// main.qml
 import QtQuick 2.0
 import QtQuick.Layouts 1.0
 import org.kde.plasma.components 2.0 as PlasmaComponents
