@@ -389,7 +389,7 @@ qdbus org.kde.KWin /KWin reconfigure
   Breeze Dark: [Chrome Theme](https://chrome.google.com/webstore/detail/breeze-dark/nkhdomjgcjkhipblklfchdkojecapgmc)
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
-{% capture label %}Enable Hardware Acceleration{% endcapture %}{% capture contents %}
+{% capture label %}Enable Hardware Acceleration in Chrome{% endcapture %}{% capture contents %}
   If you notice tearing while playing video, check `chrome://gpu` and see if it says hardware acceleration is unavailable. It's very likely that it's just that chrome doesn't recognize that it can use your GPU.
   > [Original Article](http://www.webupd8.org/2014/01/enable-hardware-acceleration-in-chrome.html)
   Go to `chrome://flags#ignore-gpu-blacklist`, search for "Override software rendering list", enable it and restart Chrome.
@@ -455,6 +455,16 @@ qdbus org.kde.KWin /KWin reconfigure
 {% capture label %}Disable Pocket{% endcapture %}{% capture contents %}
   Go to `about:config`
   Search for `extensions.pocket.enabled` and set it to `false`
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Enable Hardware Acceleration in Firefox{% endcapture %}{% capture contents %}
+  If you notice tearing while playing video, check `about:support` and `Ctrl+F` to search for `HW_COMPOSITING`. If it says "blocked by env: Acceleration blocked by platform" then it is not using Hardware Acceleration by default.
+  We need to go to `about:config` then set `layers.acceleration.force-enabled` to `true`.
+  Restart firefox, and it should now say "force_enabled by user: Force-enabled by pref" under `HW_COMPOSITING` in `about:support`.
+
+  -----
+
+  Firefox is also [working on WebRender](https://wiki.mozilla.org/Platform/GFX/WebRender_Where#Linux), which is "[a GPU based 2D rendering engine for the web written in Rust](https://mozillagfx.wordpress.com/2020/04/30/moz-gfx-newsletter-52/)". You can try enabling it by going to `about:config` and setting `gfx.webrender.all` to `true`. Restart firefox, then go to `about:support` and `Ctrl+F` for `WEBRENDER` to make sure it's enabled.
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Hide Search Dropdown Footer{% endcapture %}{% capture contents %}
