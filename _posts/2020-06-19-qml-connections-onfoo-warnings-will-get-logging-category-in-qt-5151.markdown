@@ -36,7 +36,7 @@ More discussion can be found [on StackOverflow](https://stackoverflow.com/questi
 
 ----
 
-After a night's sleep, I though about trying to build qtdeclarative from source, then ~~installing it to `/usr/local/...`~~ use `LD_PRELOAD=... plasmoidviewer`.
+After a night's sleep, I thought about trying to build `qtdeclarative` from source, then ~~installing it to `/usr/local/...`~~ use `LD_PRELOAD=... plasmoidviewer`.
 
 First things first is to download the `qtdeclarative` project. It's pretty large, so just do a shallow copy of the 5.15 branch.
 
