@@ -47,7 +47,7 @@ git clone https://github.com/qt/qtdeclarative.git --branch 5.15 --depth 1
 cd qtdeclarative
 ```
 
-Looks like there's a `qtdeclarative.pro`, so that means `qmake` to generate the Makefiles. Then run `make` to compile the code.
+Looks like there's a `qtdeclarative.pro`, so we'll use `qmake` to generate the Makefiles. Then run `make` to compile the code.
 
 ```
 qmake
