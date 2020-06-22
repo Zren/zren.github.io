@@ -158,6 +158,13 @@ kwriteconfig5 --file ~/.config/kwinrc --group Windows --key BorderlessMaximizedW
 qdbus org.kde.KWin /KWin reconfigure
   {% endhighlight %}
 {% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Launch app with discrete GPU{% endcapture %}{% capture contents %}
+  Also known as using `prime-run` ([PRIME wiki](https://wiki.archlinux.org/index.php/PRIME)) or using the `DRI_PRIME=1` environment variable.
+  Open Application Launcher > Right Click app
+  Application Tab > Advanced Options
+  Discrete GPU > Check: Run using dedicated graphics card
+{% endcapture%}{% include tip.html label=label contents=contents %}
 </ul>
 
 ### Windows/Meta Key
