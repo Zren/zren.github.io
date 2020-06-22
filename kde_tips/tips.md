@@ -267,6 +267,17 @@ qdbus org.kde.KWin /KWin reconfigure
   ☰ Control > Configure Shortcuts
   Paste > Set Alternative (Defaulted to Shift+Insert) as “None”
 {% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Disable File Indexing (Baloo){% endcapture %}{% capture contents %}
+  Some user may want to disable the indexing when:
+
+  * [For some users](https://www.reddit.com/r/kde/search?q=baloo&restrict_sr=on), the `baloo_file` process can slow down the system.
+  * The `~/.local/share/baloo/index` can use over a Gigabyte of space.  
+    Run `balooctl indexSize` to break the database usage down.
+
+  System Settings > Search
+  Uncheck: Enable File Search
+{% endcapture%}{% include tip.html label=label contents=contents %}
 </ul>
 
 ### LibreOffice Writer
