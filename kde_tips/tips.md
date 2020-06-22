@@ -150,6 +150,11 @@ qdbus org.kde.KWin /KWin reconfigure
   Layout mode: "Natural" => "Flexible Grid"
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
+{% capture label %}Change titlebar height{% endcapture %}{% capture contents %}
+  System Settings > Fonts
+  Window title > Edit Font Size
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
 {% capture label %}Hide titlebars when maximized (like Ubuntu){% endcapture %}{% capture contents %}
   We need to set `BorderlessMaximizedWindows=true` under the group `[Windows]` in the file `~/.config/kwinrc`, then reload kwin.
   It's easier to use these commmands than doing it by hand.
