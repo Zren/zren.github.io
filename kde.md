@@ -24,7 +24,7 @@ sudo apt install -y kcron # Task Scheduler in System Settings
 
 ## Kubuntu: Backports PPA
 
-Kubuntu will usually only get bugfixes for a few months. By default, Kubuntu will not update from Plasma 5.15 to Plasma 5.16 which has new features. Kubuntu [provides a backports PPA](https://kubuntu.org/tag/backports/) which will allow users to upgrade to the latest version of the Plasma desktop.
+Kubuntu will usually only get bugfixes for a few months. By default, Kubuntu will not update from Plasma 5.18 to Plasma 5.19 which has new features. Kubuntu [provides a backports PPA](https://kubuntu.org/tag/backports/) which will allow users to upgrade to the latest version of the Plasma desktop.
 
 {% highlight bash %}
 sudo add-apt-repository ppa:kubuntu-ppa/backports
