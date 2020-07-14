@@ -1635,6 +1635,23 @@ redirect_from: /projects/kde/repos/
 </table>
 
 
+## KDE Frameworks
+
+<table class="repolist">
+	<tr>
+		{% include kdeRepo.html
+			repoName='KPackage'
+			gitlabGroup='frameworks'
+			gitRepo='kpackage'
+			product='frameworks-kpackage'
+			phabRepo='kpackage'
+			phabRepoName='KPackage'
+			phabDiffQuery='pW.6iUCaNzoP'
+		%}
+	</tr>
+</table>
+
+
 
 ## Other
 
