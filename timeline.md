@@ -145,7 +145,7 @@ While trying to rewrite a more customizable timer, I tried creating a multi stag
 
 **Source:** <https://github.com/Zren/dolphin>
 
-![](https://i.imgur.com/6ESZLS9.png){:.pull-right}
+![](https://i.imgur.com/6ESZLS9.png)
 
 KDE's file manager was the most feature complete when compared to Window's File Explorer. The major reason I didn't stick with XFCE was because there wasn't any development in Thunar, and there wasn't a quick way to edit the addressbar by clicking the "empty area to the right" while keeping breadcrumb navigation. Dolphin also had a build in terminal at the bottom which was amazing.
 
@@ -276,7 +276,7 @@ I needed a light theme with a black panel, and I wanted to make a few adjustment
 ### HawkenAPI - Periodic Diff Check Emails
 <div class="tags">Python SMTP</div>
 
-![](https://i.imgur.com/g2Gp6r1.jpg){:.pull-right}
+![](https://i.imgur.com/g2Gp6r1.jpg)
 
 After the responses for certain endpoints in the Hawken API started going haywire (due to Reloaded taking over), I wrote a script to check if it had changed and, if it had, send an email. I learned a little about GMail, and styling emails.
 
@@ -286,7 +286,7 @@ After the responses for certain endpoints in the Hawken API started going haywir
 
 **Link:** <http://home.xshade.ca/users/recent/7-days/pilotlevel-distribution/>
 
-![](https://i.imgur.com/tX1pRGc.jpg){:.pull-right}
+![](https://i.imgur.com/tX1pRGc.jpg)
 
 After noticing the existing MMR distribution charts were wildly inaccurate because they included users who hadn't played in months, I made a chart fetching data from the leaderboards which filtered out older users.
 
@@ -296,7 +296,7 @@ After noticing the existing MMR distribution charts were wildly inaccurate becau
 
 **Link:** <http://home.xshade.ca/users/leaderboard/>
 
-![](https://i.imgur.com/0pQcZhZ.jpg){:.pull-right}
+![](https://i.imgur.com/0pQcZhZ.jpg)
 
 After data mining a list of users by name in order to add a user search function to the server list app, I decided to start mining some other data as well. I ended up making a simple leaderboard based on MMR (MatchMaking Ranking) which the community had been using for a while.
 
@@ -307,7 +307,7 @@ After data mining a list of users by name in order to add a user search function
 
 **Source:** <https://github.com/Zren/QuasselPy>
 
-![](https://i.imgur.com/ay00toq.png){:.pull-right}
+![](https://i.imgur.com/ay00toq.png)
 
 After being dissatisfied with quasselsuche, I decided to reinplement the feature using DataTables to have dynamic filtering.
 
@@ -317,7 +317,7 @@ After being dissatisfied with quasselsuche, I decided to reinplement the feature
 
 **Source:** <https://github.com/Zren/quassel-pushbullet>
 
-![](https://i.imgur.com/V3oQJ5vl.png){:.pull-right}
+![](https://i.imgur.com/V3oQJ5vl.png)
 
 After toying around with quassel-webserver, I tried pulling it apart to make an always connected client that would speedup the load time. I eventually ended up creating a new "client" and hooking the new message event to send a pushbullet notification to my phone when I get highlighted. Unfortunately I have more or less abandoned this project due to libquassel's meomory consumption.
 
@@ -327,7 +327,7 @@ After toying around with quassel-webserver, I tried pulling it apart to make an 
 
 **Source:** <https://github.com/magne4000/quassel-webserver>
 
-![](https://i.imgur.com/yDOGT1H.png){:.pull-right}
+![](https://i.imgur.com/yDOGT1H.png)
 
 magne4000 released a quasselclient implementation using NodeJS and socket.io. I made a number of pull requests to make the UI more similar to the desktop application. I was hoping to replace QuasselDroid with this in order to lower battery consumption on my phone.
 
@@ -335,7 +335,7 @@ magne4000 released a quasselclient implementation using NodeJS and socket.io. I 
 ### OpenUserJS.org
 <div class="tags">Javascript NodeJS MongoDB Mongoose Bootstrap</div>
 
-![](https://i.imgur.com/SkGA17P.png){:.pull-right}
+![](https://i.imgur.com/SkGA17P.png)
 
 After userscript.org went down due to neglect. A few replacements appeared. The mojority with a UI made by programmers. I decided to help redisign on of them. My decision to help OUJS is mainly due it being the first I was able to setup a dev environment for. I'd worked with NodeJS before, and the developer had a default remote MongoDB database which made it very easy to setup.
 
@@ -347,7 +347,7 @@ I ended up reskinning theming Bootstrap for them, and refactoring all the views 
 
 **Source:** <https://github.com/Zren/atom-open-recent>
 
-![](https://i.imgur.com/d9y4iAi.png){:.pull-right}
+![](https://i.imgur.com/d9y4iAi.png)
 
 Another must have feature missing from Atom was a `Open Recent` list in the menu. There existed a 3rd party plugin already to list recently opened files, and another for directories. I forked one of the projects, fixed the bugs, and streamlined both features to look like the menu in Sublime Text.
 
@@ -357,7 +357,7 @@ Another must have feature missing from Atom was a `Open Recent` list in the menu
 
 **Source:** <https://github.com/Zren/atom-windows-context-menu>
 
-![](https://i.imgur.com/9v0UZKo.png){:.pull-right}
+![](https://i.imgur.com/9v0UZKo.png)
 
 After GitHub released their new text editor, one of the key features missing was being able to open Atom from the file explorer.
 
@@ -369,7 +369,7 @@ After GitHub released their new text editor, one of the key features missing was
 
 **Demo:** <http://zren.github.io/eggtimer/>
 
-![](https://i.imgur.com/0HLSN0Z.png){:.pull-right}
+![](https://i.imgur.com/0HLSN0Z.png)
 
 A timer based on a url parameter. Based off of [e.ggtimer.com](http://e.ggtimer.com/). This version uses different parsing, focusing on short forms, and allows for clock times. Eg: `2:20` started at 1 PM will end at 2:20 PM. `1:10` started at 11 PM will end at 1:10 AM.
 
@@ -393,7 +393,7 @@ After a similar userscript/extension broke, I decided to make a simplier version
 
 **Demo:** <http://jsfiddle.net/YwDPf/4/>
 
-![](https://i.imgur.com/KiiKI9t.png){:.pull-right}
+![](https://i.imgur.com/KiiKI9t.png)
 
 There was a minor discussion on #quassel on UI ideas for multi split chat. I origionally set out with the idea of adding small icons next to the selected buffers in the buffer list widget to show which buffers are selected. This idea spiralled into learning a little bit of AngularJS to make a semi-functioning UI.
 
@@ -405,7 +405,7 @@ There was a minor discussion on #quassel on UI ideas for multi split chat. I ori
 
 **Demo:** <http://zren.github.io/HexChatThemeEditor/>
 
-![](https://i.imgur.com/t9Z5Wfq.png){:.pull-right}
+![](https://i.imgur.com/t9Z5Wfq.png)
 
 Trying to edit HexChat style's was midely annoying without a live preview. So I made this.
 
@@ -415,7 +415,7 @@ Trying to edit HexChat style's was midely annoying without a live preview. So I 
 
 **Link:** <link>
 
-![](https://i.imgur.com/ZIHMkgW.png){:.pull-right}
+![](https://i.imgur.com/ZIHMkgW.png)
 
 After Ashfire made his graphs private. I decided to go ahead with a project I’d been holding off because he had already made a solution. I installed MongoDB + PyMongo and wrote a script to poll the server list periodically, then store the resulting JSON in the database. Once that was done, I modified my flask web server for the server list to serve a simple graph using [HighStocks](http://www.highcharts.com/products/highstock). It uses ajax to fetch the data from the database as I did not store the derived data (the player count). Instead each request will parse X data points of server list jsons which makes it useful as a local application only.
 
@@ -428,7 +428,7 @@ After Ashfire made his graphs private. I decided to go ahead with a project I’
 
 **Link:** <https://hawken.herokuapp.com/>
 
-![](https://i.imgur.com/E4oGvju.png){:.pull-right}
+![](https://i.imgur.com/E4oGvju.png)
 
 During the Beta for hawken, the developers turned off the server browser to maximize the usage of their matchmaking (in order to perfect it). This made those who wanted to setup an organized scrim very painful. I checked out how Hawken retrived the list and put together a simple interactive table using jQuery and Datatables. To actually fetch the data, I had to create a simple library in python 2.x for Hawken’s services as Javascript by itself would fail (due to some overhead required in XHRs). I then used it in combination with Flask as a proxy in order to filter and combine multiple requests together. The result would show the users on the server, the map, and the ip address + port the server is running on.
 
@@ -436,7 +436,7 @@ During the Beta for hawken, the developers turned off the server browser to maxi
 ### Quassel – Web Search
 <div class="tags">C++</div>
 
-![](https://i.imgur.com/lrjlrGL.jpg){:.pull-right}
+![](https://i.imgur.com/lrjlrGL.jpg)
 
 Finalized my first [pull request](https://github.com/quassel/quassel/pull/13) to a larger Open Source project. I copied Chrome’s Search for __ when right clicking selected text in chat.
 
@@ -454,7 +454,7 @@ I took over a writing a friend’s plugin for the [Pride PvP Games](http://pride
 
 **Link:** <https://gist.github.com/Zren/2779042>
 
-![](https://i.imgur.com/8hJNNxG.png){:.pull-right}
+![](https://i.imgur.com/8hJNNxG.png)
 
 Looking for an IRC client that that fully customizable skins eventually brought me to Quassel. While I love the fact everything is styleable in QSS (CSS for QT), the client itself has a few minor annoyances. Thus began my first serious foray into C++.
 
@@ -463,7 +463,7 @@ Looking for an IRC client that that fully customizable skins eventually brought 
 ### Bukkit Plugin – Citizens Editor
 <div class="tags">Java</div>
 
-![](https://i.imgur.com/r5HyL8e.png){:.pull-right}
+![](https://i.imgur.com/r5HyL8e.png)
 
 I attempted to write a GUI editor for the <http://dev.bukkit.org/bukkit-plugins/citizens/> Bukkit plugin in order to speed up NPC/Quest creation.
 
@@ -480,7 +480,7 @@ This project was spurred by the fact that [bPermissions](http://dev.bukkit.org/s
 ### jsPaint
 <div class="tags">Javascript</div>
 
-![](https://i.imgur.com/AKMhQQo.png){:.pull-right}
+![](https://i.imgur.com/AKMhQQo.png)
 
 **Link:** <https://github.com/Zren/jsPaint>
 
