@@ -84,7 +84,7 @@ Lets try it!
 
 ```
 LD_PRELOAD=~/Code/qt/qtdeclarative/lib/libQt5Qml.so.5.15.0 \
-    QT_LOGGING_RULES="qt.qml.connections.warning=false=false" \
+    QT_LOGGING_RULES="qt.qml.connections.warning=false" \
     QML_DISABLE_DISK_CACHE=false \
     plasmoidviewer -a org.kde.plasma.digitalclock
 ```
