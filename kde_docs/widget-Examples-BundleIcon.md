@@ -3,7 +3,7 @@
 {% capture sectionLeft %}
 If we're packaging a QML only widget to be put on the [KDE Store](https://store.kde.org), we won't be able to install an icon to `/usr/share/icons/`. Instead we'll package the icon in the widget directory. For this example, we will place our icon in `contents/icons/customicon.svg`. Copy `/usr/share/icons/breeze/apps/22/kde.svg` as a placeholder if you don't have an icon drawn up yet.
 
-The [`DefaultCompactRepresentation.qml`](https://github.com/KDE/plasma-desktop/blob/master/desktoppackage/contents/applet/DefaultCompactRepresentation.qml) uses `PlasmaCore.IconItem`, which supports a `source: "iconname"` only if the icon is installed to `/usr/share/icons/`. Instead we'll need to use the full path to the svg.
+The [`DefaultCompactRepresentation.qml`](https://github.com/KDE/plasma-desktop/blob/master/desktoppackage/contents/applet/DefaultCompactRepresentation.qml) uses [`PlasmaCore.IconItem`](https://github.com/KDE/plasma-framework/blame/master/src/declarativeimports/core/iconitem.h), which supports a `source: "iconname"` only if the icon is installed to `/usr/share/icons/`. Instead we'll need to use the full path to the svg.
 
 Eg: `source: "/path/.../contents/icon/customicon.svg"`
 
@@ -15,7 +15,7 @@ PlasmaCore.IconItem {
 }
 {% endhighlight %}
 
-Unfortunately, the `PlasmaCore.IconItem` image loading logic will not apply the Color Scheme colors if you use an absolute filepath. It only applies the Color Scheme colors if you use `source: "iconname"`. To workaround this, we'll use a [`PlasmaCore.SvgItem`]() + [`PlasmaCore.Svg`]().
+Unfortunately, the `PlasmaCore.IconItem` [image loading logic](https://github.com/KDE/plasma-framework/blame/master/src/declarativeimports/core/iconitem.cpp) will not apply the Color Scheme colors if you use an absolute filepath. It only applies the Color Scheme colors if you use `source: "iconname"`. To workaround this, we'll use a [`PlasmaCore.SvgItem`](https://github.com/KDE/plasma-framework/blob/master/src/declarativeimports/core/svgitem.h) + [`PlasmaCore.Svg`](https://github.com/KDE/plasma-framework/blob/master/src/plasma/svg.h).
 
 {% highlight qml %}
 Item {
