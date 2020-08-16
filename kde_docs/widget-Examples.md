@@ -270,14 +270,3 @@ Item {
 {% endhighlight %}
 {% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
 
-
-{% include_relative kde_docs/widget-Examples-BundleIcon.md %}
-
-
-
-{% capture label %}...{% endcapture %}
-{% capture sectionLeft %}
-...
-{% endcapture %}{% capture sectionRight %}
-...
-{% endcapture %}{% include docSection.html label=label sectionLeft=sectionLeft sectionRight=sectionRight %}
