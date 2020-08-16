@@ -57,13 +57,15 @@
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Disable Middle-Click Paste Notes Widget{% endcapture %}{% capture contents %}
-  * Plasma 5.17 and below
-    Right Click Panel > Lock Widgets
-  * Plasma 5.18 and above
-    While you can disable Middle-Click paste on the desktop in Desktop Settings, you cannot easily disable it for the panel. The easiest way prevent Middle-Click paste is running the following command to toggle locking widgets.
-    {% highlight bash %}
-    qdbus org.kde.plasmashell /PlasmaShell evaluateScript "lockCorona(!locked)"
-    {% endhighlight %}
+  Right Click Desktop Wallpaper > Configure Desktop
+  Mouse Actions Tab > Press the Delete icon next to the Middle-Button row.
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Lock Widgets{% endcapture %}{% capture contents %}
+  Plasma 5.18 and above has hidden the "lock widgets" toggle. It's very easy to enter "edit mode" with a long press. If you want to get the old locked mode behavior, run the following command:
+  {% highlight bash %}
+  qdbus org.kde.plasmashell /PlasmaShell evaluateScript 'lockCorona(!locked)'
+  {% endhighlight %}
   If you want an easier way to toggle locking widgets in Plasma 5.18, install [Win7ShowDesktop widget](https://store.kde.org/p/1100895/) which has a "Lock Widgets" toggle in it's right click menu.
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
