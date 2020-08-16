@@ -105,6 +105,9 @@ p, li {
 code {
   font-size: 19px;
 }
+code.nowrap {
+  white-space: nowrap;
+}
 pre > code {
   font-size: 15px;
   -moz-tab-size: 4;

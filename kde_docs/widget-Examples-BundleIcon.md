@@ -1,7 +1,7 @@
 <!-- ------- -->
 {% capture label %}Bundle icon/svg with widget{% endcapture %}
 {% capture sectionLeft %}
-If we're packaging a QML only widget to be put on the [KDE Store](https://store.kde.org), we won't be able to install an icon to `/usr/share/icons/`. Instead we'll package the icon in the widget directory. For this example, we will place our icon in `contents/icons/customicon.svg`. Copy `/usr/share/icons/breeze/apps/22/kde.svg` as a placeholder if you don't have an icon drawn up yet.
+If we're packaging a QML only widget to be put on the [KDE Store](https://store.kde.org), we won't be able to install an icon to `/usr/share/icons/`. Instead we'll package the icon in the widget directory. For this example, we will place our icon in `contents/icons/customicon.svg`{:.nowrap}. Copy `/usr/share/icons/breeze/apps/22/kde.svg` as a placeholder if you don't have an icon drawn up yet.
 
 The [`DefaultCompactRepresentation.qml`](https://github.com/KDE/plasma-desktop/blob/master/desktoppackage/contents/applet/DefaultCompactRepresentation.qml) uses [`PlasmaCore.IconItem`](https://github.com/KDE/plasma-framework/blame/master/src/declarativeimports/core/iconitem.h), which supports a `source: "iconname"` only if the icon is installed to `/usr/share/icons/`. Instead we'll need to use the full path to the svg.
 
@@ -38,7 +38,7 @@ Item {
 }
 {% endhighlight %}
 
-I've written [`AppletIcon.qml`](https://github.com/Zren/plasma-applet-lib/blob/master/package/contents/ui/lib/AppletIcon.qml) which allows you to easily use `AppletIcon { source: "customicon" }` to draw the icon with `PlasmaCore.SvgItem`. It also supports `AppletIcon { source: "kde" }` which first checks to see if `icons/kde.svg` exists, then falls back to the `kde` icon from the icon theme. This way you can easily support a configrable icon in your widget.
+I've written [`AppletIcon.qml`](https://github.com/Zren/plasma-applet-lib/blob/master/package/contents/ui/lib/AppletIcon.qml) which allows you to easily use `AppletIcon { source: "customicon" }`{:.nowrap} to draw the icon with `PlasmaCore.SvgItem`. It also supports `AppletIcon { source: "kde" }`{:.nowrap} which first checks to see if `icons/kde.svg` exists, then falls back to the `kde` icon from the icon theme. This way you can easily support a configrable icon in your widget.
 
 Now that we've drawn the icon, we need to fixup `customicon.svg` to support the color scheme. I will summarize the Plasma Style (aka desktoptheme) [documentation on system colors](https://techbase.kde.org/Development/Tutorials/Plasma5/ThemeDetails#Using_system_colors) here.
 
