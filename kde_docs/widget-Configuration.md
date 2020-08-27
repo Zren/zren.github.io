@@ -141,7 +141,7 @@ Item {
 
         CheckBox {
             id: showLabel
-            Kirigami.FormData.label: i18n ("Section:")
+            Kirigami.FormData.label: i18n("Section:")
             text: i18n("Show label")
         }
         CheckBox {
@@ -150,7 +150,7 @@ Item {
         }
         TextField {
             id: labelText
-            Kirigami.FormData.label: i18n ("Label:")
+            Kirigami.FormData.label: i18n("Label:")
             placeholderText: i18n("Placeholder")
         }
     }
