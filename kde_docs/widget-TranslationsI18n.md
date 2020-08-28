@@ -93,6 +93,7 @@ A working example can be seen in my TiledMenu widget:
         * `contents/`
             * `...`
         * `translate/`
+            * `fr.po`
             * `template.pot`
             * `build.sh`
             * `merge.sh`
