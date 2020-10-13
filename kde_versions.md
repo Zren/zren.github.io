@@ -78,6 +78,44 @@ a:not([href]):hover {
   </thead>
   <tbody>
     <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.20.0">Plasma 5.20.0</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/jabkh2/plasma_520_by_all_accounts_a_massive_release_is/">/r/kde</a></td>
+      <td>
+        <a href="https://www.reddit.com/r/linux/comments/jabksw/plasma_520_by_all_accounts_a_massive_release_is/">/r/linux</a>
+        <a href="https://news.ycombinator.com/item?id=24764504">HackerNews</a>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.19.90">Plasma 5.20.0 Beta</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/ium37w/plasma_520_beta_is_out_help_kde_test_the_new/">/r/kde</a></td>
+      <td><a href="https://www.reddit.com/r/linux/comments/iun83l/plasma_520_beta_is_out_help_kde_test_the_new/">/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.19.5">Plasma 5.19.5</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/ikkm84/kde_plasma_5195_bugfix_release_for_september/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.19.4">Plasma 5.19.4</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/hzez9i/kde_plasma_5194_bugfix_release_for_july/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.19.3">Plasma 5.19.3</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/hmvdtk/kde_plasma_5193_bugfix_release_for_july/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.19.2">Plasma 5.19.2</a></td>
+      <td><a>/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma-5.19.1">Plasma 5.19.1</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/ha4uo6/kde_plasma_5191_bugfix_release_for_june/">/r/kde</a></td>
+      <td><a>/r/linux</a></td>
+    </tr>
+    <tr>
       <td><a href="https://kde.org/announcements/plasma-5.19.0">Plasma 5.19.0</a></td>
       <td><a href="https://www.reddit.com/r/kde/comments/gzli5g/kde_plasma_519_is_out_and_it_is_sleeker_and_more/">/r/kde</a></td>
       <td><a href="https://www.reddit.com/r/linux/comments/gzlj42/kde_plasma_519_is_out_and_comes_with_photographic/">/r/linux</a></td>
@@ -115,7 +153,10 @@ a:not([href]):hover {
     <tr>
       <td><a href="https://kde.org/announcements/plasma-5.18.0.php">Plasma 5.18.0</a></td>
       <td><a href="https://www.reddit.com/r/kde/comments/f27ibv/plasma_518_is_out_easier_system_settings/">/r/kde</a></td>
-      <td><a href="https://www.reddit.com/r/linux/comments/f27iit/kdes_plasma_518_is_out_easier_system_settings/">/r/linux</a></td>
+      <td>
+        <a href="https://www.reddit.com/r/linux/comments/f27iit/kdes_plasma_518_is_out_easier_system_settings/">/r/linux</a>
+        <a href="https://news.ycombinator.com/item?id=22297897">HackerNews</a>
+      </td>
     </tr>
     <tr>
       <td><a href="https://kde.org/announcements/plasma-5.17.90.php">Plasma 5.18.0 Beta</a></td>
