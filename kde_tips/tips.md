@@ -98,7 +98,7 @@
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Fix Alt+Click in certain games/software{% endcapture %}{% capture contents %}
-  **Note:** Plasma 5.20 has changed the default to `Meta+Click+Drag`, but these are the same for changing back to `Alt+Click+Drag`.
+  **Note:** Plasma 5.20 has changed the default to `Meta+Click+Drag`, but these instructions are the same for changing back to `Alt+Click+Drag`.
   `Alt+Click+Drag` was a standard keybinding for moving a window in Linux. It tends to conflict with software designed for Windows like Games, Inkscape and Blender. To fix, we'll change it to `Meta+Click+Drag`.
   System Settings > Window Management
   Window Actions Tab > Inner Window, Titlebar, Frame > Modifier Key: `Meta`
