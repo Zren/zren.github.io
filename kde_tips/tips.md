@@ -281,6 +281,12 @@ qdbus org.kde.KWin /KWin reconfigure
   System Settings > Search
   Uncheck: Enable File Search
 {% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Remove Filmstrip From Video Thumbnails{% endcapture %}{% capture contents %}
+  ☰ Control > Configure Dolphin
+  General Tab > Previews > Video Files (ffmpegthumbs) > Configure Button
+  Uncheck: Embed filmstrip effect
+{% endcapture%}{% include tip.html label=label contents=contents %}
 </ul>
 
 ### LibreOffice Writer
