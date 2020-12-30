@@ -164,7 +164,7 @@ qdbus org.kde.KWin /KWin reconfigure
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group Windows --key BorderlessMaximizedWindows true
 qdbus org.kde.KWin /KWin reconfigure
-  {% endhighlight %}
+{% endhighlight %}
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Launch app with discrete GPU{% endcapture %}{% capture contents %}
@@ -188,12 +188,12 @@ qdbus org.kde.KWin /KWin reconfigure
     {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu"
 qdbus org.kde.KWin /KWin reconfigure
-  {% endhighlight %}
+{% endhighlight %}
   If you wish to revert what the Meta key opens because you changed it to open KRunner or a Latte Dock widget, run the following:
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.plasmashell,/PlasmaShell,org.kde.PlasmaShell,activateLauncherMenu"
 qdbus org.kde.KWin /KWin reconfigure
-  {% endhighlight %}
+{% endhighlight %}
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Do not open the "Start Menu" with Windows/Meta key{% endcapture %}{% capture contents %}
@@ -202,7 +202,7 @@ qdbus org.kde.KWin /KWin reconfigure
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta ""
 qdbus org.kde.KWin /KWin reconfigure
-  {% endhighlight %}
+{% endhighlight %}
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Open KRunner with Windows/Meta key{% endcapture %}{% capture contents %}
@@ -212,12 +212,12 @@ qdbus org.kde.KWin /KWin reconfigure
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/krunner_desktop,org.kde.kglobalaccel.Component,invokeShortcut,_launch"
 qdbus org.kde.KWin /KWin reconfigure
-  {% endhighlight %}
+{% endhighlight %}
   **Plasma 5.17 and below:**
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/krunner,org.kde.kglobalaccel.Component,invokeShortcut,run command"
 qdbus org.kde.KWin /KWin reconfigure
-  {% endhighlight %}
+{% endhighlight %}
 {% endcapture%}{% include tip.html label=label contents=contents %}
 </ul>
 
@@ -568,7 +568,7 @@ Checkout [/r/FirefoxCSS/](https://www.reddit.com/r/FirefoxCSS/) for help.
 #navigator-toolbox:hover #PersonalToolbar {
   visibility: visible !important;
 }
-  {% endhighlight %}
+{% endhighlight %}
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Remove left tabbar padding when not maximized{% endcapture %}{% capture contents %}
@@ -576,7 +576,7 @@ Checkout [/r/FirefoxCSS/](https://www.reddit.com/r/FirefoxCSS/) for help.
   {% highlight css %}
 .titlebar-placeholder[type="pre-tabs"] { display: none; } /* Firefox 64 */
 .titlebar-spacer[type="pre-tabs"] { width: 0 !important; } /* Firefox 65+ */
-  {% endhighlight %}
+{% endhighlight %}
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Cleanup right click menu (aka contextmenu){% endcapture %}{% capture contents %}
@@ -595,7 +595,7 @@ Checkout [/r/FirefoxCSS/](https://www.reddit.com/r/FirefoxCSS/) for help.
 #contentAreaContextMenu #context-viewpartialsource-selection {
   display: none !important;
 }
-  {% endhighlight %}
+{% endhighlight %}
   If you're not a web developer, you can hide "Take a screenshot" by going to `about:config`
   Search for `extensions.screenshots.disabled` and set it to `true`
 {% endcapture%}{% include tip.html label=label contents=contents %}
