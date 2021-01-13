@@ -241,9 +241,6 @@ redirect_from: /projects/kde/repos/
 			gitRepo='kcoreaddons'
 			gitPath='src/lib/util/kuser_unix.cpp#L184'
 			product='frameworks-kcoreaddons'
-			phabRepo='kcoreaddons'
-			phabRepoName='KCoreAddons'
-			phabDiffQuery='iqSqxSUsh7VC'
 		%}
 	</tr>
 	<tr>
@@ -279,9 +276,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='plasma-active-window-control'
 			product='Active%20Window%20Control'
-			phabRepo='plasma-active-window-control'
-			phabRepoName='Active Window Control Applet for Plasma'
-			phabDiffQuery='sv1JhxTYnBq6'
 		%}
 	</tr>
 	<tr class="indent">
@@ -296,9 +290,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='plasma-pa'
 			product='plasma-pa'
-			phabRepo='plasma-pa'
-			phabRepoName='Plasma Audio Volume Applet'
-			phabDiffQuery='NlM7ES4ji2UX'
 		%}
 	</tr>
 	<tr>
@@ -321,9 +312,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='plasma-browser-integration'
 			product='plasma-browser-integration'
-			phabRepo='plasma-browser-integration'
-			phabRepoName='Plasma Browser Integration'
-			phabDiffQuery='zVTBKyUKLVBi'
 		%}
 	</tr>
 	<tr>
@@ -402,9 +390,6 @@ redirect_from: /projects/kde/repos/
 			gitRepo='kholidays'
 			gitPath='holidays/plan2'
 			product='frameworks-kholidays'
-			phabRepo='kholidays'
-			phabRepoName='KHolidays'
-			phabDiffQuery='cy_NT_ZbMsFQ'
 		%}
 	</tr>
 	<tr>
@@ -449,9 +434,6 @@ redirect_from: /projects/kde/repos/
 			gitRepo='kscreen'
 			gitPath='plasmoid'
 			product='KScreen&component=Plasma%20Applet'
-			phabRepo='kscreen'
-			phabRepoName='KScreen'
-			phabDiffQuery='i2Ka89fDypU3'
 		%}
 	</tr>
 	<tr>
@@ -510,9 +492,6 @@ redirect_from: /projects/kde/repos/
 			gitRepo='kdeconnect-kde'
 			gitPath='plasmoid'
 			product='kdeconnect'
-			phabRepo='kdeconnect-kde'
-			phabRepoName='KDE Connect'
-			phabDiffQuery='ukrPN51zGqf8'
 		%}
 	</tr>
 	<tr class="indent">
@@ -521,9 +500,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='network'
 			gitRepo='kdeconnect-android'
 			product='kdeconnect&component=android-application'
-			phabRepo='kdeconnect-android'
-			phabRepoName='KDE Connect - Android Application'
-			phabDiffQuery='O5uLyNhBHBeF'
 		%}
 	</tr>
 	<tr>
@@ -581,9 +557,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='plasma-nm'
 			product='plasma-nm'
-			phabRepo='plasma-nm'
-			phabRepoName='Plasma Network Management Applet'
-			phabDiffQuery='zTZoO20shXlW'
 		%}
 	</tr>
 	<tr>
@@ -662,9 +635,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='milou'
 			product='plasmashell&component=Milou'
-			phabRepo='milou'
-			phabRepoName='Milou'
-			phabDiffQuery='KeQ1uFdgDzbJ'
 		%}
 	</tr>
 	<tr>
@@ -723,9 +693,6 @@ redirect_from: /projects/kde/repos/
 			gitRepo='discover'
 			gitPath='notifier'
 			product='Discover&component=Updater'
-			phabRepo='discover'
-			phabRepoName='Discover Software Store'
-			phabDiffQuery='XBRvBuRvMiM5'
 		%}
 	</tr>
 	<tr>
@@ -742,9 +709,6 @@ redirect_from: /projects/kde/repos/
 			gitRepo='plasma-vault'
 			gitPath='plasma'
 			product='Plasma%20Vault'
-			phabRepo='plasma-vault'
-			phabRepoName='Plasma Vault'
-			phabDiffQuery='xviPAQ7cuNOx'
 		%}
 	</tr>
 	<tr>
@@ -787,9 +751,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='frameworks'
 			gitRepo='breeze-icons'
 			product='Breeze&component=icons'
-			phabRepo='breeze-icons'
-			phabRepoName='Breeze Icons'
-			phabDiffQuery='5_HzpnwoEZjH'
 		%}
 	</tr>
 	<tr>
@@ -805,9 +766,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='breeze-gtk'
 			product='Breeze&component=gtk%20theme'
-			phabRepo='breeze-gtk'
-			phabRepoName='Breeze for Gtk'
-			phabDiffQuery='oZtk.c1MpUIx'
 		%}
 	</tr>
 </table>
@@ -860,9 +818,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='kdecoration'
 			product='kwin&component=decorations'
-			phabRepo='kdecoration'
-			phabRepoName='Window Decoration Library'
-			phabDiffQuery='TX1cIo28VdCS'
 		%}
 	</tr>
 	<tr class="indent depth2">
@@ -872,9 +827,6 @@ redirect_from: /projects/kde/repos/
 			gitRepo='breeze'
 			gitPath='kdecoration'
 			product='Breeze&component=window%20decoration'
-			phabRepo='breeze'
-			phabRepoName='Breeze'
-			phabDiffQuery='5_HzpnwoEZjH'
 		%}
 	</tr>
 	<tr class="indent depth2">
@@ -890,9 +842,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='smaragd'
 			product='smaragd'
-			phabRepo='smaragd'
-			phabRepoName='Smaragd'
-			phabDiffQuery='txJJQqwJiZVM'
 		%}
 	</tr>
 </table>
@@ -912,9 +861,6 @@ redirect_from: /projects/kde/repos/
 			repoName='Aether Wordpress Theme'
 			gitlabGroup='websites'
 			gitRepo='aether-wordpress'
-			phabRepo='websites-aether-wordpress'
-			phabRepoName='Aether theme for Wordpress'
-			phabDiffQuery='y_clwL62C9dN'
 		%}
 	</tr>
 	<tr>
@@ -922,9 +868,6 @@ redirect_from: /projects/kde/repos/
 			repoName='docs.kde.org'
 			gitlabGroup='websites'
 			gitRepo='docs-kde-org'
-			phabRepo='websites-docs-kde-org'
-			phabRepoName='Documentation Website (docs.kde.org)'
-			phabDiffQuery='Pnz57PMZTbuM'
 		%}
 	</tr>
 	<tr>
@@ -948,9 +891,6 @@ redirect_from: /projects/kde/repos/
 			gitRepo='ocs-webserver'
 			gitPath='application/modules/default/controllers'
 			phabWorkboard='https://phabricator.kde.org/project/board/146/'
-			phabRepo='ocs-webserver'
-			phabRepoName='OCS Webserver'
-			phabDiffQuery='6v0DIohqTbc6'
 		%}
 	</tr>
 	<tr class="indent">
@@ -982,9 +922,6 @@ redirect_from: /projects/kde/repos/
 			gitRepo='plasma-sdk'
 			gitPath='cuttlefish'
 			product='Plasma%20SDK&component=cuttlefish'
-			phabRepo='plasma-sdk'
-			phabRepoName='Plasma SDK'
-			phabDiffQuery='40hfBk8vxVpb'
 		%}
 	</tr>
 	<tr>
@@ -994,9 +931,6 @@ redirect_from: /projects/kde/repos/
 			gitRepo='plasma-sdk'
 			gitPath='themeexplorer'
 			product='Plasma%20SDK&component=plasmathemeexplorer'
-			phabRepo='plasma-sdk'
-			phabRepoName='Plasma SDK'
-			phabDiffQuery='40hfBk8vxVpb'
 		%}
 	</tr>
 	<tr>
@@ -1006,9 +940,6 @@ redirect_from: /projects/kde/repos/
 			gitRepo='plasma-sdk'
 			gitPath='plasmoidviewer'
 			product='Plasma%20SDK&component=plasmoidviewer'
-			phabRepo='plasma-sdk'
-			phabRepoName='Plasma SDK'
-			phabDiffQuery='40hfBk8vxVpb'
 		%}
 	</tr>
 </table>
@@ -1023,9 +954,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='discover'
 			product='Discover'
-			phabRepo='discover'
-			phabRepoName='Discover Software Store'
-			phabDiffQuery='XBRvBuRvMiM5'
 		%}
 	</tr>
 	<tr>
@@ -1034,9 +962,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='system'
 			gitRepo='dolphin'
 			product='dolphin'
-			phabRepo='dolphin'
-			phabRepoName='Dolphin'
-			phabDiffQuery='Q.uZMhKXjose'
 		%}
 	</tr>
 	<tr class="indent">
@@ -1045,9 +970,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='sdk'
 			gitRepo='dolphin-plugins'
 			product='dolphin&component=plugins%3A bazaar&component=plugins%3A dropbox&component=plugins%3A git&component=plugins%3A mercurial&component=plugins%3A svn'
-			phabRepo='dolphin-plugins'
-			phabRepoName='Plugins for Dolphin'
-			phabDiffQuery='Va5Sq8plksJF'
 		%}
 	</tr>
 	<tr class="indent">
@@ -1056,9 +978,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='frameworks'
 			gitRepo='kio'
 			product='kio'
-			phabRepo='kio'
-			phabRepoName='KIO'
-			phabDiffQuery='38lmUxypxGRG'
 		%}
 	</tr>
 	<tr class="indent">
@@ -1067,9 +986,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='network'
 			gitRepo='kio-extras'
 			product='kio-extras'
-			phabRepo='kio-extras'
-			phabRepoName='KIO Extras'
-			phabDiffQuery='U_e72SrCJaT1'
 		%}
 	</tr>
 	<tr>
@@ -1085,9 +1001,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='network'
 			gitRepo='falkon'
 			product='Falkon'
-			phabRepo='falkon'
-			phabRepoName='Falkon'
-			phabDiffQuery='a6LykVQZeOj5'
 		%}
 	</tr>
 	<tr>
@@ -1096,9 +1009,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='graphics'
 			gitRepo='gwenview'
 			product='gwenview'
-			phabRepo='gwenview'
-			phabRepoName='Gwenview'
-			phabDiffQuery='hRSwCAgRbJhD'
 		%}
 	</tr>
 	<tr>
@@ -1107,9 +1017,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='multimedia'
 			gitRepo='kdenlive'
 			product='kdenlive'
-			phabRepo='kdenlive'
-			phabRepoName='Kdenlive'
-			phabDiffQuery='3i8H_hCbT9lu'
 		%}
 	</tr>
 	<tr>
@@ -1118,9 +1025,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='utilities'
 			gitRepo='kdialog'
 			product='kdialog'
-			phabRepo='kdialog'
-			phabRepoName='KDialog'
-			phabDiffQuery='pJGwlCW8NtAk'
 		%}
 	</tr>
 	<tr>
@@ -1129,9 +1033,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='utilities'
 			gitRepo='konsole'
 			product='konsole'
-			phabRepo='konsole'
-			phabRepoName='Konsole'
-			phabDiffQuery='K5WA0r5foHBY'
 		%}
 	</tr>
 	<tr>
@@ -1140,9 +1041,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='network'
 			gitRepo='konversation'
 			product='konversation'
-			phabRepo='konversation'
-			phabRepoName='Konversation'
-			phabDiffQuery='MqFWDNoLKvbO'
 		%}
 	</tr>
 	<tr>
@@ -1151,9 +1049,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='graphics'
 			gitRepo='krita'
 			product='krita'
-			phabRepo='krita'
-			phabRepoName='Krita'
-			phabDiffQuery='Apm2jNyZrawx'
 		%}
 	</tr>
 	<tr>
@@ -1162,9 +1057,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='frameworks'
 			gitRepo='krunner'
 			product='krunner'
-			phabRepo='krunner'
-			phabRepoName='KRunner'
-			phabDiffQuery='bGOsxqpDNf1b'
 		%}
 	</tr>
 	<tr>
@@ -1173,9 +1065,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='ksysguard'
 			product='ksysguard'
-			phabRepo='ksysguard'
-			phabRepoName='KSysguard'
-			phabDiffQuery='sL4hOEh5QL6Z'
 		%}
 	</tr>
 	<tr>
@@ -1184,9 +1073,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='graphics'
 			gitRepo='spectacle'
 			product='spectacle'
-			phabRepo='spectacle'
-			phabRepoName='Spectacle'
-			phabDiffQuery='d0ahfxoZg5xe'
 		%}
 	</tr>
 	<tr>
@@ -1195,9 +1081,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='utilities'
 			gitRepo='yakuake'
 			product='yakuake'
-			phabRepo='yakuake'
-			phabRepoName='Yakuake'
-			phabDiffQuery='LDXG9mAnVUkh'
 		%}
 	</tr>
 </table>
@@ -1402,9 +1285,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='systemsettings'
 			product='systemsettings'
-			phabRepo='systemsettings'
-			phabRepoName='System Settings'
-			phabDiffQuery='PlE.UXMKpvQe'
 		%}
 	</tr>
 	<tr class="indent">
@@ -1504,9 +1384,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='system'
 			gitRepo='kubuntu-driver-kcm'
 			product='KDE%20Config%20Driver%20Manager'
-			phabRepo='kubuntu-driver-kcm'
-			phabRepoName='Kubuntu Proprietary Driver Manager'
-			phabDiffQuery='8WNeIi9_K_p3'
 		%}
 	</tr>
 	<tr class="indent">
@@ -1564,9 +1441,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='kde-gtk-config'
 			product='kde-gtk-config'
-			phabRepo='kde-gtk-config'
-			phabRepoName='KDE Gtk Configuration Tool'
-			phabDiffQuery='j8derDIaiCMm'
 		%}
 	</tr>
 	<tr class="indent">
@@ -1742,9 +1616,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='frameworks'
 			gitRepo='baloo'
 			product='frameworks-baloo'
-			phabRepo='baloo'
-			phabRepoName='Baloo'
-			phabDiffQuery='dxa5q95Y92MO'
 		%}
 	</tr>
 	<tr>
@@ -1753,9 +1624,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='frameworks'
 			gitRepo='kglobalaccel'
 			product='frameworks-kglobalaccel'
-			phabRepo='kglobalaccel'
-			phabRepoName='KGlobalAccel'
-			phabDiffQuery='YtlirHsPPMpy'
 		%}
 	</tr>
 	<tr>
@@ -1778,9 +1646,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='kscreenlocker'
 			product='kscreenlocker'
-			phabRepo='kscreenlocker'
-			phabRepoName='KScreenLocker'
-			phabDiffQuery='54ALVMVJRT2S'
 		%}
 	</tr>
 	<tr>
@@ -1789,9 +1654,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='polkit-kde-agent-1'
 			product='policykit-kde-agent-1'
-			phabRepo='polkit-kde-agent-1'
-			phabRepoName='Policykit (Polkit) KDE Agent'
-			phabDiffQuery='hRFIy.6nV9HA'
 		%}
 	</tr>
 	<tr>
@@ -1800,9 +1662,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='powerdevil'
 			product='Powerdevil'
-			phabRepo='powerdevil'
-			phabRepoName='Powerdevil'
-			phabDiffQuery='bOaiSgfPQGoI'
 		%}
 	</tr>
 	<tr>
@@ -1811,9 +1670,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='plasma'
 			gitRepo='xdg-desktop-portal-kde'
 			product='xdg-desktop-portal-kde'
-			phabRepo='xdg-desktop-portal-kde'
-			phabRepoName='Flatpak Support: KDE Portal for XDG Desktop'
-			phabDiffQuery='gNr_6_SymR34'
 		%}
 	</tr>
 	<tr class="indent">
@@ -1834,9 +1690,6 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='frameworks'
 			gitRepo='kpackage'
 			product='frameworks-kpackage'
-			phabRepo='kpackage'
-			phabRepoName='KPackage'
-			phabDiffQuery='pW.6iUCaNzoP'
 		%}
 	</tr>
 </table>
