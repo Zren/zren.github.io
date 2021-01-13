@@ -1203,6 +1203,196 @@ redirect_from: /projects/kde/repos/
 </table>
 
 
+## KRunner Plugins
+
+<table class="repolist">
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Activities'
+			gitPath='runners/activities'
+			product='krunner&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Applications (Services)'
+			gitPath='runners/services'
+			product='krunner&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Bookmarks'
+			gitPath='runners/bookmarks'
+			product='krunner&component=bookmarks'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Calculator'
+			gitPath='runners/calculator'
+			product='krunner&component=calculator'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Command Line (Shell)'
+			gitPath='runners/shell'
+			product='krunner&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoAddons.html
+			repoName='Date and Time'
+			gitPath='runners/datetime'
+			product='krunner&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Desktop Search (Baloo)'
+			gitPath='runners/baloo'
+			product='krunner&component=filesearch'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Desktop Sessions'
+			gitPath='runners/sessions'
+			product='krunner&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoAddons.html
+			repoName='Dictionary'
+			gitPath='runners/dictionary'
+			product='krunner&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoAddons.html
+			repoName='Kate Sessions'
+			gitPath='runners/katesessions'
+			product='krunner&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoAddons.html
+			repoName='Konsole Profiles'
+			gitPath='runners/konsoleprofiles'
+			product='kdeplasma-addons&component=konsoleprofiles'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='KWin'
+			gitPath='runners/kwin'
+			product='krunner&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Locations'
+			gitPath='runners/locations'
+			product='krunner&component=locations'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='PIM Contacts Search'
+			gitlabGroup='pim'
+			gitRepo='akonadi-search'
+			gitPath='runner'
+			product='Akonadi&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Places'
+			gitPath='runners/places'
+			product='krunner&component=places'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoDesktop.html
+			repoName='Plasma Desktop Shell'
+			gitPath='runners/plasma-desktop'
+			product='krunner&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Power (Powerdevil)'
+			gitPath='runners/powerdevil'
+			product='krunner&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Recent Files'
+			gitPath='runners/recentdocuments'
+			product='krunner&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Software Center (AppStream)'
+			gitPath='runners/appstream'
+			product='krunner&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoAddons.html
+			repoName='Special Characters'
+			gitPath='runners/characters'
+			product='krunner&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoAddons.html
+			repoName='Spell Checker'
+			gitPath='runners/spellchecker'
+			product='krunner&component=spellchecker'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Terminate Applications (Kill)'
+			gitPath='runners/kill'
+			product='krunner&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoAddons.html
+			repoName='Unit Converter'
+			gitPath='runners/converter'
+			product='krunner&component=converter'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Web Search Keywords'
+			gitPath='runners/webshortcuts'
+			product='krunner&component=webshortcuts'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='Windowed widgets'
+			gitPath='runners/windowedwidgets'
+			product='krunner&component=general'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepoKwin.html
+			repoName='Windows'
+			gitPath='plugins/krunner-integration'
+			product='krunner&component=windows'
+		%}
+	</tr>
+</table>
+
+
 ## System Settings
 
 <table class="repolist">
