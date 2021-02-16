@@ -78,6 +78,22 @@ a:not([href]):hover {
   </thead>
   <tbody>
     <tr>
+      <td><a href="https://kde.org/announcements/plasma/5/5.21.0/">Plasma 5.21.0</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/ll388r/plasma_521_is_out_and_this_time_we_have_improved/">/r/kde</a></td>
+      <td>
+        <a href="https://www.reddit.com/r/kde/comments/liuglq/this_week_in_kde_plasma_521_approaches_adventures/">/r/kde (blog post)</a>
+        <a href="https://www.reddit.com/r/kde/comments/ljsc0l/kde_plasma_521_new_look_new_menu_and_wayland_100/">/r/kde (video discussion)</a>
+        <a href="https://www.reddit.com/r/linux/comments/lj22f9/this_week_in_kde_plasma_521_approaches_adventures/">/r/linux (blog post)</a>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma/5/5.20.90/">Plasma 5.21.0 Beta</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/l20ffp/plasma_521_beta_released/">/r/kde</a></td>
+      <td>
+        <a href="https://www.reddit.com/r/linux/comments/l21lr7/plasma_521_beta_release/">/r/linux</a>
+      </td>
+    </tr>
+    <tr>
       <td><a href="https://kde.org/announcements/plasma-5.20.0">Plasma 5.20.0</a></td>
       <td><a href="https://www.reddit.com/r/kde/comments/jabkh2/plasma_520_by_all_accounts_a_massive_release_is/">/r/kde</a></td>
       <td>
