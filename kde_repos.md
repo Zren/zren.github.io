@@ -672,6 +672,13 @@ redirect_from: /projects/kde/repos/
 			product='plasmashell&component=Task%20Manager%20and%20Icons-Only%20Task%20Manager'
 		%}
 	</tr>
+	<tr class="indent">
+		{% include kdeRepoWorkspace.html
+			repoName='libtaskmanager'
+			gitPath='libtaskmanager'
+			product='plasmashell&component=Task%20Manager%20and%20Icons-Only%20Task%20Manager'
+		%}
+	</tr>
 	<tr>
 		{% include kdeRepoAddons.html
 			repoName='Timer'
