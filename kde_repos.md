@@ -662,14 +662,14 @@ redirect_from: /projects/kde/repos/
 		{% include kdeRepoDesktop.html
 			repoName='Task Manager'
 			gitPath='applets/taskmanager'
-			product='plasmashell&component=Task%20Manager'
+			product='plasmashell&component=Task%20Manager%20and%20Icons-Only%20Task%20Manager'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='Icon Tasks'
 			gitPath='applets/taskmanager'
-			product='plasmashell&component=Icons-only%20Task%20Manager'
+			product='plasmashell&component=Task%20Manager%20and%20Icons-Only%20Task%20Manager'
 		%}
 	</tr>
 	<tr>
