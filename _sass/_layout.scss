@@ -120,6 +120,11 @@ hr {
 }
 
 // Images
+.post-content img {
+  box-shadow: 0 0 4px #000;
+  display: block;
+  margin: 0 auto;
+}
 @media screen and (min-width: 64em) {
   .post-content img.pull-right,
   .post-content img.pull-left {
@@ -144,12 +149,6 @@ hr {
   .post:nth-of-type(1) .post-content .outset:nth-child(-n+8) {
     margin-left: -20px;
     margin-right: -20px;
-  }
-
-  .post-content img {
-    box-shadow: 0 0 4px #000;
-    display: block;
-    margin: 0 auto;
   }
   .post-content .outset {
     box-shadow: 0 0 10px #000;
