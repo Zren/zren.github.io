@@ -1,4 +1,6 @@
 _site
+_drafts
 .sass-cache
 kde_tips/tips.mediawiki
 .directory
+.jekyll-cache
