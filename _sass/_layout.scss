@@ -119,6 +119,16 @@ hr {
   margin: 1em 0;
 }
 
+// Videos
+.post-content video {
+  box-shadow: 0 0 4px #000;
+  display: block;
+  margin: 0 auto;
+}
+.post-content > video {
+  margin: 0 auto 10px auto;
+}
+
 // Images
 .post-content img {
   box-shadow: 0 0 4px #000;
