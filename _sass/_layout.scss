@@ -135,6 +135,10 @@ hr {
   display: block;
   margin: 0 auto;
 }
+.post-content a.image-container {
+  display: block;
+  margin: 0 0 10px;
+}
 @media screen and (min-width: 64em) {
   .post-content img.pull-right,
   .post-content img.pull-left {

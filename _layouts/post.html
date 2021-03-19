@@ -16,3 +16,18 @@ layout: default
   </div>
 
 </article>
+
+<script type="text/javascript">
+function forEachImage(callback) {
+	document.querySelectorAll('.post-content > p > img:first-child:last-child').forEach(callback)
+}
+forEachImage(function(img){
+	var p = img.parentNode
+	var a = document.createElement('a')
+	a.classList.add('image-container')
+	a.setAttribute('href', img.getAttribute('src'))
+	a.setAttribute('target', '_blank')
+	p.replaceWith(a)
+	a.appendChild(img)
+})
+</script>
