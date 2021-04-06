@@ -1309,6 +1309,24 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='Activity Power Settings (PowerDevil)'
+			gitlabGroup='plasma'
+			gitRepo='powerdevil'
+			gitPath='kcmodule/activities'
+			product='systemsettings&component=kcm_powerdevil'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='Advanced Power Settings (PowerDevil)'
+			gitlabGroup='plasma'
+			gitRepo='powerdevil'
+			gitPath='kcmodule/global'
+			product='systemsettings&component=kcm_powerdevil'
+		%}
+	</tr>
+	<tr class="indent">
 		{% include kdeRepoDesktop.html
 			repoName='[Qt] Application Style'
 			gitPath='kcms/style'
@@ -1398,6 +1416,15 @@ redirect_from: /projects/kde/repos/
 			repoName='Emoticons'
 			gitPath='kcms/emoticons'
 			product='systemsettings&component=kcm_emoticons'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='Energy Saving (PowerDevil profiles)'
+			gitlabGroup='plasma'
+			gitRepo='powerdevil'
+			gitPath='kcmodule/profiles'
+			product='systemsettings&component=kcm_powerdevil'
 		%}
 	</tr>
 	<tr class="indent">
@@ -1609,6 +1636,30 @@ redirect_from: /projects/kde/repos/
 			repoName='Window Decorations'
 			gitPath='kcmkwin/kwindecoration'
 			product='systemsettings&component=kcm_kwindecoration'
+		%}
+	</tr>
+</table>
+
+
+## KInfoCenter
+
+<table class="repolist">
+	<tr>
+		{% include kdeRepo.html
+			repoName='KInfoCenter'
+			gitlabGroup='plasma'
+			gitRepo='kinfocenter'
+			product='kinfocenter'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='Energy'
+			gitlabGroup='plasma'
+			gitRepo='kinfocenter'
+			product='kinfocenter'
+			gitPath='Modules/energy'
+			product='kinfocenter&component=Energy%20Information'
 		%}
 	</tr>
 </table>
