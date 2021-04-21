@@ -37,13 +37,13 @@
 
 {% capture label %}Don’t sort windows in Taskbar{% endcapture %}{% capture contents %}
   Right Click the empty area on the taskbar next to the tasks > Task Manager Settings
-  General Tab > Sorting: Manual
-  General Tab > Uncheck: Keep Launchers Separate
+  Behavior Tab > Sorting: Manual
+  Behavior Tab > Uncheck: Keep Launchers Separate
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Hide windows from other Desktops in Taskbar{% endcapture %}{% capture contents %}
   Right Click a Task > Task Manager Settings
-  General Tab > Filters > Check: Current Desktop
+  Behavior Tab > Show only tasks: > Check: From current desktop
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Pin Apps to Taskbar{% endcapture %}{% capture contents %}
