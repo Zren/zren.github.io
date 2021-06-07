@@ -531,6 +531,11 @@ qdbus org.kde.KWin /KWin reconfigure
   Search for `browser.urlbar.doubleClickSelectsAll` and set it to `false`
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
+{% capture label %}Show bookmarks toolbar only on new tab{% endcapture %}{% capture contents %}
+  Available since Firefox v85+
+  Right Click Bookmarks Toolbar > Bookmarks Toolbar > Only Show on New Tab
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
 </ul>
 
 
@@ -548,28 +553,6 @@ Checkout [/r/FirefoxCSS/](https://www.reddit.com/r/FirefoxCSS/) for help.
 </ol>
 
 <ul>
-
-{% capture label %}Show bookmarks toolbar only on hover{% endcapture %}{% capture contents %}
-  ☰ > Customize
-  Toolbars > Check: Bookmarks Toolbar
-  Then paste the following CSS into `userChrome.css` ([instructions](#firefox-userchromecss)) and restart firefox.
-  {% highlight css %}
-#PersonalToolbar {
-  visibility: collapse !important;
-  display: block;
-  position: absolute !important;
-  z-index: 1;
-  width: 100%;
-  box-shadow: 0 6px 6px -6px #000;
-}
-#nav-bar:focus-within + #PersonalToolbar,
-#PersonalToolbar:focus-within,
-#PersonalToolbar[customizing="true"],
-#navigator-toolbox:hover #PersonalToolbar {
-  visibility: visible !important;
-}
-{% endhighlight %}
-{% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Remove left tabbar padding when not maximized{% endcapture %}{% capture contents %}
   Then paste the following CSS into `userChrome.css` ([instructions](#firefox-userchromecss)) and restart firefox.
