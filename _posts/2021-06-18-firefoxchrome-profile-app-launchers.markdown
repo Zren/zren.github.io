@@ -81,7 +81,7 @@ Finally drag the app to your panel's task manager widget to pin it there.
 
 ## Firefox
 
-For firefox, the process is the same as Chrome, however the `firefox-chris.desktop` file should be based on `/usr/share/applications/firefox.desktop` instead.
+The process for Firefox is the same as Chrome, however the `firefox-chris.desktop` file should be based on `/usr/share/applications/firefox.desktop` instead.
 
 {% highlight ini %}
 [Desktop Entry]
