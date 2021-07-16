@@ -4,7 +4,7 @@ title: Plasma Widget Tutorial
 permalink: /kde/docs/widget/
 ---
 
-The KDE wiki has a [Getting Started and Hello World](https://techbase.kde.org/Development/Tutorials/Plasma5) tutorial which you can read as well.
+This tutorial has been [upstreamed to the KDE Documentation](https://develop.kde.org/docs/plasma/widget/) with improvements like using the newer `PlasmaComponents 3.0` and `QtQuick.Controls 2.0` in your widget. This older tutorial still uses `PlasmaComponents 2.0` and `QQC 1.0`.
 
 <!-- ------- -->
 {% include_relative kde_docs/widget-DefaultWidgets.md %}
