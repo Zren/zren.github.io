@@ -136,6 +136,12 @@ qdbus org.kde.KWin /KWin reconfigure
   Desktop Session Tab > Uncheck: Confirm Logout
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
+{% capture label %}Redden the Screen at Night{% endcapture %}{% capture contents %}
+  This is known as Night Light on Windows and Android
+  System Settings > Display and Monitor > Night Color
+  Check: Activate Night Color
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
 {% capture label %}Windows Keybindings for moving windows{% endcapture %}{% capture contents %}
   System Settings > Shortcuts > Global Keyboard Shortcuts Tab
   KWin > Show Desktop: `Win+M`

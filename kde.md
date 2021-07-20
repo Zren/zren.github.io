@@ -59,12 +59,6 @@ gvfs-mime --set x-scheme-handler/https google-chrome.desktop
 # https://calibre-ebook.com/download_linux (Isolated install)
 # Installs to ~/calibre-bin/
 wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | python -c "import sys; main=lambda x,y:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main('~/calibre-bin', True)"
-
-## Redshift (Redden the Screen / f.lux Alternative)
-sudo apt install -y redshift
-# Unlock Widgets > Right Click ☰ > Add Widgets
-# Get New Widgets > Download New Widgets > Redshift Control
-# System Tray Settings > General Tab > Enable Redshift
 {% endhighlight %}
 
 
