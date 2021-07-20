@@ -115,7 +115,7 @@
 {% capture label %}Show Alt+Tab popup as fast as possible{% endcapture %}{% capture contents %}
   Normally it will wait 90 milliseconds before trying to show the popup. This makes quick switches faster since it doesn't need to draw anything.
   We need to set `DelayTime=0` under the group `[TabBox]` in the file `~/.config/kwinrc`, then reload kwin.
-  It's easier to use these commmands than doing it by hand.
+  It's easier to use these commands than doing it by hand.
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group TabBox --key DelayTime 0
 qdbus org.kde.KWin /KWin reconfigure
@@ -204,7 +204,7 @@ qdbus org.kde.KWin /KWin reconfigure
 
 {% capture label %}Do not open the "Start Menu" with Windows/Meta key{% endcapture %}{% capture contents %}
   We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/.config/kwinrc`, then reload kwin.
-  It's easier to use these commmands than doing it by hand.
+  It's easier to use these commands than doing it by hand.
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta ""
 qdbus org.kde.KWin /KWin reconfigure
@@ -213,7 +213,7 @@ qdbus org.kde.KWin /KWin reconfigure
 
 {% capture label %}Open KRunner with Windows/Meta key{% endcapture %}{% capture contents %}
   We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/.config/kwinrc`, then reload kwin.
-  It's easier to use these commmands than doing it by hand.
+  It's easier to use these commands than doing it by hand.
   **Plasma 5.18 and above:**
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/krunner_desktop,org.kde.kglobalaccel.Component,invokeShortcut,_launch"
@@ -234,7 +234,7 @@ qdbus org.kde.KWin /KWin reconfigure
   System Settings > Startup and Shutdown
   Login Screen (SDDM) Tab > Background > Load From File
   We should also change the lock screen.
-  System Settings > Desktop Bahviour
+  System Settings > Desktop Bahaviour
   Screen Locking Tab > Wallpaper > Wallpaper Type: Image
 {% endcapture%}{% include tip.html label=label contents=contents %}
 </ul>
@@ -362,7 +362,7 @@ qdbus org.kde.KWin /KWin reconfigure
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Close Steam to Tray{% endcapture %}{% capture contents %}
-  We need to launch steam using `STEAM_FRAME_FORCE_CLOSE=1 steam` as mentioned in [this bug report](https://github.com/ValveSoftware/steam-for-linux/issues/5806), but editing every single game shortcut that Steam generates is a hassel. So we'll set a [session environment variable](https://userbase.kde.org/Session_Environment_Variables/en) by adding `export STEAM_FRAME_FORCE_CLOSE=1` to `~/.config/plasma-workspace/env/path.sh`. It's easier to run this commands:
+  We need to launch steam using `STEAM_FRAME_FORCE_CLOSE=1 steam` as mentioned in [this bug report](https://github.com/ValveSoftware/steam-for-linux/issues/5806), but editing every single game shortcut that Steam generates is a hassle. So we'll set a [session environment variable](https://userbase.kde.org/Session_Environment_Variables/en) by adding `export STEAM_FRAME_FORCE_CLOSE=1` to `~/.config/plasma-workspace/env/path.sh`. It's easier to run this commands:
   {% highlight bash %}echo 'export STEAM_FRAME_FORCE_CLOSE=1' >> ~/.config/plasma-workspace/env/path.sh{% endhighlight %}
   Then logout and back in so that your "panel" is launched with the session variable so that it can pass it to Steam when Steam is launched from the app launcher or desktop shortcut.
 {% endcapture%}{% include tip.html label=label contents=contents %}
@@ -409,7 +409,7 @@ qdbus org.kde.KWin /KWin reconfigure
   Window Matching Tab > Window class: [`Exact Match`] `virtualbox machine`
   Appearances & Fixes Tab > Check "Ignore Global Shortcuts"
   Change "Do Not Affect" to "Force", then select "Yes".
-  > Note that this also disables Spectable's screenshot global shortcuts while the VM window is focused.
+  > Note that this also disables Spectacle's screenshot global shortcuts while the VM window is focused.
 {% endcapture%}{% include tip.html label=label contents=contents %}
 </ul>
 
