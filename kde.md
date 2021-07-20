@@ -46,7 +46,8 @@ sudo apt install -y xbindkey # Remap Mouse Buttons / Keys
 sudo apt install -y xdotool # Command Line Trigger Mouse/Keys
 sudo apt install -y vlc # Video Player (.mp4 .mkv)
 
-## Chrome
+## Google Chrome
+# https://www.google.com/chrome/
 cd ~/Downloads
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome*.deb
