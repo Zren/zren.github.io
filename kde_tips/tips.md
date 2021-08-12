@@ -237,6 +237,12 @@ qdbus org.kde.KWin /KWin reconfigure
   System Settings > Desktop Bahaviour
   Screen Locking Tab > Wallpaper > Wallpaper Type: Image
 {% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Auto-Login{% endcapture %}{% capture contents %}
+  Note: KDE Wallet will prompt you for your password to get the WiFi password after auto-login.
+  System Settings > Startup and Shutdown > Login Screen (SDDM)
+  Behavior button > Check: Automatically login as user
+{% endcapture%}{% include tip.html label=label contents=contents %}
 </ul>
 
 ### Dolphin (File Manager)
