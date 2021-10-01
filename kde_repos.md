@@ -154,7 +154,7 @@ redirect_from: /projects/kde/repos/
 </style>
 
 
-> **Note:** KDE now uses GitLab (<https://invent.kde.org>). KDE still uses Bugzilla (<https://bugs.kde.org>). KDE is currently migrating off <https://phabricator.kde.org> for pull requests. There is a readonly code mirror at <https://github.com/KDE/> and <https://cgit.kde.org/>.
+> **Note:** KDE now uses GitLab (<https://invent.kde.org>). KDE still uses Bugzilla (<https://bugs.kde.org>). KDE recently migrated off <https://phabricator.kde.org> for pull requests but still uses it for older tasks. There is a readonly code mirror at <https://github.com/KDE/>.
 
 <div id="search" class="button-group">
 	<label for="search-input">
