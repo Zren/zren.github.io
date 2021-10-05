@@ -4,7 +4,7 @@ title: Plasma Widget Tutorial
 permalink: /kde/docs/widget/
 ---
 
-This tutorial has been [upstreamed to the KDE Documentation](https://develop.kde.org/docs/plasma/widget/) with improvements like using the newer `PlasmaComponents 3.0` and `QtQuick.Controls 2.0` in your widget. This older tutorial still uses `PlasmaComponents 2.0` and `QQC 1.0`.
+**This tutorial has been [upstreamed to the KDE Documentation](https://develop.kde.org/docs/plasma/widget/) with improvements** like using the newer `PlasmaComponents 3.0` and `QtQuick.Controls 2.0` in your widget. This older tutorial still uses `PlasmaComponents 2.0` and `QtQuick.Controls 1.0`. **This tutorial is out of date.**
 
 <!-- ------- -->
 {% include_relative kde_docs/widget-DefaultWidgets.md %}
