@@ -78,6 +78,22 @@ a:not([href]):hover {
   </thead>
   <tbody>
     <tr>
+      <td><a href="https://kde.org/announcements/plasma/5/5.23.0/">Plasma 5.23.0</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/q7wpwf/plasma_25th_anniversary_edition_is_here_with_a/">/r/kde</a></td>
+      <td>
+        <a href="https://www.reddit.com/r/kde/comments/q7yb7s/plasma_25th_anniversary_edition/">/r/kde (video discussion)</a>
+        <a href="https://www.reddit.com/r/linux/comments/q7wq10/plasma_25th_anniversary_edition_is_here_with_a/">/r/linux (blog post)</a>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="https://kde.org/announcements/plasma/5/5.22.0/">Plasma 5.22.0</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/nv1w9a/plasma_522_is_here_kdes_desktop_is_more_reliable/">/r/kde</a></td>
+      <td>
+        <a href="https://www.reddit.com/r/linux/comments/nv1xmd/plasma_522_is_here_kdes_desktop_is_more_reliable/">/r/linux (blog post)</a>
+        <a href="https://news.ycombinator.com/item?id=27433781">HackerNews</a>
+      </td>
+    </tr>
+    <tr>
       <td><a href="https://kde.org/announcements/plasma/5/5.21.0/">Plasma 5.21.0</a></td>
       <td><a href="https://www.reddit.com/r/kde/comments/ll388r/plasma_521_is_out_and_this_time_we_have_improved/">/r/kde</a></td>
       <td>
