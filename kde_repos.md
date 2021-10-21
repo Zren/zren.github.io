@@ -860,14 +860,24 @@ redirect_from: /projects/kde/repos/
 	<tr>
 		{% include kdeRepo.html
 			repoName='www.kde.org'
-			gitUrl='https://websvn.kde.org/trunk/www/sites/www/'
+			gitlabGroup='websites'
+			gitRepo='kde-org'
+			product='www.kde.org'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepo.html
-			repoName='Aether Wordpress Theme'
+			repoName='Aether SASS'
 			gitlabGroup='websites'
-			gitRepo='aether-wordpress'
+			gitRepo='aether-sass'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
+			repoName='develop.kde.org'
+			gitlabGroup='documentation'
+			gitRepo='develop-kde-org'
+			product='docs'
 		%}
 	</tr>
 	<tr>
@@ -875,6 +885,7 @@ redirect_from: /projects/kde/repos/
 			repoName='docs.kde.org'
 			gitlabGroup='websites'
 			gitRepo='docs-kde-org'
+			product='docs'
 		%}
 	</tr>
 	<tr>
@@ -883,6 +894,20 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='websites'
 			gitRepo='aether-mediawiki'
 			product='KDE%20MediaWiki'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
+			repoName='Older Websites (SVN)'
+			gitUrl='https://websvn.kde.org/trunk/www/sites/www/'
+			product='www.kde.org'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='Aether Wordpress Theme'
+			gitlabGroup='websites'
+			gitRepo='aether-wordpress'
 		%}
 	</tr>
 </table>
