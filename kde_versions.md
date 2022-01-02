@@ -85,6 +85,14 @@ a:not([href]):hover {
       <td><a href="https://repology.org/project/plasma-desktop/versions#debian_11">Plasma 5.20</a></td>
     </tr>
     <tr>
+      <td>2021-06</td>
+      <td><a href="https://en.opensuse.org/Portal:15.3">OpenSUSE Leap 15.3</a></td>
+      <td><a href="https://repology.org/project/qt/versions#opensuse_leap_15_3">Qt 5.12</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.5</a></td>
+      <td><a href="https://repology.org/project/plasma-framework/versions#opensuse_leap_15_3">KF5 5.76</a></td>
+      <td><a href="https://repology.org/project/plasma-desktop/versions#opensuse_leap_15_3">Plasma 5.18</a></td>
+    </tr>
+    <tr>
       <td>2021-04</td>
       <td><a href="https://fedoramagazine.org/announcing-fedora-34/">Fedora 34</a></td>
       <td><a href="https://repology.org/project/qt/versions#fedora_34">Qt 5.15</a></td>
@@ -99,6 +107,14 @@ a:not([href]):hover {
       <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.14</a></td>
       <td><a href="https://repology.org/project/plasma-framework/versions#fedora_33">KF5 5.79</a></td>
       <td><a href="https://repology.org/project/plasma-desktop/versions#fedora_33">Plasma 5.20</a></td>
+    </tr>
+    <tr>
+      <td>2020-07</td>
+      <td><a href="https://en.opensuse.org/Portal:15.2">OpenSUSE Leap 15.2</a></td>
+      <td><a href="https://repology.org/project/qt/versions#opensuse_leap_15_2">Qt 5.12</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.5</a></td>
+      <td><a href="https://repology.org/project/plasma-framework/versions#opensuse_leap_15_2">KF5 5.71</a></td>
+      <td><a href="https://repology.org/project/plasma-desktop/versions#opensuse_leap_15_2">Plasma 5.18</a></td>
     </tr>
     <tr>
       <td>2020-04</td>
@@ -117,12 +133,28 @@ a:not([href]):hover {
       <td><a href="https://repology.org/project/plasma-desktop/versions#debian_10">Plasma 5.14</a></td>
     </tr>
     <tr>
+      <td>2019-05</td>
+      <td><a href="https://en.opensuse.org/Portal:15.1">OpenSUSE Leap 15.1</a></td>
+      <td><a href="https://repology.org/project/qt/versions#opensuse_leap_15_1">Qt 5.9</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.2</a></td>
+      <td><a href="https://repology.org/project/plasma-framework/versions#opensuse_leap_15_1">KF5 5.55</a></td>
+      <td><a href="https://repology.org/project/plasma-desktop/versions#opensuse_leap_15_1">Plasma 5.12</a></td>
+    </tr>
+    <tr>
       <td>2018-04</td>
       <td>Ubuntu 18.04</td>
       <td><a href="https://repology.org/project/qt/versions#ubuntu_18_04">Qt 5.9</a></td>
       <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.2</a></td>
       <td><a href="https://repology.org/project/plasma-framework/versions#ubuntu_18_04">KF5 5.44</a></td>
       <td><a href="https://repology.org/project/plasma-desktop/versions#ubuntu_18_04">Plasma 5.14</a></td>
+    </tr>
+    <tr>
+      <td>2017-06</td>
+      <td><a href="https://www.debian.org/News/2017/20170617">Debian 9</a></td>
+      <td><a href="https://repology.org/project/qt/versions#debian_9">Qt 5.7</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.0</a></td>
+      <td><a href="https://repology.org/project/plasma-framework/versions#debian_9">KF5 5.28</a></td>
+      <td><a href="https://repology.org/project/plasma-desktop/versions#debian_9">Plasma 5.8</a></td>
     </tr>
     <tr>
       <td>2016-04</td>
