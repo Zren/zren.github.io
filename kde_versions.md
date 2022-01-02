@@ -79,8 +79,8 @@ a:not([href]):hover {
     <tr>
       <td>2021-08</td>
       <td><a href="https://www.debian.org/News/2021/20210814">Debian 11</a></td>
-      <td><a href="https://repology.org/project/qt/versions#debian_11">Qt 5.11</a></td>
-      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.4</a></td>
+      <td><a href="https://repology.org/project/qt/versions#debian_11">Qt 5.15</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.15</a></td>
       <td><a href="https://repology.org/project/plasma-framework/versions#debian_11">KF5 5.78</a></td>
       <td><a href="https://repology.org/project/plasma-desktop/versions#debian_11">Plasma 5.20</a></td>
     </tr>
@@ -111,8 +111,8 @@ a:not([href]):hover {
     <tr>
       <td>2019-07</td>
       <td><a href="https://www.debian.org/News/2019/20190706">Debian 10</a></td>
-      <td><a href="https://repology.org/project/qt/versions#debian_10">Qt 5.15</a></td>
-      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.15</a></td>
+      <td><a href="https://repology.org/project/qt/versions#debian_10">Qt 5.11</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.4</a></td>
       <td><a href="https://repology.org/project/plasma-framework/versions#debian_10">KF5 5.54</a></td>
       <td><a href="https://repology.org/project/plasma-desktop/versions#debian_10">Plasma 5.14</a></td>
     </tr>
