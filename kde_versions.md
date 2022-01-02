@@ -56,6 +56,86 @@ a:not([href]):hover {
   </tbody>
 </table>
 
+<table class="table">
+  <thead>
+    <tr>
+      <th>Released</th>
+      <th>Distro</th>
+      <th>Qt</th>
+      <th>QQC2</th>
+      <th>KF5</th>
+      <th>Plasma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2021-11</td>
+      <td><a href="https://fedoramagazine.org/announcing-fedora-35/">Fedora 35</a></td>
+      <td><a href="https://repology.org/project/qt/versions#fedora_35">Qt 5.15</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.15</a></td>
+      <td><a href="https://repology.org/project/plasma-framework/versions#fedora_35">KF5 5.89</a></td>
+      <td><a href="https://repology.org/project/plasma-desktop/versions#fedora_35">Plasma 5.23</a></td>
+    </tr>
+    <tr>
+      <td>2021-08</td>
+      <td><a href="https://www.debian.org/News/2021/20210814">Debian 11</a></td>
+      <td><a href="https://repology.org/project/qt/versions#debian_11">Qt 5.11</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.4</a></td>
+      <td><a href="https://repology.org/project/plasma-framework/versions#debian_11">KF5 5.78</a></td>
+      <td><a href="https://repology.org/project/plasma-desktop/versions#debian_11">Plasma 5.20</a></td>
+    </tr>
+    <tr>
+      <td>2021-04</td>
+      <td><a href="https://fedoramagazine.org/announcing-fedora-34/">Fedora 34</a></td>
+      <td><a href="https://repology.org/project/qt/versions#fedora_34">Qt 5.15</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.15</a></td>
+      <td><a href="https://repology.org/project/plasma-framework/versions#fedora_34">KF5 5.85</a></td>
+      <td><a href="https://repology.org/project/plasma-desktop/versions#fedora_34">Plasma 5.22</a></td>
+    </tr>
+    <tr>
+      <td>2020-10</td>
+      <td><a href="https://fedoramagazine.org/announcing-fedora-33/">Fedora 33</a></td>
+      <td><a href="https://repology.org/project/qt/versions#fedora_33">Qt 5.14</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.14</a></td>
+      <td><a href="https://repology.org/project/plasma-framework/versions#fedora_33">KF5 5.79</a></td>
+      <td><a href="https://repology.org/project/plasma-desktop/versions#fedora_33">Plasma 5.20</a></td>
+    </tr>
+    <tr>
+      <td>2020-04</td>
+      <td>Ubuntu 20.04</td>
+      <td><a href="https://repology.org/project/qt/versions#ubuntu_20_04">Qt 5.15</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.15</a></td>
+      <td><a href="https://repology.org/project/plasma-framework/versions#ubuntu_20_04">KF5 5.68</a></td>
+      <td><a href="https://repology.org/project/plasma-desktop/versions#ubuntu_20_04">Plasma 5.18</a></td>
+    </tr>
+    <tr>
+      <td>2019-07</td>
+      <td><a href="https://www.debian.org/News/2019/20190706">Debian 10</a></td>
+      <td><a href="https://repology.org/project/qt/versions#debian_10">Qt 5.15</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.15</a></td>
+      <td><a href="https://repology.org/project/plasma-framework/versions#debian_10">KF5 5.54</a></td>
+      <td><a href="https://repology.org/project/plasma-desktop/versions#debian_10">Plasma 5.14</a></td>
+    </tr>
+    <tr>
+      <td>2018-04</td>
+      <td>Ubuntu 18.04</td>
+      <td><a href="https://repology.org/project/qt/versions#ubuntu_18_04">Qt 5.9</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.2</a></td>
+      <td><a href="https://repology.org/project/plasma-framework/versions#ubuntu_18_04">KF5 5.44</a></td>
+      <td><a href="https://repology.org/project/plasma-desktop/versions#ubuntu_18_04">Plasma 5.14</a></td>
+    </tr>
+    <tr>
+      <td>2016-04</td>
+      <td>Ubuntu 16.04</td>
+      <td><a href="https://repology.org/project/qt/versions#ubuntu_16_04">Qt 5.5</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">N/A</a></td>
+      <td><a href="https://repology.org/project/plasma-framework/versions#ubuntu_16_04">KF5 5.18</a></td>
+      <td><a href="https://repology.org/project/plasma-desktop/versions#ubuntu_16_04">Plasma 5.5</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 <style type="text/css">
 .table.versiontable td:nth-of-type(2) a,
