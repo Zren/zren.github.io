@@ -119,8 +119,8 @@ a:not([href]):hover {
     <tr>
       <td>2020-04</td>
       <td>Ubuntu 20.04</td>
-      <td><a href="https://repology.org/project/qt/versions#ubuntu_20_04">Qt 5.15</a></td>
-      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.15</a></td>
+      <td><a href="https://repology.org/project/qt/versions#ubuntu_20_04">Qt 5.12</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.5</a></td>
       <td><a href="https://repology.org/project/plasma-framework/versions#ubuntu_20_04">KF5 5.68</a></td>
       <td><a href="https://repology.org/project/plasma-desktop/versions#ubuntu_20_04">Plasma 5.18</a></td>
     </tr>
