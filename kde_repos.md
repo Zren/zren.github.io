@@ -1504,9 +1504,16 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoDesktop.html
-			repoName='Global Shortcuts'
+			repoName='[Global] Shortcuts (KGlobalAccel)'
 			gitPath='kcms/keys'
 			product='systemsettings&component=kcm_keys'
+		%}
+	</tr>
+	<tr class="indent depth2">
+		{% include kdeRepoDesktop.html
+			repoName='Custom Shortcuts (KHotkeys)'
+			gitPath='kcm_hotkeys'
+			product='systemsettings&component=kcm_khotkeys'
 		%}
 	</tr>
 	<tr class="indent">
