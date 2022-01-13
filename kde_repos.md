@@ -808,14 +808,14 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Alt+Tab (TabBox)'
-			gitPath='tabbox'
+			gitPath='src/tabbox'
 			product='kwin&component=tabbox'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Window Decorations'
-			gitPath='decorations'
+			gitPath='src/decorations'
 			product='kwin&component=decorations'
 		%}
 	</tr>
@@ -839,7 +839,7 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent depth2">
 		{% include kdeRepoKwin.html
 			repoName='Aurorae Decorations'
-			gitPath='plugins/kdecorations/aurorae'
+			gitPath='src/plugins/kdecorations/aurorae'
 			product='kwin&component=aurorae'
 		%}
 	</tr>
@@ -1301,7 +1301,7 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Windows'
-			gitPath='plugins/krunner-integration'
+			gitPath='src/plugins/krunner-integration'
 			product='krunner&component=windows'
 		%}
 	</tr>
@@ -1382,7 +1382,7 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Compositor'
-			gitPath='kcmkwin/kwincompositing'
+			gitPath='src/kcmkwin/kwincompositing'
 			product='systemsettings&component=compositing'
 		%}
 	</tr>
@@ -1410,7 +1410,7 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Desktop Effects'
-			gitPath='kcmkwin/kwineffects'
+			gitPath='src/kcmkwin/kwineffects'
 			product='systemsettings&component=kcm_kwin_effects'
 		%}
 	</tr>
@@ -1547,7 +1547,7 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='KWin Scripts'
-			gitPath='kcmkwin/kwinscripts'
+			gitPath='src/kcmkwin/kwinscripts'
 			product='kwin&component=scripting'
 		%}
 	</tr>
@@ -1596,7 +1596,7 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Screen Edges'
-			gitPath='kcmkwin/kwinscreenedges'
+			gitPath='src/kcmkwin/kwinscreenedges'
 			product='systemsettings&component=kcm_kwinscreenedges'
 		%}
 	</tr>
@@ -1624,7 +1624,7 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Task Switcher'
-			gitPath='kcmkwin/kwintabbox'
+			gitPath='src/kcmkwin/kwintabbox'
 			product='kwin&component=tabbox'
 		%}
 	</tr>
@@ -1638,35 +1638,35 @@ redirect_from: /projects/kde/repos/
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Touch Screen'
-			gitPath='kcmkwin/kwinscreenedges'
+			gitPath='src/kcmkwin/kwinscreenedges'
 			product='systemsettings&component=kcm_kwintouchscreen'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Virtual Desktops'
-			gitPath='kcmkwin/kwindesktop'
+			gitPath='src/kcmkwin/kwindesktop'
 			product='systemsettings&component=kcm_kwin_virtualdesktops'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Window Behavior'
-			gitPath='kcmkwin/kwinoptions'
+			gitPath='src/kcmkwin/kwinoptions'
 			product='kwin&component=general'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Window Rules'
-			gitPath='kcmkwin/kwinrules'
+			gitPath='src/kcmkwin/kwinrules'
 			product='kwin&component=rules'
 		%}
 	</tr>
 	<tr class="indent">
 		{% include kdeRepoKwin.html
 			repoName='Window Decorations'
-			gitPath='kcmkwin/kwindecoration'
+			gitPath='src/kcmkwin/kwindecoration'
 			product='systemsettings&component=kcm_kwindecoration'
 		%}
 	</tr>
