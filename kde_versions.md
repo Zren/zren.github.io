@@ -118,11 +118,27 @@ a:not([href]):hover {
     </tr>
     <tr>
       <td>2020-04</td>
+      <td><a href="https://fedoramagazine.org/announcing-fedora-32/">Fedora 32</a></td>
+      <td><a href="https://repology.org/project/qt/versions#fedora_32">Qt 5.14</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.14</a></td>
+      <td><a href="https://repology.org/project/plasma-framework/versions#fedora_32">KF5 5.75</a></td>
+      <td><a href="https://repology.org/project/plasma-desktop/versions#fedora_32">Plasma 5.18</a></td>
+    </tr>
+    <tr>
+      <td>2020-04</td>
       <td>Ubuntu 20.04</td>
       <td><a href="https://repology.org/project/qt/versions#ubuntu_20_04">Qt 5.12</a></td>
       <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.5</a></td>
       <td><a href="https://repology.org/project/plasma-framework/versions#ubuntu_20_04">KF5 5.68</a></td>
       <td><a href="https://repology.org/project/plasma-desktop/versions#ubuntu_20_04">Plasma 5.18</a></td>
+    </tr>
+    <tr>
+      <td>2019-10</td>
+      <td><a href="https://fedoramagazine.org/announcing-fedora-31/">Fedora 31</a></td>
+      <td><a href="https://repology.org/project/qt/versions#fedora_31">Qt 5.13</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.13</a></td>
+      <td><a href="https://repology.org/project/plasma-framework/versions#fedora_31">KF5 5.73</a></td>
+      <td><a href="https://repology.org/project/plasma-desktop/versions#fedora_31">Plasma 5.18</a></td>
     </tr>
     <tr>
       <td>2019-07</td>
@@ -139,6 +155,14 @@ a:not([href]):hover {
       <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.2</a></td>
       <td><a href="https://repology.org/project/plasma-framework/versions#opensuse_leap_15_1">KF5 5.55</a></td>
       <td><a href="https://repology.org/project/plasma-desktop/versions#opensuse_leap_15_1">Plasma 5.12</a></td>
+    </tr>
+    <tr>
+      <td>2019-04</td>
+      <td><a href="https://fedoramagazine.org/announcing-fedora-30/">Fedora 30</a></td>
+      <td><a href="https://repology.org/project/qt/versions#fedora_30">Qt 5.12</a></td>
+      <td><a href="https://doc.qt.io/qt-6/qtquickcontrols-index.html#versions">QQC2 2.5</a></td>
+      <td><a href="https://repology.org/project/plasma-framework/versions#fedora_30">KF5 5.68</a></td>
+      <td><a href="https://repology.org/project/plasma-desktop/versions#fedora_30">Plasma 5.15</a></td>
     </tr>
     <tr>
       <td>2018-04</td>
