@@ -783,14 +783,14 @@ redirect_from: /projects/kde/repos/
 <table class="repolist">
 	<tr>
 		{% include kdeRepo.html
-			repoName='Breath'
-			gitUrl='https://gitlab.manjaro.org/artwork/themes/breath'
+			repoName='Breath Old'
+			gitUrl='https://gitlab.manjaro.org/artwork/themes/breath-old'
 		%}
 	</tr>
 	<tr>
 		{% include kdeRepo.html
-			repoName='Breath2'
-			gitUrl='https://gitlab.manjaro.org/artwork/themes/breath2'
+			repoName='Breath (Breath2)'
+			gitUrl='https://gitlab.manjaro.org/artwork/themes/breath'
 		%}
 	</tr>
 </table>
