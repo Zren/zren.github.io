@@ -19,7 +19,7 @@ In the past few versions of Plasma, there's been several changes to the official
 
 In Plasma 5.24, the city selector was changed again to drop the need to select which weather service (`noaa`, `envcan`, `wettercom`, `bbcukmet`) before searching for the city. This makes it easier to setup. It removed the private `ServiceListModel` class with an even more private `plasmoid.nativeInterface.providers` variable. `plasmoid.nativeInterface` can only be used by the official widget with the id `org.kde.plasma.weather` so forked widgets cannot use it.
 
-https://invent.kde.org/plasma/kdeplasma-addons/-/commit/2484b96f663aa3226271a4db1f7cef0948d3b605
+<https://invent.kde.org/plasma/kdeplasma-addons/-/commit/2484b96f663aa3226271a4db1f7cef0948d3b605>
 
 Alas, since I was using the private `ServiceListModel` class, I needed to update my 3 weather widgets ([Condensed Weather](https://store.kde.org/p/1353451), [Daily Forecast](https://store.kde.org/p/1287928), [Simple Weather](https://store.kde.org/p/1287571)) which fork the upstream widget.
 
@@ -29,7 +29,7 @@ Luckily the weather DataEngine has a `weatherDataSource.data['ions']` property w
 
 It looks like there was also another weather service added in Plasma 5.24, the German Weather Service (`dwd`).
 
-https://invent.kde.org/plasma/plasma-workspace/-/commit/bae13fa8c241f28b41cef1daeb4068c0e543801b
+<https://invent.kde.org/plasma/plasma-workspace/-/commit/bae13fa8c241f28b41cef1daeb4068c0e543801b>
 
 So to replace `ServiceListModel`, I wrote the following:
 
@@ -52,10 +52,10 @@ property var weatherDataSource: PlasmaCore.DataSource {
 
 The default KDE weather widget heavily uses `plasmoid.nativeInterface` for configuration as well, so I can't recommend forking it. If you want to create your own weather widget, I recommend using my `libweather` QML files, or forking one of my widgets.
 
-* https://github.com/Zren/plasma-applet-lib/tree/master/package/contents/ui/libweather
-* https://github.com/Zren/plasma-applet-simpleweather
-* https://github.com/Zren/plasma-applet-dailyforecast
-* https://github.com/Zren/plasma-applet-condensedweather
+* <https://github.com/Zren/plasma-applet-lib/tree/master/package/contents/ui/libweather>
+* <https://github.com/Zren/plasma-applet-simpleweather>
+* <https://github.com/Zren/plasma-applet-dailyforecast>
+* <https://github.com/Zren/plasma-applet-condensedweather>
 
 ![](/pic/2022-02-13___19-36-15.png)
 ![](/pic/2022-02-13___19-34-53.png)
