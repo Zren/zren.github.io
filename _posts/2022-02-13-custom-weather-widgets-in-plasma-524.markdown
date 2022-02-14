@@ -56,3 +56,6 @@ The default KDE weather widget heavily uses `plasmoid.nativeInterface` for confi
 * https://github.com/Zren/plasma-applet-simpleweather
 * https://github.com/Zren/plasma-applet-dailyforecast
 * https://github.com/Zren/plasma-applet-condensedweather
+
+![](/pic/2022-02-13___19-36-15.png)
+![](/pic/2022-02-13___19-34-53.png)
