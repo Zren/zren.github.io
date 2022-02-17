@@ -3,7 +3,7 @@ title: KDE Neon Update Bug (Feb 16) (Fixed)
 layout: post
 ---
 
-TL;DR: I went to TTY2 and ran updated again in the morning (12 hours later), then went back to TTY1 and could login. Seems `libkf5coreaddons5` was missing in the update last night.
+TL;DR: I went to TTY2 and ran the update again in the morning (12 hours later), then went back to TTY1 and could login. Seems `libkf5coreaddons5` was missing in the update last night.
 
 -----
 
