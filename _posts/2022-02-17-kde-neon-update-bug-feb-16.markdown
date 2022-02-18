@@ -7,7 +7,7 @@ TL;DR: I went to TTY2 and ran the update again in the morning (12 hours later), 
 
 -----
 
-Ran `sudo apt update && sudo apt full-upgrade` last night (Feb 16, 2022). IIRC, the was some resolved conflicts around the `libkwin4-effect-builtins1` package, but I can't find mention of it in the history.
+Ran `sudo apt update && sudo apt full-upgrade` last night (Feb 16, 2022). IIRC, there was some resolved conflicts around the `libkwin4-effect-builtins1` package, but I can't find mention of it in the history.
 
 I initiated the restart on the computer and went to bed.
 
