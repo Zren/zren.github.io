@@ -452,10 +452,9 @@ qdbus org.kde.KWin /KWin reconfigure
 
 {% capture label %}Use the KDE File selector dialog{% endcapture %}{% capture contents %}
   Make sure you have the `xdg-desktop-portal` and `xdg-desktop-portal-kde` package installed.
-  Right click the Firefox launcher in the app launcher > Edit Application
-  Application tab > Command `GTK_USE_PORTAL=1 /usr/lib/firefox/firefox %u`
+  In newer versions of Firefox, you can go to `about:config` and set `widget.use-xdg-desktop-portal` to `true`. 
   Press `Ctrl+Esc` and search to make sure the `xdg-desktop-portal-gtk` process is not running. If it is, end all `xdg-` processes.
-  Restart Firefox
+  Note: [Older Firefox versions needed](https://askubuntu.com/questions/1100261/how-do-i-make-firefox-64-use-the-kde-file-selection-dialog) the `GTK_USE_PORTAL=1` environment variable set in the Firefox launcher.
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Install privacy addons{% endcapture %}{% capture contents %}
