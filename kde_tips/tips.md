@@ -511,8 +511,9 @@ qdbus org.kde.KWin /KWin reconfigure
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Hide Search Dropdown Footer{% endcapture %}{% capture contents %}
-  Go to `about:config`
-  Search for `browser.urlbar.oneOffSearches` and set it to `false`
+  ☰ > Preferences > Search 
+  Search Shortcuts: Uncheck All
+  Note: Keywords will still work.
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Disable `Ctrl+Tab`'s recently used order{% endcapture %}{% capture contents %}
