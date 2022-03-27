@@ -3,8 +3,6 @@ title: QML Profiling Plasmashell
 layout: post
 ---
 
-<script type="text/javascript" src="/js/livereload.js"></script>
-
 [A while back](https://github.com/Zren/plasma-applets/issues/118#issuecomment-362778737) I figured out how to use Qt Creator's QML Profiler to check my widgets. I imported the [`plasma-sdk` repository](https://invent.kde.org/plasma/plasma-sdk) which contains the `plasmoidviewer` process.
 
 More recently I wondered if I could do the same to the full `plasmashell` process. First off is finding out which of KDE's hundreds of repository's owns the `plasmashell` process.
