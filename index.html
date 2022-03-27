@@ -46,7 +46,6 @@ redirect_from: /projects/
       text-align: center;
       background-color: #f4f4f4;
       color: #888;
-      border-top: 1px solid #e8e8e8;
       position: relative;
     }
     a.post-continue-reading:hover {
@@ -78,9 +77,7 @@ redirect_from: /projects/
       {{ post.excerpt }}
     </div>
 
-    <a class="post-continue-reading" href="{{ post.url | prepend: site.baseurl }}">
-      ● ● ●
-    </a>
+    <a class="post-continue-reading" href="{{ post.url | prepend: site.baseurl }}"></a>
 
   </article>
   {% endfor %}
