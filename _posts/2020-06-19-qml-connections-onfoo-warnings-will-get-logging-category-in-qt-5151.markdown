@@ -36,6 +36,11 @@ More discussion can be found [on StackOverflow](https://stackoverflow.com/questi
 
 ----
 
+Update: KDE Plasma has a workaround to hide them using `QLoggingCategory::installFilter`:  
+<https://invent.kde.org/plasma/plasma-workspace/-/commit/5aebd1a8c122a30f950582832ab3d6cf1bc978f7>
+
+----
+
 After a night's sleep, I thought about trying to build `qtdeclarative` from source, then ~~installing it to `/usr/local/...`~~ use `LD_PRELOAD=... plasmoidviewer`.
 
 First things first is to download the `qtdeclarative` project. It's pretty large, so just do a shallow copy of the 5.15 branch.
