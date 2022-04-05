@@ -318,10 +318,12 @@ qdbus org.kde.KWin /KWin reconfigure
 {% capture label %}Set Default Font Size/Family/CellPadding{% endcapture %}{% capture contents %}
   Styles > Manage Styles
   Right click Default > Modify
-  Font > Family: Noto Sans (Office uses Carlito/Calibri)
+  Font > Family: Noto Sans (KDE default) might look different for Window users.
+  Font > Family: Manually type "Calibri" (Office default) which will map to the free "Carlito" font.
   Font > Size: 12 (Office uses 11)
-  Borders > Padding: 1.00mm
+  Borders > Padding: 2.0 pt
   Ok
+  Make sure "Bad", "Good", etc under "Status" also use the correct font.
   File > Templates > Save As Template
   Name: Default
   Category: My Templates
