@@ -1,7 +1,13 @@
 ---
-title: QML Profiling Plasmashell
+title: QML Profiling Plasmashell (Out of Date)
 layout: post
 ---
+
+Update: There is now an easier way to debug plasmashell. You no longer need to compile `plasma-workspace` in Qt Creator to debug plasmashell.
+
+Please [read this article]({% post_url 2022-04-07-qml-profiling-plasmashell %}) on how to use the `qmlprofiler` command to create `.qtd` files you can load in Qt Creator.
+
+-----
 
 [A while back](https://github.com/Zren/plasma-applets/issues/118#issuecomment-362778737) I figured out how to use Qt Creator's QML Profiler to check my widgets. I imported the [`plasma-sdk` repository](https://invent.kde.org/plasma/plasma-sdk) which contains the `plasmoidviewer` process.
 
