@@ -129,6 +129,30 @@ If you haven't yet installed Qt Creator:
 	opensuse='qt5-creator'
 %}
 
+Open Qt Creator.
 
+Click the triangle on the Debug tab, a context menu should appear. Select QML Profiler.
 
+![](/pic/2022-04-07___19-28-40.png)
 
+Right click the empty timeline area > Load Trace File
+
+Select your `.qtd` file. It takes a few seconds to load small trace files. Larger files take a minute.
+
+You'll notice a number of sections in the timeline. "Pixmap Cache", "Scene Graph", "Memory Usage", "Debug Messages", "Animations", "Compiling", "Creating", "Binding", "Handling Signal", and "JavaScript".
+
+<video src="/vid/screen-2021-03-18_20.46.41.mp4" width="100%" autoplay loop muted controls></video>
+
+The timeline can be scrolled, and clicked to view the details. Use `Ctrl+MouseWheel` to zoom if something is hard to click. As you can see in the video, it seems it took a while to load my wallpaper and the tile images in my [Tiled Menu](https://store.kde.org/p/1160672/) app launcher. This "Pixmap Cache" is likely asynchronous however since it's IO.
+
+<video src="/vid/screen-2021-03-18_20.41.38.mp4" width="100%" autoplay loop muted controls></video>
+
+There's an interesting Memory Usage section which should be useful.
+
+![](/pic/2021-03-18___20-56-29.png)
+
+There's also a "Flame Graph" and "Statistics" tab which tell me that my [Event Calendar widget](https://store.kde.org/p/998901/) code could be better. Functions are starting, then ending much later.
+
+![](/pic/2021-03-18___20-42-22.png)
+
+![](/pic/2021-03-18___20-43-13.png)
