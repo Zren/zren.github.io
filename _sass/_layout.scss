@@ -427,6 +427,12 @@ hr {
         box-shadow: none;
         vertical-align: baseline;
     }
+    .installtable span {
+        vertical-align: middle;
+    }
+    .installtable span + img {
+        margin-left: 0.5em;
+    }
     .installtable td:first-child {
         text-align: right;
     }
