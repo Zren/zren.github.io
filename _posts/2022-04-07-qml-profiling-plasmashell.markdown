@@ -28,7 +28,7 @@ QML Debugger: Waiting for connection on port 5555...
 To read more about the `-qmljsdebugger` read the Qt documentation:  
 <https://doc.qt.io/qt-5/qtquick-debugging.html#starting-applications>
 
-### qmlprofiler
+## qmlprofiler
 
 `qmlprofiler` (`qmlprofiler-qt5` in OpenSUSE) is a terminal command we run in a separate Konsole window/tab (`Meta+T`).
 
@@ -91,13 +91,13 @@ Data written to /home/chris/Desktop/plasmashell1649368701.qtd.
 
 Please note that the longer the command runs, the more data the output file uses. A simple 10 second test can create a file 2 Mb. If you do lots of interactions over 60 seconds, it can be 20 Mb. The larger the file, the longer it'll take to load in Qt Creator, and the more RAM is needed to preview it. At launch, Qt Creator uses 60-120Mb of RAM. After loading a 2Mb `.qtd` file, it uses 300Mb of RAM. After loading the 20Mb `.qtd` file, it used 600Mb of RAM and took 10 seconds to load in Qt Creator.
 
-### Compress/Share
+## Compress/Share
 
 If you're a user, at this point you'll need to compress the file before uploading it.
 
 Right click the file > Compress > Here (as TAR.GZ)
 
-### Profiling Plasmashell startup
+## Profiling Plasmashell startup
 
 Previously, we skipped recording when plasma started up to minimize the file size. However a KDE dev might want you to profile the startup, so use these commands instead.
 
@@ -117,7 +117,7 @@ PLASMA_ENABLE_QML_DEBUG=1 qmlprofiler --interactive --output ~/Desktop/plasmashe
 
 All you need to do is type `f` then `Enter` (ignore the plasma logs) and it'll save to file.
 
-### Loading Trace Files In Qt Creator
+## Loading Trace Files In Qt Creator
 
 If you haven't yet installed Qt Creator:
 
