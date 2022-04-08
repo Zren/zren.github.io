@@ -22,7 +22,6 @@ QML Debugger: Waiting for connection on port 5555...
 * `PLASMA_ENABLE_QML_DEBUG=1` [tells plasmashell](https://invent.kde.org/plasma/plasma-workspace/-/blame/master/shell/main.cpp#L58-62) to allow debugging.
 * `-qmljsdebugger=` configures what data to expose and how to connect to it.
 * `port:5555,5565,` will select an open port between `5555` .. `5565`
-* Without `block`, `plasmashell` continues loading and display the panels + wallpapers. If we add `block` then `plasmashell` will pause from loading until `qmlprofiler` (explained below) connects to it.
 * `services:CanvasFrameRate` is [the code name for the "QML Profiler"](https://github.com/qt/qtdeclarative/blob/784c62441333de8d13d31c719ac01e6096247c01/src/qml/debugger/qqmldebugserviceinterfaces.cpp#L47). Qt Creator also enables `EngineControl,DebugMessages,DebugTranslation` but they are unrelated to data collection.
 
 To read more about the `-qmljsdebugger` read the Qt documentation:  
@@ -108,6 +107,8 @@ PLASMA_ENABLE_QML_DEBUG=1 plasmashell --replace -qmljsdebugger=port:5555,5565,bl
 ```bash
 qmlprofiler --interactive --attach localhost --port 5555 --output ~/Desktop/plasmashell$(date +%s).qtd
 ```
+
+You'll notice we added `block` to `-qmljsdebugger=`. It will pause `plasmashell` from loading until `qmlprofiler` connects to it. Without `block`, `plasmashell` continues loading and display the panels + wallpapers.
 
 If you're a developer, you can even turn this into a one liner with:
 
