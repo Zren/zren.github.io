@@ -425,5 +425,9 @@ hr {
         margin-right: 2px;
         display: inline-block;
         box-shadow: none;
+        vertical-align: baseline;
+    }
+    .installtable td:first-child {
+        text-align: right;
     }
 }
