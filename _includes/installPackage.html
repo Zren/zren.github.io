@@ -1,0 +1,14 @@
+<table>
+	{% if include.ubuntu %}<tr>
+		<td>Kubuntu / KDE Neon</td>
+		<td><code>sudo apt install {{include.ubuntu}}</code></td>
+	</tr>{% endif %}
+	{% if include.arch %}<tr>
+		<td>Manjaro / Arch</td>
+		<td><code>sudo pacman -S {{include.arch}}</code></td>
+	</tr>{% endif %}
+	{% if include.opensuse %}<tr>
+		<td>OpenSUSE</td>
+		<td><code>sudo zypper install {{include.opensuse}}</code></td>
+	</tr>{% endif %}
+</table>
