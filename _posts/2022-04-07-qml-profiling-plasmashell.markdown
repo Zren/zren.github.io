@@ -101,7 +101,7 @@ Right click the file > Compress > Here (as TAR.GZ)
 
 ### Profiling Plasmashell startup
 
-Previously, we skipped recording when plasma started up to minimize the file size. However a KDE dev might as you to profile the startup, so use these commands instead.
+Previously, we skipped recording when plasma started up to minimize the file size. However a KDE dev might want you to profile the startup, so use these commands instead.
 
 ```bash
 PLASMA_ENABLE_QML_DEBUG=1 plasmashell --replace -qmljsdebugger=port:5555,5565,block,services:CanvasFrameRate,EngineControl,DebugMessages,DebugTranslation
