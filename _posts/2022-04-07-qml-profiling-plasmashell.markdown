@@ -9,7 +9,7 @@ Since [my last article]({% post_url 2021-03-18-qml-profiling-plasmashell %}) on 
 Open up the Konsole app (`Meta+T`), then paste the following (`Ctrl+Shift+V`) to restart plasmashell in debug mode:
 
 ```bash
-PLASMA_ENABLE_QML_DEBUG=1 plasmashell --replace -qmljsdebugger=port:5555,5565,services:CanvasFrameRate,EngineControl,DebugMessages,DebugTranslation
+PLASMA_ENABLE_QML_DEBUG=1 plasmashell --replace -qmljsdebugger=port:5555,5565,services:CanvasFrameRate
 ```
 
 You should see the following in the logs.
@@ -23,7 +23,7 @@ QML Debugger: Waiting for connection on port 5555...
 * `-qmljsdebugger=` configures what data to expose and how to connect to it.
 * `port:5555,5565,` will select an open port between `5555` .. `5565`
 * Without `block`, `plasmashell` continues loading and display the panels + wallpapers. If we add `block` then `plasmashell` will pause from loading until `qmlprofiler` (explained below) connects to it.
-* `services:CanvasFrameRate,EngineControl,DebugMessages,DebugTranslation` enables the same services that Qt Creator does. `CanvasFrameRate` is the important service as it is [the code name for the "QML Profiler"](https://github.com/qt/qtdeclarative/blob/784c62441333de8d13d31c719ac01e6096247c01/src/qml/debugger/qqmldebugserviceinterfaces.cpp#L47).
+* `services:CanvasFrameRate` is [the code name for the "QML Profiler"](https://github.com/qt/qtdeclarative/blob/784c62441333de8d13d31c719ac01e6096247c01/src/qml/debugger/qqmldebugserviceinterfaces.cpp#L47). Qt Creator also enables `EngineControl,DebugMessages,DebugTranslation` but they are unrelated to data collection.
 
 To read more about the `-qmljsdebugger` read the Qt documentation:  
 <https://doc.qt.io/qt-5/qtquick-debugging.html#starting-applications>
@@ -102,7 +102,7 @@ Right click the file > Compress > Here (as TAR.GZ)
 Previously, we skipped recording when plasma started up to minimize the file size. However a KDE dev might want you to profile the startup, so use these commands instead.
 
 ```bash
-PLASMA_ENABLE_QML_DEBUG=1 plasmashell --replace -qmljsdebugger=port:5555,5565,block,services:CanvasFrameRate,EngineControl,DebugMessages,DebugTranslation
+PLASMA_ENABLE_QML_DEBUG=1 plasmashell --replace -qmljsdebugger=port:5555,5565,block,services:CanvasFrameRate
 ```
 
 ```bash
