@@ -19,7 +19,7 @@ QML debugging is enabled. Only use this in a safe environment.
 QML Debugger: Waiting for connection on port 5555...
 ```
 
-* `PLASMA_ENABLE_QML_DEBUG=1` [tells plasmashell](https://invent.kde.org/plasma/plasma-workspace/-/blame/master/shell/main.cpp#L58-62) to not ignore `-qmljsdebugger`.
+* `PLASMA_ENABLE_QML_DEBUG=1` [tells plasmashell](https://invent.kde.org/plasma/plasma-workspace/-/blame/master/shell/main.cpp#L58-62) to allow debugging.
 * `-qmljsdebugger=` configures what data to expose and how to connect to it.
 * `port:5555,5565,` will select an open port between `5555` .. `5565`
 * Without `block`, `plasmashell` continues loading and display the panels + wallpapers. If we add `block` then `plasmashell` will pause from loading until `qmlprofiler` (explained below) connects to it.
