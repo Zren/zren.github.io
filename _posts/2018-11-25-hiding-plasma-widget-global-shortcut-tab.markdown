@@ -56,3 +56,9 @@ Item {
 ![](https://i.imgur.com/SH26uO2.png)
 
 Please note `AppletConfiguration.qml` is private code, not a public API, so it may change without notice.
+
+**2022-04-19 Update:** I've had to modify this code a couple times since I wrote it. The most recent code can be found in TiledMenu's code.
+
+* Plasma 5.15 changes: <https://github.com/Zren/plasma-applet-tiledmenu/commit/4caa88460465e8720bff7639ebf053288dc9ad6b>
+* Plasma 5.24 changes: <https://github.com/Zren/plasma-applet-tiledmenu/commit/ea15d8a2f141f0676b9608815a20707f0070b503>
+* Latest Code: <https://github.com/Zren/plasma-applet-tiledmenu/blame/master/package/contents/ui/config/ConfigGeneral.qml#L21>
