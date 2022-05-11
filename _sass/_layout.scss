@@ -430,10 +430,15 @@ hr {
     .installtable span {
         vertical-align: middle;
     }
-    .installtable span + img {
+    .installtable span + span {
         margin-left: 0.5em;
     }
     .installtable td:first-child {
         text-align: right;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .installtable td:nth-child(2) {
+        vertical-align: bottom;
     }
 }
