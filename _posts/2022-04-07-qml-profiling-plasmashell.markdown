@@ -161,3 +161,17 @@ There's also a "Flame Graph" and "Statistics" tab which tell me that my [Event C
 ![](/pic/2021-03-18___20-42-22.png)
 
 ![](/pic/2021-03-18___20-43-13.png)
+
+## Opening Huge 100Mb Log Files
+
+If you leave a plasmashell debugging session running for several hours or overnight, the `.qtd` log file can grow to nearly 1000Mb when the data is flushed to file. In order to open a file that large in Qt Creator, it would take several days and tons of RAM.
+
+For such cases, I wrote a simple python3 script to split a large `.qtd` log file into multiple 20Mb files.
+
+<https://gist.github.com/Zren/b4d2c234b5f84228e2475e4c0f0d2592>
+
+1. Download the `splitqtd.py` script by opening the Raw file on Gist then Saving Page As (`Ctrl+S`).  
+  <https://gist.githubusercontent.com/Zren/b4d2c234b5f84228e2475e4c0f0d2592/raw/splitqtd.py>
+2. Run `python3 ./splitqtd.py ~/Desktop/plasmashell1234567890.qtd`
+
+![](/pic/2022-05-11___09-36-49.png)
