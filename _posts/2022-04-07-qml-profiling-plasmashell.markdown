@@ -31,6 +31,12 @@ To read more about the `-qmljsdebugger` read the Qt documentation:
 
 `qmlprofiler` (`qmlprofiler-qt5` in OpenSUSE) is a terminal command we run in a separate Konsole window/tab (`Meta+T`).
 
+{% include installPackage.html
+    ubuntu='qtdeclarative5-dev-tools'
+    arch='qt5-declarative'
+    opensuse='libqt5-qtdeclarative-tools'
+%}
+
 ```bash
 qmlprofiler --interactive --record off --attach localhost --port 5555 --output ~/Desktop/plasmashell$(date +%s).qtd
 ```
