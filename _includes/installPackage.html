@@ -1,21 +1,19 @@
 <table class="installtable">
 	{% if include.ubuntu %}<tr>
 		<td>
-			<img src="/img/distro/kubuntu.svg" /><span>Kubuntu</span>
-			<img src="/img/distro/kdeneon.svg" /><span>KDE Neon</span>
+			<span><img src="/img/distro/kubuntu.svg" />Kubuntu</span><span><img src="/img/distro/kdeneon.svg" />KDE Neon</span>
 		</td>
 		<td><code>sudo apt install {{include.ubuntu}}</code></td>
 	</tr>{% endif %}
 	{% if include.arch %}<tr>
 		<td>
-			<img src="/img/distro/manjaro.svg" /><span>Manjaro</span>
-			<img src="/img/distro/archlinux.svg" /><span>Arch</span>
+			<span><img src="/img/distro/manjaro.svg" />Manjaro</span><span><img src="/img/distro/archlinux.svg" />Arch</span>
 		</td>
 		<td><code>sudo pacman -S {{include.arch}}</code></td>
 	</tr>{% endif %}
 	{% if include.opensuse %}<tr>
 		<td>
-			<img src="/img/distro/opensuse.svg" /><span>OpenSUSE</span>
+			<span><img src="/img/distro/opensuse.svg" />OpenSUSE</span>
 		</td>
 		<td><code>sudo zypper install {{include.opensuse}}</code></td>
 	</tr>{% endif %}
