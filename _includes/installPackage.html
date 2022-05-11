@@ -17,4 +17,10 @@
 		</td>
 		<td><code>sudo zypper install {{include.opensuse}}</code></td>
 	</tr>{% endif %}
+	{% if include.fedora %}<tr>
+		<td>
+			<span><img src="/img/distro/fedora.svg" />Fedora</span>
+		</td>
+		<td><code>sudo dnf install {{include.fedora}}</code></td>
+	</tr>{% endif %}
 </table>

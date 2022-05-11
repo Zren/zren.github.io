@@ -35,6 +35,7 @@ To read more about the `-qmljsdebugger` read the Qt documentation:
     ubuntu='qtdeclarative5-dev-tools'
     arch='qt5-declarative'
     opensuse='libqt5-qtdeclarative-tools'
+    fedora='qt5-qtdeclarative-devel'
 %}
 
 ```bash
@@ -132,6 +133,7 @@ If you haven't yet installed Qt Creator:
 	ubuntu='qtcreator'
 	arch='qtcreator'
 	opensuse='qt5-creator'
+	fedora='qt-creator'
 %}
 
 Open Qt Creator.
