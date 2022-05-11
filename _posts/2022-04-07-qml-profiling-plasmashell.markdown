@@ -171,7 +171,7 @@ For such cases, I wrote a simple python3 script to split a large `.qtd` log file
 <https://gist.github.com/Zren/b4d2c234b5f84228e2475e4c0f0d2592>
 
 1. Download the `splitqtd.py` script by opening the Raw file on Gist then Saving Page As (`Ctrl+S`).  
-  <https://gist.githubusercontent.com/Zren/b4d2c234b5f84228e2475e4c0f0d2592/raw/splitqtd.py>
+    <https://gist.githubusercontent.com/Zren/b4d2c234b5f84228e2475e4c0f0d2592/raw/splitqtd.py>
 2. Run `python3 ./splitqtd.py ~/Desktop/plasmashell1234567890.qtd`
 
 ![](/pic/2022-05-11___09-36-49.png)
