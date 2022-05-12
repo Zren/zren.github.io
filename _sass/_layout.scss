@@ -419,26 +419,33 @@ hr {
         }
     }
 
-    .installtable img {
-        width: 1.4em;
-        height: 1.4em;
-        margin-right: 2px;
-        display: inline-block;
-        box-shadow: none;
-        vertical-align: middle;
-    }
-    .installtable span {
-        vertical-align: middle;
-        display: inline-block;
-    }
-    .installtable span + span {
-        margin-left: 0.5em;
-    }
-    .installtable td:first-child {
-        text-align: right;
-        vertical-align: top;
-    }
-    .installtable td:nth-child(2) {
-        vertical-align: bottom;
+    .installtable {
+        img {
+            width: 1.4em;
+            height: 1.4em;
+            margin-right: 2px;
+            display: inline-block;
+            box-shadow: none;
+            vertical-align: middle;
+        }
+        td:first-child {
+            text-align: right;
+            vertical-align: middle;
+
+            span {
+                vertical-align: middle;
+                display: inline-block;
+            }
+            span + span {
+                margin-left: 0.5em;
+            }
+        }
+        td:nth-child(2) {
+            vertical-align: middle;
+        }
+        .highlight,
+        .highlight pre {
+            margin-bottom: 0;
+        }
     }
 }

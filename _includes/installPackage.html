@@ -3,24 +3,55 @@
 		<td>
 			<span><img src="/img/distro/kubuntu.svg" />Kubuntu</span><span><img src="/img/distro/kdeneon.svg" />KDE Neon</span>
 		</td>
-		<td><code>sudo apt install {{include.ubuntu}}</code></td>
+		<td>
+{% highlight bash %}
+sudo pacman -S {{include.ubuntu}}
+{% if include.ubuntuCommand %}{{include.ubuntuCommand}}{% endif %}
+{% endhighlight %}
+		</td>
 	</tr>{% endif %}
 	{% if include.arch %}<tr>
 		<td>
 			<span><img src="/img/distro/manjaro.svg" />Manjaro</span><span><img src="/img/distro/archlinux.svg" />Arch</span>
 		</td>
-		<td><code>sudo pacman -S {{include.arch}}</code></td>
+		<td>
+{% highlight bash %}
+sudo pacman -S {{include.arch}}
+{% if include.archCommand %}{{include.archCommand}}{% endif %}
+{% endhighlight %}
+		</td>
 	</tr>{% endif %}
 	{% if include.opensuse %}<tr>
 		<td>
 			<span><img src="/img/distro/opensuse.svg" />OpenSUSE</span>
 		</td>
-		<td><code>sudo zypper install {{include.opensuse}}</code></td>
+		<td>
+{% highlight bash %}
+sudo zypper install {{include.opensuse}}
+{% if include.opensuseCommand %}{{include.opensuseCommand}}{% endif %}
+{% endhighlight %}
+		</td>
 	</tr>{% endif %}
 	{% if include.fedora %}<tr>
 		<td>
 			<span><img src="/img/distro/fedora.svg" />Fedora</span>
 		</td>
-		<td><code>sudo dnf install {{include.fedora}}</code></td>
+		<td>
+{% highlight bash %}
+sudo pacman -S {{include.fedora}}
+{% if include.fedoraCommand %}{{include.fedoraCommand}}{% endif %}
+{% endhighlight %}
+		</td>
+	</tr>{% endif %}
+	{% if include.gentoo %}<tr>
+		<td>
+			<span><img src="/img/distro/gentoo.svg" />Gentoo</span>
+		</td>
+		<td>
+{% highlight bash %}
+sudo pacman -S {{include.gentoo}}
+{% if include.gentooCommand %}{{include.gentooCommand}}{% endif %}
+{% endhighlight %}
+		</td>
 	</tr>{% endif %}
 </table>

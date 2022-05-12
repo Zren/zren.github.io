@@ -29,13 +29,19 @@ To read more about the `-qmljsdebugger` read the Qt documentation:
 
 ## qmlprofiler
 
-`qmlprofiler` (`qmlprofiler-qt5` in OpenSUSE) is a terminal command we run in a separate Konsole window/tab (`Meta+T`).
+`qmlprofiler` is a terminal command we run in a separate Konsole window/tab (`Meta+T`).
 
 {% include installPackage.html
     ubuntu='qtdeclarative5-dev-tools'
+    ubuntuCommand='qmlprofiler'
     arch='qt5-declarative'
+    archCommand='qmlprofiler'
     opensuse='libqt5-qtdeclarative-tools'
+    opensuseCommand='qmlprofiler-qt5'
     fedora='qt5-qtdeclarative-devel'
+    fedoraCommand='qmlprofiler'
+    gentoo='qt5-qtdeclarative-devel'
+    gentooCommand='/usr/lib64/qt5/bin/qmlprofiler'
 %}
 
 ```bash
