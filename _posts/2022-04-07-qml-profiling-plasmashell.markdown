@@ -45,7 +45,7 @@ To read more about the `-qmljsdebugger` read the Qt documentation:
 %}
 
 ```bash
-qmlprofiler --interactive --record off --attach localhost --port 5555 --output ~/Desktop/plasmashell$(date +%s).qtd
+qmlprofiler --interactive --record off --attach localhost --port 5555 --output ~/Desktop/plasmashell_$(date +%s).qtd
 ```
 
 Breaking this command down:
@@ -54,7 +54,7 @@ Breaking this command down:
 * `--record off` tells it to not record when we connect to `plasmashell`
 * `--attach localhost` switches to connecting to an already running program
 * `--port 5555` which port to connect to
-* `--output ~/Desktop/plasmashell$(date +%s).qtd` Make sure you save as a `.qtd` filetype or you won't be able to open it in Qt Creator.
+* `--output ~/Desktop/plasmashell_$(date +%s).qtd` Make sure you save as a `.qtd` filetype or you won't be able to open it in Qt Creator.
 
 For more help, type `qmlprofiler --help`.
 
@@ -98,7 +98,7 @@ When you've finished triggering the memory leak. Type `flush` to save to the out
 
 ```
 > flush
-Data written to /home/chris/Desktop/plasmashell1649368701.qtd.
+Data written to /home/chris/Desktop/plasmashell_1649368701.qtd.
 ```
 
 Please note that the longer the command runs, the more data the output file uses. A simple 10 second test can create a file 2 Mb. If you do lots of interactions over 60 seconds, it can be 20 Mb. The larger the file, the longer it'll take to load in Qt Creator, and the more RAM is needed to preview it. At launch, Qt Creator uses 60-120Mb of RAM. After loading a 2Mb `.qtd` file, it uses 300Mb of RAM. After loading the 20Mb `.qtd` file, it used 600Mb of RAM and took 10 seconds to load in Qt Creator.
@@ -118,7 +118,7 @@ PLASMA_ENABLE_QML_DEBUG=1 plasmashell --replace -qmljsdebugger=port:5555,5565,bl
 ```
 
 ```bash
-qmlprofiler --interactive --attach localhost --port 5555 --output ~/Desktop/plasmashell$(date +%s).qtd
+qmlprofiler --interactive --attach localhost --port 5555 --output ~/Desktop/plasmashell_$(date +%s).qtd
 ```
 
 You'll notice we added `block` to `-qmljsdebugger=`. It will pause `plasmashell` from loading until `qmlprofiler` connects to it. Without `block`, `plasmashell` continues loading and display the panels + wallpapers.
@@ -126,7 +126,7 @@ You'll notice we added `block` to `-qmljsdebugger=`. It will pause `plasmashell`
 If you're a developer, you can even turn this into a one liner with:
 
 ```bash
-PLASMA_ENABLE_QML_DEBUG=1 qmlprofiler --interactive --output ~/Desktop/plasmashell$(date +%s).qtd plasmashell --replace
+PLASMA_ENABLE_QML_DEBUG=1 qmlprofiler --interactive --output ~/Desktop/plasmashell_$(date +%s).qtd plasmashell --replace
 ```
 
 All you need to do is type `f` then `Enter` (ignore the plasma logs) and it'll save to file.
@@ -180,6 +180,6 @@ For such cases, I wrote a simple python3 script to split a large `.qtd` log file
 
 1. Download the `splitqtd.py` script by opening the Raw file on Gist then Saving Page As (`Ctrl+S`).  
     <https://gist.githubusercontent.com/Zren/b4d2c234b5f84228e2475e4c0f0d2592/raw/splitqtd.py>
-2. Run `python3 ./splitqtd.py ~/Desktop/plasmashell1234567890.qtd`
+2. Run `python3 ./splitqtd.py ~/Desktop/plasmashell_1234567890.qtd`
 
 ![](/pic/2022-05-11___09-36-49.png)
