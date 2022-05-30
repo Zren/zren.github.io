@@ -14,10 +14,12 @@
 {% capture label %}Hide the ☰ button in the top corner{% endcapture %}{% capture contents %}
   Right Click the desktop wallpaper > Desktop/Folder View Settings
   Tweaks Tab > Uncheck: Show the desktop toolbox
+  Note: Plasma removed this button in Plasma 5.19
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Hide the ☰ button in the panel on the bottom right{% endcapture %}{% capture contents %}
   Right Click the ☰ button > Lock Widgets.
+  Note: Plasma removed this button in Plasma 5.19
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Always Hide System Tray Notification Icons{% endcapture %}{% capture contents %}
