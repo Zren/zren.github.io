@@ -108,8 +108,8 @@
 {% capture label %}“Normal” Alt+Tab popup{% endcapture %}{% capture contents %}
   System Settings > Window Management
   Task Switcher Tab > Click the "star icon"
-  Install "[Thumbnail Grid](https://store.kde.org/p/1153173)", then close the installer window.
   Select "Thumbnail Grid" in the dropdown.
+  Note: You may need to install a package if "Thumbnail Grid" is missing. `kwin-addons` (Kubuntu / KDE Neon), `kdeplasma-addons` (Arch / Manjaro / Fedora), `plasma5-addons` (OpenSUSE).
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Show Alt+Tab popup as fast as possible{% endcapture %}{% capture contents %}
