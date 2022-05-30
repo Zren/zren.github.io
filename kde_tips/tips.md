@@ -303,6 +303,15 @@ qdbus org.kde.KWin /KWin reconfigure
 {% endcapture%}{% include tip.html label=label contents=contents %}
 </ul>
 
+### Spectacle (Screenshots)
+
+<ul>
+{% capture label %}Show Magnifier{% endcapture %}{% capture contents %}
+  Configure > General
+  Rectangular Region > Check: Show magnifier
+{% endcapture%}{% include tip.html label=label contents=contents %}
+</ul>
+
 ### LibreOffice Writer
 
 <ul>
