@@ -188,8 +188,8 @@ qdbus org.kde.KWin /KWin reconfigure
 <ul>
 {% capture label %}Open “Start Menu” with Windows/Meta key{% endcapture %}{% capture contents %}
   Feature has been added by default since Plasma 5.8.
-  If it's not working, make sure your "Start Menu" widget has a global shortcut like `Alt+F1` set (you can't assign it directly to `Meta`, but it will open with `Meta` if another shortcut is assigned).
-  Right Click the KDE Icon > Application Menu Settings
+  If it's not working, make sure your Application Launcher ("Start Menu") widget has a global shortcut like `Alt+F1` set (you can't assign it directly to `Meta`, but it will open with `Meta` if another shortcut is assigned).
+  Right Click the KDE Icon > Configure Application Launcher
   Keyboard Shortcuts Tab > Shortcut: `Alt+F1`
   * Latte Dock
     If you're using Latte Dock, you will need to run the following commands [mentioned in it's Wiki](https://github.com/psifidotos/Latte-Dock/wiki/F.A.Q.#q-can-i-use-my-super-key-to-open-the-app-l).
