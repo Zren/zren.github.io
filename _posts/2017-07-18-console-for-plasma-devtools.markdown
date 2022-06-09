@@ -3,7 +3,9 @@ layout: post
 title: Console for Plasma DevTools
 ---
 
-Since my last update, I've added a console to the devtools window. QML doesn't have an "exec" function but you can dynamically create components with a string. So we just put our string inside the `Component.onCompleted` event handler. Here's my current exec function.
+2022-06-09 Update: I've published the code at <https://github.com/Zren/QmlDevTools>.
+
+Since [my last update]({% post-url 2017-07-16-making-a-devtools-inspector-for-plasma %}), I've added a console to the devtools window. QML doesn't have an "exec" function but you can dynamically create components with a string. So we just put our string inside the `Component.onCompleted` event handler. Here's my current exec function.
 
 {% highlight javascript %}
 function exec(str) {

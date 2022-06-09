@@ -3,6 +3,8 @@ layout: post
 title: Making a DevTools Inspector for Plasma
 ---
 
+2022-06-09 Update: I've published the code at <https://github.com/Zren/QmlDevTools>.
+
 One of the the things I really miss from my few days with Gtk 3.0 in Cinnamon is that it has access to the "Chrome" DevTools inspector. It lets you easily see the Panel's DOM, and quickly test modifications. It's a must have for any web development these days too.
 
 This isn't my first time attempting this project, so I had an some code mocked up already.
