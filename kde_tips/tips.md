@@ -300,6 +300,14 @@ qdbus org.kde.KWin /KWin reconfigure
   ☰ Control > Configure Dolphin
   General Tab > Previews > Video Files (ffmpegthumbs) > Configure Button
   Uncheck: Embed filmstrip effect
+  Note: Since Dolphin 21.12, The GUI toggle was removed. You will need to create and edit `~/.config/ffmpegthumbsrc` to disable the filmstrips. It's easier to run this command:
+  {% highlight bash %}
+kwriteconfig5 --file ~/.config/ffmpegthumbsrc --group General --key filmstrip false
+  {% endhighlight %}
+  Finally you will need to delete the `~/.cache/thumbnails/` folder to regenerate the thumbnails.
+  {% highlight bash %}
+  rm -r ~/.cache/thumbnails/
+  {% endhighlight %}
 {% endcapture%}{% include tip.html label=label contents=contents %}
 </ul>
 
