@@ -87,7 +87,7 @@ target_link_libraries (ion_envcan
 )
 {% endhighlight %}
 
-Then open up `envcan/ion_envcan.h` and remove the `#include "../ion.h"` line and add `#include <plasma/weather/ion.h>` in it's place. This imports from the `PlasmaWeatherIon` library instead of trying to import the `ion.h` 1 directory up which we're pretending doesn't exist so we can compile just this folder.
+Then open up `envcan/ion_envcan.h` and remove the `#include "../ion.h"` line and add `#include <plasma/weather/ion.h>` in it's place. This imports from the `PlasmaWeatherIon` library instead of trying to import the `ion.h` one directory up which we're pretending doesn't exist so we can compile just this folder.
 
 {% highlight cpp %}
 // #include "../ion.h"
