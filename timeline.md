@@ -62,6 +62,7 @@ h3 + .tags {
 
 
 ### Plasma5 Widget - SideCalendar
+<div class="tags">QML</div>
 
 **Source:** <https://github.com/Zren/plasma-applet-sidecalendar>
 
@@ -76,12 +77,14 @@ Read more: <https://zren.github.io/2019/04/06/side-calendar-work-in-progress>
 
 
 ### Plasma5 Widget - Bugzilla
+<div class="tags">QML JSON</div>
 
 **Source:** <https://github.com/Zren/plasma-applet-bugzilla>
 
 I rewrote my GitHub widget to support the KDE's Bugzilla. Needing the ability to list multiple projects, I added the ability to put a "tag" in front of the bug title, which is rather difficult in QML since it does not have the concept of mixing "inline-blocks" with text that wraps.
 
 ### Plasma5 Widget - GitHub Issues
+<div class="tags">QML JSON</div>
 
 **Source:** <https://github.com/Zren/plasma-applet-githubissues>
 
@@ -89,6 +92,7 @@ GitHub does not provide an RSS feed for a repository' issues, so I could not use
 
 
 ### Plasma5 Widget - System Monitor Dashboard
+<div class="tags">QML</div>
 
 **Source:** <https://github.com/Zren/plasma-applet-sysmonitordash>
 
@@ -96,6 +100,7 @@ I refactored my "System Dash" widget to work for other computer by replacing all
 
 
 ### Plasma5 Widget - KDE Connect Device
+<div class="tags">QML</div>
 
 **Source:** <https://github.com/Zren/plasma-applet-kdeconnectdevice>
 
@@ -103,6 +108,7 @@ I refactored the earlier "KDE Connect Phone Charge" to have the ability to drag 
 
 
 ### Plasma5 Widget - MPVZ
+<div class="tags">C++ Qt QML</div>
 
 **Source:** <https://github.com/Zren/mpvz>
 
@@ -115,6 +121,7 @@ After development for the [bomi](https://github.com/xylosper/bomi) video player 
 
 
 ### Plasma5 Widget - Volume Slider
+<div class="tags">QML SVG</div>
 
 **Source:** <https://github.com/Zren/plasma-applet-volumeslider>
 
@@ -123,6 +130,7 @@ After convicing my parents to use Linux on their TV PC, I needed to simplify con
 
 
 ### Plasma5 Wallpaper - Inactive Blur Wallpaper
+<div class="tags">QML</div>
 
 **Source:** <https://github.com/Zren/plasma-wallpapers/tree/master/inactiveblur>
 
@@ -130,6 +138,7 @@ Someone on /r/unixporn had the idea of blurring the wallpaper when there was an 
 
 
 ### Plasma5 Wallpaper - Animated Hue Wallpaper
+<div class="tags">QML</div>
 
 **Source:** <https://github.com/Zren/plasma-wallpapers/tree/master/animatedhue>
 
@@ -137,11 +146,13 @@ I made a simple wallpaper plugin that would shift the hue of a wallpaper every f
 
 
 ### Plasma5 Widget - Workout Timer
+<div class="tags">QML SVG TextToSpeech</div>
 
 While trying to rewrite a more customizable timer, I tried creating a multi staged timer for a complete workout. It has 5s to 15s rest period to setup the next stretch. I also downloaded a few Text To Speech (TTS) phrases from google's API when a workout started and ended.
 
 
 ### Dolphin - Personal Fork
+<div class="tags">C++ Qt</div>
 
 **Source:** <https://github.com/Zren/dolphin>
 
@@ -157,11 +168,13 @@ Another thing that annoyed me was that I had to waste an entire row or column to
 
 
 ### Plasma5 Widget - System Dash
+<div class="tags">QML</div>
 
 A quick fullscreen view to see wifi speed, disk I/O, disk space, fan speeds, temperatures, and cpu/ram use. All mesured in graphs over time so that you can see how far the temperature/fan speed dropped after you exited a game. The panel button is even a CPU graph (that only shows the last 7 seconds) styled like the KSysGuard icon.
 
 
 ### Plasma5 Widget - Terminal Update
+<div class="tags">QML Bash</div>
 
 **Source:** <https://github.com/Zren/plasma-applet-terminalupdate>
 
@@ -169,6 +182,7 @@ KDE Discover is still in active development, which isn't the greatest thing for 
 
 
 ### Plasma5 Widget - Present Windows
+<div class="tags">QML SVG DBus</div>
 
 **Source:** <https://github.com/Zren/plasma-applet-presentwindows>
 
@@ -176,7 +190,9 @@ A simple buttons that with the Windows 10 "Task View" icon that triggers the "De
 
 
 ### KDE / Plasma (Contributor)
+<div class="tags">C++ Qt QML</div>
 
+**Update:** KDE now uses GitLab <https://invent.kde.org/cholland>
 **Link:** <https://phabricator.kde.org/people/commits/11270/>
 
 I started contributing patches to the Plasma desktop environment on Phabricator.
@@ -187,6 +203,7 @@ I started contributing patches to the Plasma desktop environment on Phabricator.
 
 
 ### Plasma5 Widget - Battery Time
+<div class="tags">QML</div>
 
 **Source:** <https://github.com/Zren/plasma-applet-batterytime>
 
@@ -194,6 +211,7 @@ Made a simple widget which will always use the breeze battery icon and also show
 
 
 ### Plasma5 Widget - Command Output
+<div class="tags">QML Bash</div>
 
 **Source:** <https://github.com/Zren/plasma-applet-commandoutput>
 
@@ -201,6 +219,7 @@ Simple widget that runs a command every second and display the output in the pan
 
 
 ### Plasma5 Widget - Tiled Menu
+<div class="tags">QML</div>
 
 **Link:** [Blog Post]({% post_url 2016-10-30-tiled-menu-win10-start-menu %})
 
@@ -210,6 +229,7 @@ I reskinned the app menu based on the Win10 Start Menu. I mainly did this becaus
 
 
 ### Plasma5 Widget - KDE Connect Phone Charge
+<div class="tags">QML</div>
 
 Later on, I realized that I rarely look at the desktop, so I redesigned the widget to focus primarily out of the system tray or on the panel. This time I focused on one widget per device.
 
@@ -217,11 +237,13 @@ I redrew the breeze battery icon using rectangles so it looks good (and is funct
 
 
 ### Plasma5 Widget - KDE Connect Desktop
+<div class="tags">QML</div>
 
 After KDE Connect was released, I was very interested in learning it's API. So I made a simple list of the connected devices with their battery icon on the desktop.
 
 
 ### Plasma5 TabBox - Thumbnail Grid
+<div class="tags">QML</div>
 
 **Source:** <https://github.com/Zren/kwin-tabbox-thumbnail_grid>
 
@@ -229,6 +251,7 @@ Plasma ships with an odd Alt Tab skin (a scrollable list on the left side). Ther
 
 
 ### Plasma5 Widget - Todo List
+<div class="tags">QML</div>
 
 **Source:** <https://github.com/Zren/plasma-applet-todolist>
 
@@ -236,6 +259,7 @@ The Note widget is a little ugly (all that look like a sticky note do) so I resk
 
 
 ### Plasma5 Widget - Win7 Volume Mixer
+<div class="tags">QML</div>
 
 **Source:** <https://github.com/Zren/plasma-applet-volumewin7mixer>
 
@@ -243,6 +267,7 @@ I loved the look of the volume mixer in Win7. I was dissapointed that most volum
 
 
 ### Plasma5 Widget - Event Calendar
+<div class="tags">QML</div>
 
 **Source:** <https://github.com/Zren/plasma-applet-eventcalendar>
 
@@ -250,12 +275,14 @@ The default clock didn't have the ability to sync with Google Calendar at the ti
 
 
 ### Plasma5 Widget - Win7 Show Desktop
+<div class="tags">QML</div>
 
 **Source:** <https://github.com/Zren/plasma-applet-win7showdesktop>
 
 I liked the slim little button in Windows so I modified the default widget to be visually similar. I also added the ability to control volume when scrolling over it, so that it's easy to blindly control the volume by flicking to the bottom right corner.
 
 ### NixShot
+<div class="tags">C++ Qt Bash</div>
 
 **Source:** <https://github.com/Zren/nixshot>
 
@@ -265,6 +292,7 @@ In the process, I found out that KDE Global Shortcuts don't fire immediately, ca
 
 
 ### Plasma5 Theme - Breeze AlphaBlack
+<div class="tags">Python SVG</div>
 
 **Source:** <https://github.com/Zren/breeze-alphablack>
 
