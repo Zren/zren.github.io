@@ -5,7 +5,7 @@
 		</td>
 		<td>
 {% highlight bash %}
-sudo pacman -S {{include.ubuntu}}
+sudo apt install {{include.ubuntu}}
 {% if include.ubuntuCommand %}{{include.ubuntuCommand}}{% endif %}
 {% endhighlight %}
 		</td>
@@ -38,7 +38,7 @@ sudo zypper install {{include.opensuse}}
 		</td>
 		<td>
 {% highlight bash %}
-sudo pacman -S {{include.fedora}}
+sudo dnf install -S {{include.fedora}}
 {% if include.fedoraCommand %}{{include.fedoraCommand}}{% endif %}
 {% endhighlight %}
 		</td>
@@ -49,7 +49,7 @@ sudo pacman -S {{include.fedora}}
 		</td>
 		<td>
 {% highlight bash %}
-sudo pacman -S {{include.gentoo}}
+sudo emerge --ask {{include.gentoo}}
 {% if include.gentooCommand %}{{include.gentooCommand}}{% endif %}
 {% endhighlight %}
 		</td>

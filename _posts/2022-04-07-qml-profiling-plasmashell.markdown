@@ -40,7 +40,7 @@ To read more about the `-qmljsdebugger` read the Qt documentation:
     opensuseCommand='qmlprofiler-qt5'
     fedora='qt5-qtdeclarative-devel'
     fedoraCommand='qmlprofiler'
-    gentoo='qt5-qtdeclarative-devel'
+    gentoo='dev-qt/qtdeclarative'
     gentooCommand='/usr/lib64/qt5/bin/qmlprofiler'
 %}
 
