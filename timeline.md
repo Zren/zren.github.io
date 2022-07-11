@@ -58,6 +58,104 @@ h3 + .tags {
 }
 </style>
 
+
+
+
+
+
+## 2022
+
+
+### mpv-osc-tethys
+<div class="tags">Lua</div>
+
+**Source:** <https://github.com/Zren/mpv-osc-tethys>
+
+After my GPU died in Fall of 2021, I was stuck with `mpv -vo=xorg` since I couldn't even use OpenGL buffers as my backup GPU was ancient. So I ended up trying to remake the bomi/mpvz GUI as a mpv lua theme to make the video player nicer to use.
+
+![](https://i.imgur.com/cYqWlw5.png)
+
+
+
+
+
+
+## 2021
+
+
+### WebExtension - NewTab Recent Bookmarks
+<div class="tags">Javascript</div>
+
+**Source:** <https://github.com/Zren/NewTabRecentBookmarks>
+
+After moving to Firefox, I missed the ability to view my bookmarks folders as a website like `chrome://bookmarks`. Eventually I made this extension to list recent bookmarks on the new tab page. I even turned it into a full blown KanBan by allowing the user to pin certain bookmark folders.
+
+![](https://raw.githubusercontent.com/Zren/NewTabRecentBookmarks/master/screenshots/FirefoxWithFavicons.png)
+
+
+
+### QmlDevTools
+<div class="tags">QML</div>
+
+**Source:** <https://github.com/Zren/QmlDevTools>
+
+When trying to debug a widget, I dusted off this old DevTools inspector for QML I originally wrote as Plasma Widget to inspect the plasma panels. As a plasma widget, it sometimes crashed plasmashell so I never kept it installed.
+
+Reviving it as it's own project/window allowed me to fork plasma-sdk's `plasmoidviewer` and patch the inspector into it.
+
+![](https://i.imgur.com/2rXaXob.png)
+
+
+
+
+
+
+## 2020
+
+
+### Plasma Widget Tutorial
+<div class="tags">Markdown</div>
+
+**Link:** <https://github.com/Zren/zren.github.io/issues/4>
+**Link:** <https://invent.kde.org/documentation/develop-kde-org/-/merge_requests/20>
+
+I ported the Plasma Widget Tutorial I'd been working on this blog to the upstream documentation.
+
+
+### Gitz (Gitk clone)
+<div class="tags">Python Git PyGTK</div>
+
+**Source:** <https://github.com/Zren/gitz>
+
+I wanted a nice GUI for skimming git log commits. I like the `git log --online --graph` UI in the terminal and wanted to make it interactive with the mouse or keyboard to preview the commit contents. I also liked the ability to select and copy the git log. Basically I wanted a TUI (Terminal UI) but settled for a PyGTK app.
+
+![](https://i.imgur.com/qa2S5IX.png)
+
+
+### Material KDecoration - LIM
+<div class="tags">C++ Qt</div>
+
+**Source:** <https://github.com/Zren/material-decoration>
+
+While trying to make my own C++ KDecoration theme, I came across [zzag's material-decoration](https://github.com/zzag/material-decoration) which is a near skeleton project of a KDecoration plugin. It served as a great example, and I implemented the other default buttons.
+
+With that experience, and the experience with DBusMenu, I ended up implementing the LIM (Locally Integrated Menus) feature from Unity7.
+
+![](https://i.imgur.com/oFOVWjV.png)
+
+
+### Plasma5 Widget - Condensed Weather
+<div class="tags">QML</div>
+
+**Link:** <https://github.com/Zren/plasma-applet-condensedweather>
+
+To make a combined Current + Daily weather forecast view, I forked Daily Forecast.
+
+![](https://i.imgur.com/2mXTwMX.png)
+
+
+
+
 ## 2019
 
 
@@ -71,9 +169,50 @@ Starting in the new year, I focused on a complete rewrite of my Event Calendar w
 Read more: <https://zren.github.io/2019/04/06/side-calendar-work-in-progress>
 
 
+### Plasma5 Widget - Daily Forecast
+<div class="tags">QML</div>
+
+**Source:** <https://github.com/Zren/plasma-applet-dailyforecast>
+
+After dogfooding Simple Weather, I soon wanted the week's forecast.
+
+![](https://i.imgur.com/ljrlh5x.png)
+
+
+
+### Plasma5 Widget - Simple Weather
+<div class="tags">QML</div>
+
+**Source:** <https://github.com/Zren/plasma-applet-simpleweather>
+
+Trying to create a Widget Tutorial video spiraled out of control when I chose to create a weather widget but found out the existing plasma widget was a terrible example to fork. So this widget was written to contain reusable code.
+
+![](https://i.imgur.com/ptHiKpw.png)
+
+
+
 
 
 ## 2018
+
+
+### Plasma HUD
+<div class="tags">Python DBus Rofi</div>
+
+**Source:** <https://github.com/Zren/plasma-hud>
+
+I learned from another KDE user that [mate-hud](https://github.com/ubuntu-mate/mate-hud) worked in KDE with a few issues. While trying to fix and upstream the bugfixes, I realized that the changes that worked around the KDE implementation of the DBusMenu wouldn't benefit the upsteam project since it basically needed a bunch of `if os.env('XDG_CURRENT_DESKTOP') == 'KDE'` to skip code that would freeze in KDE for 30sec before timing out.
+
+![](https://i.imgur.com/M3YUONc.png)
+![](https://i.imgur.com/sE0i8IE.png)
+
+
+### Plasma5 Widget - Plasma Widget Lib
+<div class="tags">QML</div>
+
+**Source:** <https://github.com/Zren/plasma-applet-lib>
+
+I grabbed all the reuseable code in my various plasma widgets and put them in a dedicated repo. The main features are Config Form Controls and translation scripts.
 
 
 ### Plasma5 Widget - Bugzilla
@@ -82,6 +221,7 @@ Read more: <https://zren.github.io/2019/04/06/side-calendar-work-in-progress>
 **Source:** <https://github.com/Zren/plasma-applet-bugzilla>
 
 I rewrote my GitHub widget to support the KDE's Bugzilla. Needing the ability to list multiple projects, I added the ability to put a "tag" in front of the bug title, which is rather difficult in QML since it does not have the concept of mixing "inline-blocks" with text that wraps.
+
 
 ### Plasma5 Widget - GitHub Issues
 <div class="tags">QML JSON</div>
@@ -118,6 +258,16 @@ After development for the [bomi](https://github.com/xylosper/bomi) video player 
 
 
 ## 2017
+
+
+### WebExtension - Recent Bookmarks
+<div class="tags">Javascript</div>
+
+**Source:** <https://github.com/Zren/chrome-extension-recentbookmarks>
+
+When you have a ton of bookmarks, it's annoying to find the last few added. So I made this to quickly return to a bookmark.
+
+![](https://i.imgur.com/CRPAuIq.png)
 
 
 ### Plasma5 Widget - Volume Slider
