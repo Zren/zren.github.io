@@ -1045,6 +1045,14 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepo.html
+			repoName='Kate'
+			gitlabGroup='utilities'
+			gitRepo='kate'
+			product='kate'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
 			repoName='Kdenlive'
 			gitlabGroup='multimedia'
 			gitRepo='kdenlive'
