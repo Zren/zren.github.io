@@ -4,3 +4,5 @@ _drafts
 kde_tips/tips.mediawiki
 .directory
 .jekyll-cache
+.bundle
+vendor
