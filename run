@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Help: https://jekyllrb.com/docs/ruby-101/
+
+# bundle config set --local path 'vendor/bundle'
+# bundle install
+bundle exec jekyll serve
