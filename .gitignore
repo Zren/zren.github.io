@@ -6,3 +6,6 @@ kde_tips/tips.mediawiki
 .jekyll-cache
 .bundle
 vendor
+Gemfile
+Gemfile.lock
+bin
