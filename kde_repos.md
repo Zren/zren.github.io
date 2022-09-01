@@ -874,6 +874,14 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepo.html
+			repoName='apps.kde.org'
+			gitlabGroup='websites'
+			gitRepo='apps-kde-org'
+			product='www.kde.org&component=apps.kde.org'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
 			repoName='develop.kde.org'
 			gitlabGroup='documentation'
 			gitRepo='develop-kde-org'
