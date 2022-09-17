@@ -3,7 +3,7 @@ title: Ignoring KDE Work Branches
 layout: post
 ---
 
-I regularly use `git lga` (custom alias in `~/.gitconfig`) to view all branches. 
+I regularly use `git lga` (custom alias in `~/.gitconfig`) to view all branches.
 
 ```ini
 [alias]
@@ -19,6 +19,8 @@ I don't really need to see all the work branches (which are normally hidden in f
 
 To clean things up, I found this on StackOverflow:
 <https://stackoverflow.com/questions/16842426/can-git-permanently-ignore-a-remote-branch>
+
+**Update: I recently tried this on KDE Neon (based on Ubuntu 20.04) which still [has git v2.25](https://repology.org/project/git/versions#ubuntu_20_04). Apparently negative refspecs require git v2.38, however it seems to work fine on OpenSUSE Tumbleweed with git v2.37.3.**
 
 I worked out that I needed to run this in every kde repo:
 
