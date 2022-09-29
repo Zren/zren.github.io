@@ -906,27 +906,7 @@ redirect_from: /projects/kde/repos/
 	</tr>
 	<tr>
 		{% include kdeRepo.html
-			repoName='Older Websites (SVN)'
-			gitUrl='https://websvn.kde.org/trunk/www/sites/www/'
-			product='www.kde.org'
-		%}
-	</tr>
-	<tr class="indent">
-		{% include kdeRepo.html
-			repoName='Aether Wordpress Theme'
-			gitlabGroup='websites'
-			gitRepo='aether-wordpress'
-		%}
-	</tr>
-</table>
-
-
-## KDE Store (store.kde.org)
-
-<table class="repolist">
-	<tr>
-		{% include kdeRepo.html
-			repoName='ocs-webserver'
+			repoName='store.kde.org (ocs-webserver)'
 			gitlabGroup='webapps'
 			gitRepo='ocs-webserver'
 			gitPath='application/modules/default/controllers'
@@ -947,6 +927,20 @@ redirect_from: /projects/kde/repos/
 			gitlabGroup='webapps'
 			gitRepo='ocs-webserver'
 			gitPath='application/modules/default/controllers/ProductcommentController.php'
+		%}
+	</tr>
+	<tr>
+		{% include kdeRepo.html
+			repoName='Older Websites (SVN)'
+			gitUrl='https://websvn.kde.org/trunk/www/sites/www/'
+			product='www.kde.org'
+		%}
+	</tr>
+	<tr class="indent">
+		{% include kdeRepo.html
+			repoName='Aether Wordpress Theme'
+			gitlabGroup='websites'
+			gitRepo='aether-wordpress'
 		%}
 	</tr>
 </table>
