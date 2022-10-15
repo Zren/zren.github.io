@@ -218,6 +218,7 @@ a:not([href]):hover {
       <td><a href="https://www.reddit.com/r/kde/comments/y180mi/plasma_526_has_landed_includes_new_features_for/">/r/kde</a></td>
       <td>
         <a href="https://www.reddit.com/r/linux/comments/y18ddt/plasma_526_has_landed_includes_new_features_for/">/r/linux</a>
+        <a href="https://www.reddit.com/r/technology/comments/y4m5wd/kde_plasma_526/">/r/technology</a>
       </td>
     </tr>
     <tr>
