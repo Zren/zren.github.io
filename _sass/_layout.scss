@@ -447,5 +447,18 @@ hr {
         .highlight pre {
             margin-bottom: 0;
         }
+
+        @media (max-width: 800px) {
+            .post-content table.installtable,
+            .post-content .installtable tbody,
+            .post-content .installtable tr,
+            .post-content .installtable td:first-child,
+            .post-content .installtable td:nth-child(2) {
+                display: block;
+            }
+            .post-content .installtable td:first-child {
+                text-align: left;
+            }
+        }
     }
 }
