@@ -115,6 +115,6 @@ It runs! And there's no more "onFoo" warnings!
 
 As a final note, I should point out that the `qdeclarative` folder is over 1.3 Gb after building, while the `lib` folder is just 20 Mb. I recommend copying the `lib` folder and renaming it `~/Code/qt/qdeclarative-build-lib`. Then delete the 1.3 Gb `qdeclarative` folder.
 
-This was a rather fun dive into Qt. The temporary (2 month) solution was much more difficult accomplish than I first thought, but it's satisfying to know a solution exists.
+This was a rather fun dive into Qt. The temporary (2 month) solution was much more difficult to accomplish than I first thought, but it's satisfying to know a solution exists.
 
 Yes... I know I could have used [`qt5-declarative-git` from the AUR](https://aur.archlinux.org/packages/qt5-declarative-git/).

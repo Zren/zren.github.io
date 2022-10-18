@@ -50,7 +50,7 @@ qmlprofiler --interactive --record off --attach localhost --port 5555 --output ~
 
 Breaking this command down:
 
-* `--interactive` allows us to enter type commands to start recording, or save recordings to file.
+* `--interactive` allows us to enter commands to start recording, or save recordings to file.
 * `--record off` tells it to not record when we connect to `plasmashell`
 * `--attach localhost` switches to connecting to an already running program
 * `--port 5555` which port to connect to
