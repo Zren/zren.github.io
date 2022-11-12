@@ -214,7 +214,7 @@ qdbus org.kde.KWin /KWin reconfigure
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Open KRunner with Windows/Meta key{% endcapture %}{% capture contents %}
-  We need to set `Meta=` under the group `[ModifierOnlyShortcuts]` in the file `~/.config/kwinrc`, then reload kwin.
+  We need to set `Meta=...` under the group `[ModifierOnlyShortcuts]` in the file `~/.config/kwinrc`, then reload kwin.
   It's easier to use these commands than doing it by hand.
   **Plasma 5.18 and above:**
   {% highlight bash %}
@@ -224,6 +224,38 @@ qdbus org.kde.KWin /KWin reconfigure
   **Plasma 5.17 and below:**
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/krunner,org.kde.kglobalaccel.Component,invokeShortcut,run command"
+qdbus org.kde.KWin /KWin reconfigure
+{% endhighlight %}
+{% endcapture%}{% include tip.html label=label contents=contents %}
+
+{% capture label %}Open Overview with Windows/Meta key{% endcapture %}{% capture contents %}
+  Overview was formerly called "Present Windows" before Plasma 5.23.
+  We need to set `Meta=...` under the group `[ModifierOnlyShortcuts]` in the file `~/.config/kwinrc`, then reload kwin.
+  It's easier to use these commands than doing it by hand.
+  {% highlight bash %}
+kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/kwin,org.kde.kglobalaccel.Component,invokeShortcut,Expose"
+qdbus org.kde.KWin /KWin reconfigure
+{% endhighlight %}
+
+{% capture label %}Open Keyboard Shortcut with Windows/Meta key{% endcapture %}{% capture contents %}
+  To run any keyboard shortcut with the Meta key, first open Konsole and run the following commands.
+  {% highlight bash %}
+qdbus # List all DBus services
+qdbus org.kde.kglobalaccel # List all shortcut groups/components
+qdbus org.kde.kglobalaccel /component/kwin # List commands
+qdbus org.kde.kglobalaccel /component/kwin shortcutNames | sort # List shortcut ids
+{% endhighlight %}
+
+  There are other shortcut groups (components) besides `/component/kwin` if you wish to use them. Once you find the "internal shortcut id" of the command you wish to activate, test the following command.
+
+  {% highlight bash %}
+qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Show Desktop"
+{% endhighlight %}
+
+  After you figure out the dbus command needed, we need to set `Meta=...` under the group `[ModifierOnlyShortcuts]` in the file `~/.config/kwinrc`, then reload kwin.
+  It's easier to use these commands than doing it by hand.
+  {% highlight bash %}
+kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/kwin,org.kde.kglobalaccel.Component,invokeShortcut,Show Desktop"
 qdbus org.kde.KWin /KWin reconfigure
 {% endhighlight %}
 {% endcapture%}{% include tip.html label=label contents=contents %}
