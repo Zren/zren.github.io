@@ -214,6 +214,19 @@ a:not([href]):hover {
   </thead>
   <tbody>
     <tr>
+      <td><a href="https://kde.org/announcements/plasma/5/5.27.0/">Plasma 5.27.0</a></td>
+      <td><a href="https://www.reddit.com/r/kde/comments/1122bl4/kdes_brand_new_plasma_527_desktop_is_out_check/">/r/kde</a></td>
+      <td>
+        <a href="https://www.reddit.com/r/kde/comments/1122cod/plasma_527_released/">/r/kde (2)</a>
+        <a href="https://www.reddit.com/r/kde/comments/1125909/new_record_kde_plasma_527_has_already_arrived_on/">/r/kde (openSUSE TW)</a>
+        <a href="https://www.reddit.com/r/openSUSE/comments/112581o/new_record_kde_plasma_527_has_already_arrived_on/">/r/openSUSE</a>
+        <a href="https://www.reddit.com/r/linux/comments/1122dvs/kdes_brand_new_plasma_527_desktop_is_out_check/">/r/linux</a>
+        <a href="https://www.reddit.com/r/SteamDeck/comments/1124ge6/kde_plasma_527_released/">/r/SteamDeck</a>
+        <a href="https://news.ycombinator.com/item?id=34787623">HackerNews</a>
+        <a href="https://www.reddit.com/r/kde/comments/112zknj/kde_plasma_527_the_biggest_best_kde_release_yet/"> /r/kde (LinuxExperiement video)
+      </td>
+    </tr>
+    <tr>
       <td><a href="https://kde.org/announcements/plasma/5/5.26.0/">Plasma 5.26.0</a></td>
       <td><a href="https://www.reddit.com/r/kde/comments/y180mi/plasma_526_has_landed_includes_new_features_for/">/r/kde</a></td>
       <td>
