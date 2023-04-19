@@ -1023,6 +1023,14 @@ redirect_from: /projects/kde/repos/
 		%}
 	</tr>
 	<tr>
+		{% include kdeRepo.html
+			repoName='Elisa [Music Player]'
+			gitlabGroup='multimedia'
+			gitRepo='elisa'
+			product='Elisa'
+		%}
+	</tr>
+	<tr>
 		{% include kdeRepoDesktop.html
 			repoName='Emoji Picker'
 			gitPath='applets/kimpanel/backend/ibus/emojier'
