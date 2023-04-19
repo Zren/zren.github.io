@@ -66,8 +66,8 @@
 {% capture label %}Lock Widgets{% endcapture %}{% capture contents %}
   Plasma 5.18 and above has hidden the "lock widgets" toggle. It's very easy to enter "edit mode" with a long press. If you want to get the old locked mode behavior, run the following command:
   {% highlight bash %}
-  qdbus org.kde.plasmashell /PlasmaShell evaluateScript 'lockCorona(!locked)'
-  {% endhighlight %}
+qdbus org.kde.plasmashell /PlasmaShell evaluateScript 'lockCorona(!locked)'
+{% endhighlight %}
   If you want an easier way to toggle locking widgets in Plasma 5.18, install [Win7ShowDesktop widget](https://store.kde.org/p/1100895/) which has a "Lock Widgets" toggle in it's right click menu.
 {% endcapture%}{% include tip.html label=label contents=contents %}
 
@@ -121,7 +121,7 @@
   {% highlight bash %}
 kwriteconfig5 --file ~/.config/kwinrc --group TabBox --key DelayTime 0
 qdbus org.kde.KWin /KWin reconfigure
-  {% endhighlight %}
+{% endhighlight %}
   You can also disable the highlight window effect by going to:
   System Settings > Window Management > Task Switcher Tab
   Uncheck: Show selected window
