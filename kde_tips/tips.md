@@ -236,6 +236,7 @@ qdbus org.kde.KWin /KWin reconfigure
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/kwin,org.kde.kglobalaccel.Component,invokeShortcut,Expose"
 qdbus org.kde.KWin /KWin reconfigure
 {% endhighlight %}
+{% endcapture%}{% include tip.html label=label contents=contents %}
 
 {% capture label %}Open Keyboard Shortcut with Windows/Meta key{% endcapture %}{% capture contents %}
   To run any keyboard shortcut with the Meta key, first open Konsole and run the following commands.
