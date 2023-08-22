@@ -772,10 +772,12 @@ a:not([href]):hover {
   </tbody>
 </table>
 
+
 ## KDE Frameworks
 
 * <https://community.kde.org/Schedules/Frameworks>
 * <https://www.reddit.com/r/kde/search?restrict_sr=on&q=frameworks+5.63>
+
 
 <table class="table versiontable">
   <thead>
