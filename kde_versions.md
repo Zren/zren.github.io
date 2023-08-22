@@ -200,6 +200,8 @@ a:not([href]):hover {
 }
 </style>
 
+-----
+
 ## Plasma
 
 <https://community.kde.org/Schedules/Plasma_5>
@@ -772,6 +774,7 @@ a:not([href]):hover {
   </tbody>
 </table>
 
+-----
 
 ## KDE Frameworks
 
