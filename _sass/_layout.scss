@@ -378,6 +378,12 @@ hr {
     margin-bottom: $spacing-unit;
     word-break: break-word;
 
+    h2, h3, h4, h5, h6 {
+        &:not(:nth-child(-n+8)) {
+            margin-top: 2em;
+        }
+    }
+
     h2 {
         font-size: 32px;
 
