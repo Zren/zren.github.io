@@ -8,7 +8,7 @@ if [[ "$VENDOR" == "suse" ]]; then
 	# GEM_HOME="${PWD}/.gem" gem install jekyll
 
 	jekyll=`find "${PWD}/.gem/bin/" -name "jekyll*"` # ./.gem/bin/jekyll.ruby3.3
-	GEM_HOME="${PWD}/.gem" "$jekyll" serve
+	GEM_HOME="${PWD}/.gem" "$jekyll" serve --livereload
 else
-	jekyll serve
+	jekyll serve --livereload
 fi
