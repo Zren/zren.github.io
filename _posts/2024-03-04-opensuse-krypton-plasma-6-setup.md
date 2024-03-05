@@ -3,7 +3,7 @@ layout: post
 title: OpenSUSE Krypton Plasma 6 Setup
 ---
 
-The last time I tried installing Plasma 6 in a VM with [OpenSUSE Krypton](https://en.opensuse.org/SDB:Argon_and_Krypton#Krypton), I failed to actually install Plasma 6 for development use.
+The last time I tried installing Plasma 6 in a VM with [OpenSUSE Krypton](https://en.opensuse.org/SDB:Argon_and_Krypton#Krypton), I failed to actually install Plasma 6 for development use. Recently I noticed a tip on the KDE Wiki and managed to get it working.
 
 ## Install via LiveCD
 
