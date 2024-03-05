@@ -74,10 +74,16 @@ redirect_from: /projects/
     </header>
 
     <div class="post-content" itemprop="articleBody">
+      {% if forloop.index == 1 %}
+      {{ post.content }}
+      {% else %}
       {{ post.excerpt }}
+      {% endif %}
     </div>
 
+    {% if forloop.index != 1 %}
     <a class="post-continue-reading" href="{{ post.url | prepend: site.baseurl }}"></a>
+    {% endif %}
 
   </article>
   {% endfor %}
