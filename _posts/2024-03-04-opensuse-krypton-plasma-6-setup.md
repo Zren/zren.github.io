@@ -3,8 +3,6 @@ layout: post
 title: OpenSUSE Krypton Plasma 6 Setup
 ---
 
-<script type="text/javascript" src="/js/livereload.js"></script>
-
 The last time I tried installing Plasma 6 in a VM with [OpenSUSE Krypton](https://en.opensuse.org/SDB:Argon_and_Krypton#Krypton), I failed to actually install Plasma 6 to develop with.
 
 ## Install via LiveCD
