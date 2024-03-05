@@ -2,6 +2,7 @@ _site
 _drafts
 .sass-cache
 kde_tips/tips.mediawiki
+.gem
 .directory
 .jekyll-cache
 .bundle

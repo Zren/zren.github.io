@@ -2,6 +2,13 @@
 
 # Help: https://jekyllrb.com/docs/ruby-101/
 
-# bundle config set --local path 'vendor/bundle'
-# bundle install
-bundle exec jekyll serve
+if [[ "$VENDOR" == "suse" ]]; then
+	# OpenSUSE Tumbleweed doesn't have a simple jekyll package to install.
+	# So use a GEM_HOME in the home directory instead of poluting the root gem dir.
+	# GEM_HOME="${PWD}/.gem" gem install jekyll
+
+	jekyll=`find "${PWD}/.gem/bin/" -name "jekyll*"` # ./.gem/bin/jekyll.ruby3.3
+	GEM_HOME="${PWD}/.gem" "$jekyll" serve
+else
+	jekyll serve
+fi
