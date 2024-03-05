@@ -191,7 +191,7 @@ hr {
     @include media-query($on-palm) {
         position: absolute;
         top: 9px;
-        right: $spacing-unit / 2;
+        right: calc($spacing-unit / 2);
         background-color: $background-color;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
@@ -252,7 +252,7 @@ hr {
 
 .footer-heading {
     font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: calc($spacing-unit / 2);
 }
 
 .contact-list,
@@ -264,14 +264,14 @@ hr {
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
-    margin-left: -$spacing-unit / 2;
+    margin-left: calc(($spacing-unit * -1) / 2);
     @extend %clearfix;
 }
 
 .footer-col {
     float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    margin-bottom: calc($spacing-unit / 2);
+    padding-left: calc($spacing-unit / 2);
 }
 
 .footer-col-1 {
