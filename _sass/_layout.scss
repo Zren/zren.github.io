@@ -160,7 +160,7 @@ hr {
     max-width: 1020px;
   }
   /* Don't overlap the nav if we .outset at the start of a post */
-  .post:nth-of-type(1) .post-content .outset:nth-child(-n+8) {
+  .post:nth-of-type(1) .post-content > :nth-child(-n+8) .outset {
     margin-left: -20px;
     margin-right: -20px;
   }
