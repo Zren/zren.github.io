@@ -3,7 +3,7 @@ layout: post
 title: OpenSUSE Krypton Plasma 6 Setup
 ---
 
-The last time I tried installing Plasma 6 in a VM with [OpenSUSE Krypton](https://en.opensuse.org/SDB:Argon_and_Krypton#Krypton), I failed to actually install Plasma 6 to develop with.
+The last time I tried installing Plasma 6 in a VM with [OpenSUSE Krypton](https://en.opensuse.org/SDB:Argon_and_Krypton#Krypton), I failed to actually install Plasma 6 for development use.
 
 ## Install via LiveCD
 
@@ -28,7 +28,7 @@ On the [Plasma 6 wiki entry on community.kde.org](https://community.kde.org/Plas
 
 Another issue I found is that by default, the user will login to the "IceWM" Desktop Environment instead of "Plasma (Wayland)".
 
-![](/pic/2024-03-04___21-34-01.png)
+![](/pic/2024-03-04___21-34-01.png){:.outset}
 
 So click the App Launcher button in the bottom-left of the IceWM panel, then click Logout.
 
@@ -37,7 +37,8 @@ So click the App Launcher button in the bottom-left of the IceWM panel, then cli
 At the bottom-left of the SDDM Login Screen is a selector drop down to select the desktop environment you login to.
 
 ![](/pic/2024-03-04___21-35-23.png)
-![](/pic/2024-03-04___21-36-36.png)
+
+![](/pic/2024-03-04___21-36-36.png){:.outset}
 
 
 However if you have AutoLogin enabled then you will need to open up KDE's System Settings.
@@ -50,13 +51,12 @@ Click on the "Behavior" button.
 
 ![](/pic/2024-03-04___21-43-53.png)
 
-Then change from "(System Default)" to "Plasma (Wayland)"
+Then change from `(System Default)` to `Plasma (Wayland)`
 
-![](/pic/2024-03-04___21-44-28.png)
+![](/pic/2024-03-04___21-44-28.png){:.outset}
 
 > If you know how to change the system default [please let me know](https://github.com/Zren/zren.github.io/issues).
 {:.alert.alert-warning}
-
 
 ## Improving the VM Experience
 
@@ -76,9 +76,9 @@ By default OpenSUSE will wait 8 seconds for you to select which boot drive you w
 
 First open up KDE's "System Settings".
 
-Under "Screen Locking" change "Lock screen automatically" from `5 minutes` to `Never`.
+Under "Screen Locking" change "Lock screen automatically" from `5 minutes` to `Never`. Also uncheck "Lock after waking from sleep".
 
-![](/pic/2024-03-04___22-26-10.png)
+![](/pic/2024-03-04___22-26-10.png){:.outset}
 
 Also, under "Power Management" uncheck "Turn off screen".
 
