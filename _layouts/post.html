@@ -30,4 +30,18 @@ forEachImage(function(img){
 	p.replaceWith(a)
 	a.appendChild(img)
 })
+function forEachHeading(callback) {
+	document.querySelectorAll('.post-content > h2').forEach(callback)
+	document.querySelectorAll('.post-content > h3').forEach(callback)
+	document.querySelectorAll('.post-content > h4').forEach(callback)
+	document.querySelectorAll('.post-content > h5').forEach(callback)
+	document.querySelectorAll('.post-content > h6').forEach(callback)
+}
+forEachHeading(function(h){
+	let a = document.createElement('a')
+	a.classList.add('header-link')
+	a.setAttribute('href', '#' + h.id)
+	a.textContent = '¶'
+	h.appendChild(a)
+})
 </script>
