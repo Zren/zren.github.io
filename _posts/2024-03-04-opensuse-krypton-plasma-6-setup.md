@@ -93,8 +93,44 @@ To quickly launch a VM from the App Launcher:
 
 * Open `kmenuedit` (Right click App Launcher Icon > Edit Application)
 * Under "Lost & Found" > Add New Item
-* Name: `VM Krypton`
-* Program: `/usr/bin/virt-manager`
-* Command-Line Arguments: `--connect qemu:///system --show-domain-console OpensuseKrypton` (note that `OpensuseKrypton` must be the exact name of the virtual machine in Virt-Manager)
-* Icon (empty button right of the "Name" text field): `openSUSE-distributor-logo`
+	* Name: `VM Krypton`
+	* Program: `/usr/bin/virt-manager`
+	* Command-Line Arguments: `--connect qemu:///system --show-domain-console OpensuseKrypton` (note that `OpensuseKrypton` must be the exact name of the virtual machine in Virt-Manager)
+	* Icon (empty button right of the "Name" text field): `openSUSE-distributor-logo`
 * Save
+
+### VM Shared Directory
+
+To quickly develop plasma 6 widget code in the host, then test in the VM.
+
+* Virtual Machine > Details Tab
+* Memory > Check Shared Memory
+* Add Hardware > Filesystem
+	* Driver: `virtiofs`
+	* Source Path: 
+		* Create a pool at `~/Code/plasmoid-tiledmenu`
+		* Then select `~/Code/plasmoid-tiledmenu/package` for the Source Path
+	* Target Path: `plasmoid_tiledmenu` (Note that this isn't a filepath but an id that we use to mount in `/etc/fstab` later)
+	* Finish
+* Start the VM
+* Open up the terminal (Konsole)
+* `EDITOR=nano sudoedit /etc/fstab`
+	* Add the following line at the bottom.  
+	  ```
+plasmoid_tiledmenu	/home/tester/.local/share/plasma/plasmoids/com.github.zren.tiledmenu	virtiofs	rw,noatime,_netdev	0	2
+```
+	* <https://wiki.archlinux.org/title/Fstab>
+	* Note to use `TAB` to separate instead of spaces.
+	* `rw,noatime,_netdev` means Read/Write, [ignore access times](https://wiki.archlinux.org/title/Fstab#atime_options), and treat this as a Network Device.
+	* `0	2` is for the following. I'm not entirely sure I should use `2`, I should probably use `0` to disable the checks.
+		* `<dump>` is checked by the `dump` utility. This field is usually set to `0`, which disables the check.
+		* `<fsck>` sets the order for file system checks at boot time; see `fsck`. For the root device it should be 1. For other partitions it should be `2`, or `0` to disable checking.
+	* Hit `Ctrl+X` then `Y` then `Enter` to save your changes in the Nano terminal text editor.
+* Create the `/home/tester/.local/share/plasma/plasmoids/com.github.zren.tiledmenu` folders if they do not currently exist.
+* Restart the VM.
+
+You should now have the `package` folder of your widget linked as an installed widget in your Plasma 6 VM which makes it easy to test.
+
+
+
+
