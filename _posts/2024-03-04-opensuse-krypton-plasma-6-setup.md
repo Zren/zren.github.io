@@ -85,3 +85,16 @@ Finally, under "Power Management" uncheck "Turn off screen".
 ![](/pic/2024-03-04___22-25-18.png)
 
 
+## Virt-Manager Tips
+
+### VM Desktop Shortcut
+
+To quickly launch a VM from the App Launcher:
+
+* Open `kmenuedit` (Right click App Launcher Icon > Edit Application)
+* Under "Lost & Found" > Add New Item
+* Name: `VM Krypton`
+* Program: `/usr/bin/virt-manager`
+* Command-Line Arguments: `--connect qemu:///system --show-domain-console OpensuseKrypton` (note that `OpensuseKrypton` must be the exact name of the virtual machine in Virt-Manager)
+* Icon (empty button right of the "Name" text field): `openSUSE-distributor-logo`
+* Save
