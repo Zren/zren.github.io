@@ -122,7 +122,7 @@ plasmoid_tiledmenu	/home/tester/.local/share/plasma/plasmoids/com.github.zren.ti
 	* <https://wiki.archlinux.org/title/Fstab>
 	* Note to use `TAB` to separate instead of spaces.
 	* `rw,noatime,_netdev` means Read/Write, [ignore access times](https://wiki.archlinux.org/title/Fstab#atime_options), and treat this as a Network Device.
-	* `0	2` is for the following. I'm not entirely sure I should use `2`, I should probably use `0` to disable the checks.
+	* `0 2` is for `<dump> <fsck>`. I'm not entirely sure I should use `2`. I should probably use `0` to disable the checks.
 		* `<dump>` is checked by the `dump` utility. This field is usually set to `0`, which disables the check.
 		* `<fsck>` sets the order for file system checks at boot time; see `fsck`. For the root device it should be 1. For other partitions it should be `2`, or `0` to disable checking.
 	* Hit `Ctrl+X` then `Y` then `Enter` to save your changes in the Nano terminal text editor.
