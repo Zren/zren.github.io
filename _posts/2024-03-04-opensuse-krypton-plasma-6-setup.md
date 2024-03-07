@@ -17,7 +17,7 @@ Even though the LiveCD runs Plasma 6, if you run the installation with the defau
 
 On the [Plasma 6 wiki entry on community.kde.org](https://community.kde.org/Plasma/Plasma_6), it mentions you need to change the installed Desktop Environment.
 
-> At the last step (installation summary), **select "Software"** and **tick "Plasma 6 Desktop Base"**.
+> At the last step (installation summary), **select "Software"** and **tick "KDE Plasma 6 Desktop Base"**.
 
 ![](/pic/2024-03-04___20-08-42.png)
 ![](/pic/2024-03-04___20-09-17.png)
@@ -80,7 +80,7 @@ Under "Screen Locking" change "Lock screen automatically" from `5 minutes` to `N
 
 ![](/pic/2024-03-04___22-26-10.png){:.outset}
 
-Also, under "Power Management" uncheck "Turn off screen".
+Finally, under "Power Management" uncheck "Turn off screen".
 
 ![](/pic/2024-03-04___22-25-18.png)
 
