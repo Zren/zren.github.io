@@ -391,6 +391,13 @@ hr {
     .header-link {
         font-size: 0.8em;
         padding: 0.1em 0.2em;
+        font-family: monospace;
+        font-weight: bold;
+
+        &:after {
+            // content: "¶";
+            content: "#";
+        }
 
         &:hover {
             text-decoration: none;
