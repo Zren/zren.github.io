@@ -126,7 +126,7 @@ plasmoid_tiledmenu	/home/tester/.local/share/plasma/plasmoids/com.github.zren.ti
 		* `<dump>` is checked by the `dump` utility. This field is usually set to `0`, which disables the check.
 		* `<fsck>` sets the order for file system checks at boot time; see `fsck`. For the root device it should be 1. For other partitions it should be `2`, or `0` to disable checking.
 	* Hit `Ctrl+X` then `Y` then `Enter` to save your changes in the Nano terminal text editor.
-* Create the `/home/tester/.local/share/plasma/plasmoids/com.github.zren.tiledmenu` folders if they do not currently exist.
+* Create the `/home/tester/.local/share/plasma/plasmoids/com.github.zren.tiledmenu/` folders if they do not currently exist.
 * Restart the VM.
 
 You should now have the `package` folder of your widget linked as an installed widget in your Plasma 6 VM which makes it easy to test.
