@@ -287,8 +287,10 @@ The last things I had to [do manually](https://github.com/Zren/plasma-applet-dai
 
 I was able to quickly `sed` replace my `plasmoid.action('configure').trigger()` trick to open the config dialog automatically when testing though which I have in most of my widgets.
 
-```js
-Plasmoid.internalAction("configure").trigger()
+```qml
+PlasmoidItem {
+	Component.onCompleted: Plasmoid.internalAction("configure").trigger()
+}
 ```
 
 ## In Closing
