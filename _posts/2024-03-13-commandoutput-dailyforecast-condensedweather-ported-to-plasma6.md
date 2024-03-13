@@ -282,6 +282,8 @@ plasmoidPropsPorted = [
 	'toolTipMainText', 'toolTipSubText', 'toolTipTextFormat', 'toolTipItem',
 	'hideOnWindowDeactivate',
 ]
+for prop in plasmoidPropsPorted:
+	line = line.replace(f"Plasmoid.{prop}:", f"{prop}:")
 ```
 
 The last things I had to [do manually](https://github.com/Zren/plasma-applet-dailyforecast/commit/7af67098b4bce76334fbd63326532674d1443077) was convert the `plasmoid.setAction('refresh, ...)` calls to the new `Plasmoid.contextualActions: [ PlasmaCore.Action {...} ]` which would be a tad too complicated to automate.
