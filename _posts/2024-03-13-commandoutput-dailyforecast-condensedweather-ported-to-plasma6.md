@@ -152,7 +152,7 @@ Now the tricky part, parsing the translated `language.po` files, then editing th
 
 Checkout the regex I used here: <https://regex101.com/r/kEJCVL/5>
 
-<https://github.com/Zren/plasma-applet-lib/blob/master/kpac#L97>
+[github.com/Zren/plasma-applet-lib/.../kpac#L97](https://github.com/Zren/plasma-applet-lib/blob/22a5d896b36f4d73a96549c980de75406ec77550/kpac#L97)
 
 ```py
 PoMessage = namedtuple('PoMessage', ['ctxt', 'id', 'str'])
@@ -199,7 +199,8 @@ class PoFile:
 		return None
 ```
 
-<https://github.com/Zren/plasma-applet-lib/blob/master/kpac#L881>
+[github.com/Zren/plasma-applet-lib/.../kpac#L881](https://github.com/Zren/plasma-applet-lib/blob/22a5d896b36f4d73a96549c980de75406ec77550/kpac#L881)
+
 
 ```py
 with open(self.jsonMetaFilepath, 'r') as fin:
@@ -237,11 +238,11 @@ Well since I have [like a dozen widgets](https://store.kde.org/u/Zren), I needed
 
 Manipulating `metadata.json` with python3 is easy enough as we demonstrated above.
 
-<https://github.com/Zren/plasma-applet-lib/blob/22a5d896b36f4d73a96549c980de75406ec77550/kpac#L1055>
+[github.com/Zren/plasma-applet-lib/.../kpac#L1055](https://github.com/Zren/plasma-applet-lib/blob/22a5d896b36f4d73a96549c980de75406ec77550/kpac#L1055)
 
 For the rest, the easiest way would be with some simple `sed` text replacements. To make life easier I just kept using python though.
 
-<https://github.com/Zren/plasma-applet-lib/blob/22a5d896b36f4d73a96549c980de75406ec77550/kpac#L1216>
+[github.com/Zren/plasma-applet-lib/.../kpac#L1216](https://github.com/Zren/plasma-applet-lib/blob/22a5d896b36f4d73a96549c980de75406ec77550/kpac#L1216)
 
 Then I grepped for the new `KSvg.` namespaces, and added an `import org.kde.ksvg as KSvg` at the top of the file if it was missing. I may or may not have forgotten to write the rest of the file contents and deleted a few files when testing. Glory to `git checkout path/to/file.txt` for saving my bacon here.
 
@@ -267,7 +268,7 @@ As always, creating a list of all the various `Plasmoid.___` properties to repla
 
 Since Plasma6 made things a little confusing as to what is in `PlasmoidItem {}` and what is accessed with `Plasmoid.___` I settled on the following for now:
 
-<https://github.com/Zren/plasma-applet-lib/blob/22a5d896b36f4d73a96549c980de75406ec77550/kpac#L1185>
+[github.com/Zren/plasma-applet-lib/.../kpac#L1185](https://github.com/Zren/plasma-applet-lib/blob/22a5d896b36f4d73a96549c980de75406ec77550/kpac#L1185)
 
 ```py
 plasmoidPropsPorted = [
@@ -299,7 +300,7 @@ Overall, with my new script it should be as easy to do most of the dull text rep
 
 The hard part will be converting any deprecated `QQC1.Buttons` and other GUI elements that might have custom styling to their `QQC2.Button` counterparts. [TiledMenu](https://github.com/Zren/plasma-applet-tiledmenu/issues/156) and EventCalendar will probably be more annoying to port than just running the following:
 
-<https://github.com/Zren/plasma-applet-lib/blob/master/kpac>
+[github.com/Zren/plasma-applet-lib/.../kpac](https://github.com/Zren/plasma-applet-lib/blob/master/kpac)
 
 ```sh
 python3 ./kpac updatelib ../plasma-applet-lib
