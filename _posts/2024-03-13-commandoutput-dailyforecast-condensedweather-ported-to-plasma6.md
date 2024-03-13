@@ -313,7 +313,7 @@ git commit . -m 'Update'
 python3 ./kpac build # Create a zipped .plasmoid
 ```
 
-I got too tired last night so first things up is porting SimpleWeather today.
+I got too tired last night, so firsts things up is porting [SimpleWeather](https://store.kde.org/p/1287571/) today since it's basically the same code as the other weather widgets.
 
-This "widgets have been updated" blog post rambled on more than I expected sorry bout that.
+This "widgets have been updated" blog post rambled on more than I expected, sorry bout that.
 
