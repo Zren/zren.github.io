@@ -300,7 +300,7 @@ PlasmoidItem {
 
 Overall, with my new script it should be as easy to do most of the dull text replacement work.
 
-The hard part will be converting any deprecated `QQC1.Buttons` and other GUI elements that might have custom styling to their `QQC2.Button` counterparts. [TiledMenu](https://github.com/Zren/plasma-applet-tiledmenu/issues/156) and EventCalendar will probably be more annoying to port than just running the following:
+The hard part will be converting any deprecated `QQC1.Button`s and other GUI elements that might have custom styling to their `QQC2.Button` counterparts. [TiledMenu](https://github.com/Zren/plasma-applet-tiledmenu/issues/156) and EventCalendar will probably be more annoying to port than just running the following:
 
 [github.com/Zren/plasma-applet-lib/.../kpac](https://github.com/Zren/plasma-applet-lib/blob/master/kpac)
 
