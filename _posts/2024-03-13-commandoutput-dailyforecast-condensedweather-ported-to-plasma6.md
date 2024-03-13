@@ -199,8 +199,6 @@ class PoFile:
 		return None
 ```
 
-An important part was to use `ensure_ascii=False` in `json.dump()` to keep the unicode text.
-
 <https://github.com/Zren/plasma-applet-lib/blob/master/kpac#L881>
 
 ```py
@@ -226,6 +224,8 @@ with open(filepath, 'w') as fout:
 	json.dump(data, fout, ensure_ascii=False, indent='\t', sort_keys=True)
 	fout.write('\n') # Trailing newline at EOF
 ```
+
+An important part was to use `ensure_ascii=False` in `json.dump()` to keep the unicode text.
 
 ## Drawing the rest of the Owl in Plasma 6
 
