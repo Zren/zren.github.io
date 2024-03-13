@@ -249,18 +249,18 @@ Lastly I detected if the file was `main.qml`, and replaced any line starting wit
 
 As always, creating a list of all the various `Plasmoid.___` properties to replace was a pain.
 
-##### [Plasma5] Global `plasmoid` property (which is also attached to the widget root item as `Plasmoid`)
+#### [Plasma5] Global `plasmoid` property (which is also attached to the widget root item as `Plasmoid`)
 
 * <https://invent.kde.org/plasma/plasma-framework/-/tree/kf5/src/scriptengines/qml/plasmoid/appletinterface.h>
 * <https://invent.kde.org/plasma/plasma-framework/-/tree/kf5/src/plasmaquick/appletquickitem.h>
 * <https://invent.kde.org/plasma/plasma-framework/-/tree/kf5/src/plasma/applet.h>
 
-##### [Plasma6] `PlasmoidItem` root item
+#### [Plasma6] `PlasmoidItem` root item
 
 * <https://invent.kde.org/plasma/plasma-framework/-/tree/master/src/plasmaquick/plasmoid/plasmoiditem.h>
 * <https://invent.kde.org/plasma/plasma-framework/-/tree/master/src/plasmaquick/appletquickitem.h>
 
-##### [Plasma6] Attached `Plasmoid` similar to `Layout` which dynamically grabs the value from the `Applet` class
+#### [Plasma6] Attached `Plasmoid` similar to `Layout` which dynamically grabs the value from the `Applet` class
 
 * <https://invent.kde.org/plasma/plasma-framework/-/blame/master/src/plasmaquick/private/plasmoidattached_p.cpp#L33>
 * <https://invent.kde.org/plasma/plasma-framework/-/tree/master/src/plasma/applet.h>
