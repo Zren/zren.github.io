@@ -150,7 +150,7 @@ with open(newTemplatePath, 'w') as fout:
 
 Now the tricky part, parsing the translated `language.po` files, then editing the `metadata.json`.
 
-Checkout the regex I used here: <https://regex101.com/r/kEJCVL>
+Checkout the regex I used here: <https://regex101.com/r/kEJCVL/5>
 
 <https://github.com/Zren/plasma-applet-lib/blob/master/kpac#L97>
 
